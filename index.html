@@ -378,8 +378,9 @@
         .carousel-image {
             width: 100%;
             height: 400px;
-            object-fit: cover;
+            object-fit: contain;
             display: none;
+            background: #f8f9fa;
         }
 
         .carousel-image.active {
@@ -810,8 +811,8 @@
                     <p>Students report increased self-confidence and improved study habits that serve them well beyond their tutoring experience.</p>
                 </div>
             </div>
-            <br> 
-            <center><h3> Tutoring Sessions in Action </h3> </center>
+            <br>
+           <center><h3>Tutoring Sessions in Action</h3></center> 
             <div class="photo-carousel">
                 <div class="carousel-container">
                     <img src="pic1.png" 
@@ -912,29 +913,45 @@
             }
         }
 
-        // Handle logo click
-        document.addEventListener('DOMContentLoaded', function() {
-            const logo = document.querySelector('.logo');
-            if (logo) {
-                logo.addEventListener('click', () => {
-                    showPage('home');
-                });
-            }
-            
-            // Debug: List all available pages
-            const allPages = document.querySelectorAll('.page');
-            console.log('Available pages:', Array.from(allPages).map(p => p.id));
-        });
-
         // Photo carousel functionality
         let slideIndex = 1;
+        let autoSlideInterval;
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                changeSlide(1);
+            }, 5000);
+        }
+
+        function stopAutoSlide() {
+            if (autoSlideInterval) {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = null;
+            }
+        }
 
         function changeSlide(n) {
+            stopAutoSlide(); // Stop auto-scroll when user manually navigates
             showSlide(slideIndex += n);
+            
+            // Restart auto-scroll after 10 seconds of inactivity
+            setTimeout(() => {
+                if (!autoSlideInterval) {
+                    startAutoSlide();
+                }
+            }, 10000);
         }
 
         function currentSlide(n) {
+            stopAutoSlide(); // Stop auto-scroll when user manually navigates
             showSlide(slideIndex = n);
+            
+            // Restart auto-scroll after 10 seconds of inactivity
+            setTimeout(() => {
+                if (!autoSlideInterval) {
+                    startAutoSlide();
+                }
+            }, 10000);
         }
 
         function showSlide(n) {
@@ -959,10 +976,22 @@
             }
         }
 
-        // Auto-advance carousel every 5 seconds
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
+        // Start auto-advance carousel when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addEventListener('click', () => {
+                    showPage('home');
+                });
+            }
+            
+            // Debug: List all available pages
+            const allPages = document.querySelectorAll('.page');
+            console.log('Available pages:', Array.from(allPages).map(p => p.id));
+            
+            // Start carousel auto-advance
+            startAutoSlide();
+        });
     </script>
 </body>
 </html>
