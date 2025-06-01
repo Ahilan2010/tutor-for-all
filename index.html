@@ -820,7 +820,14 @@
             });
             
             // Show selected page
-            document.getElementById(pageId).classList.add('active');
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            } else {
+                // Fallback to home if page not found
+                document.getElementById('home').classList.add('active');
+                return;
+            }
             
             // Add active class to corresponding nav item (skip for home since it's handled by logo)
             if (pageId !== 'home') {
@@ -838,6 +845,16 @@
                 }
             }
         }
+
+        // Handle logo click
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addEventListener('click', () => {
+                    showPage('home');
+                });
+            }
+        });
 
         // Handle logo click
         document.querySelector('.logo').addEventListener('click', () => {
