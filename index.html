@@ -14,7 +14,7 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #d4a574 0%, #5fa8d3 50%, #4db6ac 100%);
+            background: linear-gradient(135deg, #d4a574 0%, #c19a5b 50%, #2d3748 100%);
             min-height: 100vh;
         }
 
@@ -41,19 +41,9 @@
         .logo {
             position: absolute;
             left: 2rem;
-            width: 50px;
             height: 50px;
-            background: #4a5568;
-            border-radius: 50%;
             cursor: pointer;
             transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 10px;
-            text-align: center;
         }
 
         .logo:hover {
@@ -76,14 +66,14 @@
         }
 
         .nav-item:hover {
-            background: linear-gradient(135deg, #5fa8d3, #4db6ac);
+            background: linear-gradient(135deg, #d4a574, #2d3748);
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .nav-item.active {
-            background: linear-gradient(135deg, #5fa8d3, #4db6ac);
+            background: linear-gradient(135deg, #d4a574, #2d3748);
             color: white;
         }
 
@@ -121,7 +111,7 @@
 
         .hero h1 {
             font-size: 3.5rem;
-            background: linear-gradient(135deg, #5fa8d3, #4db6ac);
+            background: linear-gradient(135deg, #d4a574, #2d3748);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -143,12 +133,12 @@
         }
 
         .feature-card {
-            background: linear-gradient(135deg, rgba(95, 168, 211, 0.1), rgba(77, 182, 172, 0.1));
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(45, 55, 72, 0.05));
             padding: 2rem;
             border-radius: 15px;
             text-align: center;
             transition: transform 0.3s ease;
-            border: 1px solid rgba(95, 168, 211, 0.2);
+            border: 1px solid rgba(212, 165, 116, 0.3);
         }
 
         .feature-card:hover {
@@ -159,7 +149,7 @@
         .feature-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #5fa8d3, #4db6ac);
+            background: linear-gradient(135deg, #d4a574, #2d3748);
             border-radius: 50%;
             margin: 0 auto 1rem;
             display: flex;
@@ -188,7 +178,7 @@
         }
 
         .cta-button {
-            background: linear-gradient(135deg, #5fa8d3, #4db6ac);
+            background: linear-gradient(135deg, #d4a574, #2d3748);
             color: white;
             padding: 1rem 2rem;
             border: none;
@@ -216,14 +206,14 @@
         .stat-item {
             text-align: center;
             padding: 2rem;
-            background: linear-gradient(135deg, rgba(95, 168, 211, 0.1), rgba(77, 182, 172, 0.1));
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(45, 55, 72, 0.05));
             border-radius: 15px;
         }
 
         .stat-number {
             font-size: 3rem;
             font-weight: bold;
-            background: linear-gradient(135deg, #5fa8d3, #4db6ac);
+            background: linear-gradient(135deg, #d4a574, #2d3748);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -262,7 +252,6 @@
     <nav class="navbar">
         <div class="nav-container">
             <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo" onclick="showPage('home')">
-            </div>
             <ul class="nav-menu">
                 <li class="nav-item active" onclick="showPage('home')">Home</li>
                 <li class="nav-item" onclick="showPage('who-we-are')">Who We Are</li>
@@ -280,7 +269,6 @@
             <div class="hero">
                 <h1>Tutor-For-All</h1>
                 <p>Empowering Growth Through Education</p>
-                <button class="cta-button">Get Started Today</button>
             </div>
             
             <div class="features">
@@ -305,6 +293,8 @@
         <!-- Who We Are Page -->
         <div id="who-we-are" class="page">
             <h2>Who We Are</h2>
+            <p>We are a group of students from Lanier Middle School dedicated to offering free tutoring services to all students, regardless of their experience. The Tutor-For-All Team is truly excited to guide you in your academic journey!</p>
+            
             <p>Tutor-For-All is a dedicated educational organization committed to making quality tutoring accessible to every student, regardless of their background or circumstances. We believe that education is the key to unlocking potential and creating opportunities for a brighter future.</p>
             
             <h3>Our Mission</h3>
@@ -385,6 +375,8 @@
             
             <h3>Community Partnerships</h3>
             <p>Collaborating with schools, libraries, community centers, and other organizations to expand our reach and impact in underserved communities.</p>
+            
+            <a href="https://docs.google.com/document/d/1h9qcaefI6_PN6ttIUEO25Cbnn9UeCq9QMLEcJehEIn4/edit?tab=t.0" target="_blank" class="cta-button">Learn More Here</a>
             
             <div class="features">
                 <div class="feature-card">
