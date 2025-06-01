@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<a href="https://docs.google.com/document/<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,14 +14,15 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #FFE5CC 0%, #FFF5F0 50%, #FFFFFF 100%);
+            background: #FFE5CC;
             min-height: 100vh;
+            color: #000000;
         }
 
         .navbar {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            padding: 0.5rem 2rem;
+            padding: 1rem 2rem;
             position: fixed;
             top: 0;
             left: 0;
@@ -32,57 +33,129 @@
 
         .nav-container {
             display: flex;
-            justify-content: center;
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
+            gap: 3rem;
         }
 
         .logo {
-            position: absolute;
-            left: 2rem;
-            height: 50px;
+            height: 60px;
             cursor: pointer;
             transition: transform 0.3s ease;
+            flex-shrink: 0;
         }
 
         .logo:hover {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(2deg);
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 3rem;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
         }
 
         .nav-item {
             cursor: pointer;
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            color: #2d3748;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            transition: all 0.4s ease;
+            color: #000000;
             font-weight: 500;
+            font-size: 1rem;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            white-space: nowrap;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(212, 165, 116, 0.2);
         }
 
         .nav-item:hover {
             background: linear-gradient(135deg, #d4a574, #2d3748);
             color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+            border: 1px solid transparent;
         }
 
         .nav-item.active {
             background: linear-gradient(135deg, #d4a574, #2d3748);
             color: white;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            min-width: 200px;
+            box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
+            z-index: 1001;
+            border-radius: 12px;
+            top: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: #000000;
+            padding: 15px 25px;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-family: 'Arial', sans-serif;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(45, 55, 72, 0.1));
+            transform: translateX(5px);
+            color: #2d3748;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            animation: dropdownFade 0.3s ease-in-out;
+        }
+
+        @keyframes dropdownFade {
+            from { 
+                opacity: 0; 
+                transform: translateX(-50%) translateY(-10px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateX(-50%) translateY(0); 
+            }
         }
 
         .content {
-            margin-top: 80px;
+            margin-top: 100px;
             padding: 2rem;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 0;
         }
 
         .page {
@@ -93,6 +166,7 @@
             padding: 3rem;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             animation: fadeIn 0.5s ease-in;
+            margin-bottom: 0;
         }
 
         .page.active {
@@ -121,8 +195,72 @@
 
         .hero p {
             font-size: 1.3rem;
-            color: #4a5568;
+            color: #000000;
             margin-bottom: 2rem;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .hero-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .hero-logo {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+
+        .hero-logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+
+        .footer {
+            background: #FFE5CC;
+            padding: 3rem 2rem 2rem 2rem;
+            margin-top: 0;
+            border-top: 1px solid rgba(212, 165, 116, 0.3);
+            text-align: center;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            height: 80px;
+        }
+
+        .footer-text {
+            color: #000000;
+        }
+
+        .footer-text h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .footer-text p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
         }
 
         .features {
@@ -160,19 +298,19 @@
         }
 
         h2 {
-            color: #2d3748;
+            color: #000000;
             margin-bottom: 1.5rem;
             font-size: 2.5rem;
         }
 
         h3 {
-            color: #4a5568;
+            color: #000000;
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
 
         p {
-            color: #718096;
+            color: #000000;
             margin-bottom: 1rem;
             font-size: 1.1rem;
         }
@@ -298,13 +436,19 @@
         <div class="nav-container">
             <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo" onclick="showPage('home')">
             <ul class="nav-menu">
-                <li class="nav-item active" onclick="showPage('home')">Home</li>
                 <li class="nav-item" onclick="showPage('who-we-are')">Who We Are</li>
-                <li class="nav-item" onclick="showPage('tutoring')">Tutoring</li>
+                <li class="dropdown">
+                    <span class="nav-item">Offerings</span>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showPage('tutoring')">Tutoring</a>
+                        <a href="#" onclick="showPage('lectures')">Lectures</a>
+                        <a href="#" onclick="showPage('resources')">Resources</a>
+                    </div>
+                </li>
                 <li class="nav-item" onclick="showPage('advocacy')">Advocacy Goal</li>
+                <li class="nav-item" onclick="showPage('donate')">Donate</li>
                 <li class="nav-item" onclick="showPage('impact')">Our Impact</li>
             </ul>
-            <div class="mobile-menu">☰</div>
         </div>
     </nav>
 
@@ -312,8 +456,16 @@
         <!-- Home Page -->
         <div id="home" class="page active">
             <div class="hero">
-                <h1>Tutor-For-All</h1>
-                <p>Empowering Growth Through Education</p>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Tutor-For-All</h1>
+                        <p>Empowering Growth Through Education</p>
+                        <p>Welcome to our comprehensive tutoring platform where students from Kindergarten through 5th grade can access quality educational support. Our dedicated team of middle school tutors is committed to helping every student succeed in their academic journey.</p>
+                    </div>
+                    <div class="hero-logo">
+                        <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo">
+                    </div>
+                </div>
             </div>
             
             <div class="features">
@@ -331,6 +483,16 @@
                     <div class="feature-icon">🚀</div>
                     <h3>Proven Results</h3>
                     <p>Track record of helping students achieve their academic goals and build confidence.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -364,6 +526,16 @@
                     <div class="feature-icon">⭐</div>
                     <h3>Excellence</h3>
                     <p>Maintaining the highest standards in everything we do, from curriculum to student support.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,6 +596,118 @@
                     <div class="grade-icon">🎓</div>
                     <h3>5th Grade</h3>
                     <p>Preparing for middle school</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lectures Page -->
+        <div id="lectures" class="page">
+            <h2>Educational Lectures</h2>
+            <p>Join our engaging educational lectures designed to supplement classroom learning with exciting topics and expert insights.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>Guest Speakers</h3>
+                    <p>Industry professionals and educators share their expertise on various subjects.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧬</div>
+                    <h3>STEM Topics</h3>
+                    <p>Interactive lectures covering science, technology, engineering, and mathematics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Study Skills</h3>
+                    <p>Learn effective study techniques and organizational strategies for academic success.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Page -->
+        <div id="resources" class="page">
+            <h2>Educational Resources</h2>
+            <p>Access a comprehensive collection of study materials, practice worksheets, and educational tools to support your learning journey.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Practice Worksheets</h3>
+                    <p>Downloadable worksheets for math, reading, and science practice at every grade level.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Educational Games</h3>
+                    <p>Fun, interactive games that make learning engaging and memorable.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Study Guides</h3>
+                    <p>Comprehensive study guides covering key concepts for each grade level.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Donate Page -->
+        <div id="donate" class="page">
+            <h2>Support Our Mission</h2>
+            <p>Help us continue providing free tutoring services to students in our community. Your donations make a real difference in supporting educational equity and student success.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">💝</div>
+                    <h3>One-Time Donation</h3>
+                    <p>Make a single contribution to support our tutoring programs and resources.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Monthly Giving</h3>
+                    <p>Become a monthly supporter and help us plan for sustained impact in our community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Supply Donations</h3>
+                    <p>Donate educational materials, books, and supplies to enhance our tutoring sessions.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -508,6 +792,16 @@
             
             <h3>Community Impact</h3>
             <p>Our work extends beyond individual student success. We've helped strengthen entire school communities by providing teacher training, parent education workshops, and advocacy for improved educational resources. Our scholarship program has made tutoring accessible to over 1,000 students from low-income families.</p>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <h3>Tutor-For-All</h3>
+                        <p>Carnegie Vanguard High School</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -528,14 +822,20 @@
             // Show selected page
             document.getElementById(pageId).classList.add('active');
             
-            // Add active class to corresponding nav item
-            const activeNavItem = Array.from(navItems).find(item => {
-                const text = item.textContent.toLowerCase().replace(/\s+/g, '-');
-                return text === pageId || (pageId === 'home' && item.textContent === 'Home');
-            });
-            
-            if (activeNavItem) {
-                activeNavItem.classList.add('active');
+            // Add active class to corresponding nav item (skip for home since it's handled by logo)
+            if (pageId !== 'home') {
+                const activeNavItem = Array.from(navItems).find(item => {
+                    const text = item.textContent.toLowerCase().replace(/\s+/g, '-');
+                    return text === pageId || 
+                           (pageId === 'who-we-are' && item.textContent === 'Who We Are') ||
+                           (pageId === 'advocacy' && item.textContent === 'Advocacy Goal') ||
+                           (pageId === 'donate' && item.textContent === 'Donate') ||
+                           (pageId === 'impact' && item.textContent === 'Our Impact');
+                });
+                
+                if (activeNavItem) {
+                    activeNavItem.classList.add('active');
+                }
             }
         }
 
