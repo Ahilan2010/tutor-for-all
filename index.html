@@ -20,7 +20,7 @@
         }
 
         .navbar {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(238, 227, 227, 0.95);
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
             position: fixed;
@@ -74,11 +74,11 @@
             white-space: nowrap;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(212, 165, 116, 0.2);
+            border: 1px solid rgba(43, 39, 34, 0.2);
         }
 
         .nav-item:hover {
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #d4a574, #645252);
             color: white;
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
@@ -158,6 +158,22 @@
             margin-bottom: 0;
         }
 
+        .page-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #000000;
+        }
+
+        .page-title h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, #d4a574, #2d3748);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
         .page {
             display: none;
             background: rgba(255, 255, 255, 0.95);
@@ -221,46 +237,6 @@
             max-width: 100%;
             height: auto;
             max-height: 300px;
-        }
-
-        .footer {
-            background: #FFE5CC;
-            padding: 3rem 2rem 2rem 2rem;
-            margin-top: 0;
-            border-top: 1px solid rgba(212, 165, 116, 0.3);
-            text-align: center;
-            width: 100%;
-            position: relative;
-            z-index: 1;
-        }
-
-        .footer-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-logo {
-            height: 80px;
-        }
-
-        .footer-text {
-            color: #000000;
-        }
-
-        .footer-text h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.8rem;
-        }
-
-        .footer-text p {
-            margin: 0;
-            font-size: 1.1rem;
-            opacity: 0.8;
         }
 
         .features {
@@ -357,10 +333,6 @@
             background-clip: text;
         }
 
-        .mobile-menu {
-            display: none;
-        }
-
         .grade-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -401,15 +373,44 @@
             color: white;
         }
 
+        .footer {
+            background: #FFE5CC;
+            padding: 3rem 2rem 2rem 2rem;
+            margin-top: 4rem;
+            border-top: 2px solid #9ca3af;
+            text-align: left;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Georgia', serif;
+        }
+
+        .footer-text {
+            color: #000000;
+            line-height: 1.8;
+        }
+
+        .footer-text p {
+            margin: 0.2rem 0;
+            font-size: 1.1rem;
+        }
+
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
-            }
-            
-            .mobile-menu {
-                display: block;
-                cursor: pointer;
-                font-size: 1.5rem;
             }
             
             .hero h1 {
@@ -428,6 +429,11 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1.5rem;
             }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -440,9 +446,9 @@
                 <li class="dropdown">
                     <span class="nav-item">Offerings</span>
                     <div class="dropdown-content">
-                        <a href="#" onclick="showPage('tutoring')">Tutoring</a>
-                        <a href="#" onclick="showPage('lectures')">Lectures</a>
-                        <a href="#" onclick="showPage('resources')">Resources</a>
+                        <a href="#" onclick="event.preventDefault(); showPage('tutoring')">Tutoring</a>
+                        <a href="#" onclick="event.preventDefault(); showPage('lectures')">Lectures</a>
+                        <a href="#" onclick="event.preventDefault(); showPage('resources')">Resources</a>
                     </div>
                 </li>
                 <li class="nav-item" onclick="showPage('advocacy')">Advocacy Goal</li>
@@ -455,10 +461,12 @@
     <div class="content">
         <!-- Home Page -->
         <div id="home" class="page active">
+            <div class="page-title">
+                <h1>Tutor-For-All</h1>
+            </div>
             <div class="hero">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Tutor-For-All</h1>
                         <p>Empowering Growth Through Education</p>
                         <p>Welcome to our comprehensive tutoring platform where students from Kindergarten through 5th grade can access quality educational support. Our dedicated team of middle school tutors is committed to helping every student succeed in their academic journey.</p>
                     </div>
@@ -485,22 +493,12 @@
                     <p>Track record of helping students achieve their academic goals and build confidence.</p>
                 </div>
             </div>
-
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Who We Are Page -->
         <div id="who-we-are" class="page">
             <h2>Who We Are</h2>
-            <p>We are a group of students from Lanier Middle School dedicated to offering free tutoring services to all students, regardless of their experience. The Tutor-For-All Team is truly excited to guide you in your academic journey!</p>
+            <p>We are a group of students dedicated to offering free tutoring services to all students, regardless of their experience. The Tutor-For-All Team is truly excited to guide you in your academic journey!</p>
             
             <p>Tutor-For-All is a dedicated educational organization committed to making quality tutoring accessible to every student, regardless of their background or circumstances. We believe that education is the key to unlocking potential and creating opportunities for a brighter future.</p>
             
@@ -528,16 +526,6 @@
                     <p>Maintaining the highest standards in everything we do, from curriculum to student support.</p>
                 </div>
             </div>
-
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Tutoring Page -->
@@ -549,7 +537,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">📖</div>
                     <h3>Academic Subjects</h3>
-                    <p>Mathematics, Science, English, History, and more - covering elementary through college level coursework.</p>
+                    <p>Mathematics, Science, English, coding, and more - covering elementary through middle school level coursework.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💻</div>
@@ -559,7 +547,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>Specialized Programs</h3>
-                    <p>Learning disability support, gifted student programs, and English as a Second Language instruction.</p>
+                    <p>Learning disability support and gifted student programs instruction.</p>
                 </div>
             </div>
 
@@ -569,43 +557,63 @@
             <div class="grade-grid">
                 <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
                     <div class="grade-icon">🎒</div>
-                    <h3>Kindergarten</h3>
-                    <p>Building foundational skills</p>
+                    <h3>Kindergarten Tutoring</h3>
+                    <p><strong>Topics:</strong></p>
+                    <ul style="text-align: left; margin: 0.5rem 0;">
+                        <li>Shapes</li>
+                        <li>Counting numbers</li>
+                        <li>Basic addition+subtraction</li>
+                    </ul>
                 </div>
                 <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
                     <div class="grade-icon">📝</div>
-                    <h3>1st Grade</h3>
-                    <p>Reading and basic math</p>
+                    <h3>First Grade Tutoring</h3>
+                    <p><strong>Topics:</strong></p>
+                    <ul style="text-align: left; margin: 0.5rem 0;">
+                        <li>Place values</li>
+                        <li>Comparing numbers</li>
+                        <li>Measurement and data</li>
+                    </ul>
                 </div>
                 <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
                     <div class="grade-icon">✏️</div>
-                    <h3>2nd Grade</h3>
-                    <p>Expanding literacy skills</p>
+                    <h3>Second Grade Tutoring</h3>
+                    <p><strong>Topics:</strong></p>
+                    <ul style="text-align: left; margin: 0.5rem 0;">
+                        <li>Money and time</li>
+                        <li>Add and subtract within 1,000</li>
+                        <li>Basic geometry</li>
+                    </ul>
                 </div>
                 <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
                     <div class="grade-icon">📐</div>
-                    <h3>3rd Grade</h3>
-                    <p>Advanced problem solving</p>
+                    <h3>Third Grade Tutoring</h3>
+                    <p><strong>Topics:</strong></p>
+                    <ul style="text-align: left; margin: 0.5rem 0;">
+                        <li>Intro to multiplication+division</li>
+                        <li>Fractions</li>
+                        <li>Arithmetic patterns</li>
+                    </ul>
                 </div>
                 <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
                     <div class="grade-icon">🔬</div>
-                    <h3>4th Grade</h3>
-                    <p>Science and critical thinking</p>
+                    <h3>Fourth Grade Tutoring</h3>
+                    <p><strong>Topics:</strong></p>
+                    <ul style="text-align: left; margin: 0.5rem 0;">
+                        <li>Advanced multiplication+division</li>
+                        <li>Fractions and area</li>
+                        <li>Intro to decimals and angles</li>
+                    </ul>
                 </div>
                 <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
                     <div class="grade-icon">🎓</div>
-                    <h3>5th Grade</h3>
-                    <p>Preparing for middle school</p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
+                    <h3>Fifth Grade Tutoring</h3>
+                    <p><strong>Topics:</strong></p>
+                    <ul style="text-align: left; margin: 0.5rem 0;">
+                        <li>Advanced decimals+fractions</li>
+                        <li>Intro to algebraic thinking</li>
+                        <li>Volume, powers, line plots</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -624,22 +632,12 @@
                 <div class="feature-card">
                     <div class="feature-icon">🧬</div>
                     <h3>STEM Topics</h3>
-                    <p>Interactive lectures covering science, technology, engineering, and mathematics.</p>
+                    <p>Interactive lectures covering science, technology, and mathematics.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📚</div>
                     <h3>Study Skills</h3>
                     <p>Learn effective study techniques and organizational strategies for academic success.</p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -666,16 +664,6 @@
                     <p>Comprehensive study guides covering key concepts for each grade level.</p>
                 </div>
             </div>
-
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Donate Page -->
@@ -690,24 +678,9 @@
                     <p>Make a single contribution to support our tutoring programs and resources.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Monthly Giving</h3>
-                    <p>Become a monthly supporter and help us plan for sustained impact in our community.</p>
-                </div>
-                <div class="feature-card">
                     <div class="feature-icon">📚</div>
                     <h3>Supply Donations</h3>
                     <p>Donate educational materials, books, and supplies to enhance our tutoring sessions.</p>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -720,20 +693,12 @@
             <h3>Educational Equity</h3>
             <p>We actively work to eliminate barriers that prevent students from accessing quality education, regardless of socioeconomic status, race, or geographic location.</p>
             
-            <h3>Policy Advocacy</h3>
-            <p>We engage with local and national policymakers to promote legislation that supports educational funding, teacher training, and student support services.</p>
-            
             <h3>Community Partnerships</h3>
             <p>Collaborating with schools, libraries, community centers, and other organizations to expand our reach and impact in underserved communities.</p>
             
             <a href="https://docs.google.com/document/d/1h9qcaefI6_PN6ttIUEO25Cbnn9UeCq9QMLEcJehEIn4/edit?tab=t.0" target="_blank" class="cta-button">Learn More Here</a>
             
             <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">🏛️</div>
-                    <h3>Policy Change</h3>
-                    <p>Working with lawmakers to create policies that support equitable access to educational resources.</p>
-                </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
                     <h3>Community Outreach</h3>
@@ -754,7 +719,7 @@
             
             <div class="stats">
                 <div class="stat-item">
-                    <div class="stat-number">5,000+</div>
+                    <div class="stat-number">20+</div>
                     <p>Students Tutored</p>
                 </div>
                 <div class="stat-item">
@@ -762,11 +727,7 @@
                     <p>Grade Improvement</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">250+</div>
-                    <p>Certified Tutors</p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
+                    <div class="stat-number">5+</div>
                     <p>Partner Schools</p>
                 </div>
             </div>
@@ -779,11 +740,6 @@
                     <p>Our students consistently show improved grades, test scores, and overall academic confidence after participating in our programs.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3>College Readiness</h3>
-                    <p>92% of our high school students go on to pursue higher education, with many receiving scholarships and academic recognition.</p>
-                </div>
-                <div class="feature-card">
                     <div class="feature-icon">💪</div>
                     <h3>Confidence Building</h3>
                     <p>Students report increased self-confidence and improved study habits that serve them well beyond their tutoring experience.</p>
@@ -791,22 +747,26 @@
             </div>
             
             <h3>Community Impact</h3>
-            <p>Our work extends beyond individual student success. We've helped strengthen entire school communities by providing teacher training, parent education workshops, and advocacy for improved educational resources. Our scholarship program has made tutoring accessible to over 1,000 students from low-income families.</p>
+            <p>Our work extends beyond individual student success. We've helped strengthen entire school communities by providing teacher training, parent education workshops, and advocacy for improved educational resources.</p>
+        </div>
+    </div>
 
-            <div class="footer">
-                <div class="footer-content">
-                    <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="footer-logo">
-                    <div class="footer-text">
-                        <h3>Tutor-For-All</h3>
-                        <p>Carnegie Vanguard High School</p>
-                    </div>
-                </div>
+    <!-- Global Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Tutor for All</div>
+            <div class="footer-text">
+                <p>Lanier Middle School</p>
+                <p>International Baccalaureate Program</p>
+                <p>2600 Woodhead St, Houston, TX 77098</p>
             </div>
         </div>
     </div>
 
     <script>
         function showPage(pageId) {
+            console.log('Attempting to show page:', pageId);
+            
             // Hide all pages
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => {
@@ -821,11 +781,17 @@
             
             // Show selected page
             const targetPage = document.getElementById(pageId);
+            console.log('Found page element:', targetPage);
+            
             if (targetPage) {
                 targetPage.classList.add('active');
+                console.log('Successfully showed page:', pageId);
             } else {
-                // Fallback to home if page not found
-                document.getElementById('home').classList.add('active');
+                console.log('Page not found, showing home');
+                const homePage = document.getElementById('home');
+                if (homePage) {
+                    homePage.classList.add('active');
+                }
                 return;
             }
             
@@ -854,11 +820,10 @@
                     showPage('home');
                 });
             }
-        });
-
-        // Handle logo click
-        document.querySelector('.logo').addEventListener('click', () => {
-            showPage('home');
+            
+            // Debug: List all available pages
+            const allPages = document.querySelectorAll('.page');
+            console.log('Available pages:', Array.from(allPages).map(p => p.id));
         });
     </script>
 </body>
