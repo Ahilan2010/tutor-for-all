@@ -14,7 +14,7 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #d4a574 0%, #c19a5b 50%, #2d3748 100%);
+            background: linear-gradient(135deg, #FFE5CC 0%, #FFF5F0 50%, #FFFFFF 100%);
             min-height: 100vh;
         }
 
@@ -223,6 +223,46 @@
             display: none;
         }
 
+        .grade-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grade-card {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(45, 55, 72, 0.05));
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(212, 165, 116, 0.3);
+            cursor: pointer;
+        }
+
+        .grade-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: #d4a574;
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.25), rgba(45, 55, 72, 0.1));
+        }
+
+        .grade-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #d4a574, #2d3748);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
@@ -244,6 +284,11 @@
             
             .page {
                 padding: 2rem;
+            }
+
+            .grade-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
             }
         }
     </style>
@@ -335,29 +380,50 @@
                     <p>Mathematics, Science, English, History, and more - covering elementary through college level coursework.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🧪</div>
-                    <h3>Test Preparation</h3>
-                    <p>SAT, ACT, GRE, and other standardized test preparation with proven strategies and practice materials.</p>
-                </div>
-                <div class="feature-card">
                     <div class="feature-icon">💻</div>
                     <h3>Online & In-Person</h3>
                     <p>Flexible learning options including virtual sessions and face-to-face tutoring to accommodate all preferences.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Group Sessions</h3>
-                    <p>Collaborative learning environments that encourage peer interaction and shared problem-solving.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>Specialized Programs</h3>
                     <p>Learning disability support, gifted student programs, and English as a Second Language instruction.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Progress Tracking</h3>
-                    <p>Regular assessments and detailed progress reports to keep students and parents informed of advancement.</p>
+            </div>
+
+            <h3 style="text-align: center; margin: 3rem 0 2rem 0;">Schedule Your Tutoring Session</h3>
+            <p style="text-align: center; margin-bottom: 2rem;">Click on your grade level to book a tutoring appointment:</p>
+            
+            <div class="grade-grid">
+                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                    <div class="grade-icon">🎒</div>
+                    <h3>Kindergarten</h3>
+                    <p>Building foundational skills</p>
+                </div>
+                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                    <div class="grade-icon">📝</div>
+                    <h3>1st Grade</h3>
+                    <p>Reading and basic math</p>
+                </div>
+                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                    <div class="grade-icon">✏️</div>
+                    <h3>2nd Grade</h3>
+                    <p>Expanding literacy skills</p>
+                </div>
+                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                    <div class="grade-icon">📐</div>
+                    <h3>3rd Grade</h3>
+                    <p>Advanced problem solving</p>
+                </div>
+                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                    <div class="grade-icon">🔬</div>
+                    <h3>4th Grade</h3>
+                    <p>Science and critical thinking</p>
+                </div>
+                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                    <div class="grade-icon">🎓</div>
+                    <h3>5th Grade</h3>
+                    <p>Preparing for middle school</p>
                 </div>
             </div>
         </div>
