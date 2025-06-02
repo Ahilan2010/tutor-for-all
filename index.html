@@ -61,7 +61,7 @@
             align-items: center;
         }
 
-        .nav-item {
+        .nav-item, .dropdown > span {
             cursor: pointer;
             padding: 0.75rem 1.5rem;
             border-radius: 12px;
@@ -75,9 +75,11 @@
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(5px);
             border: 1px solid rgba(43, 39, 34, 0.2);
+            display: flex;
+            align-items: center;
         }
 
-        .nav-item:hover {
+        .nav-item:hover, .dropdown:hover > span {
             background: linear-gradient(135deg, #d4a574, #645252);
             color: white;
             transform: translateY(-3px) scale(1.05);
@@ -85,58 +87,76 @@
             border: 1px solid transparent;
         }
 
-        .nav-item.active {
+        .nav-item.active, .dropdown > span.active {
             background: linear-gradient(135deg, #d4a574, #2d3748);
             color: white;
             box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
         }
 
         .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+    position: relative;
+    display: inline-block;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            min-width: 200px;
-            box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
-            z-index: 1001;
-            border-radius: 12px;
-            top: calc(100% + 10px);
-            left: 50%;
-            transform: translateX(-50%);
-            border: 1px solid rgba(212, 165, 116, 0.3);
-            overflow: hidden;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    min-width: 200px;
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
+    z-index: 1001;
+    border-radius: 12px;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    overflow: hidden;
+    /* Add padding to create hover area */
+    padding-top: 10px;
+    margin-top: -10px;
+}
 
-        .dropdown-content a {
-            color: #000000;
-            padding: 15px 25px;
-            text-decoration: none;
-            display: block;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            font-family: 'Arial', sans-serif;
-            border-bottom: 1px solid rgba(212, 165, 116, 0.1);
-        }
+.dropdown-content a {
+    color: #000000;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+}
 
-        .dropdown-content a:last-child {
-            border-bottom: none;
-        }
+.dropdown-content a:first-child {
+    margin-top: 10px;
+}
 
-        .dropdown-content a:hover {
-            background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(45, 55, 72, 0.1));
-            transform: translateX(5px);
-            color: #2d3748;
-        }
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-            animation: dropdownFade 0.3s ease-in-out;
-        }
+.dropdown-content a:hover {
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(45, 55, 72, 0.1));
+    transform: translateX(5px);
+    color: #2d3748;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: dropdownFade 0.3s ease-in-out;
+}
+
+/* Create invisible bridge between button and dropdown */
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: transparent;
+}
 
         @keyframes dropdownFade {
             from { 
@@ -469,9 +489,47 @@
             line-height: 1.8;
         }
 
-        .footer-text p {
-            margin: 0.2rem 0;
-            font-size: 1.1rem;
+        .donation-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .full-width-card {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(45, 55, 72, 0.05));
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .full-width-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .donate-button {
+            background: linear-gradient(135deg, #d4a574, #2d3748);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+        }
+
+        .donate-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(212, 165, 116, 0.4);
         }
 
         @media (max-width: 768px) {
@@ -734,19 +792,15 @@
 
         <!-- Donate Page -->
         <div id="donate" class="page">
-            <h2>Support Our Mission</h2>
-            <p>Help us continue providing free tutoring services to students in our community. Your donations make a real difference in supporting educational equity and student success.</p>
+           <center> <h2>Support Our Mission</h2> </center>
+            <p>Help us achieve our goal of improving the educational edge of students within our community. Your donations make a real difference in supporting educational equity and academic success.</p>
             
-            <div class="features">
-                <div class="feature-card">
-                    <div class="feature-icon">💝</div>
-                    <h3>One-Time Donation</h3>
-                    <p>Make a single contribution to support our tutoring programs and resources.</p>
-                </div>
-                <div class="feature-card">
+            <div class="donation-container">
+                <div class="full-width-card">
                     <div class="feature-icon">📚</div>
                     <h3>Supply Donations</h3>
-                    <p>Donate educational materials, books, and supplies to enhance our tutoring sessions.</p>
+                    <p>Donate educational materials, books, and supplies to enhance educational quality. Your contributions directly support our students' learning experience with essential resources like textbooks, workbooks, art supplies, and educational technology.</p>
+                    <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview" target="_blank" class="donate-button">Donate Resources Now!</a>
                 </div>
             </div>
         </div>
@@ -811,26 +865,26 @@
                     <p>Students report increased self-confidence and improved study habits that serve them well beyond their tutoring experience.</p>
                 </div>
             </div>
-            <br>
-           <center><h3>Tutoring Sessions in Action</h3></center> 
+
+            <h3>Tutoring Sessions in Action</h3>
             <div class="photo-carousel">
                 <div class="carousel-container">
-                    <img src="pic1.png" 
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRkZFNUNDIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDAwIiBmb250LXNpemU9IjI0Ij5SZWZsZWN0aW9uIFNlc3Npb24gLSBPbmxpbmUgVHV0b3Jpbmc8L3RleHQ+Cjwvc3ZnPg==" 
                          alt="Reflection Session - Online Tutoring" class="carousel-image active">
                     
-                    <img src="pic2.png" 
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRkZFNUNDIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDAwIiBmb250LXNpemU9IjI0Ij5NYXRoIEZyYWN0aW9ucyAtIEtoYW4gQWNhZGVteSBTZXNzaW9uPC90ZXh0Pgo8L3N2Zz4=" 
                          alt="Math Fractions - Khan Academy Session" class="carousel-image">
                     
-                    <img src="pic3.png" 
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRkZFNUNDIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDAwIiBmb250LXNpemU9IjI0Ij5JbnRlcmFjdGl2ZSBMZWFybmluZyBTZXNzaW9uPC90ZXh0Pgo8L3N2Zz4=" 
                          alt="Interactive Learning Session" class="carousel-image">
                     
-                    <img src="pic4.png" 
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRkZFNUNDIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDAwIiBmb250LXNpemU9IjI0Ij5SZWZsZWN0aW9uICYgUmV2aWV3IFNlc3Npb248L3RleHQ+Cjwvc3ZnPg==" 
                          alt="Reflection & Review Session" class="carousel-image">
                     
-                    <img src="pic5.png" 
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRkZFNUNDIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDAwIiBmb250LXNpemU9IjI0Ij5PbmUtb24tT25lIFR1dG9yaW5nIFNlc3Npb248L3RleHQ+Cjwvc3ZnPg==" 
                          alt="One-on-One Tutoring Session" class="carousel-image">
                     
-                    <img src="pic6.png" 
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDgwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRkZFNUNDIi8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMDAwIiBmb250LXNpemU9IjI0Ij5WaXJ0dWFsIE1lZXRpbmcgU2Vzc2lvbjwvdGV4dD4KPHN2Zz4=" 
                          alt="Virtual Meeting Session" class="carousel-image">
 
                     <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
@@ -992,6 +1046,7 @@
             // Start carousel auto-advance
             startAutoSlide();
         });
+    
     </script>
 </body>
 </html>
