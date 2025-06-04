@@ -102,7 +102,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background: #FFE5CC;
+            background: #FFE5CC; /* Changed to match page background */
             backdrop-filter: blur(10px);
             min-width: 200px;
             box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
@@ -126,7 +126,6 @@
             font-weight: 500;
             font-family: 'Arial', sans-serif;
             border-bottom: 1px solid rgba(212, 165, 116, 0.1);
-            background: rgba(255, 255, 255, 0.5);
         }
 
         .dropdown-content a:first-child {
@@ -138,7 +137,7 @@
         }
 
         .dropdown-content a:hover {
-            background: linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(45, 55, 72, 0.1));
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(45, 55, 72, 0.1));
             transform: translateX(5px);
             color: #2d3748;
         }
@@ -635,9 +634,10 @@
             .nav-item, .dropdown > span {
                 width: 100%;
                 text-align: center;
-                padding: 1rem 1.5rem;
-                font-size: 1.1rem;
+                padding: 1rem 1.5rem !important;
+                font-size: 1.1rem !important;
                 background: rgba(255, 255, 255, 0.9);
+                display: block !important;
             }
             
             /* Hide the original dropdown content on mobile */
@@ -747,6 +747,18 @@
                 flex-direction: column;
             }
         }
+
+        /* Desktop-specific styles to hide dropdown content when not needed */
+        @media (min-width: 769px) {
+            /* Ensure dropdown content is only visible on hover */
+            .dropdown-content {
+                display: none;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
@@ -780,12 +792,6 @@
         <button class="back-button" onclick="backToMainMenu()">
             <span>←</span> Back to Menu
         </button>
-        <h2 style="text-align: center; margin-bottom: 2rem; color: #000000;">Offerings</h2>
-        <div class="submenu-items">
-            <div class="submenu-item" onclick="showPageFromSubmenu('tutoring')">Tutoring</div>
-            <div class="submenu-item" onclick="showPageFromSubmenu('lectures')">Lectures</div>
-            <div class="submenu-item" onclick="showPageFromSubmenu('resources')">Resources</div>
-        </div>
     </div>
 
     <div class="content">
