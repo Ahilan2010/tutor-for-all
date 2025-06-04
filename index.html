@@ -41,7 +41,7 @@
         }
 
         .logo {
-            height: 85px;
+            height: 70px;
             cursor: pointer;
             transition: transform 0.3s ease;
             flex-shrink: 0;
@@ -168,13 +168,44 @@
             }
         }
 
-         .content {
-    margin-top: 100px;
-    padding: 40px 40px 0 40px;  /* Added 40px top padding */
-    min-height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-}
+        /* Hamburger Menu Styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+            margin-left: auto;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #000000;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 3px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        .content {
+            margin-top: 100px;
+            padding: 40px 40px 0 40px;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+        }
+
         .page-title {
             text-align: center;
             margin-bottom: 2rem;
@@ -182,11 +213,11 @@
         }
 
         .page-title h1 {
-    font-size: 3.5rem;
-    color: #000000;
-    margin-bottom: 0;
-    font-weight: bold;
-}
+            font-size: 3.5rem;
+            color: #000000;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
 
         .page {
             display: none;
@@ -570,8 +601,60 @@
             box-shadow: 0 12px 30px rgba(212, 165, 116, 0.4);
         }
 
+        /* Mobile Styles */
         @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
             .nav-menu {
+                display: none;
+                position: fixed;
+                top: 100px;
+                left: 0;
+                right: 0;
+                background: rgba(238, 227, 227, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+                max-height: calc(100vh - 100px);
+                overflow-y: auto;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-item, .dropdown > span {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .dropdown-content {
+                position: static;
+                display: none;
+                background: rgba(255, 255, 255, 0.95);
+                box-shadow: none;
+                margin-top: 0.5rem;
+                transform: none;
+                animation: none;
+            }
+            
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: none;
+            }
+            
+            .dropdown::after {
                 display: none;
             }
             
@@ -625,6 +708,11 @@
                 <li class="nav-item" onclick="showPage('donate')">Donate</li>
                 <li class="nav-item" onclick="showPage('impact')">Our Impact</li>
             </ul>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -670,7 +758,7 @@
             Individuals in low-income communities don't have the access to essential resources and quality education needed to succeed in life. We aim to target the problem early and help young individuals achieve their high potential.
         </div>
         <div class="mission-image">
-            <img src= "graduation.jpeg" >
+            [Image Placeholder]
         </div>
     </div>
 </div>
@@ -1025,6 +1113,67 @@
             }
         }
 
+        // Toggle mobile menu function
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a nav item
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const dropdowns = document.querySelectorAll('.dropdown > span');
+            
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const navMenu = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    if (window.innerWidth <= 768) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Handle dropdown clicks on mobile
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.parentElement.classList.toggle('active');
+                    }
+                });
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    const navMenu = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    const navContainer = document.querySelector('.nav-container');
+                    
+                    if (!navContainer.contains(e.target) && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                }
+            });
+
+            // Logo click handler
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addEventListener('click', () => {
+                    showPage('home');
+                });
+            }
+            
+            // Start carousel auto-advance
+            startAutoSlide();
+        });
+
         // Photo carousel functionality
         let slideIndex = 1;
         let autoSlideInterval;
@@ -1087,24 +1236,6 @@
                 dots[slideIndex - 1].classList.add('active');
             }
         }
-
-        // Start auto-advance carousel when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            const logo = document.querySelector('.logo');
-            if (logo) {
-                logo.addEventListener('click', () => {
-                    showPage('home');
-                });
-            }
-            
-            // Debug: List all available pages
-            const allPages = document.querySelectorAll('.page');
-            console.log('Available pages:', Array.from(allPages).map(p => p.id));
-            
-            // Start carousel auto-advance
-            startAutoSlide();
-        });
-    
     </script>
 </body>
 </html>
