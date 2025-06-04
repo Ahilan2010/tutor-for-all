@@ -102,7 +102,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background: rgba(255, 255, 255, 0.95);
+            background: #FFE5CC;
             backdrop-filter: blur(10px);
             min-width: 200px;
             box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
@@ -126,6 +126,7 @@
             font-weight: 500;
             font-family: 'Arial', sans-serif;
             border-bottom: 1px solid rgba(212, 165, 116, 0.1);
+            background: rgba(255, 255, 255, 0.5);
         }
 
         .dropdown-content a:first-child {
@@ -137,7 +138,7 @@
         }
 
         .dropdown-content a:hover {
-            background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(45, 55, 72, 0.1));
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(45, 55, 72, 0.1));
             transform: translateX(5px);
             color: #2d3748;
         }
@@ -617,7 +618,7 @@
                 top: 100px;
                 left: 0;
                 right: 0;
-                background: rgba(238, 227, 227, 0.98);
+                background: #FFE5CC;
                 flex-direction: column;
                 padding: 2rem;
                 gap: 1rem;
@@ -634,28 +635,86 @@
             .nav-item, .dropdown > span {
                 width: 100%;
                 text-align: center;
+                padding: 1rem 1.5rem;
+                font-size: 1.1rem;
+                background: rgba(255, 255, 255, 0.9);
             }
             
+            /* Hide the original dropdown content on mobile */
             .dropdown-content {
-                position: static;
-                display: none;
-                background: rgba(255, 255, 255, 0.95);
-                box-shadow: none;
-                margin-top: 0.5rem;
-                transform: none;
-                animation: none;
+                display: none !important;
             }
             
-            .dropdown.active .dropdown-content {
-                display: block;
-            }
-            
+            /* Remove hover effect for dropdown on mobile */
             .dropdown:hover .dropdown-content {
-                display: none;
+                display: none !important;
             }
             
             .dropdown::after {
                 display: none;
+            }
+
+            /* Submenu page styles */
+            .submenu-page {
+                display: none;
+                position: fixed;
+                top: 100px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #FFE5CC;
+                z-index: 1000;
+                padding: 2rem;
+                overflow-y: auto;
+            }
+
+            .submenu-page.active {
+                display: block;
+            }
+
+            .back-button {
+                background: linear-gradient(135deg, #d4a574, #2d3748);
+                color: white;
+                border: none;
+                padding: 0.75rem 1.5rem;
+                border-radius: 12px;
+                font-size: 1rem;
+                cursor: pointer;
+                margin-bottom: 2rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: all 0.3s ease;
+            }
+
+            .back-button:hover {
+                transform: translateX(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .submenu-items {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .submenu-item {
+                background: rgba(255, 255, 255, 0.95);
+                padding: 1.2rem 1.5rem;
+                border-radius: 12px;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border: 1px solid rgba(212, 165, 116, 0.3);
+                font-weight: 500;
+                color: #000000;
+                font-size: 1.1rem;
+            }
+
+            .submenu-item:hover {
+                background: linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(45, 55, 72, 0.1));
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             }
             
             .hero h1 {
@@ -716,52 +775,64 @@
         </div>
     </nav>
 
-    <div class="content">
-       
-       <!-- Home Page -->
-<div id="home" class="page active">
-    <div class="page-title">
-        <h1>Tutor-For-All</h1>
-    </div>
-    <div class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p>Empowering Growth Through Education</p>
-                <p>Welcome to our comprehensive tutoring platform where students from Kindergarten through 5th grade can access quality educational support. Our dedicated team of middle school tutors is committed to helping every student succeed in their academic journey.</p>
-            </div>
-            <div class="hero-logo">
-                <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo">
-            </div>
-        </div>
-    </div>
-    
-    <div class="features">
-        <div class="feature-card">
-            <div class="feature-icon">📚</div>
-            <h3>Quality Education</h3>
-            <p>Access to high-quality tutoring services designed to meet every student's unique learning needs.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🌟</div>
-            <h3>Personalized Learning</h3>
-            <p>Customized learning experiences that adapt to individual strengths and areas for improvement.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3>Proven Results</h3>
-            <p>Track record of helping students achieve their academic goals and build confidence.</p>
+    <!-- Mobile Submenu for Offerings -->
+    <div class="submenu-page" id="offerings-submenu">
+        <button class="back-button" onclick="backToMainMenu()">
+            <span>←</span> Back to Menu
+        </button>
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #000000;">Offerings</h2>
+        <div class="submenu-items">
+            <div class="submenu-item" onclick="showPageFromSubmenu('tutoring')">Tutoring</div>
+            <div class="submenu-item" onclick="showPageFromSubmenu('lectures')">Lectures</div>
+            <div class="submenu-item" onclick="showPageFromSubmenu('resources')">Resources</div>
         </div>
     </div>
 
-    <div class="mission-section">
-        <div class="mission-text">
-            Individuals in low-income communities don't have the access to essential resources and quality education needed to succeed in life. We aim to target the problem early and help young individuals achieve their high potential.
+    <div class="content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="page-title">
+                <h1>Tutor-For-All</h1>
+            </div>
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p>Empowering Growth Through Education</p>
+                        <p>Welcome to our comprehensive tutoring platform where students from Kindergarten through 5th grade can access quality educational support. Our dedicated team of middle school tutors is committed to helping every student succeed in their academic journey.</p>
+                    </div>
+                    <div class="hero-logo">
+                        <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Quality Education</h3>
+                    <p>Access to high-quality tutoring services designed to meet every student's unique learning needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Personalized Learning</h3>
+                    <p>Customized learning experiences that adapt to individual strengths and areas for improvement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Proven Results</h3>
+                    <p>Track record of helping students achieve their academic goals and build confidence.</p>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <div class="mission-text">
+                    Individuals in low-income communities don't have the access to essential resources and quality education needed to succeed in life. We aim to target the problem early and help young individuals achieve their high potential.
+                </div>
+                <div class="mission-image">
+                    [Image Placeholder]
+                </div>
+            </div>
         </div>
-        <div class="mission-image">
-            [Image Placeholder]
-        </div>
-    </div>
-</div>
        
         <!-- Who We Are Page -->
         <div id="who-we-are" class="page">
@@ -1122,7 +1193,25 @@
             hamburger.classList.toggle('active');
         }
 
-        // Close mobile menu when clicking on a nav item
+        // Functions for mobile submenu
+        function backToMainMenu() {
+            const submenuPage = document.getElementById('offerings-submenu');
+            submenuPage.classList.remove('active');
+            
+            // Show the main menu again
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.add('active');
+            hamburger.classList.add('active');
+        }
+
+        function showPageFromSubmenu(pageId) {
+            const submenuPage = document.getElementById('offerings-submenu');
+            submenuPage.classList.remove('active');
+            showPage(pageId);
+        }
+
+        // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
             const navItems = document.querySelectorAll('.nav-item');
             const dropdowns = document.querySelectorAll('.dropdown > span');
@@ -1138,12 +1227,22 @@
                 });
             });
             
-            // Handle dropdown clicks on mobile
+            // Handle dropdown clicks on mobile - show submenu page
             dropdowns.forEach(dropdown => {
                 dropdown.addEventListener('click', (e) => {
                     if (window.innerWidth <= 768) {
                         e.preventDefault();
-                        dropdown.parentElement.classList.toggle('active');
+                        e.stopPropagation();
+                        
+                        // Close the main menu
+                        const navMenu = document.querySelector('.nav-menu');
+                        const hamburger = document.querySelector('.hamburger');
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        
+                        // Show the submenu page
+                        const submenuPage = document.getElementById('offerings-submenu');
+                        submenuPage.classList.add('active');
                     }
                 });
             });
