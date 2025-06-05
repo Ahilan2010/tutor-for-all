@@ -628,22 +628,24 @@
             
             /* Full screen mobile menu that covers everything */
             .nav-menu {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100vw;
-                height: 100vh;
-                background: #FFE5CC;
-                flex-direction: column;
-                padding: 80px 2rem 2rem 2rem;
-                gap: 1rem;
-                z-index: 1003; /* Higher than logo and hamburger */
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
-            }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #FFE5CC;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    z-index: 1003;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
             
             .nav-menu.active {
                 display: flex;
@@ -660,14 +662,15 @@
             }
             
             .nav-item, .dropdown > span {
-                width: 100%;
-                text-align: center;
-                padding: 1.2rem 1.5rem !important;
-                font-size: 1.2rem !important;
-                background: rgba(255, 255, 255, 0.9);
-                display: block !important;
-                min-width: unset;
-            }
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 2rem 2rem !important;
+    font-size: 1.5rem !important;
+    background: rgba(255, 255, 255, 0.9);
+    display: block !important;
+    min-width: unset;
+}
             
             /* Mobile dropdown styles */
             .dropdown {
@@ -1398,3 +1401,4 @@
     </script>
 </body>
 </html>
+
