@@ -625,7 +625,16 @@
             .hamburger {
                 display: flex;
             }
-            
+            /* Position hamburger independently when menu is open */
+body.menu-open .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+}
             /* Full screen mobile menu that covers everything */
             .nav-menu {
     display: none;
@@ -643,7 +652,7 @@
     align-items: center;
     padding: 2rem;
     gap: 2rem;
-    z-index: 9998;
+    z-index: 9999;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     margin: 0;
@@ -669,7 +678,9 @@
     backdrop-filter: none;
     box-shadow: none;
 }
-            
+body.menu-open .logo {
+    display: none;
+}
             .nav-item, .dropdown > span {
     width: 100%;
     max-width: 400px;
