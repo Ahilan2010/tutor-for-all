@@ -636,15 +636,18 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile */
     background: #FFE5CC;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     gap: 2rem;
-    z-index: 1003;
+    z-index: 9998;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    margin: 0;
+    border: 0;
 }
             
             .nav-menu.active {
@@ -653,13 +656,19 @@
             
             /* Hamburger button stays on top when menu is open */
             .hamburger {
-                z-index: 1004;
+                z-index: 9999;
             }
             
             /* Logo stays hidden when menu is open */
             .logo {
                 z-index: 1001;
             }
+
+            body.menu-open .navbar {
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+}
             
             .nav-item, .dropdown > span {
     width: 100%;
