@@ -639,10 +639,11 @@
     height: calc(100dvh - 100px) !important;
     background: #FFE5CC !important;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 2rem;
-    gap: 2rem;
+    padding-bottom: 4rem;
+    gap: 1.5rem;
     z-index: 1003 !important;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -686,8 +687,8 @@ body.menu-open .logo {
     width: 100%;
     max-width: 400px;
     text-align: center;
-    padding: 2rem 2rem !important;
-    font-size: 1.5rem !important;
+    padding: 1.5rem 2rem !important;
+    font-size: 1.3rem !important;
     background: rgba(255, 255, 255, 0.9);
     display: block !important;
     min-width: unset;
@@ -798,11 +799,18 @@ body.menu-open .logo {
 
         /* iOS specific fixes */
         @supports (-webkit-touch-callout: none) {
-            .nav-menu {
-                height: -webkit-fill-available;
-            }
-        }
-
+    .nav-menu {
+        height: -webkit-fill-available !important;
+        max-height: calc(100vh - 100px) !important;
+        padding-top: 1rem;
+    }
+}
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .nav-menu {
+        min-height: -webkit-fill-available;
+        padding-bottom: env(safe-area-inset-bottom, 20px);
+    }
+}
         /* Desktop-specific styles to hide dropdown content when not needed */
         @media (min-width: 769px) {
             /* Ensure dropdown content is only visible on hover */
@@ -1250,14 +1258,26 @@ body.menu-open .logo {
 
         // Toggle mobile menu function
         function toggleMobileMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            const hamburger = document.querySelector('.hamburger');
-            const body = document.body;
-            
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            body.classList.toggle('menu-open');
-        }
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    const body = document.body;
+    
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    body.classList.toggle('menu-open');
+    
+    // iOS-specific: Save and restore scroll position
+    if (body.classList.contains('menu-open')) {
+        // Save current scroll position
+        body.style.top = `-${window.scrollY}px`;
+    } else {
+        // Restore scroll position
+        const scrollY = body.style.top;
+        body.style.position = '';
+        body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
+}
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
