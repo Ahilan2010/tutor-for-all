@@ -626,7 +626,7 @@
                 display: flex;
             }
             
-            /* Full screen mobile menu */
+            /* Full screen mobile menu that covers everything */
             .nav-menu {
                 display: none;
                 position: fixed;
@@ -638,15 +638,25 @@
                 height: 100vh;
                 background: #FFE5CC;
                 flex-direction: column;
-                padding: 120px 2rem 2rem 2rem;
+                padding: 80px 2rem 2rem 2rem;
                 gap: 1rem;
-                z-index: 999;
+                z-index: 1003; /* Higher than logo and hamburger */
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
             }
             
             .nav-menu.active {
                 display: flex;
+            }
+            
+            /* Hamburger button stays on top when menu is open */
+            .hamburger {
+                z-index: 1004;
+            }
+            
+            /* Logo stays hidden when menu is open */
+            .logo {
+                z-index: 1001;
             }
             
             .nav-item, .dropdown > span {
@@ -1203,7 +1213,7 @@
                 }
             }
             
-            // Close mobile menu if open
+            // Close mobile menu if open (only for non-dropdown items)
             const navMenu = document.querySelector('.nav-menu');
             const hamburger = document.querySelector('.hamburger');
             const body = document.body;
@@ -1230,17 +1240,23 @@
             const navItems = document.querySelectorAll('.nav-item');
             const dropdowns = document.querySelectorAll('.dropdown');
             
+            // Handle individual nav item clicks (not in dropdown)
             navItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    const navMenu = document.querySelector('.nav-menu');
-                    const hamburger = document.querySelector('.hamburger');
-                    const body = document.body;
-                    if (window.innerWidth <= 768) {
-                        navMenu.classList.remove('active');
-                        hamburger.classList.remove('active');
-                        body.classList.remove('menu-open');
-                    }
-                });
+                // Check if this item is not a dropdown toggle
+                const isDropdownToggle = item.parentElement.classList.contains('dropdown') && item.tagName === 'SPAN';
+                
+                if (!isDropdownToggle) {
+                    item.addEventListener('click', () => {
+                        const navMenu = document.querySelector('.nav-menu');
+                        const hamburger = document.querySelector('.hamburger');
+                        const body = document.body;
+                        if (window.innerWidth <= 768) {
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                }
             });
             
             // Handle dropdown clicks on mobile - toggle expanded state
@@ -1250,11 +1266,12 @@
                     if (window.innerWidth <= 768) {
                         e.preventDefault();
                         e.stopPropagation();
+                        // Only toggle the dropdown, don't close the menu
                         dropdown.classList.toggle('expanded');
                     }
                 });
                 
-                // Handle clicks on dropdown items
+                // Handle clicks on dropdown items - these should close the menu
                 const dropdownLinks = dropdown.querySelectorAll('.dropdown-content a');
                 dropdownLinks.forEach(link => {
                     link.addEventListener('click', (e) => {
@@ -1281,7 +1298,7 @@
                 });
             });
             
-            // Close menu when clicking outside
+            // Close menu when clicking outside (but don't interfere with dropdown behavior)
             document.addEventListener('click', (e) => {
                 if (window.innerWidth <= 768) {
                     const navMenu = document.querySelector('.nav-menu');
@@ -1289,10 +1306,17 @@
                     const navContainer = document.querySelector('.nav-container');
                     const body = document.body;
                     
+                    // Only close if clicking completely outside the nav area
                     if (!navContainer.contains(e.target) && navMenu.classList.contains('active')) {
                         navMenu.classList.remove('active');
                         hamburger.classList.remove('active');
                         body.classList.remove('menu-open');
+                        
+                        // Also close any expanded dropdowns
+                        const expandedDropdowns = document.querySelectorAll('.dropdown.expanded');
+                        expandedDropdowns.forEach(dropdown => {
+                            dropdown.classList.remove('expanded');
+                        });
                     }
                 }
             });
