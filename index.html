@@ -20,7 +20,12 @@
             overflow-x: hidden;
         }
 
-       
+        /* Prevent scrolling when menu is open */
+        body.menu-open {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+        }
 
         .navbar {
             background: rgba(238, 227, 227, 0.95);
@@ -89,7 +94,7 @@
         }
 
         .nav-item:hover, .dropdown:hover > span {
-            background: linear-gradient(135deg, #d4a574, #645252);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             color: white;
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
@@ -97,7 +102,7 @@
         }
 
         .nav-item.active, .dropdown > span.active {
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             color: white;
             box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
         }
@@ -110,7 +115,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background: #FFE5CC;
+            background: rgba(238, 227, 227, 0.95);
             backdrop-filter: blur(10px);
             min-width: 200px;
             box-shadow: 0px 12px 30px rgba(0,0,0,0.2);
@@ -145,7 +150,7 @@
         }
 
         .dropdown-content a:hover {
-            background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(45, 55, 72, 0.1));
+            background: linear-gradient(135deg, rgba(248, 214, 184, 0.3), rgba(185, 140, 99, 0.2));
             transform: translateX(5px);
             color: #2d3748;
         }
@@ -197,7 +202,7 @@
         }
 
         .hamburger.active span:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-6px, 6px);
         }
 
         .hamburger.active span:nth-child(2) {
@@ -205,7 +210,7 @@
         }
 
         .hamburger.active span:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-6px, -6px);
         }
 
         .content {
@@ -257,7 +262,7 @@
 
         .hero h1 {
             font-size: 3.5rem;
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -325,7 +330,7 @@
         .feature-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             border-radius: 50%;
             margin: 0 auto 1rem;
             display: flex;
@@ -358,7 +363,7 @@
         }
 
         .cta-button {
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             color: white;
             padding: 1rem 2rem;
             border: none;
@@ -394,7 +399,7 @@
         .stat-number {
             font-size: 3rem;
             font-weight: bold;
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -591,7 +596,7 @@
         }
 
         .donate-button {
-            background: linear-gradient(135deg, #d4a574, #2d3748);
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
             color: white;
             padding: 1.2rem 2.5rem;
             border: none;
@@ -623,71 +628,70 @@
         
             /* Full screen mobile menu that covers everything */
             .nav-menu {
-    display: none;
-    position: fixed;
-    top: 100px !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100vw !important;
-    height: calc(100vh - 100px) !important;
-    height: calc(100dvh - 100px) !important;
-    background: #FFE5CC !important;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2rem;
-    padding-bottom: 4rem;
-    gap: 1.5rem;
-    z-index: 1003 !important;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    margin: 0 !important;
-    border: 0 !important;
-    box-sizing: border-box !important;
-}
+                display: none;
+                position: fixed;
+                top: 100px !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                width: 100vw !important;
+                height: calc(100vh - 100px) !important;
+                height: calc(100dvh - 100px) !important;
+                background: rgba(238, 227, 227, 0.95) !important;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 2rem;
+                padding-bottom: 4rem;
+                gap: 1.5rem;
+                z-index: 1003 !important;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 !important;
+                border: 0 !important;
+                box-sizing: border-box !important;
+            }
             
-.nav-menu.active {
-    display: flex !important;
-    position: fixed !important;
-    top: 100px !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    height: calc(100vh - 100px) !important;
-    z-index: 1003 !important;
-    background: #FFE5CC !important;
-}
+            .nav-menu.active {
+                display: flex !important;
+                position: fixed !important;
+                top: 100px !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                width: 100% !important;
+                height: calc(100vh - 100px) !important;
+                z-index: 1003 !important;
+                background: rgba(238, 227, 227, 0.95) !important;
+                overflow-y: auto !important;
+            }
             
             /* Hamburger button stays on top when menu is open */
             .hamburger {
                 z-index: 9999;
             }
             
-            /* Logo stays hidden when menu is open */
-            .logo {
-                z-index: 1001;
-            }
-
+            /* Keep navbar visible when menu is open */
             body.menu-open .navbar {
-    background: transparent;
-    backdrop-filter: none;
-    box-shadow: none;
-}
-body.menu-open .logo {
-    display: none;
-}
+                background: rgba(238, 227, 227, 0.95);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            body.menu-open .logo {
+                display: block;
+            }
+            
             .nav-item, .dropdown > span {
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    padding: 1.5rem 2rem !important;
-    font-size: 1.3rem !important;
-    background: rgba(255, 255, 255, 0.9);
-    display: block !important;
-    min-width: unset;
-}
+                width: 100%;
+                max-width: 400px;
+                text-align: center;
+                padding: 1.5rem 2rem !important;
+                font-size: 1.3rem !important;
+                background: rgba(255, 255, 255, 0.9);
+                display: block !important;
+                min-width: unset;
+            }
             
             /* Mobile dropdown styles */
             .dropdown {
@@ -740,7 +744,7 @@ body.menu-open .logo {
             }
             
             .dropdown-content a:hover {
-                background: linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(45, 55, 72, 0.1));
+                background: linear-gradient(135deg, rgba(248, 214, 184, 0.3), rgba(185, 140, 99, 0.2));
                 transform: none;
             }
             
@@ -769,8 +773,9 @@ body.menu-open .logo {
                 padding: 2rem;
             }
 
+            /* Fix for grade cards on mobile */
             .grade-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
 
@@ -794,18 +799,20 @@ body.menu-open .logo {
 
         /* iOS specific fixes */
         @supports (-webkit-touch-callout: none) {
-    .nav-menu {
-        height: -webkit-fill-available !important;
-        max-height: calc(100vh - 100px) !important;
-        padding-top: 1rem;
-    }
-}
-@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-    .nav-menu {
-        min-height: -webkit-fill-available;
-        padding-bottom: env(safe-area-inset-bottom, 20px);
-    }
-}
+            .nav-menu {
+                height: -webkit-fill-available !important;
+                max-height: calc(100vh - 100px) !important;
+                padding-top: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+            .nav-menu {
+                min-height: -webkit-fill-available;
+                padding-bottom: env(safe-area-inset-bottom, 20px);
+            }
+        }
+        
         /* Desktop-specific styles to hide dropdown content when not needed */
         @media (min-width: 769px) {
             /* Ensure dropdown content is only visible on hover */
@@ -1174,9 +1181,6 @@ body.menu-open .logo {
                     </div>
                 </div>
             </div>
-            
-            <h3 style="text-align: center;">Community Impact</h3>
-            <p>Our work extends beyond individual student success. We've helped strengthen entire school communities by providing teacher training, parent education workshops, and advocacy for improved educational resources.</p>
         </div>
     </div>
 
@@ -1253,26 +1257,26 @@ body.menu-open .logo {
 
         // Toggle mobile menu function
         function toggleMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    const hamburger = document.querySelector('.hamburger');
-    const body = document.body;
-    
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-    body.classList.toggle('menu-open');
-    
-    // iOS-specific: Save and restore scroll position
-    if (body.classList.contains('menu-open')) {
-        // Save current scroll position
-        body.style.top = `-${window.scrollY}px`;
-    } else {
-        // Restore scroll position
-        const scrollY = body.style.top;
-        body.style.position = '';
-        body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    }
-}
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const body = document.body;
+            
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            body.classList.toggle('menu-open');
+            
+            // iOS-specific: Save and restore scroll position
+            if (body.classList.contains('menu-open')) {
+                // Save current scroll position
+                body.style.top = `-${window.scrollY}px`;
+            } else {
+                // Restore scroll position
+                const scrollY = body.style.top;
+                body.style.position = '';
+                body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        }
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
@@ -1437,4 +1441,3 @@ body.menu-open .logo {
     </script>
 </body>
 </html>
-
