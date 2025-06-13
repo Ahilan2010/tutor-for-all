@@ -625,7 +625,19 @@
             .hamburger {
                 display: flex;
             }
-        
+        /* Landscape mobile fixes */
+@media (max-width: 768px) and (orientation: landscape) {
+    .nav-menu {
+        padding-top: 1rem;
+        padding-bottom: 10rem;
+        gap: 1rem;
+    }
+    
+    .nav-item, .dropdown > span {
+        padding: 1rem 1.5rem !important;
+        font-size: 1.1rem !important;
+    }
+}
             /* Full screen mobile menu that covers everything */
             .nav-menu {
                 display: none;
@@ -642,7 +654,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 padding: 2rem;
-                padding-bottom: 4rem;
+                padding-bottom: 8rem;
                 gap: 1.5rem;
                 z-index: 1003 !important;
                 overflow-y: auto;
