@@ -712,19 +712,22 @@
             
             /* Mobile dropdown content */
             .dropdown-content {
-                display: none !important;
-                position: static !important;
-                background: rgba(255, 255, 255, 0.9) !important;
-                box-shadow: none !important;
-                border-radius: 0 0 12px 12px !important;
-                padding: 0 !important;
-                margin: 0 !important;
-                border: none !important;
-                transform: none !important;
-                animation: none !important;
-                width: 100%;
-            }
-            
+    display: none !important;
+    position: static !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: none !important;
+    border-radius: 0 0 12px 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    transform: none !important;
+    left: 0 !important;
+    animation: none !important;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
             .dropdown.expanded .dropdown-content {
                 display: block !important;
             }
@@ -810,6 +813,14 @@
             .nav-menu {
                 min-height: -webkit-fill-available;
                 padding-bottom: env(safe-area-inset-bottom, 20px);
+            }
+        }
+
+        /* Fix dropdown alignment in landscape mode */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .dropdown-content {
+                left: 0 !important;
+                transform: none !important;
             }
         }
         
