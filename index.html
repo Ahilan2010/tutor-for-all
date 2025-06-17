@@ -510,6 +510,125 @@
             background: #d4a574;
         }
 
+        /* Problem Is Real Section Styles */
+        .problem-section {
+            margin-top: 2rem;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .problem-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 3rem;
+        }
+
+        .stats-circles {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            gap: 2rem;
+        }
+
+        .stat-circle {
+            flex: 1;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .circle-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .circle-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .circle-background circle {
+            fill: none;
+            stroke: #e0e0e0;
+            stroke-width: 8;
+        }
+
+        .circle-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .circle-progress circle {
+            fill: none;
+            stroke: #d4a574;
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke-dasharray: 565.5;
+            stroke-dashoffset: 565.5;
+            transition: stroke-dashoffset 2s ease;
+        }
+
+        .circle-progress.animated circle {
+            stroke-dashoffset: calc(565.5 - (565.5 * var(--percentage) / 100));
+        }
+
+        .circle-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: #d4a574;
+        }
+
+        .stat-description {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+
+        .stat-description strong {
+            font-weight: bold;
+        }
+
+        .donate-section {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .donate-resources-button {
+            background: linear-gradient(135deg, #F8D6B8, #B98C63);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+        }
+
+        .donate-resources-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(212, 165, 116, 0.4);
+        }
+
         .footer {
             background: #FFE5CC;
             padding: 3rem 2rem 2rem 2rem;
@@ -801,6 +920,29 @@
             .page-title h1 {
                 font-size: 2.5rem;
             }
+
+            /* Mobile stats circles */
+            .stats-circles {
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            .circle-container {
+                width: 180px;
+                height: 180px;
+            }
+
+            .circle-text {
+                font-size: 1.8rem;
+            }
+
+            .stat-description {
+                font-size: 1rem;
+            }
+
+            .problem-title {
+                font-size: 2rem;
+            }
         }
 
         /* iOS specific fixes */
@@ -887,7 +1029,7 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <p>Empowering Growth Through Education</p>
-                        <p>Welcome to our comprehensive tutoring platform where students from Kindergarten through 5th grade can access quality educational support. Our dedicated team of high school tutors is committed to helping every student succeed in their academic journey through <b>FREE INSTRUCTIVE CLASSES </b>.</p>
+                        <p>Welcome to our comprehensive tutoring platform where students from Kindergarten through 5th grade can access quality educational support. Our dedicated team of high school tutors is committed to helping every student succeed in their academic journey through <b>FREE INSTRUCTIVE CLASSES</b>.</p>
                     </div>
                     <div class="hero-logo">
                         <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo">
@@ -919,6 +1061,52 @@
                 </div>
                 <div class="mission-image">
                     <img src= "graduation.jpeg" >
+                </div>
+            </div>
+
+            <!-- The Problem Is Real Section -->
+            <div class="problem-section">
+                <h2 class="problem-title">The Problem Is Real</h2>
+                <div class="stats-circles">
+                    <div class="stat-circle">
+                        <div class="circle-container">
+                            <svg class="circle-background">
+                                <circle cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <svg class="circle-progress" style="--percentage: 40">
+                                <circle cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <div class="circle-text">40%</div>
+                        </div>
+                        <p class="stat-description"><strong>40%</strong> of children living in poverty are not prepared for primary education, compared to their higher-income peers</p>
+                    </div>
+                    <div class="stat-circle">
+                        <div class="circle-container">
+                            <svg class="circle-background">
+                                <circle cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <svg class="circle-progress" style="--percentage: 70">
+                                <circle cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <div class="circle-text">70%</div>
+                        </div>
+                        <p class="stat-description"><strong>60-70% of students</strong> in the Greater Houston area are in underfunded schools that don't provide enough educational resources</p>
+                    </div>
+                    <div class="stat-circle">
+                        <div class="circle-container">
+                            <svg class="circle-background">
+                                <circle cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <svg class="circle-progress" style="--percentage: 80">
+                                <circle cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <div class="circle-text">80%</div>
+                        </div>
+                        <p class="stat-description"><strong>80 percent</strong> of HISD students are from low-income families</p>
+                    </div>
+                </div>
+                <div class="donate-section">
+                    <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview" target="_blank" class="donate-resources-button">Donate Resources</a>
                 </div>
             </div>
         </div>
@@ -1303,8 +1491,32 @@
             }
         }
 
+        // Intersection Observer for circle animations
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const circleObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const circles = entry.target.querySelectorAll('.circle-progress');
+                    circles.forEach(circle => {
+                        circle.classList.add('animated');
+                    });
+                    circleObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
+            // Observe the stats circles section
+            const statsSection = document.querySelector('.stats-circles');
+            if (statsSection) {
+                circleObserver.observe(statsSection);
+            }
+
             const navItems = document.querySelectorAll('.nav-item');
             const dropdowns = document.querySelectorAll('.dropdown');
             
@@ -1422,7 +1634,7 @@
             stopAutoSlide(); // Stop auto-scroll when user manually navigates
             showSlide(slideIndex += n);
             
-            // Restart auto-scroll after 10 seconds of inactivity
+              // Restart auto-scroll after 10 seconds of inactivity
             setTimeout(() => {
                 if (!autoSlideInterval) {
                     startAutoSlide();
