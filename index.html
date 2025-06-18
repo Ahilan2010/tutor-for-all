@@ -512,8 +512,8 @@
 
         /* Problem Is Real Section Styles */
         .problem-section {
-            margin-top: 2rem;
-            padding: 3rem 0;
+            margin-top: 1rem;
+            padding: 1rem 0;
             text-align: center;
         }
 
@@ -527,7 +527,7 @@
         .stats-circles {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
             max-width: 1200px;
             margin: 0 auto 3rem;
             gap: 2rem;
@@ -537,6 +537,9 @@
             flex: 1;
             max-width: 350px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .circle-container {
@@ -546,30 +549,19 @@
             margin: 0 auto 1.5rem;
         }
 
-        .circle-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .circle-svg {
+            width: 200px;
+            height: 200px;
+            transform: rotate(-90deg);
         }
 
-        .circle-background circle {
+        .circle-background {
             fill: none;
             stroke: #e0e0e0;
             stroke-width: 8;
         }
 
         .circle-progress {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transform: rotate(-90deg);
-        }
-
-        .circle-progress circle {
             fill: none;
             stroke: #d4a574;
             stroke-width: 8;
@@ -579,7 +571,7 @@
             transition: stroke-dashoffset 2s ease;
         }
 
-        .circle-progress.animated circle {
+        .circle-progress.animated {
             stroke-dashoffset: calc(565.5 - (565.5 * var(--percentage) / 100));
         }
 
@@ -932,6 +924,11 @@
                 height: 180px;
             }
 
+            .circle-svg {
+                width: 180px;
+                height: 180px;
+            }
+
             .circle-text {
                 font-size: 1.8rem;
             }
@@ -951,6 +948,12 @@
                 height: -webkit-fill-available !important;
                 max-height: calc(100vh - 100px) !important;
                 padding-top: 1rem;
+            }
+            
+            /* iOS Safari SVG fix */
+            .circle-svg {
+                -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
             }
         }
         
@@ -1070,11 +1073,9 @@
                 <div class="stats-circles">
                     <div class="stat-circle">
                         <div class="circle-container">
-                            <svg class="circle-background">
-                                <circle cx="100" cy="100" r="90"></circle>
-                            </svg>
-                            <svg class="circle-progress" style="--percentage: 40">
-                                <circle cx="100" cy="100" r="90"></circle>
+                            <svg class="circle-svg">
+                                <circle cx="100" cy="100" r="90" class="circle-background"></circle>
+                                <circle cx="100" cy="100" r="90" class="circle-progress" style="--percentage: 40"></circle>
                             </svg>
                             <div class="circle-text">40%</div>
                         </div>
@@ -1082,11 +1083,9 @@
                     </div>
                     <div class="stat-circle">
                         <div class="circle-container">
-                            <svg class="circle-background">
-                                <circle cx="100" cy="100" r="90"></circle>
-                            </svg>
-                            <svg class="circle-progress" style="--percentage: 70">
-                                <circle cx="100" cy="100" r="90"></circle>
+                            <svg class="circle-svg">
+                                <circle cx="100" cy="100" r="90" class="circle-background"></circle>
+                                <circle cx="100" cy="100" r="90" class="circle-progress" style="--percentage: 70"></circle>
                             </svg>
                             <div class="circle-text">70%</div>
                         </div>
@@ -1094,11 +1093,9 @@
                     </div>
                     <div class="stat-circle">
                         <div class="circle-container">
-                            <svg class="circle-background">
-                                <circle cx="100" cy="100" r="90"></circle>
-                            </svg>
-                            <svg class="circle-progress" style="--percentage: 80">
-                                <circle cx="100" cy="100" r="90"></circle>
+                            <svg class="circle-svg">
+                                <circle cx="100" cy="100" r="90" class="circle-background"></circle>
+                                <circle cx="100" cy="100" r="90" class="circle-progress" style="--percentage: 80"></circle>
                             </svg>
                             <div class="circle-text">80%</div>
                         </div>
@@ -1604,8 +1601,7 @@
             // Logo click handler
             const logo = document.querySelector('.logo');
             if (logo) {
-                logo.addEventListener('click', () => {
-                    showPage('home');
+                logo.addEventListener('click', () => {showPage('home');
                 });
             }
             
