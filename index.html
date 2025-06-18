@@ -959,6 +959,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: visible !important;
+        background: transparent !important;
     }
     
     .circle-svg {
@@ -967,6 +969,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        overflow: visible !important;
+        background: transparent !important;
     }
     
     .circle-text {
@@ -975,6 +979,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
+        background: transparent !important;
+    }
+    
+    /* Ensure parent containers don't clip the circles */
+    .stat-circle {
+        overflow: visible !important;
+        background: transparent !important;
+    }
+    
+    .stats-circles {
+        overflow: visible !important;
     }
     
     /* iOS mobile specific circle fixes */
@@ -982,12 +997,13 @@
         .circle-container {
             width: 160px;
             height: 160px;
-            overflow: visible;
+            overflow: visible !important;
         }
         
         .circle-svg {
             width: 160px;
             height: 160px;
+            overflow: visible !important;
         }
     }
 }
