@@ -943,70 +943,170 @@
         }
 
         /* iOS specific fixes */
-@supports (-webkit-touch-callout: none) {
-    .nav-menu {
-        height: -webkit-fill-available !important;
-        max-height: calc(100vh - 100px) !important;
-        padding-top: 1rem;
-    }
-    
-    /* iOS Safari circle positioning fix */
-    .circle-container {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: visible !important;
-        background: transparent !important;
-    }
-    
-    .circle-svg {
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        position: absolute;
-        top: 0;
-        left: 0;
-        overflow: visible !important;
-        background: transparent !important;
-    }
-    
-    .circle-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        background: transparent !important;
-    }
-    
-    /* Ensure parent containers don't clip the circles */
-    .stat-circle {
-        overflow: visible !important;
-        background: transparent !important;
-    }
-    
-    .stats-circles {
-        overflow: visible !important;
-    }
-    
-    /* iOS mobile specific circle fixes */
-    @media (max-width: 768px) {
-        .circle-container {
-            width: 160px;
-            height: 160px;
-            overflow: visible !important;
+        @supports (-webkit-touch-callout: none) {
+            .nav-menu {
+                height: -webkit-fill-available !important;
+                max-height: calc(100vh - 100px) !important;
+                padding-top: 1rem;
+            }
+            
+            /* iOS Safari circle positioning fix */
+            .circle-container {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: visible !important;
+                background: transparent !important;
+            }
+            
+            .circle-svg {
+                -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: visible !important;
+                background: transparent !important;
+            }
+            
+            .circle-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                background: transparent !important;
+                /* Force iOS to respect centering */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+            }
+            
+            /* Ensure parent containers don't clip the circles */
+            .stat-circle {
+                overflow: visible !important;
+                background: transparent !important;
+            }
+            
+            .stats-circles {
+                overflow: visible !important;
+            }
+            
+            /* iOS mobile specific circle fixes */
+            @media (max-width: 768px) {
+                .circle-container {
+                    width: 160px;
+                    height: 160px;
+                    overflow: visible !important;
+                }
+                
+                .circle-svg {
+                    width: 160px;
+                    height: 160px;
+                    overflow: visible !important;
+                }
+                
+                .circle-text {
+                    font-size: 1.6rem;
+                }
+            }
+            
+            /* iOS landscape mode centering fixes */
+            @media (orientation: landscape) {
+                .stats-circles {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    padding: 0 2rem;
+                }
+                
+                .stat-circle {
+                    flex: 0 1 calc(33.333% - 1.5rem);
+                    min-width: 280px;
+                    max-width: 350px;
+                }
+                
+                .problem-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                /* Ensure all content is centered in landscape */
+                .features, .grade-grid, .photo-carousel, 
+                .mission-section, .donation-container {
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                
+                .hero-content {
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                /* Mobile landscape specific adjustments */
+                @media (max-width: 768px) {
+                    .stats-circles {
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                    
+                    .stat-circle {
+                        flex: 1 1 100%;
+                        max-width: 300px;
+                    }
+                }
+            }
+            
+            /* iOS landscape and portrait centering for all elements */
+            @media (max-width: 768px) {
+                .hero-logo img, .mission-image img, .feature-card, 
+                .grade-card, .carousel-container, .full-width-card {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                }
+                
+                .page {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .page.active {
+                    display: flex;
+                }
+                
+                /* Center text content */
+                p, h1, h2, h3 {
+                    text-align: center;
+                    width: 100%;
+                }
+                
+                .hero-text {
+                    text-align: center;
+                }
+                
+                .mission-text {
+                    text-align: center;
+                }
+            }
         }
-        
-        .circle-svg {
-            width: 160px;
-            height: 160px;
-            overflow: visible !important;
-        }
-    }
-}
+
         
         @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
             .nav-menu {
@@ -1043,6 +1143,34 @@
             
             .dropdown:hover .dropdown-content {
                 display: block;
+            }
+        }
+        
+        /* Additional iOS Safari fixes for circle text positioning */
+        @supports (-webkit-touch-callout: none) {
+            /* Force hardware acceleration for better rendering */
+            .circle-container, .circle-svg, .circle-text {
+                -webkit-transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+            }
+            
+            /* Alternative circle text positioning for iOS */
+            .circle-text {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                -webkit-transform: none !important;
+                transform: none !important;
+                line-height: 1 !important;
             }
         }
     </style>
@@ -1612,116 +1740,117 @@
                             hamburger.classList.remove('active');
                             body.classList.remove('menu-open');
                             dropdown.classList.remove('expanded');
-                            
-                            // Get the page to show from the onclick attribute
-                            const onclickAttr = link.getAttribute('onclick');
-                            if (onclickAttr) {
-                                const match = onclickAttr.match(/showPage\('([^']+)'\)/);
-                                if (match) {
-                                    showPage(match[1]);
-                                }
-                            }
-                        }
-                    });
-                });
-            });
-            
-            // Close menu when clicking outside (but don't interfere with dropdown behavior)
-            document.addEventListener('click', (e) => {
-                if (window.innerWidth <= 768) {
-                    const navMenu = document.querySelector('.nav-menu');
-                    const hamburger = document.querySelector('.hamburger');
-                    const navContainer = document.querySelector('.nav-container');
-                    const body = document.body;
-                    
-                    // Only close if clicking completely outside the nav area
-                    if (!navContainer.contains(e.target) && navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        hamburger.classList.remove('active');
-                        body.classList.remove('menu-open');
-                        
-                        // Also close any expanded dropdowns
-                        const expandedDropdowns = document.querySelectorAll('.dropdown.expanded');
-                        expandedDropdowns.forEach(dropdown => {
-                            dropdown.classList.remove('expanded');
-                        });
-                    }
-                }
-            });
+                           
+                           // Get the page to show from the onclick attribute
+                           const onclickAttr = link.getAttribute('onclick');
+                           if (onclickAttr) {
+                               const match = onclickAttr.match(/showPage\('([^']+)'\)/);
+                               if (match) {
+                                   showPage(match[1]);
+                               }
+                           }
+                       }
+                   });
+               });
+           });
+           
+           // Close menu when clicking outside (but don't interfere with dropdown behavior)
+           document.addEventListener('click', (e) => {
+               if (window.innerWidth <= 768) {
+                   const navMenu = document.querySelector('.nav-menu');
+                   const hamburger = document.querySelector('.hamburger');
+                   const navContainer = document.querySelector('.nav-container');
+                   const body = document.body;
+                   
+                   // Only close if clicking completely outside the nav area
+                   if (!navContainer.contains(e.target) && navMenu.classList.contains('active')) {
+                       navMenu.classList.remove('active');
+                       hamburger.classList.remove('active');
+                       body.classList.remove('menu-open');
+                       
+                       // Also close any expanded dropdowns
+                       const expandedDropdowns = document.querySelectorAll('.dropdown.expanded');
+                       expandedDropdowns.forEach(dropdown => {
+                           dropdown.classList.remove('expanded');
+                       });
+                   }
+               }
+           });
 
-            // Logo click handler
-            const logo = document.querySelector('.logo');
-            if (logo) {
-                logo.addEventListener('click', () => {showPage('home');
-                });
-            }
-            
-            // Start carousel auto-advance
-            startAutoSlide();
-        });
+           // Logo click handler
+           const logo = document.querySelector('.logo');
+           if (logo) {
+               logo.addEventListener('click', () => {
+                   showPage('home');
+               });
+           }
+           
+           // Start carousel auto-advance
+           startAutoSlide();
+       });
 
-        // Photo carousel functionality
-        let slideIndex = 1;
-        let autoSlideInterval;
+       // Photo carousel functionality
+       let slideIndex = 1;
+       let autoSlideInterval;
 
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(() => {
-                changeSlide(1);
-            }, 5000);
-        }
+       function startAutoSlide() {
+           autoSlideInterval = setInterval(() => {
+               changeSlide(1);
+           }, 5000);
+       }
 
-        function stopAutoSlide() {
-            if (autoSlideInterval) {
-                clearInterval(autoSlideInterval);
-                autoSlideInterval = null;
-            }
-        }
+       function stopAutoSlide() {
+           if (autoSlideInterval) {
+               clearInterval(autoSlideInterval);
+               autoSlideInterval = null;
+           }
+       }
 
-        function changeSlide(n) {
-            stopAutoSlide(); // Stop auto-scroll when user manually navigates
-            showSlide(slideIndex += n);
-            
-              // Restart auto-scroll after 10 seconds of inactivity
-            setTimeout(() => {
-                if (!autoSlideInterval) {
-                    startAutoSlide();
-                }
-            }, 10000);
-        }
+       function changeSlide(n) {
+           stopAutoSlide(); // Stop auto-scroll when user manually navigates
+           showSlide(slideIndex += n);
+           
+           // Restart auto-scroll after 10 seconds of inactivity
+           setTimeout(() => {
+               if (!autoSlideInterval) {
+                   startAutoSlide();
+               }
+           }, 10000);
+       }
 
-        function currentSlide(n) {
-            stopAutoSlide(); // Stop auto-scroll when user manually navigates
-            showSlide(slideIndex = n);
-            
-            // Restart auto-scroll after 10 seconds of inactivity
-            setTimeout(() => {
-                if (!autoSlideInterval) {
-                    startAutoSlide();
-                }
-            }, 10000);
-        }
+       function currentSlide(n) {
+           stopAutoSlide(); // Stop auto-scroll when user manually navigates
+           showSlide(slideIndex = n);
+           
+           // Restart auto-scroll after 10 seconds of inactivity
+           setTimeout(() => {
+               if (!autoSlideInterval) {
+                   startAutoSlide();
+               }
+           }, 10000);
+       }
 
-        function showSlide(n) {
-            const slides = document.querySelectorAll('.carousel-image');
-            const dots = document.querySelectorAll('.carousel-dot');
-            
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-            
-            // Hide all slides
-            slides.forEach(slide => slide.classList.remove('active'));
-            
-            // Remove active from all dots
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            // Show current slide and activate corresponding dot
-            if (slides[slideIndex - 1]) {
-                slides[slideIndex - 1].classList.add('active');
-            }
-            if (dots[slideIndex - 1]) {
-                dots[slideIndex - 1].classList.add('active');
-            }
-        }
-    </script>
+       function showSlide(n) {
+           const slides = document.querySelectorAll('.carousel-image');
+           const dots = document.querySelectorAll('.carousel-dot');
+           
+           if (n > slides.length) { slideIndex = 1; }
+           if (n < 1) { slideIndex = slides.length; }
+           
+           // Hide all slides
+           slides.forEach(slide => slide.classList.remove('active'));
+           
+           // Remove active from all dots
+           dots.forEach(dot => dot.classList.remove('active'));
+           
+           // Show current slide and activate corresponding dot
+           if (slides[slideIndex - 1]) {
+               slides[slideIndex - 1].classList.add('active');
+           }
+           if (dots[slideIndex - 1]) {
+               dots[slideIndex - 1].classList.add('active');
+           }
+       }
+   </script>
 </body>
 </html>
