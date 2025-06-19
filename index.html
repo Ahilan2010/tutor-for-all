@@ -972,7 +972,9 @@
                 font-size: 2rem;
             }
         }
-        /* iOS specific fixes - ENHANCED FOR BETTER CIRCLE POSITIONING */
+                }
+                
+            /* iOS specific fixes - ENHANCED FOR BETTER CIRCLE POSITIONING */
         @supports (-webkit-touch-callout: none) {
             .nav-menu {
                 height: -webkit-fill-available !important;
@@ -1007,8 +1009,8 @@
             
             .circle-text {
                 position: absolute !important;
-                top: calc(50% - 3px) !important;
-                left: calc(50% + 2px) !important;
+                top: 50% !important;
+                left: 50% !important;
                 transform: translate(-50%, -50%) !important;
                 -webkit-transform: translate(-50%, -50%) !important;
                 z-index: 10 !important;
@@ -1077,6 +1079,8 @@
                     z-index: 10 !important;
                     width: auto !important;
                     height: auto !important;
+                    color: #d4a574 !important;
+                    font-weight: bold !important;
                 }
                 
                 .stats-circles {
@@ -1107,6 +1111,93 @@
                     text-align: center !important;
                 }
             }
+            
+            /* iOS landscape mode fixes - VERTICAL ARRANGEMENT WITH PROPER SPACING */
+            @media (max-width: 768px) and (orientation: landscape) {
+                .problem-section {
+                    padding: 2rem 1rem !important;
+                }
+                
+                .stats-circles {
+                    flex-direction: column !important;
+                    flex-wrap: nowrap !important;
+                    justify-content: flex-start !important;
+                    align-items: center !important;
+                    gap: 4rem !important;
+                    width: 100% !important;
+                    padding: 2rem 1rem !important;
+                    max-width: 700px !important;
+                    margin: 0 auto !important;
+                    min-height: auto !important;
+                }
+                
+                .stat-circle {
+                    flex: none !important;
+                    width: 100% !important;
+                    max-width: 600px !important;
+                    margin: 0 auto !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    padding: 1rem 0 !important;
+                }
+                
+                .circle-container {
+                    width: 140px !important;
+                    height: 140px !important;
+                    margin: 0 auto 2rem !important;
+                    position: relative !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+                
+                .circle-svg {
+                    width: 140px !important;
+                    height: 140px !important;
+                    position: absolute !important;
+                    top: 50% !important;
+                    left: 50% !important;
+                    margin-top: -70px !important;
+                    margin-left: -70px !important;
+                }
+                
+                .circle-text {
+                    font-size: 1.4rem !important;
+                    position: absolute !important;
+                    top: 50% !important;
+                    left: 50% !important;
+                    transform: translate(-50%, -50%) !important;
+                    -webkit-transform: translate(-50%, -50%) !important;
+                    z-index: 10 !important;
+                    width: auto !important;
+                    height: auto !important;
+                    color: #d4a574 !important;
+                    font-weight: bold !important;
+                }
+                
+                .stat-description {
+                    font-size: 0.9rem !important;
+                    max-width: 500px !important;
+                    text-align: center !important;
+                    line-height: 1.5 !important;
+                    margin: 0 auto !important;
+                    padding: 0 2rem !important;
+                }
+                
+                .problem-title {
+                    font-size: 1.8rem !important;
+                    margin-bottom: 3rem !important;
+                    text-align: center !important;
+                }
+                
+                .donate-section {
+                    margin-top: 3rem !important;
+                    padding-top: 2rem !important;
+                }
+            }
+        }
             
             /* iOS landscape mode fixes - VERTICAL ARRANGEMENT WITH PROPER SPACING */
             @media (max-width: 768px) and (orientation: landscape) {
