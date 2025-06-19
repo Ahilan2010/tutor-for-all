@@ -20,12 +20,7 @@
             overflow-x: hidden;
         }
 
-        /* Prevent scrolling when menu is open */
-        body.menu-open {
-            overflow: hidden;
-            position: fixed;
-            width: 100%;
-        }
+        
 
         .navbar {
             background: rgba(238, 227, 227, 0.95);
@@ -999,226 +994,233 @@
                 font-size: 2rem;
             }
         }
-        /* iOS specific fixes - ENHANCED FOR BETTER CIRCLE POSITIONING */
-        @supports (-webkit-touch-callout: none) {
-            .nav-menu {
-                height: -webkit-fill-available !important;
-                max-height: calc(100vh - 100px) !important;
-                padding-top: 1rem;
-            }
-            
-            /* Enhanced iOS Safari circle positioning fix */
-            .circle-container {
-                position: relative !important;
-                width: 200px !important;
-                height: 200px !important;
-                margin: 0 auto 1.5rem !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                overflow: visible !important;
-                background: transparent !important;
-            }
-            
-            .circle-svg {
-                position: absolute !important;
-                top: 0 !important;
-                left: 0 !important;
-                width: 200px !important;
-                height: 200px !important;
-                transform: rotate(-90deg) !important;
-                -webkit-transform: rotate(-90deg) !important;
-                overflow: visible !important;
-                background: transparent !important;
-            }
-            
-            .circle-text {
-                position: absolute !important;
-                top: calc(50% - 150px) !important;
-                left: calc(50% + 200px) !important;
-                transform: translate(-50%, -50%) !important;
-                -webkit-transform: translate(-50%, -50%) !important;
-                z-index: 10 !important;
-                background: transparent !important;
-                color: #d4a574 !important;
-                font-weight: bold !important;
-                pointer-events: none !important;
-                font-size: 2rem !important;
-                line-height: 1 !important;
-                text-align: center !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                width: auto !important;
-                height: auto !important;
-                
-            }
-            
-            /* Ensure parent containers don't clip the circles */
-            .stat-circle {
-                overflow: visible !important;
-                background: transparent !important;
-                position: relative !important;
-                display: flex !important;
-                flex-direction: column !important;
-                align-items: center !important;
-                justify-content: center !important;
-            }
-            
-            .stats-circles {
-                overflow: visible !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-            }
-            
-            /* iOS mobile specific circle fixes */
-            @media (max-width: 768px) {
-                .circle-container {
-                    width: 180px !important;
-                    height: 180px !important;
-                    overflow: visible !important;
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    margin: 0 auto 1.5rem !important;
-                }
-                
-                .circle-svg {
-                    width: 180px !important;
-                    height: 180px !important;
-                    overflow: visible !important;
-                    position: absolute !important;
-                    top: 50% !important;
-                    left: 50% !important;
-                    margin-top: -90px !important;
-                    margin-left: -90px !important;
-                }
-                
-                .circle-text {
-                    font-size: 1.8rem !important;
-                    position: absolute !important;
-                    top: 50% !important;
-                    left: 50% !important;
-                    transform: translate(-50%, -50%) !important;
-                    -webkit-transform: translate(-50%, -50%) !important;
-                    z-index: 10 !important;
-                    width: auto !important;
-                    height: auto !important;
-                }
-                
-                .stats-circles {
-                    flex-direction: column !important;
-                    gap: 3rem !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    width: 100% !important;
-                    padding: 0 1rem !important;
-                }
-                
-                .stat-circle {
-                    width: 100% !important;
-                    max-width: 350px !important;
-                    display: flex !important;
-                    flex-direction: column !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    text-align: center !important;
-                    margin: 0 auto !important;
-                }
-                
-                .stat-description {
-                    font-size: 1rem !important;
-                    width: 100% !important;
-                    max-width: 300px !important;
-                    margin: 0 auto !important;
-                    text-align: center !important;
-                }
-            }
-            
-            /* iOS landscape mode fixes - VERTICAL ARRANGEMENT WITH PROPER SPACING */
-            @media (max-width: 768px) and (orientation: landscape) {
-                .problem-section {
-                    padding: 2rem 1rem !important;
-                }
-                
-                .stats-circles {
-                    flex-direction: column !important;
-                    flex-wrap: nowrap !important;
-                    justify-content: flex-start !important;
-                    align-items: center !important;
-                    gap: 4rem !important;
-                    width: 100% !important;
-                    padding: 2rem 1rem !important;
-                    max-width: 700px !important;
-                    margin: 0 auto !important;
-                    min-height: auto !important;
-                }
-                
-                .stat-circle {
-                    flex: none !important;
-                    width: 100% !important;
-                    max-width: 600px !important;
-                    margin: 0 auto !important;
-                    display: flex !important;
-                    flex-direction: column !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    padding: 1rem 0 !important;
-                }
-                
-                .circle-container {
-                    width: 140px !important;
-                    height: 140px !important;
-                    margin: 0 auto 2rem !important;
-                    position: relative !important;
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                }
-                
-                .circle-svg {
-                    width: 140px !important;
-                    height: 140px !important;
-                    position: absolute !important;
-                    top: 50% !important;
-                    left: 50% !important;
-                    margin-top: -70px !important;
-                    margin-left: -70px !important;
-                }
-                
-                .circle-text {
-                    font-size: 1.4rem !important;
-                    position: absolute !important;
-                    top: 54px !important;
-                    left: 86px !important;
-                    transform: translate(-50%, -50%) !important;
-                    -webkit-transform: translate(-50%, -50%) !important;
-                    z-index: 10 !important;
-                    width: auto !important;
-                    height: auto !important;
-                    color: #d4a574 !important;
-                    font-weight: bold !important;
-                }
-                
-                .stat-description {
-                    font-size: 0.9rem !important;
-                    max-width: 500px !important;
-                    text-align: center !important;
-                    line-height: 1.5 !important;
-                    margin: 0 auto !important;
-                    padding: 0 2rem !important;
-                }
-                
-                .problem-title {
-                    font-size: 1.8rem !important;
-                    margin-bottom: 3rem !important;
-                    text-align: center !important;
-                }
-                
-            
-            }
+        /* Enhanced iOS-specific fixes for circle text centering */
+@supports (-webkit-touch-callout: none) {
+    /* Base iOS circle container setup */
+    .circle-container {
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: visible !important;
+        background: transparent !important;
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto 1.5rem !important;
+    }
+    
+    /* SVG positioning - consistent across all iOS modes */
+    .circle-svg {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        width: 200px !important;
+        height: 200px !important;
+        transform: translate(-50%, -50%) rotate(-90deg) !important;
+        -webkit-transform: translate(-50%, -50%) rotate(-90deg) !important;
+        overflow: visible !important;
+        background: transparent !important;
+        z-index: 1 !important;
+    }
+    
+    /* Circle text - the core centering solution */
+    .circle-text {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        -webkit-transform: translate(-50%, -50%) !important;
+        z-index: 10 !important;
+        background: transparent !important;
+        color: #d4a574 !important;
+        font-weight: bold !important;
+        pointer-events: none !important;
+        font-size: 2rem !important;
+        line-height: 1 !important;
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Ensure parent containers don't interfere */
+    .stat-circle {
+        overflow: visible !important;
+        background: transparent !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .stats-circles {
+        overflow: visible !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* iOS Portrait Mobile - maintain same centering principles */
+    @media (max-width: 768px) {
+        .circle-container {
+            width: 180px !important;
+            height: 180px !important;
+            overflow: visible !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            margin: 0 auto 1.5rem !important;
+            position: relative !important;
         }
+        
+        .circle-svg {
+            width: 180px !important;
+            height: 180px !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) rotate(-90deg) !important;
+            -webkit-transform: translate(-50%, -50%) rotate(-90deg) !important;
+            z-index: 1 !important;
+        }
+        
+        .circle-text {
+            font-size: 1.8rem !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            -webkit-transform: translate(-50%, -50%) !important;
+            z-index: 10 !important;
+            width: auto !important;
+            height: auto !important;
+        }
+        
+        .stats-circles {
+            flex-direction: column !important;
+            gap: 3rem !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 100% !important;
+            padding: 0 1rem !important;
+        }
+        
+        .stat-circle {
+            width: 100% !important;
+            max-width: 350px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            margin: 0 auto !important;
+        }
+        
+        .stat-description {
+            font-size: 1rem !important;
+            width: 100% !important;
+            max-width: 300px !important;
+            margin: 0 auto !important;
+            text-align: center !important;
+        }
+    }
+    
+    /* iOS Landscape Mode - applying the same centering concept with scaled dimensions */
+    @media (max-width: 768px) and (orientation: landscape) {
+        .problem-section {
+            padding: 2rem 1rem !important;
+        }
+        
+        .stats-circles {
+            flex-direction: column !important;
+            flex-wrap: nowrap !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            gap: 4rem !important;
+            width: 100% !important;
+            padding: 2rem 1rem !important;
+            max-width: 700px !important;
+            margin: 0 auto !important;
+            min-height: auto !important;
+            overflow: visible !important;
+        }
+        
+        .stat-circle {
+            flex: none !important;
+            width: 100% !important;
+            max-width: 600px !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 1rem 0 !important;
+            overflow: visible !important;
+        }
+        
+        /* Landscape circle container - smaller but maintaining centering principles */
+        .circle-container {
+            width: 140px !important;
+            height: 140px !important;
+            margin: 0 auto 2rem !important;
+            position: relative !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            overflow: visible !important;
+        }
+        
+        /* Landscape SVG - same centering approach, different size */
+        .circle-svg {
+            width: 140px !important;
+            height: 140px !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) rotate(-90deg) !important;
+            -webkit-transform: translate(-50%, -50%) rotate(-90deg) !important;
+            z-index: 1 !important;
+        }
+        
+        /* Landscape text - same centering method, scaled font */
+        .circle-text {
+            font-size: 1.4rem !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            -webkit-transform: translate(-50%, -50%) !important;
+            z-index: 10 !important;
+            width: auto !important;
+            height: auto !important;
+            color: #d4a574 !important;
+            font-weight: bold !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        
+        .stat-description {
+            font-size: 0.9rem !important;
+            max-width: 500px !important;
+            text-align: center !important;
+            line-height: 1.5 !important;
+            margin: 0 auto !important;
+            padding: 0 2rem !important;
+        }
+        
+        .problem-title {
+            font-size: 1.8rem !important;
+            margin-bottom: 3rem !important;
+            text-align: center !important;
+        }
+    }
+}
         
         @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
             .nav-menu {
