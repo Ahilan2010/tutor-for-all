@@ -585,6 +585,33 @@
             color: #d4a574;
         }
 
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d4a574;
+    font-size: 2.4rem;
+    pointer-events: none;
+}
+
+.circle-number {
+    font-size: 2.6rem;
+    line-height: 1;
+}
+
+.circle-symbol {
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-left: 0.15em;
+    align-self: flex-start;
+}
+
+
         .stat-description {
             font-size: 1.1rem;
             color: #000000;
@@ -1006,25 +1033,25 @@
             }
             
             .circle-text {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    -webkit-transform: translate(-50%, -50%) !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 2.4rem !important;  /* Increased from 2rem to 2.4rem */
-    font-weight: bold !important;
-    color: #d4a574 !important;
-    text-align: center !important;
-    width: 100% !important;
-    height: 100% !important;
-    line-height: 1 !important;
-    pointer-events: none !important;
-    z-index: 10 !important;
-}
-
+                position: absolute !important;
+                top: calc(50% - 3px) !important;
+                left: calc(50% + 2px) !important;
+                transform: translate(-50%, -50%) !important;
+                -webkit-transform: translate(-50%, -50%) !important;
+                z-index: 10 !important;
+                background: transparent !important;
+                color: #d4a574 !important;
+                font-weight: bold !important;
+                pointer-events: none !important;
+                font-size: 2rem !important;
+                line-height: 1 !important;
+                text-align: center !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: auto !important;
+                height: auto !important;
+            }
             
             /* Ensure parent containers don't clip the circles */
             .stat-circle {
@@ -1313,7 +1340,7 @@
                                 <circle cx="100" cy="100" r="90" class="circle-background"></circle>
                                 <circle cx="100" cy="100" r="90" class="circle-progress" style="--percentage: 40"></circle>
                             </svg>
-                            <div class="circle-text">40%</div>
+                            <div class="circle-text"><span class="circle-number">40</span><span class="circle-symbol">%</span></div>
                         </div>
                         <p class="stat-description"><strong>40%</strong> of children living in poverty are not prepared for primary education, compared to their higher-income peers</p>
                     </div>
@@ -1323,7 +1350,7 @@
                                 <circle cx="100" cy="100" r="90" class="circle-background"></circle>
                                 <circle cx="100" cy="100" r="90" class="circle-progress" style="--percentage: 70"></circle>
                             </svg>
-                            <div class="circle-text">70%</div>
+                            <div class="circle-text"><span class="circle-number">70</span><span class="circle-symbol">%</span></div>
                         </div>
                         <p class="stat-description"><strong>60-70% of students</strong> in the Greater Houston area are in underfunded schools that don't provide enough educational resources</p>
                     </div>
@@ -1333,7 +1360,7 @@
                                 <circle cx="100" cy="100" r="90" class="circle-background"></circle>
                                 <circle cx="100" cy="100" r="90" class="circle-progress" style="--percentage: 80"></circle>
                             </svg>
-                            <div class="circle-text">80%</div>
+                            <div class="circle-text"><span class="circle-number">80</span><span class="circle-symbol">%</span></div>
                         </div>
                         <p class="stat-description"><strong>80 percent</strong> of HISD students are from low-income families</p>
                     </div>
