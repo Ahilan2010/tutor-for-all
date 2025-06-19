@@ -1179,6 +1179,38 @@
             }
         }
     </style>
+
+<style>
+  /* Fix percentage text alignment for iOS */
+  @supports (-webkit-touch-callout: none) {
+    .circle-container {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      position: relative !important;
+    }
+
+    .circle-svg {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) rotate(-90deg) !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .circle-text {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      -webkit-transform: translate(-50%, -50%) !important;
+      z-index: 10 !important;
+      font-size: 1.8rem !important;
+    }
+  }
+</style>
+
 </head>
 <body>
     <nav class="navbar">
