@@ -1006,25 +1006,25 @@
             }
             
             .circle-text {
-                position: absolute !important;
-                top: calc(50% - 3px) !important;
-                left: calc(50% + 2px) !important;
-                transform: translate(-50%, -50%) !important;
-                -webkit-transform: translate(-50%, -50%) !important;
-                z-index: 10 !important;
-                background: transparent !important;
-                color: #d4a574 !important;
-                font-weight: bold !important;
-                pointer-events: none !important;
-                font-size: 2rem !important;
-                line-height: 1 !important;
-                text-align: center !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                width: auto !important;
-                height: auto !important;
-            }
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 2.4rem !important;  /* Increased from 2rem to 2.4rem */
+    font-weight: bold !important;
+    color: #d4a574 !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 1 !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+}
+
             
             /* Ensure parent containers don't clip the circles */
             .stat-circle {
