@@ -1151,7 +1151,7 @@
                 }
             }
             
-            /* iOS Landscape Mode - applying the same centering concept with scaled dimensions */
+            /* iOS Landscape Mode - FIXED ANIMATION AND ALIGNMENT ISSUES */
             @media (max-width: 768px) and (orientation: landscape) {
                 .problem-section {
                     padding: 2rem 1rem !important;
@@ -1214,7 +1214,7 @@
                     font-size: 1.4rem !important;
                     position: absolute !important;
                     top: 30% !important;
-                    left: 75% !important;
+                    left: 60% !important;
                     transform: translate(-50%, -50%) !important;
                     -webkit-transform: translate(-50%, -50%) !important;
                     z-index: 10 !important;
@@ -1240,6 +1240,18 @@
                     font-size: 1.8rem !important;
                     margin-bottom: 3rem !important;
                     text-align: center !important;
+                }
+
+                /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
+                .circle-progress {
+                    stroke-dasharray: 440 !important; /* Adjusted for 140px diameter */
+                    stroke-dashoffset: 440 !important;
+                    transition: stroke-dashoffset 2s ease !important;
+                    -webkit-transition: stroke-dashoffset 2s ease !important;
+                }
+
+                .circle-progress.animated {
+                    stroke-dashoffset: calc(440 - (440 * var(--percentage) / 100)) !important;
                 }
             }
         }
@@ -1267,6 +1279,40 @@
             .dropdown-content {
                 left: 0 !important;
                 transform: none !important;
+            }
+
+            /* FIX FOR STATS GRID ALIGNMENT IN LANDSCAPE - CENTERING THE THIRD CARD */
+            .stats {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                align-items: stretch !important;
+                gap: 1.5rem !important;
+                width: 100% !important;
+                max-width: 800px !important;
+                margin: 3rem auto !important;
+            }
+
+            .stat-item {
+                flex: 0 1 calc(45% - 0.75rem) !important;
+                min-width: 200px !important;
+                max-width: 300px !important;
+                margin: 0 !important;
+            }
+
+            /* Center the third card when it's alone on its row */
+            .stat-item:nth-child(3):nth-last-child(1) {
+                flex: 0 1 calc(45% - 0.75rem) !important;
+                margin: 0 auto !important;
+            }
+
+            /* Ensure all stat items have same height */
+            .stat-item {
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                min-height: 150px !important;
             }
         }
         
@@ -1775,9 +1821,9 @@
             }
         }
 
-        // Intersection Observer for circle animations
+        // Enhanced Intersection Observer for iOS landscape support
         const observerOptions = {
-            threshold: 0.5,
+            threshold: 0.3, // Lowered threshold for better landscape detection
             rootMargin: '0px'
         };
 
@@ -1786,7 +1832,15 @@
                 if (entry.isIntersecting) {
                     const circles = entry.target.querySelectorAll('.circle-progress');
                     circles.forEach(circle => {
-                        circle.classList.add('animated');
+                        // Force a reflow to ensure animation works in iOS landscape
+                        circle.style.animation = 'none';
+                        circle.offsetHeight; // Trigger reflow
+                        circle.style.animation = '';
+                        
+                        // Add animated class after a small delay
+                        setTimeout(() => {
+                            circle.classList.add('animated');
+                        }, 100);
                     });
                     circleObserver.unobserve(entry.target);
                 }
@@ -1799,6 +1853,37 @@
             const statsSection = document.querySelector('.stats-circles');
             if (statsSection) {
                 circleObserver.observe(statsSection);
+                
+                // iOS Landscape specific: Re-observe on orientation change
+                window.addEventListener('orientationchange', function() {
+                    setTimeout(() => {
+                        const circles = document.querySelectorAll('.circle-progress');
+                        const hasAnimated = Array.from(circles).some(circle => circle.classList.contains('animated'));
+                        
+                        if (!hasAnimated && statsSection) {
+                            // Re-create observer for orientation change
+                            const newObserver = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        const circles = entry.target.querySelectorAll('.circle-progress');
+                                        circles.forEach(circle => {
+                                            // Force animation in new orientation
+                                            circle.classList.remove('animated');
+                                            circle.style.strokeDashoffset = circle.style.strokeDasharray;
+                                            
+                                            setTimeout(() => {
+                                                circle.classList.add('animated');
+                                            }, 100);
+                                        });
+                                        newObserver.unobserve(entry.target);
+                                    }
+                                });
+                            }, observerOptions);
+                            
+                            newObserver.observe(statsSection);
+                        }
+                    }, 300);
+                });
             }
 
             const navItems = document.querySelectorAll('.nav-item');
@@ -1894,6 +1979,25 @@
             
             // Start carousel auto-advance
             startAutoSlide();
+
+            // iOS-specific: Ensure circle animations work on initial landscape load
+            if (window.orientation !== undefined && (window.orientation === 90 || window.orientation === -90)) {
+                // Device is in landscape mode on load
+                setTimeout(() => {
+                    const statsCircles = document.querySelector('.stats-circles');
+                    if (statsCircles) {
+                        const rect = statsCircles.getBoundingClientRect();
+                        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                        
+                        if (isVisible) {
+                            const circles = statsCircles.querySelectorAll('.circle-progress');
+                            circles.forEach(circle => {
+                                circle.classList.add('animated');
+                            });
+                        }
+                    }
+                }, 500);
+            }
         });
 
         // Photo carousel functionality
