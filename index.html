@@ -1214,7 +1214,7 @@
                     font-size: 1.4rem !important;
                     position: absolute !important;
                     top: 30% !important;
-                    left: 60% !important;
+                    left: 65% !important;
                     transform: translate(-50%, -50%) !important;
                     -webkit-transform: translate(-50%, -50%) !important;
                     z-index: 10 !important;
@@ -1243,16 +1243,28 @@
                 }
 
                 /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
-                .circle-progress {
-                    stroke-dasharray: 440 !important; /* Adjusted for 140px diameter */
-                    stroke-dashoffset: 440 !important;
-                    transition: stroke-dashoffset 2s ease !important;
-                    -webkit-transition: stroke-dashoffset 2s ease !important;
-                }
+.circle-progress {
+    stroke-dasharray: 440 !important; /* Adjusted for 140px diameter */
+    stroke-dashoffset: 440 !important;
+    transition: stroke-dashoffset 2s ease !important;
+    -webkit-transition: stroke-dashoffset 2s ease !important;
+    transform-origin: center !important;
+    -webkit-transform-origin: center !important;
+}
 
-                .circle-progress.animated {
-                    stroke-dashoffset: calc(440 - (440 * var(--percentage) / 100)) !important;
-                }
+.circle-progress.animated {
+    stroke-dashoffset: calc(440 - (440 * var(--percentage) / 100)) !important;
+}
+
+/* Force initial state for landscape circles */
+.circle-svg {
+    stroke-dashoffset: 440 !important;
+}
+
+.circle-svg circle {
+    transform-origin: center !important;
+    -webkit-transform-origin: center !important;
+}
             }
         }
         
