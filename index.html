@@ -1214,7 +1214,7 @@
                     font-size: 1.4rem !important;
                     position: absolute !important;
                     top: 30% !important;
-                    left: 75% !important;
+                    left: 65% !important;
                     transform: translate(-50%, -50%) !important;
                     -webkit-transform: translate(-50%, -50%) !important;
                     z-index: 10 !important;
@@ -1242,10 +1242,10 @@
                     text-align: center !important;
                 }
 
-                /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
+               /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
 .circle-progress {
-    stroke-dasharray: 440 !important; /* Adjusted for 140px diameter */
-    stroke-dashoffset: 440 !important;
+    stroke-dasharray: 395.84 !important; /* Correct circumference for r=63 */
+    stroke-dashoffset: 395.84 !important;
     transition: stroke-dashoffset 2s ease !important;
     -webkit-transition: stroke-dashoffset 2s ease !important;
     transform-origin: center !important;
@@ -1253,7 +1253,7 @@
 }
 
 .circle-progress.animated {
-    stroke-dashoffset: calc(440 - (440 * var(--percentage) / 100)) !important;
+    stroke-dashoffset: calc(395.84 - (395.84 * var(--percentage) / 100)) !important;
 }
 
 /* Force initial state for landscape circles */
@@ -1882,7 +1882,12 @@
                                         circles.forEach(circle => {
                                             // Force animation in new orientation
                                             circle.classList.remove('animated');
-                                            circle.style.strokeDashoffset = circle.style.strokeDasharray;
+                                            // Check if in landscape mode
+if (window.innerWidth <= 768 && window.matchMedia("(orientation: landscape)").matches) {
+    circle.style.strokeDashoffset = '395.84';
+} else {
+    circle.style.strokeDashoffset = '565.5';
+}
                                             
                                             setTimeout(() => {
                                                 circle.classList.add('animated');
@@ -1898,6 +1903,38 @@
                     }, 300);
                 });
             }
+            // Fix SVG circles for landscape mode
+function adjustCirclesForLandscape() {
+    const isLandscape = window.innerWidth <= 768 && window.matchMedia("(orientation: landscape)").matches;
+    const circles = document.querySelectorAll('.circle-svg circle');
+    
+    circles.forEach(circle => {
+        if (isLandscape) {
+            // Adjust for 140px container
+            circle.setAttribute('cx', '70');
+            circle.setAttribute('cy', '70');
+            circle.setAttribute('r', '63');
+        } else {
+            // Reset to default
+            circle.setAttribute('cx', '100');
+            circle.setAttribute('cy', '100');
+            circle.setAttribute('r', '90');
+        }
+    });
+}
+
+// Call on load
+adjustCirclesForLandscape();
+
+// Call on orientation change
+window.addEventListener('orientationchange', function() {
+    setTimeout(adjustCirclesForLandscape, 100);
+});
+
+// Call on resize
+window.addEventListener('resize', function() {
+    adjustCirclesForLandscape();
+});
 
             const navItems = document.querySelectorAll('.nav-item');
             const dropdowns = document.querySelectorAll('.dropdown');
