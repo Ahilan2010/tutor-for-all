@@ -1194,7 +1194,7 @@
                     align-items: center !important;
                     justify-content: center !important;
                     overflow: visible !important;
-                    transform: translateX(-18%) !important;
+                    
                 }
                 
                 /* Landscape SVG - same centering approach, different size */
@@ -1211,7 +1211,7 @@
                 
                 /* Landscape text - adjusted positioning for better visibility */
                 .circle-text {
-                    font-size: 1.4rem !important;
+                    font-size: 1.6rem !important;
                     position: absolute !important;
                     top: 30% !important;
                     left: 65% !important;
@@ -1243,9 +1243,20 @@
                 }
 
                /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
+/* 180px circle containers */
+.circle-container {
+    width: 180px !important;
+    height: 180px !important;
+}
+
+.circle-svg {
+    width: 180px !important;
+    height: 180px !important;
+}
+
 .circle-progress {
-    stroke-dasharray: 502.65 !important; /* Circumference for r=80 in 140px container */
-    stroke-dashoffset: 502.65 !important;
+    stroke-dasharray: 527.79 !important; /* Circumference for r=84 in 180px container */
+    stroke-dashoffset: 527.79 !important;
     transition: stroke-dashoffset 2s ease !important;
     -webkit-transition: stroke-dashoffset 2s ease !important;
     transform-origin: center !important;
@@ -1253,7 +1264,7 @@
 }
 
 .circle-progress.animated {
-    stroke-dashoffset: calc(502.65 - (502.65 * var(--percentage) / 100)) !important;
+    stroke-dashoffset: calc(527.79 - (527.79 * var(--percentage) / 100)) !important;
 }
 
 /* Force initial state for landscape circles */
@@ -1910,10 +1921,10 @@ function adjustCirclesForLandscape() {
     
     circles.forEach(circle => {
         if (isLandscape) {
-            // Keep circles visually similar size but adjust for 140px container
-            circle.setAttribute('cx', '70');
-            circle.setAttribute('cy', '70');
-            circle.setAttribute('r', '80'); // Changed from 63 to 80
+            // For 180px container
+            circle.setAttribute('cx', '90');
+            circle.setAttribute('cy', '90');
+            circle.setAttribute('r', '84');
         } else {
             // Reset to default
             circle.setAttribute('cx', '100');
