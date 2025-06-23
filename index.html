@@ -1244,8 +1244,8 @@
 
                /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
 .circle-progress {
-    stroke-dasharray: 395.84 !important; /* Correct circumference for r=63 */
-    stroke-dashoffset: 395.84 !important;
+    stroke-dasharray: 502.65 !important; /* Circumference for r=80 in 140px container */
+    stroke-dashoffset: 502.65 !important;
     transition: stroke-dashoffset 2s ease !important;
     -webkit-transition: stroke-dashoffset 2s ease !important;
     transform-origin: center !important;
@@ -1253,7 +1253,7 @@
 }
 
 .circle-progress.animated {
-    stroke-dashoffset: calc(395.84 - (395.84 * var(--percentage) / 100)) !important;
+    stroke-dashoffset: calc(502.65 - (502.65 * var(--percentage) / 100)) !important;
 }
 
 /* Force initial state for landscape circles */
@@ -1910,10 +1910,10 @@ function adjustCirclesForLandscape() {
     
     circles.forEach(circle => {
         if (isLandscape) {
-            // Adjust for 140px container
+            // Keep circles visually similar size but adjust for 140px container
             circle.setAttribute('cx', '70');
             circle.setAttribute('cy', '70');
-            circle.setAttribute('r', '63');
+            circle.setAttribute('r', '80'); // Changed from 63 to 80
         } else {
             // Reset to default
             circle.setAttribute('cx', '100');
