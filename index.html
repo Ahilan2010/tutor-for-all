@@ -1151,10 +1151,16 @@
                 }
             }
             
-            /* iOS Landscape Mode - FIXED ANIMATION AND ALIGNMENT ISSUES */
+            /* iOS Landscape Mode - FIXED ANIMATION AND ALIGNMENT ISSUES WITH REQUESTED CHANGES */
             @media (max-width: 768px) and (orientation: landscape) {
                 .problem-section {
-                    padding: 2rem 1rem !important;
+                    padding: 0.5rem 1rem !important; /* Reduced from 1rem to 0.5rem */
+                }
+                
+                .problem-title {
+                    font-size: 1.8rem !important;
+                    margin-bottom: 0.5rem !important; /* Reduced from 1.0rem to 0.5rem - 50% spacing reduction */
+                    text-align: center !important;
                 }
                 
                 .stats-circles {
@@ -1162,9 +1168,9 @@
                     flex-wrap: nowrap !important;
                     justify-content: flex-start !important;
                     align-items: center !important;
-                    gap: 1.5rem !important;
+                    gap: 0.75rem !important; /* Reduced from 1.5rem to 0.75rem - 50% spacing reduction */
                     width: 100% !important;
-                    padding: 2rem 1rem !important;
+                    padding: 1rem 1rem !important; /* Reduced top/bottom padding */
                     max-width: 700px !important;
                     margin: 0 auto !important;
                     min-height: auto !important;
@@ -1180,7 +1186,7 @@
                     flex-direction: column !important;
                     align-items: center !important;
                     justify-content: center !important;
-                    padding: 1rem 0 !important;
+                    padding: 0.5rem 0 !important; /* Reduced from 1rem to 0.5rem */
                     overflow: visible !important;
                 }
                 
@@ -1188,7 +1194,7 @@
                 .circle-container {
                     width: 140px !important;
                     height: 140px !important;
-                    margin: 0 auto 2rem !important;
+                    margin: 0 auto 1rem !important; /* Reduced from 2rem to 1rem */
                     position: relative !important;
                     display: flex !important;
                     align-items: center !important;
@@ -1209,12 +1215,12 @@
                     z-index: 1 !important;
                 }
                 
-                /* Landscape text - adjusted positioning for better visibility */
+                /* LANDSCAPE TEXT - MOVED 5% TO THE LEFT AS REQUESTED */
                 .circle-text {
                     font-size: 1.6rem !important;
                     position: absolute !important;
                     top: 50% !important;
-                    left: 50%% !important;
+                    left: 45% !important; /* Changed from 50% to 45% - moved 5% to the left */
                     transform: translate(-50%, -50%) !important;
                     -webkit-transform: translate(-50%, -50%) !important;
                     z-index: 10 !important;
@@ -1236,10 +1242,10 @@
                     padding: 0 2rem !important;
                 }
                 
-                .problem-title {
-                    font-size: 1.8rem !important;
-                    margin-bottom: 1.0rem !important;
-                    text-align: center !important;
+                /* DONATE SECTION - REDUCED SPACING BY 50% */
+                .donate-section {
+                    text-align: center;
+                    margin-top: 1rem !important; /* Reduced from 2rem to 1rem - 50% spacing reduction */
                 }
 
                /* FIX FOR CIRCLE ANIMATION IN iOS LANDSCAPE */
