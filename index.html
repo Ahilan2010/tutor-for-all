@@ -1052,25 +1052,25 @@
     /* Menu positioning - moved up to eliminate gap */
     .nav-menu {
         top: 105px !important; /* Moved up from 120px to 105px */
-        height: calc(100vh - 105px) !important;
-        height: calc(100dvh - 105px) !important;
+        height: calc(100vh - 90px) !important;
+        height: calc(100dvh - 90px) !important;
     }
     
     .nav-menu.active {
         top: 105px !important; /* Moved up from 120px to 105px */
-        height: calc(100vh - 105px) !important;
+        height: calc(100vh - 90px) !important;
     }
 }
 
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
-            max-height: calc(100vh - 105px) !important; /* Updated to 105px */
+            max-height: calc(100vh - 90px) !important; /* Updated to 105px */
         }
         
         .nav-menu.active {
-            max-height: calc(100vh - 105px) !important; /* Updated to 105px */
-            top: 105px !important; /* Moved up from 120px to 105px */
+            max-height: calc(100vh - 90px) !important; /* Updated to 105px */
+            top: 90px !important; /* Moved up from 120px to 105px */
         }
     }
 }
