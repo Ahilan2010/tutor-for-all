@@ -1034,6 +1034,39 @@
                 font-size: 2rem;
             }
         }
+        @media (max-width: 768px) and (orientation: portrait) {
+    .banner {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .navbar {
+        top: 32px;
+    }
+    
+    .content {
+        margin-top: 132px;
+    }
+    
+    .nav-menu {
+        top: 132px !important;
+        height: calc(100vh - 132px) !important;
+        height: calc(100dvh - 132px) !important;
+    }
+    
+    .nav-menu.active {
+        top: 132px !important;
+        height: calc(100vh - 132px) !important;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 768px) and (orientation: portrait) {
+        .nav-menu {
+            max-height: calc(100vh - 132px) !important;
+        }
+    }
+}
       /* Enhanced iOS-specific fixes for circle text centering */
         @supports (-webkit-touch-callout: none) {
             .nav-menu {
