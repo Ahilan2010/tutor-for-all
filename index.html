@@ -13,7 +13,7 @@
 
 <!-- Apple Touch Icon (for iOS/Safari) -->
 <link rel="apple-touch-icon" sizes="180x180" href="https://tutorforall.org/apple-touch-icon.png">
-
+    
     <style>
         * {
             margin: 0;
@@ -29,7 +29,32 @@
             color: #000000;
             overflow-x: hidden;
         }
+.banner {
+    background: linear-gradient(135deg, #D4A574, #C49664);
+    color: white;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.banner a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.banner a:hover {
+    color: #FFE5CC;
+    text-decoration: none;
+}
         /* Prevent scrolling when menu is open */
         body.menu-open {
             overflow: hidden;
@@ -42,7 +67,7 @@
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
             position: fixed;
-            top: 0;
+            top: 45px;
             left: 0;
             right: 0;
             z-index: 1000;
@@ -224,9 +249,9 @@
         }
 
         .content {
-            margin-top: 100px;
+            margin-top: 145px;
             padding: 40px 40px 0 40px;
-            min-height: calc(100vh - 100px);
+            min-height: calc(100vh - 145px);
             display: flex;
             flex-direction: column;
         }
@@ -778,13 +803,13 @@
             .nav-menu {
                 display: none;
                 position: fixed;
-                top: 100px !important;
+                top: 145px !important;
                 left: 0 !important;
                 right: 0 !important;
                 bottom: 0 !important;
                 width: 100vw !important;
-                height: calc(100vh - 100px) !important;
-                height: calc(100dvh - 100px) !important;
+                height: calc(100vh - 145px) !important;
+                height: calc(100dvh - 145px) !important;
                 background: rgba(238, 227, 227, 0.95) !important;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -1013,7 +1038,7 @@
         @supports (-webkit-touch-callout: none) {
             .nav-menu {
                 height: -webkit-fill-available !important;
-                max-height: calc(100vh - 100px) !important;
+                max-height: calc(100vh - 145px) !important;
                 padding-top: 1rem;
             }
             
@@ -1360,6 +1385,9 @@
    
 </head>
 <body>
+    <div class="banner">
+        🎓 Tutor-For-All is a nonprofit organization — <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview" target="_blank">help us grow!</a>
+    </div>
     <nav class="navbar">
         <div class="nav-container">
             <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo" onclick="showPage('home')">
