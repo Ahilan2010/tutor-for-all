@@ -1044,10 +1044,7 @@
         top: 32px;
     }
     
-    .content {
-        margin-top: 132px;
-    }
-    
+       /* Fixed menu positioning for iOS portrait */
     .nav-menu {
         top: 132px !important;
         height: calc(100vh - 132px) !important;
@@ -1055,15 +1052,33 @@
     }
     
     .nav-menu.active {
+        display: flex !important;
+        position: fixed !important;
         top: 132px !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
         height: calc(100vh - 132px) !important;
+        z-index: 1003 !important;
+        background: rgba(238, 227, 227, 0.95) !important;
+        overflow-y: auto !important;
     }
 }
 
+/* iOS Specific Menu Fixes */
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
             max-height: calc(100vh - 132px) !important;
+            padding-top: 1rem;
+        }
+        
+        .nav-menu.active {
+            height: -webkit-fill-available !important;
+            max-height: calc(100vh - 132px) !important;
+            top: 132px !important;
+            position: fixed !important;
         }
     }
 }
