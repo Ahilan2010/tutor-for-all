@@ -1043,34 +1043,58 @@
     
     .navbar {
         top: 32px;
+        padding: 0.5rem 1rem; /* Reduce padding to control height */
+    }
+    
+    .logo {
+        height: 60px; /* Slightly smaller logo on portrait */
     }
     
     .content {
         margin-top: 132px;
     }
     
-    /* Menu positioning - moved up to eliminate gap */
+    /* Calculate exact navbar bottom position */
     .nav-menu {
-        top: 105px !important; /* Moved up from 120px to 105px */
-        height: calc(100vh - 50px) !important;
-        height: calc(100dvh - 50px) !important;
+        top: 0 !important;
+        margin-top: 0 !important;
+        padding-top: calc(32px + 70px + 1rem) !important; /* Banner + navbar exact height */
+        height: 100vh !important;
+        height: 100dvh !important;
+        background: rgba(238, 227, 227, 1) !important; /* Solid background */
     }
     
     .nav-menu.active {
-        top: 105px !important; /* Moved up from 120px to 105px */
-        height: calc(100vh - 50px) !important;
+        top: 0 !important;
+        padding-top: calc(32px + 70px + 1rem) !important;
+        height: 100vh !important;
+        background: rgba(238, 227, 227, 1) !important; /* Solid background */
+    }
+}
+
+/* Ensure menu covers everything behind navbar */
+@media (max-width: 768px) {
+    .nav-menu.active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: calc(32px + 70px + 2rem); /* Cover navbar area */
+        background: rgba(238, 227, 227, 0.95);
+        z-index: -1;
     }
 }
 
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
-            max-height: calc(100vh - 50px) !important; /* Updated to 105px */
+            max-height: calc(100vh - 90px) !important; /* Updated to 105px */
         }
         
         .nav-menu.active {
-            max-height: calc(100vh - 50px) !important; /* Updated to 105px */
-            top: 50px !important; /* Moved up from 120px to 105px */
+            max-height: calc(100vh - 90px) !important; /* Updated to 105px */
+            top: 90px !important; /* Moved up from 120px to 105px */
         }
     }
 }
