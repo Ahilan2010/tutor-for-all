@@ -1034,7 +1034,8 @@
                 font-size: 2rem;
             }
         }
-      @media (max-width: 768px) and (orientation: portrait) {
+    
+@media (max-width: 768px) and (orientation: portrait) {
     .banner {
         padding: 0.4rem 0.5rem;
         font-size: 0.8rem;
@@ -1048,28 +1049,28 @@
         margin-top: 132px;
     }
     
-    /* Menu positioning - moved up to intersect with navbar */
+    /* Menu positioning - moved up to eliminate gap */
     .nav-menu {
-        top: 120px !important; /* Moved up from 132px to 120px */
-        height: calc(100vh - 120px) !important;
-        height: calc(100dvh - 120px) !important;
+        top: 105px !important; /* Moved up from 120px to 105px */
+        height: calc(100vh - 105px) !important;
+        height: calc(100dvh - 105px) !important;
     }
     
     .nav-menu.active {
-        top: 120px !important; /* Moved up from 132px to 120px */
-        height: calc(100vh - 120px) !important;
+        top: 105px !important; /* Moved up from 120px to 105px */
+        height: calc(100vh - 105px) !important;
     }
 }
 
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
-            max-height: calc(100vh - 120px) !important; /* Updated to 120px */
+            max-height: calc(100vh - 105px) !important; /* Updated to 105px */
         }
         
         .nav-menu.active {
-            max-height: calc(100vh - 120px) !important; /* Updated to 120px */
-            top: 120px !important; /* Moved up from 132px to 120px */
+            max-height: calc(100vh - 105px) !important; /* Updated to 105px */
+            top: 105px !important; /* Moved up from 120px to 105px */
         }
     }
 }
