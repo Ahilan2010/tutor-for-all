@@ -1034,7 +1034,8 @@
                 font-size: 2rem;
             }
         }
-        @media (max-width: 768px) and (orientation: portrait) {
+       
+@media (max-width: 768px) and (orientation: portrait) {
     .banner {
         padding: 0.4rem 0.5rem;
         font-size: 0.8rem;
@@ -1042,13 +1043,20 @@
     
     .navbar {
         top: 32px;
+        height: 100px; /* Ensure navbar has defined height */
     }
     
-       /* Fixed menu positioning for iOS portrait */
+    .content {
+        margin-top: 132px;
+    }
+    
+    /* Fixed menu positioning - starts immediately after navbar */
     .nav-menu {
-        top: 132px !important;
+        top: 132px !important; /* 32px banner + 100px navbar = 132px */
         height: calc(100vh - 132px) !important;
         height: calc(100dvh - 132px) !important;
+        padding-top: 0 !important; /* Remove any top padding causing gap */
+        margin-top: 0 !important; /* Remove any top margin */
     }
     
     .nav-menu.active {
@@ -1063,6 +1071,9 @@
         z-index: 1003 !important;
         background: rgba(238, 227, 227, 0.95) !important;
         overflow-y: auto !important;
+        padding-top: 1rem !important; /* Only internal padding for menu items */
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
 }
 
@@ -1071,7 +1082,8 @@
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
             max-height: calc(100vh - 132px) !important;
-            padding-top: 1rem;
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
         
         .nav-menu.active {
@@ -1079,9 +1091,12 @@
             max-height: calc(100vh - 132px) !important;
             top: 132px !important;
             position: fixed !important;
+            padding-top: 1rem !important;
+            margin-top: 0 !important;
         }
     }
 }
+        
       /* Enhanced iOS-specific fixes for circle text centering */
         @supports (-webkit-touch-callout: none) {
             .nav-menu {
