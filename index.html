@@ -1086,37 +1086,49 @@
     }
 }
 
+
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
-            max-height: calc(100vh - 90px) !important; /* Updated to 105px */
-        }
-        
-        .nav-menu.active {
-            max-height: calc(100vh - 90px) !important; /* Updated to 105px */
-            top: 90px !important; /* Moved up from 120px to 105px */
-        }
-    }
-}
-/* iOS Specific Menu Fixes */
-@supports (-webkit-touch-callout: none) {
-    @media (max-width: 768px) and (orientation: portrait) {
-        .nav-menu {
-            max-height: calc(100vh - 132px) !important;
-            padding-top: 0 !important;
-            margin-top: 0 !important;
-        }
-        
-        .nav-menu.active {
-            height: -webkit-fill-available !important;
-            max-height: calc(100vh - 132px) !important;
-            top: 132px !important;
-            position: fixed !important;
+            top: 102px !important; /* 32px banner + 70px navbar */
             padding-top: 1rem !important;
-            margin-top: 0 !important;
+            height: calc(100vh - 102px) !important;
+            max-height: calc(100vh - 102px) !important;
+        }
+
+        .nav-menu.active {
+            top: 102px !important;
+            padding-top: 1rem !important;
+            height: calc(100vh - 102px) !important;
+            max-height: calc(100vh - 102px) !important;
+            position: fixed !important;
         }
     }
 }
+
+
+/* iOS Specific Menu Fixes */
+
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 768px) and (orientation: portrait) {
+        .nav-menu {
+            top: 102px !important; /* 32px banner + 70px navbar */
+            padding-top: 1rem !important;
+            height: calc(100vh - 102px) !important;
+            max-height: calc(100vh - 102px) !important;
+        }
+
+        .nav-menu.active {
+            top: 102px !important;
+            padding-top: 1rem !important;
+            height: calc(100vh - 102px) !important;
+            max-height: calc(100vh - 102px) !important;
+            position: fixed !important;
+        }
+    }
+}
+
+
         
       /* Enhanced iOS-specific fixes for circle text centering */
         @supports (-webkit-touch-callout: none) {
