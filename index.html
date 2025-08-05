@@ -1048,32 +1048,31 @@
         margin-top: 132px;
     }
     
-    /* Menu positioning - adjusted for smaller banner */
+    /* Menu positioning - moved up to intersect with navbar */
     .nav-menu {
-        top: 132px !important;
-        height: calc(100vh - 132px) !important;
-        height: calc(100dvh - 132px) !important;
+        top: 120px !important; /* Moved up from 132px to 120px */
+        height: calc(100vh - 120px) !important;
+        height: calc(100dvh - 120px) !important;
     }
     
     .nav-menu.active {
-        top: 132px !important;
-        height: calc(100vh - 132px) !important;
+        top: 120px !important; /* Moved up from 132px to 120px */
+        height: calc(100vh - 120px) !important;
     }
 }
 
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
         .nav-menu {
-            max-height: calc(100vh - 132px) !important;
+            max-height: calc(100vh - 120px) !important; /* Updated to 120px */
         }
         
         .nav-menu.active {
-            max-height: calc(100vh - 132px) !important;
-            top: 132px !important;
+            max-height: calc(100vh - 120px) !important; /* Updated to 120px */
+            top: 120px !important; /* Moved up from 132px to 120px */
         }
     }
 }
-
 /* iOS Specific Menu Fixes */
 @supports (-webkit-touch-callout: none) {
     @media (max-width: 768px) and (orientation: portrait) {
