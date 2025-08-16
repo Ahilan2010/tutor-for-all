@@ -941,6 +941,8 @@
     }
 }
     
+/* ONLY ADD THIS - Replace the specific iOS portrait section around line 680 */
+
 @media (max-width: 768px) and (orientation: portrait) {
     .banner {
         padding: 0.4rem 0.5rem;
@@ -949,32 +951,36 @@
     
     .navbar {
         top: 32px;
-        padding: 0.5rem 1rem; /* Reduce padding to control height */
+        padding: 0.5rem 1rem;
     }
     
     .logo {
-        height: 60px; /* Slightly smaller logo on portrait */
+        height: 60px;
     }
     
     .content {
         margin-top: 132px;
     }
     
-    /* Calculate exact navbar bottom position */
+    /* FIX: Menu covers gap completely */
     .nav-menu {
         top: 0 !important;
-        margin-top: 0 !important;
-        padding-top: calc(32px + 70px + 1rem) !important; /* Banner + navbar exact height */
         height: 100vh !important;
         height: 100dvh !important;
-        background: rgba(238, 227, 227, 1) !important; /* Solid background */
+        background: rgba(238, 227, 227, 1) !important; /* Solid background - no transparency */
+        padding-top: calc(32px + 60px + 1rem) !important; /* Banner + navbar height */
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
     }
     
     .nav-menu.active {
         top: 0 !important;
-        padding-top: calc(32px + 70px + 1rem) !important;
         height: 100vh !important;
-        background: rgba(238, 227, 227, 1) !important; /* Solid background */
+        height: 100dvh !important;
+        background: rgba(238, 227, 227, 1) !important; /* Solid background - no transparency */
+        padding-top: calc(32px + 60px + 1rem) !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
     }
 }
 
