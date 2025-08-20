@@ -2083,3 +2083,308 @@
                 body.classList.remove('menu-open');
             }
         }
+          // Toggle mobile menu function
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const body = document.body;
+            
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            body.classList.toggle('menu-open');
+            
+            // iOS-specific: Save and restore scroll position
+            if (body.classList.contains('menu-open')) {
+                // Save current scroll position
+                body.style.top = `-${window.scrollY}px`;
+            } else {
+                // Restore scroll position
+                const scrollY = body.style.top;
+                body.style.position = '';
+                body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        }
+
+        // Enhanced Intersection Observer for iOS landscape support
+        const observerOptions = {
+            threshold: 0.3, // Lowered threshold for better landscape detection
+            rootMargin: '0px'
+        };
+
+        const circleObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const circles = entry.target.querySelectorAll('.circle-progress');
+                    circles.forEach(circle => {
+                        // Force a reflow to ensure animation works in iOS landscape
+                        circle.style.animation = 'none';
+                        circle.offsetHeight; // Trigger reflow
+                        circle.style.animation = '';
+                        
+                        // Add animated class after a small delay
+                        setTimeout(() => {
+                            circle.classList.add('animated');
+                        }, 100);
+                    });
+                    circleObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observe the stats circles section
+            const statsSection = document.querySelector('.stats-circles');
+            if (statsSection) {
+                circleObserver.observe(statsSection);
+                
+                // iOS Landscape specific: Re-observe on orientation change
+                window.addEventListener('orientationchange', function() {
+                    setTimeout(() => {
+                        const circles = document.querySelectorAll('.circle-progress');
+                        const hasAnimated = Array.from(circles).some(circle => circle.classList.contains('animated'));
+                        
+                        if (!hasAnimated && statsSection) {
+                            // Re-create observer for orientation change
+                            const newObserver = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        const circles = entry.target.querySelectorAll('.circle-progress');
+                                        circles.forEach(circle => {
+                                            // Force animation in new orientation
+                                            circle.classList.remove('animated');
+                                            // Check if in landscape mode
+if (window.innerWidth <= 768 && window.matchMedia("(orientation: landscape)").matches) {
+    circle.style.strokeDashoffset = '395.84';
+} else {
+    circle.style.strokeDashoffset = '565.5';
+}
+                                            
+                                            setTimeout(() => {
+                                                circle.classList.add('animated');
+                                            }, 100);
+                                        });
+                                        newObserver.unobserve(entry.target);
+                                    }
+                                });
+                            }, observerOptions);
+                            
+                            newObserver.observe(statsSection);
+                        }
+                    }, 300);
+                });
+            }
+            // Fix SVG circles for landscape mode
+function adjustCirclesForLandscape() {
+    const isLandscape = window.innerWidth <= 768 && window.matchMedia("(orientation: landscape)").matches;
+    const circles = document.querySelectorAll('.circle-svg circle');
+    
+    circles.forEach(circle => {
+        if (isLandscape) {
+            // For 180px container
+            circle.setAttribute('cx', '90');
+            circle.setAttribute('cy', '90');
+            circle.setAttribute('r', '84');
+        } else {
+            // Reset to default
+            circle.setAttribute('cx', '100');
+            circle.setAttribute('cy', '100');
+            circle.setAttribute('r', '90');
+        }
+    });
+}
+
+// Call on load
+adjustCirclesForLandscape();
+
+// Call on orientation change
+window.addEventListener('orientationchange', function() {
+    setTimeout(adjustCirclesForLandscape, 100);
+});
+
+// Call on resize
+window.addEventListener('resize', function() {
+    adjustCirclesForLandscape();
+});
+
+            const navItems = document.querySelectorAll('.nav-item');
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            // Handle individual nav item clicks (not in dropdown)
+            navItems.forEach(item => {
+                // Check if this item is not a dropdown toggle
+                const isDropdownToggle = item.parentElement.classList.contains('dropdown') && item.tagName === 'SPAN';
+                
+                if (!isDropdownToggle) {
+                    item.addEventListener('click', () => {
+                        const navMenu = document.querySelector('.nav-menu');
+                        const hamburger = document.querySelector('.hamburger');
+                        const body = document.body;
+                        if (window.innerWidth <= 768) {
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                }
+            });
+            
+            // Handle dropdown clicks on mobile - toggle expanded state
+            dropdowns.forEach(dropdown => {
+                const dropdownToggle = dropdown.querySelector('span');
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        // Only toggle the dropdown, don't close the menu
+                        dropdown.classList.toggle('expanded');
+                    }
+                });
+                
+                // Handle clicks on dropdown items - these should close the menu
+                const dropdownLinks = dropdown.querySelectorAll('.dropdown-content a');
+                dropdownLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        if (window.innerWidth <= 768) {
+                            e.preventDefault();
+                            const navMenu = document.querySelector('.nav-menu');
+                            const hamburger = document.querySelector('.hamburger');
+                            const body = document.body;
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            body.classList.remove('menu-open');
+                            dropdown.classList.remove('expanded');
+                            
+                            // Get the page to show from the onclick attribute
+                            const onclickAttr = link.getAttribute('onclick');
+                            if (onclickAttr) {
+                                const match = onclickAttr.match(/showPage\('([^']+)'\)/);
+                                if (match) {
+                                    showPage(match[1]);
+                                }
+                            }
+                        }
+                    });
+                });
+            });
+            
+            // Close menu when clicking outside (but don't interfere with dropdown behavior)
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    const navMenu = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    const navContainer = document.querySelector('.nav-container');
+                    const body = document.body;
+                    
+                    // Only close if clicking completely outside the nav area
+                    if (!navContainer.contains(e.target) && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        body.classList.remove('menu-open');
+                        
+                        // Also close any expanded dropdowns
+                        const expandedDropdowns = document.querySelectorAll('.dropdown.expanded');
+                        expandedDropdowns.forEach(dropdown => {
+                            dropdown.classList.remove('expanded');
+                        });
+                    }
+                }
+            });
+
+            // Logo click handler
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addEventListener('click', () => {showPage('home');
+                });
+            }
+            
+            // Start carousel auto-advance
+            startAutoSlide();
+
+            // iOS-specific: Ensure circle animations work on initial landscape load
+            if (window.orientation !== undefined && (window.orientation === 90 || window.orientation === -90)) {
+                // Device is in landscape mode on load
+                setTimeout(() => {
+                    const statsCircles = document.querySelector('.stats-circles');
+                    if (statsCircles) {
+                        const rect = statsCircles.getBoundingClientRect();
+                        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                        
+                        if (isVisible) {
+                            const circles = statsCircles.querySelectorAll('.circle-progress');
+                            circles.forEach(circle => {
+                                circle.classList.add('animated');
+                            });
+                        }
+                    }
+                }, 500);
+            }
+        });
+
+        // Photo carousel functionality
+        let slideIndex = 1;
+        let autoSlideInterval;
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                changeSlide(1);
+            }, 5000);
+        }
+
+        function stopAutoSlide() {
+            if (autoSlideInterval) {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = null;
+            }
+        }
+
+        function changeSlide(n) {
+            stopAutoSlide(); // Stop auto-scroll when user manually navigates
+            showSlide(slideIndex += n);
+            
+              // Restart auto-scroll after 10 seconds of inactivity
+            setTimeout(() => {
+                if (!autoSlideInterval) {
+                    startAutoSlide();
+                }
+            }, 10000);
+        }
+
+        function currentSlide(n) {
+            stopAutoSlide(); // Stop auto-scroll when user manually navigates
+            showSlide(slideIndex = n);
+            
+            // Restart auto-scroll after 10 seconds of inactivity
+            setTimeout(() => {
+                if (!autoSlideInterval) {
+                    startAutoSlide();
+                }
+            }, 10000);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.carousel-image');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            // Remove active from all dots
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current slide and activate corresponding dot
+            if (slides[slideIndex - 1]) {
+                slides[slideIndex - 1].classList.add('active');
+            }
+            if (dots[slideIndex - 1]) {
+                dots[slideIndex - 1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
+
