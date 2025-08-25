@@ -1597,25 +1597,31 @@
         <div class="nav-container">
             <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo" onclick="showPage('home')">
             <ul class="nav-menu">
-                <li class="nav-item" onclick="showPage('who-we-are')">Who We Are</li>
-                <li class="dropdown">
-                    <span class="nav-item">Offerings</span>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="event.preventDefault(); showPage('tutoring')">Tutoring</a>
-                        <a href="#" onclick="event.preventDefault(); showPage('lectures')">Lectures</a>
-                        <a href="#" onclick="event.preventDefault(); showPage('resources')">Resources</a>
-                    </div>
-                </li>
-                <li class="nav-item" onclick="showPage('advocacy')">Advocacy Goal</li>
-                <li class="dropdown">
-                    <span class="nav-item">How to Help?</span>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="event.preventDefault(); showPage('donate')">Donate</a>
-                        <a href="#" onclick="event.preventDefault(); showPage('donation-wall')">Donation Wall</a>
-                    </div>
-                </li>
-                <li class="nav-item" onclick="showPage('impact')">Our Impact</li>
-            </ul>
+    <li class="dropdown">
+        <span class="nav-item">Offerings</span>
+        <div class="dropdown-content">
+            <a href="#" onclick="event.preventDefault(); showPage('tutoring')">Tutoring</a>
+            <a href="#" onclick="event.preventDefault(); showPage('lectures')">Lectures</a>
+            <a href="#" onclick="event.preventDefault(); showPage('resources')">Resources</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <span class="nav-item">How to Help?</span>
+        <div class="dropdown-content">
+            <a href="#" onclick="event.preventDefault(); showPage('donate')">Donate</a>
+            <a href="#" onclick="event.preventDefault(); showPage('donation-wall')">Donation Wall</a>
+        </div>
+    </li>
+    <li class="nav-item" onclick="showPage('impact')">Our Impact</li>
+    <li class="dropdown">
+        <span class="nav-item">About</span>
+        <div class="dropdown-content">
+            <a href="#" onclick="event.preventDefault(); showPage('who-we-are')">Who We Are</a>
+            <a href="#" onclick="event.preventDefault(); showPage('advocacy')">Advocacy Goal</a>
+            <a href="#" onclick="event.preventDefault(); showPage('feedback')">Feedback</a>
+        </div>
+    </li>
+</ul>
             <div class="instagram-icon" onclick="window.open('https://www.instagram.com/tutorforallorg/', '_blank')">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
@@ -2090,7 +2096,43 @@
                 <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview" target="_blank" class="donate-button">Make a Donation Today</a>
             </div>
         </div>
+        <!-- Feedback Page -->
+<div id="feedback" class="page">
+    <h2>We Value Your Feedback</h2>
+    <p>Your feedback helps us improve our tutoring services and better serve our community. We appreciate you taking the time to share your thoughts and experiences with Tutor-For-All.</p>
+    
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">💭</div>
+            <h3>Share Your Thoughts</h3>
+            <p>Tell us about your experience with our tutoring services, what worked well, and what we can improve.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Rate Our Services</h3>
+            <p>Help other families by sharing how our tutoring programs have helped you or your child succeed academically.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Suggest Improvements</h3>
+            <p>Have ideas for new subjects, teaching methods, or program features? We'd love to hear your suggestions!</p>
+        </div>
+    </div>
 
+    <div style="text-align: center; margin: 3rem 0;">
+        <h3>Ready to Share Your Feedback?</h3>
+        <p style="margin-bottom: 2rem;">Your input makes a real difference in helping us serve students better. Click below to access our feedback form.</p>
+        <a href="https://forms.gle/SKB5harvtWaFzViWA" target="_blank" class="donate-button">Submit Feedback</a>
+    </div>
+
+    <div class="donation-container" style="margin-top: 3rem;">
+        <div class="full-width-card">
+            <div class="feature-icon">📝</div>
+            <h3>What We Ask About</h3>
+            <p>Our feedback form covers topics like tutoring quality, communication, scheduling, educational materials, and overall satisfaction. Your responses help us maintain high standards and continuously improve our services for all students and families.</p>
+        </div>
+    </div>
+</div>
     </div>
 
     <!-- Global Footer -->
