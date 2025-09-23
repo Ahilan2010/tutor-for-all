@@ -229,6 +229,63 @@
     box-shadow: 0 8px 25px rgba(188, 24, 136, 0.5) !important;
     background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
 }
+.monetary-donation-btn {
+    background: linear-gradient(135deg, #28a745, #20c997) !important;
+    color: white !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3) !important;
+    position: absolute !important;
+    right: 6rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    white-space: nowrap !important;
+}
+
+.monetary-donation-btn:hover {
+    transform: translateY(-50%) scale(1.1) !important;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5) !important;
+    background: linear-gradient(135deg, #218838, #1e7e34) !important;
+}
+
+.mobile-instagram-icon {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 12px !important;
+    background-color: rgba(188, 24, 136, 0.1) !important;
+    border: 2px solid rgba(188, 24, 136, 0.3) !important;
+    cursor: pointer !important;
+    margin-top: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+}
+
+.mobile-donation-btn {
+    background: linear-gradient(135deg, #28a745, #20c997) !important;
+    color: white !important;
+    padding: 1.5rem 2rem !important;
+    font-size: 1.3rem !important;
+    margin: 0 !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    display: block !important;
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3) !important;
+    margin-bottom: 1rem !important;
+}
         .dropdown::after {
             content: '';
             position: absolute;
@@ -822,264 +879,408 @@
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 12px 30px rgba(212, 165, 116, 0.4);
         }
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 0 1rem;
-    }
-    
-    .hamburger {
-        display: flex;
-    }
-}
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+                position: relative;
+            }
+            
+            .hamburger {
+                display: flex;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1005;
+            }
+            
+            /* Hide Instagram icon on mobile in navbar */
+            .instagram-icon {
+                display: none !important;
+            }
+            
+            /* Full screen mobile menu - starts BELOW navbar */
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: calc(32px + 70px + 2rem); /* Start below banner + navbar */
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100vw;
+                height: calc(100vh - 32px - 70px - 2rem); /* Fill remaining space */
+                height: calc(100dvh - 32px - 70px - 2rem);
+                background: rgba(238, 227, 227, 0.98);
+                backdrop-filter: blur(15px);
+                z-index: 1003;
+                
+                /* Scrollable menu content */
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                
+                /* Flex layout for menu items */
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                
+                /* Internal padding for menu items */
+                padding: 2rem 1rem 2rem 1rem;
+                gap: 1.5rem;
+                margin: 0;
+                border: 0;
+                box-sizing: border-box;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            /* Keep banner and navbar visible above menu */
+            .banner {
+                position: fixed;
+                z-index: 1004;
+            }
+            
+            .navbar {
+                position: fixed;
+                z-index: 1004;
+                background: rgba(238, 227, 227, 0.95);
+                backdrop-filter: blur(10px);
+            }
+            
+            /* Hamburger and logo stay on top */
+            .hamburger {
+                position: absolute;
+                z-index: 1005;
+            }
+            
+            .logo {
+                position: relative;
+                z-index: 1005;
+            }
+            
+            /* Menu items styling */
+            .nav-item, .dropdown > span {
+                width: 100%;
+                max-width: 400px;
+                padding: 1.5rem 2rem;
+                font-size: 1.3rem;
+                background: rgba(255, 255, 255, 0.9);
+                margin: 0;
+                border-radius: 12px;
+                text-align: center;
+                display: block;
+                min-width: unset;
+            }
+            
+            
 
-/* iOS Portrait Menu Fix - Cover Gap Below Navbar */
-@media (max-width: 768px) and (orientation: portrait) {
-    /* Menu covers area below navbar only */
-    .nav-menu {
-        display: none;
-        position: fixed !important;
-        top: calc(32px + 70px + 2rem) !important; /* Start below banner + navbar */
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        width: 100vw !important;
-        height: calc(100vh - 32px - 70px - 2rem) !important; /* Fill remaining space */
-        height: calc(100dvh - 32px - 70px - 2rem) !important;
-        background: rgba(238, 227, 227, 0.98) !important;
-        backdrop-filter: blur(15px) !important;
-        z-index: 1003 !important;
-        
-        /* Scrollable menu content */
-        overflow-y: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-        
-        /* Flex layout for menu items */
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-        
-        /* Internal padding for menu items */
-        padding: 2rem 1rem 2rem 1rem !important;
-        gap: 1.5rem !important;
-        margin: 0 !important;
-        border: 0 !important;
-        box-sizing: border-box !important;
-    }
-    
-    .nav-menu.active {
-        display: flex !important;
-    }
-    
-    /* Keep banner and navbar in their normal positions */
-    .banner {
-        position: fixed !important;
-        z-index: 1004 !important;
-    }
-    
-    .navbar {
-        position: fixed !important;
-        z-index: 1004 !important;
-        background: rgba(238, 227, 227, 0.95) !important;
-        backdrop-filter: blur(10px) !important;
-    }
-    
-    /* Hamburger and logo stay on top of everything */
-    .hamburger {
-        position: relative !important;
-        z-index: 1005 !important;
-    }
-    
-    .logo {
-        position: relative !important;
-        z-index: 1005 !important;
-    }
-    
-    /* Menu items styling */
-    .nav-item, .dropdown > span {
-        width: 100% !important;
-        max-width: 400px !important;
-        padding: 1.5rem 2rem !important;
-        font-size: 1.3rem !important;
-        background: rgba(255, 255, 255, 0.9) !important;
-        margin: 0 !important;
-        border-radius: 12px !important;
-        text-align: center !important;
-        display: block !important;
-        min-width: unset !important;
-    }
-    
-    .nav-menu .instagram-icon {
+            .mobile-instagram-icon {
     width: 60px !important;
     height: 60px !important;
-    max-width: 60px !important;
-    font-size: 1.5rem !important;
-    margin: 0 auto !important;
+    border-radius: 12px !important;
+    background-color: rgba(188, 24, 136, 0.1) !important;
+    border: 2px solid rgba(188, 24, 136, 0.3) !important;
+    cursor: pointer !important;
+    margin-top: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
 }
-    /* Dropdown specific styles */
-    .dropdown {
-        width: 100% !important;
-        max-width: 400px !important;
-        margin: 0 auto !important;
-    }
-    
-    .dropdown-content {
-        position: static !important;
-        background: rgba(255, 255, 255, 0.9) !important;
-        box-shadow: none !important;
-        border-radius: 0 0 12px 12px !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border: none !important;
-        transform: none !important;
-        width: 100% !important;
-        display: none !important;
-    }
-    
-    .dropdown.expanded .dropdown-content {
-        display: block !important;
-    }
-    
-    .dropdown.expanded > span {
-        border-radius: 12px 12px 0 0 !important;
-    }
-    
-    .dropdown-content a {
-        background: rgba(255, 255, 255, 0.9) !important;
-        padding: 1.2rem 1.5rem !important;
-        border-top: 1px solid rgba(212, 165, 116, 0.2) !important;
-        border-radius: 0 !important;
-        font-size: 1.1rem !important;
-        margin: 0 !important;
-    }
-    
-    .dropdown-content a:last-child {
-        border-radius: 0 0 12px 12px !important;
-    }
-    
-    /* Prevent body scroll when menu is open */
-    body.menu-open {
-        overflow: hidden !important;
-        position: fixed !important;
-        width: 100% !important;
-    }
-}
-
-/* iOS Specific Fixes */
-@supports (-webkit-touch-callout: none) {
-    @media (max-width: 768px) and (orientation: portrait) {
-        .nav-menu {
-            top: calc(32px + 70px + 2rem) !important;
-            height: calc(100vh - 32px - 70px - 2rem) !important;
-            height: calc(100dvh - 32px - 70px - 2rem) !important;
+            
+            /* Dropdown specific styles */
+            .dropdown {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .dropdown-content {
+                position: static;
+                background: rgba(255, 255, 255, 0.9);
+                box-shadow: none;
+                border-radius: 0 0 12px 12px;
+                padding: 0;
+                margin: 0;
+                border: none;
+                transform: none;
+                width: 100%;
+                display: none;
+            }
+            
+            .dropdown.expanded .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown.expanded > span {
+                border-radius: 12px 12px 0 0;
+            }
+            
+            .dropdown-content a {
+                background: rgba(255, 255, 255, 0.9);
+                padding: 1.2rem 1.5rem;
+                border-top: 1px solid rgba(212, 165, 116, 0.2);
+                border-radius: 0;
+                font-size: 1.1rem;
+                margin: 0;
+            }
+            
+            .dropdown-content a:last-child {
+                border-radius: 0 0 12px 12px;
+            }
+            
+            /* Prevent body scroll when menu is open, but keep navbar visible */
+            body.menu-open {
+                overflow: hidden;
+            }
+            
+            /* Fix content spacing */
+            .content {
+                padding: 20px;
+            }
+            
+            .page {
+                padding: 2rem;
+            }
+            
+            /* Fix hero content layout */
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .page-title h1 {
+                font-size: 2.5rem;
+            }
+            
+            /* Fix grade grid for mobile */
+            .grade-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0;
+            }
+            
+            /* Fix features grid */
+            .features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+            
+            /* Fix stats grid */
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 2rem auto;
+            }
+            
+            /* Fix mission section */
+            .mission-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            /* Fix footer */
+            .footer-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            /* Fix stats circles for mobile portrait */
+            .stats-circles {
+                flex-direction: column;
+                gap: 3rem;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 0 1rem;
+            }
+            
+            .stat-circle {
+                width: 100%;
+                max-width: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            .circle-container {
+                width: 180px;
+                height: 180px;
+                margin: 0 auto 1.5rem;
+            }
+            
+            .circle-svg {
+                width: 180px;
+                height: 180px;
+            }
+            
+            .circle-text {
+                font-size: 1.8rem;
+            }
+            
+            .stat-description {
+                font-size: 1rem;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            .problem-title {
+                font-size: 2rem;
+            }
         }
         
-        .nav-menu.active {
-            top: calc(32px + 70px + 2rem) !important;
-            height: calc(100vh - 32px - 70px - 2rem) !important;
-            height: calc(100dvh - 32px - 70px - 2rem) !important;
+        /* Mobile Portrait Specific - Move banner up and adjust spacing */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .banner {
+                padding: 0.3rem 0.5rem;
+                font-size: 0.75rem;
+                top: 0;
+            }
+            
+            .navbar {
+                top: 28px; /* Reduced from 32px */
+                padding: 0.5rem 1rem;
+            }
+            
+            .logo {
+                height: 60px;
+            }
+            
+            .content {
+                margin-top: 128px; /* Adjusted for smaller banner */
+            }
+            
+            /* Menu positioning for portrait mode */
+            .nav-menu {
+                top: calc(28px + 70px + 2rem); /* Adjusted for smaller banner */
+                height: calc(100vh - 28px - 70px - 2rem);
+                height: calc(100dvh - 28px - 70px - 2rem);
+                padding: 1.5rem 1rem 2rem 1rem; /* More space for scrolling */
+            }
+            
+            .nav-menu.active {
+                top: calc(28px + 70px + 2rem);
+                height: calc(100vh - 28px - 70px - 2rem);
+                height: calc(100dvh - 28px - 70px - 2rem);
+            }
         }
-    }
-}
-    
-/* ONLY ADD THIS - Replace the specific iOS portrait section around line 680 */
-
-@media (max-width: 768px) and (orientation: portrait) {
-    .banner {
-        padding: 0.4rem 0.5rem;
-        font-size: 0.8rem;
-    }
-    
-    .navbar {
-        top: 32px;
-        padding: 0.5rem 1rem;
-    }
-    
-    .logo {
-        height: 60px;
-    }
-    
-    .content {
-        margin-top: 132px;
-    }
-    
-    /* FIX: Menu covers gap completely */
-    .nav-menu {
-        top: 0 !important;
-        height: 100vh !important;
-        height: 100dvh !important;
-        background: rgba(238, 227, 227, 1) !important; /* Solid background - no transparency */
-        padding-top: calc(32px + 60px + 1rem) !important; /* Banner + navbar height */
-        overflow-y: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-    }
-    
-    .nav-menu.active {
-        top: 0 !important;
-        height: 100vh !important;
-        height: 100dvh !important;
-        background: rgba(238, 227, 227, 1) !important; /* Solid background - no transparency */
-        padding-top: calc(32px + 60px + 1rem) !important;
-        overflow-y: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-    }
-}
-
-/* Ensure menu covers everything behind navbar */
-@media (max-width: 768px) {
-    .nav-menu.active::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: calc(32px + 70px + 2rem); /* Cover navbar area */
-        background: rgba(238, 227, 227, 0.95);
-        z-index: -1;
-    }
-}
-
-
-@supports (-webkit-touch-callout: none) {
-    @media (max-width: 768px) and (orientation: portrait) {
-        .nav-menu {
-            top: 102px !important; /* 32px banner + 70px navbar */
-            padding-top: 1rem !important;
-            height: calc(100vh - 102px) !important;
-            max-height: calc(100vh - 102px) !important;
+        
+        /* Mobile Landscape Specific */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .nav-menu {
+                padding: 1rem 1rem 1rem 1rem;
+                gap: 1rem;
+                top: calc(32px + 60px + 1rem);
+                height: calc(100vh - 32px - 60px - 1rem);
+                height: calc(100dvh - 32px - 60px - 1rem);
+            }
+            
+            .nav-menu.active {
+                top: calc(32px + 60px + 1rem);
+                height: calc(100vh - 32px - 60px - 1rem);
+                height: calc(100dvh - 32px - 60px - 1rem);
+            }
+            
+            .nav-item, .dropdown > span {
+                padding: 1rem 1.5rem;
+                font-size: 1.1rem;
+            }
+            
+            .problem-section {
+                padding: 0.5rem 1rem;
+            }
+            
+            .problem-title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            
+            .stats-circles {
+                gap: 1.5rem;
+                padding: 0.5rem 1rem;
+            }
+            
+            .stat-circle {
+                padding: 0.5rem 0;
+            }
+            
+            .circle-container {
+                width: 140px;
+                height: 140px;
+                margin: 0 auto 1rem;
+            }
+            
+            .circle-svg {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .circle-text {
+                font-size: 1.4rem;
+            }
+            
+            .stat-description {
+                font-size: 0.9rem;
+                max-width: 500px;
+                padding: 0 1rem;
+            }
+            
+            .donate-section {
+                margin-top: 1rem;
+            }
+            
+            /* Fix landscape grid layouts */
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                margin: 1.5rem auto;
+            }
+            
+            .grade-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
         }
-
-        .nav-menu.active {
-            top: 102px !important;
-            padding-top: 1rem !important;
-            height: calc(100vh - 102px) !important;
-            max-height: calc(100vh - 102px) !important;
-            position: fixed !important;
+        
+        /* iOS Specific Fixes */
+        @supports (-webkit-touch-callout: none) {
+            @media (max-width: 768px) and (orientation: portrait) {
+                .nav-menu {
+                    top: calc(28px + 70px + 2rem);
+                    height: calc(100vh - 28px - 70px - 2rem);
+                    height: calc(100dvh - 28px - 70px - 2rem);
+                    padding-bottom: env(safe-area-inset-bottom, 20px);
+                }
+                
+                .nav-menu.active {
+                    top: calc(28px + 70px + 2rem);
+                    height: calc(100vh - 28px - 70px - 2rem);
+                    height: calc(100dvh - 28px - 70px - 2rem);
+                }
+            }
         }
-    }
-}
-
-
-/* iOS Specific Menu Fixes */
-
-@supports (-webkit-touch-callout: none) {
-    @media (max-width: 768px) and (orientation: portrait) {
-        .nav-menu {
-            top: 102px !important; /* 32px banner + 70px navbar */
-            padding-top: 1rem !important;
-            height: calc(100vh - 102px) !important;
-            max-height: calc(100vh - 102px) !important;
-        }
-
-        .nav-menu.active {
-            top: 102px !important;
-            padding-top: 1rem !important;
-            height: calc(100vh - 102px) !important;
-            max-height: calc(100vh - 102px) !important;
-            position: fixed !important;
-        }
-    }
-}
 
 
         
@@ -1449,7 +1650,6 @@
         <div class="nav-container">
             <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo" onclick="showPage('home')">
             <ul class="nav-menu">
-    <li class="nav-item" onclick="showPage('who-we-are')">Who We Are</li>
     <li class="dropdown">
         <span class="nav-item">Offerings</span>
         <div class="dropdown-content">
@@ -1458,36 +1658,33 @@
             <a href="#" onclick="event.preventDefault(); showPage('resources')">Resources</a>
         </div>
     </li>
-    <li class="nav-item" onclick="showPage('advocacy')">Advocacy Goal</li>
     <li class="dropdown">
-        <span class="nav-item">Help us!</span>
+        <span class="nav-item">How to Help?</span>
         <div class="dropdown-content">
             <a href="#" onclick="event.preventDefault(); showPage('donate')">Donate</a>
             <a href="#" onclick="event.preventDefault(); showPage('donation-wall')">Donation Wall</a>
         </div>
     </li>
     <li class="nav-item" onclick="showPage('impact')">Our Impact</li>
+    <li class="dropdown">
+        <span class="nav-item">About</span>
+        <div class="dropdown-content">
+            <a href="#" onclick="event.preventDefault(); showPage('who-we-are')">Who We Are</a>
+            <a href="#" onclick="event.preventDefault(); showPage('advocacy')">Advocacy Goal</a>
+            <a href="#" onclick="event.preventDefault(); showPage('feedback')">Feedback</a>
+        </div>
+    </li>
 </ul>
-<div class="instagram-icon" onclick="window.open('https://www.instagram.com/tutorforallorg/', '_blank')">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
-        <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
-        <circle cx="17.5" cy="6.5" r="1" fill="white"/>
-    </svg>
-</div>
-                <li class="nav-item" onclick="showPage('who-we-are')">Who We Are</li>
-                <li class="dropdown">
-                    <span class="nav-item">Offerings</span>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="event.preventDefault(); showPage('tutoring')">Tutoring</a>
-                        <a href="#" onclick="event.preventDefault(); showPage('lectures')">Lectures</a>
-                        <a href="#" onclick="event.preventDefault(); showPage('resources')">Resources</a>
-                    </div>
-                </li>
-                <li class="nav-item" onclick="showPage('advocacy')">Advocacy Goal</li>
-                <li class="nav-item" onclick="showPage('donate')">Donate</li>
-                <li class="nav-item" onclick="showPage('impact')">Our Impact</li>
-            </ul>
+            <div class="instagram-icon" onclick="window.open('https://www.instagram.com/tutorforallorg/', '_blank')">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" class="monetary-donation-btn">
+    💰 Donate
+</a>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
+                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+                </svg>
+            </div>
             <div class="hamburger" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
@@ -1641,7 +1838,7 @@
             <p style="text-align : center; margin-bottom: 2rem;">Click on your grade level to book a tutoring appointment:</p>
             
             <div class="grade-grid">
-                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                <div class="grade-card" onclick="window.open('https://calendar.app.google/XHu1gtmgyrLfd3YG6', '_blank')">
                     <div class="grade-icon">🎒</div>
                     <h3>Kindergarten Tutoring</h3>
                     <p><strong>Topics:</strong></p>
@@ -1651,7 +1848,7 @@
                         <li>Basic addition+subtraction</li>
                     </ul>
                 </div>
-                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                <div class="grade-card" onclick="window.open('https://calendar.app.google/XHu1gtmgyrLfd3YG6', '_blank')">
                     <div class="grade-icon">📝</div>
                     <h3>First Grade Tutoring</h3>
                     <p><strong>Topics:</strong></p>
@@ -1661,7 +1858,7 @@
                         <li>Measurement and data</li>
                     </ul>
                 </div>
-                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                <div class="grade-card" onclick="window.open('https://calendar.app.google/XHu1gtmgyrLfd3YG6', '_blank')">
                     <div class="grade-icon">✏️</div>
                     <h3>Second Grade Tutoring</h3>
                     <p><strong>Topics:</strong></p>
@@ -1671,7 +1868,7 @@
                         <li>Basic geometry</li>
                     </ul>
                 </div>
-                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                <div class="grade-card" onclick="window.open('https://calendar.app.google/XHu1gtmgyrLfd3YG6', '_blank')">
                     <div class="grade-icon">📐</div>
                     <h3>Third Grade Tutoring</h3>
                     <p><strong>Topics:</strong></p>
@@ -1681,7 +1878,7 @@
                         <li>Arithmetic patterns</li>
                     </ul>
                 </div>
-                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                <div class="grade-card" onclick="window.open('https://calendar.app.google/XHu1gtmgyrLfd3YG6', '_blank')">
                     <div class="grade-icon">🔬</div>
                     <h3>Fourth Grade Tutoring</h3>
                     <p><strong>Topics:</strong></p>
@@ -1691,7 +1888,7 @@
                         <li>Intro to decimals and angles</li>
                     </ul>
                 </div>
-                <div class="grade-card" onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3E7-dCoEw65Hminud9FiNW8q53aTvma-jdYv_gYEWHPcIt5-j_7AJA0kCJEcPA6sBswRuq3NVT', '_blank')">
+                <div class="grade-card" onclick="window.open('https://calendar.app.google/XHu1gtmgyrLfd3YG6', '_blank')">
                     <div class="grade-icon">🎓</div>
                     <h3>Fifth Grade Tutoring</h3>
                     <p><strong>Topics:</strong></p>
@@ -1763,6 +1960,7 @@
                     <h3>Supply Donations</h3>
                     <p>Donate educational materials, books, and supplies to enhance educational quality. Your contributions directly support our students' learning experience with essential resources like textbooks, workbooks, art supplies, and educational technology.</p>
                     <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview" target="_blank" class="donate-button">Donate Resources Now!</a>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" class="donate-button">Monetary Donations</a>
                     <a href="https://docs.google.com/document/d/1qltJk7tT9KZ-iD-24FCUcRo4UrD7YNHtgQXEjhlfaco/edit?tab=t.0" target="_blank" class="donate-button">What We Accept</a>
                 </div>
             </div>
@@ -1816,18 +2014,69 @@
                     <p>Partner Schools</p>
                 </div>
             </div>
-<!-- Donation Wall Page -->
+            
+            <h3 style="text-align: center;">Success Stories</h3>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Academic Achievement</h3>
+                    <p>Our students consistently show improved grades, test scores, and overall academic confidence after participating in our programs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>Confidence Building</h3>
+                    <p>Students report increased self-confidence and improved study habits that serve them well beyond their tutoring experience.</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center;"><br>Tutoring Sessions in Action</h3>
+            <div class="photo-carousel">
+                <div class="carousel-container">
+                    <img src="pic1.png" 
+                         alt="Reflection Session - Online Tutoring" class="carousel-image active">
+                    
+                    <img src="pic2.png" 
+                         alt="Math Fractions - Khan Academy Session" class="carousel-image">
+                    
+                    <img src="pic3.png" 
+                         alt="Interactive Learning Session" class="carousel-image">
+                    
+                    <img src="pic4.png"
+                         alt="Reflection & Review Session" class="carousel-image">
+                    
+                    <img src= "pic5.png"
+                         alt="One-on-One Tutoring Session" class="carousel-image">
+
+                    <img src= "pic6.png"
+                         alt="Virtual Meeting Session" class="carousel-image">
+
+                    <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="carousel-nav carousel-next" onclick="changeSlide(1)">❯</button>
+                    
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" onclick="currentSlide(1)"></span>
+                        <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                        <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                        <span class="carousel-dot" onclick="currentSlide(4)"></span>
+                        <span class="carousel-dot" onclick="currentSlide(5)"></span>
+                        <span class="carousel-dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Donation Wall Page -->
         <div id="donation-wall" class="page">
             <h2>Donation Wall</h2>
             <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">Thank you to all our amazing donors who make our mission possible!</p>
             
             <div class="donation-progress" style="max-width: 800px; margin: 0 auto 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(45, 55, 72, 0.05)); border-radius: 15px;">
-                <h3 style="text-align: center; margin-bottom: 1rem;">2024 Fundraising Goal</h3>
+                <h3 style="text-align: center; margin-bottom: 1rem;">2025-26 Fundraising Goal</h3>
                 <div style="background: #e0e0e0; height: 20px; border-radius: 10px; overflow: hidden; margin-bottom: 1rem;">
-                    <div style="background: linear-gradient(90deg, #F8D6B8, #B98C63); height: 100%; width: 45%; transition: width 2s ease;"></div>
+                    <div style="background: linear-gradient(90deg, #F8D6B8, #B98C63); height: 100%; width: 1%; transition: width 2s ease;"></div>
                 </div>
                 <div style="display: flex; justify-content: space-between; font-size: 1rem;">
-                    <span>$2,250 raised</span>
+                    <span>$50 raised</span>
                     <span style="font-weight: bold;">Goal: $5,000</span>
                 </div>
             </div>
@@ -1837,18 +2086,18 @@
                     <div class="feature-icon">🌟</div>
                     <h3>Recent Donations</h3>
                     <div style="text-align: left; margin-top: 1rem;">
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• Anonymous Donor - $500 (School Supplies)</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• Johnson Family - $150 (Learning Materials)</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• Local Business Partner - $300 (Technology Fund)</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• Community Group - $200 (Student Scholarships)</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• Kindred Stories- $50</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• Books Between Kids- 330 books</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• </p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">• </p>
                     </div>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>Impact Goals</h3>
                     <div style="text-align: left; margin-top: 1rem;">
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">✅ Reach 50 students (Achieved!)</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🔄 Secure $5,000 in funding (45% complete)</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">. Reach 50 students </p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🔄 Secure $5,000 in funding (1% complete)</p>
                         <p style="margin: 0.5rem 0; font-size: 0.95rem;">📚 Distribute 200 educational resources</p>
                         <p style="margin: 0.5rem 0; font-size: 0.95rem;">🏫 Partner with 10 local schools</p>
                     </div>
@@ -1857,25 +2106,25 @@
                     <div class="feature-icon">🤝</div>
                     <h3>Top Contributors</h3>
                     <div style="text-align: left; margin-top: 1rem;">
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🥇 Gold Level ($500+): 3 donors</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🥈 Silver Level ($200-$499): 8 donors</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🥉 Bronze Level ($50-$199): 15 donors</p>
-                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">❤️ Community Supporters: 25+ donors</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🥇 Gold Level ($500+): 0 donors</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🥈 Silver Level ($200-$499): 0 donors</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">🥉 Bronze Level ($50-$199): 1 donor: Kindred Stories</p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">❤️ Community Supporters: Books Between Kids </p>
                     </div>
                 </div>
             </div>
 
             <div class="stats">
                 <div class="stat-item">
-                    <div class="stat-number">$2,250</div>
+                    <div class="stat-number">$50</div>
                     <p>Total Raised</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">51</div>
+                    <div class="stat-number">$0</div>
                     <p>Individual Donors</p>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">75+</div>
+                    <div class="stat-number">20+</div>
                     <p>Students Impacted</p>
                 </div>
             </div>
@@ -1904,20 +2153,59 @@
                 <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview" target="_blank" class="donate-button">Make a Donation Today</a>
             </div>
         </div>
+        <!-- Feedback Page -->
+<div id="feedback" class="page">
+    <h2>We Value Your Feedback</h2>
+    <p>Your feedback helps us improve our tutoring services and better serve our community. We appreciate you taking the time to share your thoughts and experiences with Tutor-For-All.</p>
+    
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">💭</div>
+            <h3>Share Your Thoughts</h3>
+            <p>Tell us about your experience with our tutoring services, what worked well, and what we can improve.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Rate Our Services</h3>
+            <p>Help other families by sharing how our tutoring programs have helped you or your child succeed academically.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Suggest Improvements</h3>
+            <p>Have ideas for new subjects, teaching methods, or program features? We'd love to hear your suggestions!</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 3rem 0;">
+        <h3>Ready to Share Your Feedback?</h3>
+        <p style="margin-bottom: 2rem;">Your input makes a real difference in helping us serve students better. Click below to access our feedback form.</p>
+        <a href="https://forms.gle/SKB5harvtWaFzViWA" target="_blank" class="donate-button">Submit Feedback</a>
+    </div>
+
+    <div class="donation-container" style="margin-top: 3rem;">
+        <div class="full-width-card">
+            <div class="feature-icon">📝</div>
+            <h3>What We Ask About</h3>
+            <p>Our feedback form covers topics like tutoring quality, communication, scheduling, educational materials, and overall satisfaction. Your responses help us maintain high standards and continuously improve our services for all students and families.</p>
+        </div>
+    </div>
+</div>
+    </div>
+
     <!-- Global Footer -->
     <div class="footer">
         <div class="footer-content">
             <div class="footer-logo">Tutor-For-All</div>
             <div class="footer-text">
-    <p>Carnegie Vanguard High School</p>
-    <p>1501 Taft St, Houston, TX 77019</p>
-    <p>Contact Us At <span style="color: blue;">tutorforallnonprofit@gmail.com</span></p>
-    <p style="margin-top: 1rem;">
-        <a href="https://www.instagram.com/tutorforallorg/" target="_blank" style="color: #bc1888; text-decoration: none; font-weight: bold;">
-            📷 Follow us on Instagram @tutorforallorg
-        </a>
-    </p>
-</div>
+                <p>Carnegie Vanguard High School</p>
+                <p>1501 Taft St, Houston, TX 77019</p>
+                <p>Contact Us At <span style="color: blue;">tutorforallnonprofit@gmail.com</span></p>
+                <p style="margin-top: 1rem;">
+                    <a href="https://www.instagram.com/tutorforallorg/" target="_blank" style="color: #bc1888; text-decoration: none; font-weight: bold;">
+                        📷 Follow us on Instagram @tutorforallorg
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
 
@@ -1961,6 +2249,7 @@
                            (pageId === 'who-we-are' && item.textContent === 'Who We Are') ||
                            (pageId === 'advocacy' && item.textContent === 'Advocacy Goal') ||
                            (pageId === 'donate' && item.textContent === 'Donate') ||
+                           (pageId === 'donation-wall' && item.textContent === 'Donation Wall') ||
                            (pageId === 'impact' && item.textContent === 'Our Impact');
                 });
                 
@@ -1979,7 +2268,6 @@
                 body.classList.remove('menu-open');
             }
         }
-
         // Toggle mobile menu function
         function toggleMobileMenu() {
             const navMenu = document.querySelector('.nav-menu');
@@ -2030,7 +2318,21 @@
         }, observerOptions);
 
         // Initialize when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {// Create Instagram icon for mobile menu
+const navMenu = document.querySelector('.nav-menu');
+if (navMenu) {
+    const instagramIcon = document.createElement('div');
+    instagramIcon.className = 'mobile-instagram-icon';
+    instagramIcon.innerHTML = `
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="#bc1888"/>
+            <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="#bc1888"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="#bc1888"/>
+        </svg>
+    `;
+    instagramIcon.onclick = () => window.open('https://www.instagram.com/tutorforallorg/', '_blank');
+    navMenu.appendChild(instagramIcon);
+}
             // Observe the stats circles section
             const statsSection = document.querySelector('.stats-circles');
             if (statsSection) {
