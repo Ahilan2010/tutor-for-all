@@ -209,7 +209,7 @@
     border: 2px solid rgba(255, 255, 255, 0.3) !important;
     box-shadow: 0 4px 15px rgba(188, 24, 136, 0.3) !important;
     position: absolute !important;
-    right: 2rem !important;
+    right: 1rem !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
 }
@@ -228,6 +228,35 @@
     transform: translateY(-3px) scale(1.1) !important;
     box-shadow: 0 8px 25px rgba(188, 24, 136, 0.5) !important;
     background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.donate-nav-button {
+    background: linear-gradient(135deg, #48bb78, #38a169) !important;
+    color: white !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 8px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3) !important;
+    position: absolute !important;
+    right: 5rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+}
+
+.donate-nav-button:hover {
+    transform: translateY(-50%) scale(1.05) !important;
+    box-shadow: 0 8px 25px rgba(72, 187, 120, 0.5) !important;
+    background: linear-gradient(135deg, #38a169, #2f855a) !important;
+    color: white !important;
 }
         .dropdown::after {
             content: '';
@@ -842,6 +871,10 @@
             .instagram-icon {
                 display: none !important;
             }
+            /* Hide donate button on mobile in navbar */
+.donate-nav-button {
+    display: none !important;
+}
             
             /* Full screen mobile menu - starts BELOW navbar */
             .nav-menu {
@@ -916,7 +949,27 @@
                 display: block;
                 min-width: unset;
             }
-            
+            /* Add donate button to mobile menu */
+.nav-menu::before {
+    content: 'Donate';
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+    padding: 1.2rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    order: -1;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    flex-shrink: 0;
+}
             /* Add Instagram icon to mobile menu */
             .nav-menu::after {
                 content: '';
@@ -1622,6 +1675,9 @@
         </div>
     </li>
 </ul>
+<a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" class="donate-nav-button">
+    Donate
+</a>
             <div class="instagram-icon" onclick="window.open('https://www.instagram.com/tutorforallorg/', '_blank')">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
@@ -2370,6 +2426,21 @@ window.addEventListener('resize', function() {
                         dropdown.classList.toggle('expanded');
                     }
                 });
+                // Handle mobile donate button click
+const navMenu = document.querySelector('.nav-menu');
+if (navMenu) {
+    navMenu.addEventListener('click', function(e) {
+        if (e.target.textContent === 'Donate' && window.innerWidth <= 768) {
+            window.open('https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY', '_blank');
+            // Close mobile menu after clicking
+            const hamburger = document.querySelector('.hamburger');
+            const body = document.body;
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            body.classList.remove('menu-open');
+        }
+    });
+}
                 
                 // Handle clicks on dropdown items - these should close the menu
                 const dropdownLinks = dropdown.querySelectorAll('.dropdown-content a');
