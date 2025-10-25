@@ -342,6 +342,7 @@
             animation: fadeIn 0.5s ease-in;
             margin-bottom: 0;
             flex: 1;
+            overflow: visible;
         }
 
         .page.active {
@@ -613,6 +614,7 @@
             margin-top: 1rem;
             padding: 1rem 0;
             text-align: center;
+            overflow: visible;
         }
 
         .problem-title {
@@ -629,6 +631,7 @@
             max-width: 1200px;
             margin: 0 auto 3rem;
             gap: 2rem;
+            overflow: visible;
         }
 
         .stat-circle {
@@ -638,6 +641,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: visible;
         }
 
         .circle-container {
@@ -645,12 +649,14 @@
             width: 200px;
             height: 200px;
             margin: 0 auto 1.5rem;
+            overflow: visible;
         }
 
         .circle-svg {
             width: 200px;
             height: 200px;
             transform: rotate(-90deg);
+            overflow: visible;
         }
 
         .circle-background {
@@ -676,26 +682,16 @@
         .circle-text {
             position: absolute;
             top: 50%;
-            left: 60%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: bold;
             color: #d4a574;
+            font-size: 2.4rem;
+            pointer-events: none;
         }
-
-.circle-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #d4a574;
-    font-size: 2.4rem;
-    pointer-events: none;
-}
 
 .circle-number {
     font-size: 2.6rem;
@@ -851,6 +847,13 @@
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 12px 30px rgba(212, 165, 116, 0.4);
         }
+
+        /* Hide mobile-only buttons on all devices by default (desktop) */
+        .mobile-donate-button,
+        .mobile-instagram-button {
+            display: none !important;
+        }
+
         /* Mobile Styles */
         @media (max-width: 768px) {
             .nav-container {
@@ -890,18 +893,18 @@
                 background: rgba(238, 227, 227, 0.98);
                 backdrop-filter: blur(15px);
                 z-index: 1003;
-                
+
                 /* Scrollable menu content */
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
-                
+
                 /* Flex layout for menu items */
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                
-                /* Internal padding for menu items */
-                padding: 2rem 1rem 2rem 1rem;
+
+                /* Internal padding - minimal top, extra bottom for scrolling */
+                padding: 1rem 1rem 4rem 1rem;
                 gap: 1.5rem;
                 margin: 0;
                 border: 0;
@@ -949,45 +952,79 @@
                 display: block;
                 min-width: unset;
             }
-            /* Add donate button to mobile menu */
-.nav-menu::before {
-    content: 'Donate';
-    background: linear-gradient(135deg, #48bb78, #38a169);
-    color: white;
-    padding: 1.2rem 2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-radius: 12px;
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 1rem;
-    order: -1;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: block;
-    flex-shrink: 0;
-}
-            /* Add Instagram icon to mobile menu */
-            .nav-menu::after {
-                content: '';
-                background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z' fill='%23bc1888'/%3E%3Cpath d='M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z' fill='%23bc1888'/%3E%3Ccircle cx='17.5' cy='6.5' r='1' fill='%23bc1888'/%3E%3C/svg%3E");
-                background-size: 32px 32px;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 60px;
-                height: 60px;
-                border-radius: 12px;
-                background-color: rgba(188, 24, 136, 0.1);
-                border: 2px solid rgba(188, 24, 136, 0.3);
-                cursor: pointer;
-                margin-top: 1rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
+
+            /* Mobile menu donate button - real clickable element */
+            .mobile-donate-button {
+                background: linear-gradient(135deg, #48bb78, #38a169) !important;
+                color: white !important;
+                padding: 1.2rem 2rem !important;
+                font-size: 1.3rem !important;
+                font-weight: 600 !important;
+                border-radius: 12px !important;
+                text-align: center !important;
+                cursor: pointer !important;
+                margin: 0 !important;
+                order: -1 !important;
+                width: 100% !important;
+                max-width: 400px !important;
+                box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3) !important;
+                transition: all 0.3s ease !important;
+                text-decoration: none !important;
+                display: none !important;
+                flex-shrink: 0 !important;
+                border: 2px solid rgba(255, 255, 255, 0.3) !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            .mobile-donate-button:hover,
+            .mobile-donate-button:active {
+                transform: scale(1.05) !important;
+                box-shadow: 0 8px 25px rgba(72, 187, 120, 0.5) !important;
+                background: linear-gradient(135deg, #38a169, #2f855a) !important;
+                color: white !important;
+            }
+
+            /* Mobile menu Instagram button - real clickable element */
+            .mobile-instagram-button {
+                background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+                color: white !important;
+                width: 100% !important;
+                max-width: 400px !important;
+                padding: 1.2rem 2rem !important;
+                border-radius: 12px !important;
+                display: none !important;
+                align-items: center !important;
+                justify-content: center !important;
+                cursor: pointer !important;
+                transition: all 0.3s ease !important;
+                border: 2px solid rgba(255, 255, 255, 0.3) !important;
+                box-shadow: 0 4px 15px rgba(188, 24, 136, 0.3) !important;
+                flex-shrink: 0 !important;
+                margin: 0 !important;
+                text-decoration: none !important;
+                font-size: 1.3rem !important;
+                font-weight: 600 !important;
+            }
+
+            .mobile-instagram-button:hover,
+            .mobile-instagram-button:active {
+                transform: scale(1.05) !important;
+                box-shadow: 0 8px 25px rgba(188, 24, 136, 0.5) !important;
+                color: white !important;
+            }
+
+            .mobile-instagram-button svg {
+                width: 24px !important;
+                height: 24px !important;
+                margin-right: 0.5rem !important;
+                flex-shrink: 0 !important;
+            }
+
+            /* Show mobile buttons ONLY when menu is active on mobile */
+            .nav-menu.active .mobile-donate-button,
+            .nav-menu.active .mobile-instagram-button {
+                display: flex !important;
             }
             
             /* Dropdown specific styles */
@@ -1105,8 +1142,9 @@
                 justify-content: center;
                 width: 100%;
                 padding: 0 1rem;
+                overflow: visible;
             }
-            
+
             .stat-circle {
                 width: 100%;
                 max-width: 350px;
@@ -1116,21 +1154,39 @@
                 justify-content: center;
                 text-align: center;
                 margin: 0 auto;
+                overflow: visible;
             }
-            
+
             .circle-container {
                 width: 180px;
                 height: 180px;
                 margin: 0 auto 1.5rem;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: visible;
             }
-            
+
             .circle-svg {
                 width: 180px;
                 height: 180px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-90deg);
+                overflow: visible;
             }
-            
+
             .circle-text {
                 font-size: 1.8rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             
             .stat-description {
@@ -1172,7 +1228,7 @@
                 top: calc(28px + 70px + 2rem); /* Adjusted for smaller banner */
                 height: calc(100vh - 28px - 70px - 2rem);
                 height: calc(100dvh - 28px - 70px - 2rem);
-                padding: 1.5rem 1rem 2rem 1rem; /* More space for scrolling */
+                padding: 1rem 1rem 4rem 1rem; /* Minimal top padding, extra bottom for scrolling */
             }
             
             .nav-menu.active {
@@ -1185,7 +1241,7 @@
         /* Mobile Landscape Specific */
         @media (max-width: 768px) and (orientation: landscape) {
             .nav-menu {
-                padding: 1rem 1rem 1rem 1rem;
+                padding: 0.75rem 1rem 3rem 1rem; /* Minimal top, extra bottom for scrolling */
                 gap: 1rem;
                 top: calc(32px + 60px + 1rem);
                 height: calc(100vh - 32px - 60px - 1rem);
@@ -1215,25 +1271,44 @@
             .stats-circles {
                 gap: 1.5rem;
                 padding: 0.5rem 1rem;
+                overflow: visible;
             }
-            
+
             .stat-circle {
                 padding: 0.5rem 0;
+                overflow: visible;
             }
-            
+
             .circle-container {
                 width: 140px;
                 height: 140px;
                 margin: 0 auto 1rem;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: visible;
             }
-            
+
             .circle-svg {
                 width: 140px;
                 height: 140px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-90deg);
+                overflow: visible;
             }
-            
+
             .circle-text {
                 font-size: 1.4rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             
             .stat-description {
@@ -1322,8 +1397,8 @@
             /* Circle text - the core centering solution with iOS adjustment */
             .circle-text {
                 position: absolute !important;
-                top: 45% !important;
-                left: 60% !important;
+                top: 50% !important;
+                left: 50% !important;
                 transform: translate(-50%, -50%) !important;
                 -webkit-transform: translate(-50%, -50%) !important;
                 z-index: 10 !important;
@@ -1331,6 +1406,9 @@
                 color: #d4a574 !important;
                 font-weight: bold !important;
                 pointer-events: none !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
                 font-size: 2rem !important;
                 line-height: 1 !important;
                 text-align: center !important;
@@ -1388,13 +1466,16 @@
                 .circle-text {
                     font-size: 1.8rem !important;
                     position: absolute !important;
-                    top: 45% !important;
-                    left: 57% !important;
+                    top: 50% !important;
+                    left: 50% !important;
                     transform: translate(-50%, -50%) !important;
                     -webkit-transform: translate(-50%, -50%) !important;
                     z-index: 10 !important;
                     width: auto !important;
                     height: auto !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
                 }
                 
                 .stats-circles {
@@ -1490,12 +1571,12 @@
                     z-index: 1 !important;
                 }
                 
-                /* LANDSCAPE TEXT - MOVED 5% TO THE LEFT AS REQUESTED */
+                /* LANDSCAPE TEXT - Centered properly */
                 .circle-text {
-                    font-size: 1.6rem !important;
+                    font-size: 1.4rem !important;
                     position: absolute !important;
                     top: 50% !important;
-                    left: 53% !important; 
+                    left: 50% !important;
                     transform: translate(-50%, -50%) !important;
                     -webkit-transform: translate(-50%, -50%) !important;
                     z-index: 10 !important;
@@ -1650,6 +1731,11 @@
         <div class="nav-container">
             <img src="tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo" onclick="showPage('home')">
             <ul class="nav-menu">
+    <!-- Mobile-only Donate Button -->
+    <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" class="mobile-donate-button">
+        Donate
+    </a>
+
     <li class="dropdown">
         <span class="nav-item">Offerings</span>
         <div class="dropdown-content">
@@ -1674,6 +1760,16 @@
             <a href="#" onclick="event.preventDefault(); showPage('feedback')">Feedback</a>
         </div>
     </li>
+
+    <!-- Mobile-only Instagram Button -->
+    <a href="https://www.instagram.com/tutorforallorg/" target="_blank" class="mobile-instagram-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
+            <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+        </svg>
+        Instagram
+    </a>
 </ul>
 <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" class="donate-nav-button">
     Donate
@@ -2426,21 +2522,35 @@ window.addEventListener('resize', function() {
                         dropdown.classList.toggle('expanded');
                     }
                 });
-                // Handle mobile donate button click
-const navMenu = document.querySelector('.nav-menu');
-if (navMenu) {
-    navMenu.addEventListener('click', function(e) {
-        if (e.target.textContent === 'Donate' && window.innerWidth <= 768) {
-            window.open('https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY', '_blank');
-            // Close mobile menu after clicking
-            const hamburger = document.querySelector('.hamburger');
-            const body = document.body;
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-            body.classList.remove('menu-open');
-        }
-    });
-}
+                // Handle mobile donate and Instagram button clicks - close menu after clicking
+                const mobileDonateBtn = document.querySelector('.mobile-donate-button');
+                const mobileInstagramBtn = document.querySelector('.mobile-instagram-button');
+
+                if (mobileDonateBtn) {
+                    mobileDonateBtn.addEventListener('click', () => {
+                        if (window.innerWidth <= 768) {
+                            const navMenu = document.querySelector('.nav-menu');
+                            const hamburger = document.querySelector('.hamburger');
+                            const body = document.body;
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                }
+
+                if (mobileInstagramBtn) {
+                    mobileInstagramBtn.addEventListener('click', () => {
+                        if (window.innerWidth <= 768) {
+                            const navMenu = document.querySelector('.nav-menu');
+                            const hamburger = document.querySelector('.hamburger');
+                            const body = document.body;
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            body.classList.remove('menu-open');
+                        }
+                    });
+                }
                 
                 // Handle clicks on dropdown items - these should close the menu
                 const dropdownLinks = dropdown.querySelectorAll('.dropdown-content a');
