@@ -541,6 +541,12 @@
         const form = e.target;
         const submitBtn = form.querySelector('.form-submit-btn');
 
+        // Validate all required fields (inputs, selects, textareas, radios)
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
         // Validate subjects selection
         const subjects = form.querySelectorAll('input[name="subjects_needed"]:checked');
         if (subjects.length === 0) {
