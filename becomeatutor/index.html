@@ -611,19 +611,25 @@
     function toggleMobileMenu() {
         const navMenu = document.querySelector('.nav-menu');
         const hamburger = document.querySelector('.hamburger');
-        const body = document.body;
         const isOpen = navMenu.classList.toggle('active');
         hamburger.classList.toggle('active');
         hamburger.setAttribute('aria-expanded', isOpen);
+
+        let backdrop = document.getElementById('menuBackdrop');
+        if (!backdrop) {
+            backdrop = document.createElement('div');
+            backdrop.id = 'menuBackdrop';
+            backdrop.className = 'menu-backdrop';
+            backdrop.addEventListener('click', toggleMobileMenu);
+            document.body.appendChild(backdrop);
+        }
+
         if (isOpen) {
-            body.style.top = `-${window.scrollY}px`;
-            body.classList.add('menu-open');
+            backdrop.classList.add('active');
+            document.body.classList.add('menu-open');
         } else {
-            const scrollY = body.style.top;
-            body.classList.remove('menu-open');
-            body.style.position = '';
-            body.style.top = '';
-            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            backdrop.classList.remove('active');
+            document.body.classList.remove('menu-open');
         }
     }
 
@@ -631,15 +637,7 @@
         item.addEventListener('click', () => {
             const navMenu = document.querySelector('.nav-menu');
             if (navMenu.classList.contains('active')) {
-                const hamburger = document.querySelector('.hamburger');
-                const scrollY = document.body.style.top;
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-                document.body.classList.remove('menu-open');
-                document.body.style.position = '';
-                document.body.style.top = '';
-                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                toggleMobileMenu();
             }
         });
     });
