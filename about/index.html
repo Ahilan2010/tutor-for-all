@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tutor-For-All</title>
+    <meta name="description" content="Learn about Tutor-For-All's mission to provide free K–5 math and reading tutoring for low-income students in Houston. See our impact and book donation program.">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XP5SSKZVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2XP5SSKZVN');
+    </script>
+
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Sticker/Book Campaign card */
+        .campaign-card {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.18), rgba(185, 140, 99, 0.08));
+            border: 2px solid var(--accent);
+            border-radius: 18px;
+            padding: 2.25rem;
+            max-width: 850px;
+            margin: 2rem auto;
+        }
+        .campaign-card h3 {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        .campaign-card p {
+            color: var(--text-muted);
+            font-size: 0.97rem;
+            line-height: 1.75;
+            margin-bottom: 0.75rem;
+        }
+        .campaign-card p:last-child { margin-bottom: 0; }
+
+        /* Values list */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.75rem;
+        }
+        .value-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.25rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        .value-icon { font-size: 1.8rem; flex-shrink: 0; }
+        .value-item h4 { font-size: 1rem; font-weight: bold; color: var(--text); margin-bottom: 0.3rem; }
+        .value-item p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; }
+    </style>
+</head>
+<body>
+
+<!-- ===== BANNER ===== -->
+<div class="banner">
+    Recruiting tutors now! <a href="/becomeatutor">Join our team →</a>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo-link">
+            <img src="/tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo">
+        </a>
+        <ul class="nav-menu">
+            <a href="/donate" class="mobile-only mobile-donate">Donate</a>
+            <li><a href="/becomeatutor" class="nav-item">Become a Tutor</a></li>
+            <li><a href="/requesttutoring" class="nav-item">Request Tutoring</a></li>
+            <li><a href="/about" class="nav-item active">About</a></li>
+            <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="mobile-only mobile-instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
+                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+                </svg>
+                &nbsp;Instagram
+            </a>
+        </ul>
+        <div class="nav-actions">
+            <a href="/donate" class="btn-donate-nav">Donate</a>
+            <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="instagram-icon" aria-label="Follow us on Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
+                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<main class="content">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <h1>Our Mission</h1>
+        <p>
+            Tutor-For-All is a student-led nonprofit on a simple mission: make sure that a child's
+            zip code doesn't determine their academic future. We do this by connecting committed
+            high school tutors with K–5 students from low-income families — for free.
+        </p>
+    </div>
+
+    <!-- OUR STORY -->
+    <section class="mission-section">
+        <div class="mission-text">
+            <h2>Where We Started</h2>
+            <p>
+                Tutor-For-All was founded by students at Carnegie Vanguard High School in Houston, Texas —
+                a city where 80% of HISD students come from low-income households, and where access to
+                quality educational support is deeply unequal.
+            </p>
+            <p>
+                We saw it firsthand: families who wanted to help their children but couldn't afford the
+                $40–$80/hour price tag of private tutoring. Elementary students falling behind in math
+                and reading — not because they weren't capable, but because they didn't have access to
+                the support they needed early enough.
+            </p>
+            <p>
+                So we built Tutor-For-All to close that gap. We recruit high-performing high school students
+                to tutor younger kids in their own community. Everyone benefits — the student gets free
+                one-on-one support, and the tutor earns volunteer hours, leadership experience, and the
+                lasting satisfaction of making a real difference.
+            </p>
+        </div>
+        <div class="mission-image">
+            <img src="/graduation.jpeg" alt="Students at Carnegie Vanguard — the founding team of Tutor-For-All">
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- IMPACT METRICS -->
+    <section class="section">
+        <h2 class="section-title">Our Impact So Far</h2>
+        <p class="section-subtitle">We're just getting started — and the numbers are already moving.</p>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">350+</span>
+                <p>Books Donated</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <p>Students Tutored</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">K–5</span>
+                <p>Grades Supported</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">$0</span>
+                <p>Cost to Families</p>
+            </div>
+        </div>
+
+        <!-- Photo carousel -->
+        <h3 style="text-align:center; font-size:1.4rem; font-weight:bold; margin: 3rem 0 1.25rem;">
+            Tutoring Sessions in Action
+        </h3>
+        <div class="photo-carousel">
+            <div class="carousel-container">
+                <img src="/pic1.png" alt="Tutor-For-All — reflection session" class="carousel-image active">
+                <img src="/pic2.png" alt="Tutor-For-All — math fractions session" class="carousel-image">
+                <img src="/pic3.png" alt="Tutor-For-All — interactive learning" class="carousel-image">
+                <img src="/pic4.png" alt="Tutor-For-All — review session" class="carousel-image">
+                <img src="/pic5.png" alt="Tutor-For-All — one-on-one tutoring" class="carousel-image">
+                <img src="/pic6.png" alt="Tutor-For-All — virtual meeting" class="carousel-image">
+                <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)" aria-label="Previous">&#10094;</button>
+                <button class="carousel-nav carousel-next" onclick="changeSlide(1)" aria-label="Next">&#10095;</button>
+                <div class="carousel-dots">
+                    <button class="carousel-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+                    <button class="carousel-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
+                    <button class="carousel-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
+                    <button class="carousel-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
+                    <button class="carousel-dot" onclick="goToSlide(4)" aria-label="Slide 5"></button>
+                    <button class="carousel-dot" onclick="goToSlide(5)" aria-label="Slide 6"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- BOOK & STICKER CAMPAIGN -->
+    <section class="section">
+        <h2 class="section-title">The Book &amp; Sticker Campaign</h2>
+        <p class="section-subtitle">How we spread the word — and put books in the hands of children who need them.</p>
+
+        <div class="campaign-card">
+            <h3>📚 Spreading the Word Through Books</h3>
+            <p>
+                One of the ways Tutor-For-All reaches families is through our book and sticker distribution
+                campaign. We partner with local donors and organizations — like <strong>Books Between Kids</strong>
+                and <strong>Kindred Stories</strong> — to collect and distribute educational books directly
+                to low-income students in the Houston area.
+            </p>
+            <p>
+                Each donated book comes with a <strong>Tutor-For-All sticker</strong> that introduces
+                our organization to parents and students. It's a simple but powerful way to let families
+                know that free tutoring support is available to them — right when they're thinking about
+                their child's education.
+            </p>
+            <p>
+                To date, we've donated over <strong>350 books</strong> to children who might otherwise
+                have none at home. Research consistently shows that access to books at home is one of the
+                strongest predictors of reading success — so every book counts.
+            </p>
+            <p>
+                <strong>Want to donate books?</strong> Visit our <a href="/donate" style="color:var(--accent-dark); font-weight:bold;">Donate page</a>
+                to learn how to contribute educational materials.
+            </p>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- WHO WE SERVE -->
+    <section class="section">
+        <h2 class="section-title">Who We Serve</h2>
+        <p class="section-subtitle">Our program is specifically designed for families who have been left behind by the educational system.</p>
+        <div class="highlight-callout">
+            <h3>Exclusively Serving Low-Income Students</h3>
+            <p>
+                Every resource we have — every tutor session, every donated book, every hour of volunteer
+                time — goes directly to K–5 students from low-income families in the Greater Houston area.
+                We do not charge for any of our services, and we never will. Educational support should
+                not be a luxury. Every child deserves a fair shot.
+            </p>
+        </div>
+        <div class="values-grid">
+            <div class="value-item">
+                <span class="value-icon">🎯</span>
+                <div>
+                    <h4>Early Intervention</h4>
+                    <p>We focus on K–5 because gaps in early reading and math are the hardest to close if left unaddressed.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <span class="value-icon">🏙️</span>
+                <div>
+                    <h4>Community-Rooted</h4>
+                    <p>Our tutors are from the same Houston community as the students they serve. That shared experience matters.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <span class="value-icon">💯</span>
+                <div>
+                    <h4>Always Free</h4>
+                    <p>No hidden fees, no waitlists tied to ability to pay. If your family qualifies, we will find a way to help.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <span class="value-icon">🔒</span>
+                <div>
+                    <h4>Safe &amp; Accountable</h4>
+                    <p>All tutors meet strict academic standards. Sessions are conducted online, and parents/guardians are welcome to observe any session.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVOCACY -->
+    <section class="section" style="padding-top:0;">
+        <div class="highlight-callout">
+            <h3>Our Advocacy Goal</h3>
+            <p>
+                Beyond one-on-one tutoring, Tutor-For-All is committed to raising awareness about
+                educational inequity in Houston and beyond. We partner with schools, community organizations,
+                and local donors to expand our reach and advocate for systemic change. 80% of HISD
+                students come from low-income families — tutoring one child at a time is our contribution
+                to a much larger solution.
+            </p>
+            <p style="margin-top:0.75rem;">
+                <a href="https://docs.google.com/document/d/1h9qcaefI6_PN6ttIUEO25Cbnn9UeCq9QMLEcJehEIn4/edit" target="_blank" rel="noopener" style="color:var(--accent-dark); font-weight:bold;">Read our full advocacy statement →</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>Help Us Grow Our Impact</h2>
+        <p>Whether you want to tutor, request tutoring for your child, or support us with a donation — every action helps close the gap.</p>
+        <a href="/becomeatutor" class="btn-white">Become a Tutor</a>
+        <a href="/donate" class="btn-white-green">Make a Donation</a>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">Tutor-For-All</div>
+                <p>Free K–5 math and reading tutoring for low-income students in Houston, TX. A student-led nonprofit.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/becomeatutor">Become a Tutor</a></li>
+                    <li><a href="/requesttutoring">Request Tutoring</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Carnegie Vanguard High School<br>1501 Taft St, Houston, TX 77019</p>
+                <p style="margin-top:0.75rem;"><a href="mailto:tutorforallnonprofit@gmail.com">tutorforallnonprofit@gmail.com</a></p>
+                <p style="margin-top:0.5rem;"><a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener">@tutorforallorg</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tutor-For-All. A registered nonprofit organization.</p>
+            <p>Serving low-income students in the Greater Houston area.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMobileMenu() {
+        const navMenu = document.querySelector('.nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        const body = document.body;
+        const isOpen = navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        if (isOpen) {
+            body.style.top = `-${window.scrollY}px`;
+            body.classList.add('menu-open');
+        } else {
+            const scrollY = body.style.top;
+            body.classList.remove('menu-open');
+            body.style.position = '';
+            body.style.top = '';
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
+    }
+
+    document.querySelectorAll('.nav-item, .mobile-only').forEach(item => {
+        item.addEventListener('click', () => {
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu.classList.contains('active')) {
+                const hamburger = document.querySelector('.hamburger');
+                const scrollY = document.body.style.top;
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+                document.body.style.position = '';
+                document.body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        });
+    });
+
+    // Carousel
+    let currentSlideIndex = 0;
+    function changeSlide(dir) {
+        goToSlide(currentSlideIndex + dir);
+    }
+    function goToSlide(n) {
+        const images = document.querySelectorAll('.carousel-image');
+        const dots = document.querySelectorAll('.carousel-dot');
+        if (!images.length) return;
+        images[currentSlideIndex].classList.remove('active');
+        dots[currentSlideIndex].classList.remove('active');
+        currentSlideIndex = (n + images.length) % images.length;
+        images[currentSlideIndex].classList.add('active');
+        dots[currentSlideIndex].classList.add('active');
+    }
+    // Auto-advance every 5 seconds
+    setInterval(() => changeSlide(1), 5000);
+</script>
+</body>
+</html>
