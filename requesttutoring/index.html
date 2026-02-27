@@ -20,7 +20,7 @@
         gtag('config', 'G-2XP5SSKZVN');
     </script>
 
-    <link rel="stylesheet" href="/styles.css?v=2">
+    <link rel="stylesheet" href="/styles.css?v=3">
 </head>
 <body>
 
@@ -501,36 +501,27 @@
 
 <script>
     function toggleMobileMenu() {
-        const navMenu = document.querySelector('.nav-menu');
-        const hamburger = document.querySelector('.hamburger');
-        const isOpen = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        hamburger.setAttribute('aria-expanded', isOpen);
-
-        let backdrop = document.getElementById('menuBackdrop');
-        if (!backdrop) {
-            backdrop = document.createElement('div');
-            backdrop.id = 'menuBackdrop';
-            backdrop.className = 'menu-backdrop';
-            backdrop.addEventListener('click', toggleMobileMenu);
-            document.body.appendChild(backdrop);
+        const menu = document.querySelector('.nav-menu');
+        const btn  = document.querySelector('.hamburger');
+        const isOpen = menu.classList.toggle('active');
+        btn.classList.toggle('active');
+        btn.setAttribute('aria-expanded', isOpen);
+        let bd = document.getElementById('menuBackdrop');
+        if (!bd) {
+            bd = document.createElement('div');
+            bd.id = 'menuBackdrop';
+            bd.className = 'menu-backdrop';
+            bd.onclick = toggleMobileMenu;
+            document.body.appendChild(bd);
         }
-
-        if (isOpen) {
-            backdrop.classList.add('active');
-            document.body.classList.add('menu-open');
-        } else {
-            backdrop.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
+        bd.classList.toggle('active', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
     }
 
-    document.querySelectorAll('.nav-item, .mobile-only').forEach(item => {
-        item.addEventListener('click', () => {
-            const navMenu = document.querySelector('.nav-menu');
-            if (navMenu.classList.contains('active')) {
+    document.querySelectorAll('.nav-item, .mobile-only').forEach(function(el) {
+        el.addEventListener('click', function() {
+            if (document.querySelector('.nav-menu').classList.contains('active'))
                 toggleMobileMenu();
-            }
         });
     });
 

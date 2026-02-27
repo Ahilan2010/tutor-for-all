@@ -218,37 +218,34 @@ img {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    padding: 8px;
+    padding: 6px;
     flex-shrink: 0;
     z-index: 1006;
-    border-radius: 6px;
-    transition: background 0.2s ease;
-}
-
-.hamburger:hover {
-    background: rgba(0, 0, 0, 0.06);
 }
 
 .hamburger span {
     display: block;
-    width: 22px;
-    height: 2px;
+    width: 24px;
+    height: 3px;
     background: var(--text);
-    border-radius: 2px;
-    transition: all 0.25s ease;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
-.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-/* Backdrop overlay for mobile drawer */
+/* Backdrop — covers only the content area below the navbar */
 .menu-backdrop {
     display: none;
     position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1002;
+    top: var(--nav-offset);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1003;
     cursor: pointer;
 }
 
@@ -1470,116 +1467,84 @@ img {
         font-size: 0.78rem;
     }
 
-    /* Hamburger visible */
-    .hamburger {
-        display: flex;
-    }
+    /* Show hamburger, hide desktop nav actions */
+    .hamburger { display: flex; }
+    .nav-actions { display: none; }
 
-    /* Hide desktop actions */
-    .nav-actions {
-        display: none;
-    }
-
-    /* Right-side slide-in drawer */
+    /* Mobile drawer panel */
     .nav-menu {
-        display: flex;
+        display: none;
         position: fixed;
-        top: 0;
+        top: var(--nav-offset);
         right: 0;
-        left: auto;
         bottom: 0;
-        width: 280px;
-        max-width: 85vw;
-        background: #23282d;
+        width: 300px;
+        max-width: 88vw;
+        background: #22272e;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: stretch;
-        gap: 0;
-        padding: calc(var(--nav-offset) + 0.75rem) 0.75rem 2rem;
-        z-index: 1003;
+        gap: 0.4rem;
+        padding: 1.25rem 1rem 2rem;
+        z-index: 1004;
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        transform: translateX(100%);
-        visibility: hidden;
-        pointer-events: none;
-        transition: transform 0.25s ease, visibility 0s linear 0.25s;
-        box-shadow: -4px 0 24px rgba(0, 0, 0, 0.35);
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
     }
 
-    .nav-menu.active {
-        transform: translateX(0);
-        visibility: visible;
-        pointer-events: auto;
-        transition: transform 0.25s ease;
-    }
+    .nav-menu.active { display: flex; }
 
-    .nav-menu li {
-        width: 100%;
-    }
+    .nav-menu li { width: 100%; }
 
     .nav-item {
         width: 100%;
         text-align: left;
-        padding: 0.9rem 1rem;
-        font-size: 1rem;
+        padding: 0.85rem 1rem;
+        font-size: 1.05rem;
         display: block;
         border-radius: 8px;
-        color: rgba(255, 255, 255, 0.8);
-        border-color: rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.82);
+        border-color: rgba(255, 255, 255, 0.1);
         background: transparent;
     }
 
     .nav-item:hover,
     .nav-item.active {
-        background: rgba(212, 165, 116, 0.2);
+        background: rgba(212, 165, 116, 0.18);
         color: white;
         border-color: rgba(212, 165, 116, 0.3);
         transform: none;
         box-shadow: none;
     }
 
-    /* Mobile-only buttons */
+    /* Mobile-only buttons (Donate, Instagram) */
     .mobile-only {
         display: flex !important;
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 0.9rem 1rem;
+        gap: 0.4rem;
+        padding: 0.85rem 1rem;
         border-radius: 8px;
-        font-size: 1rem;
+        font-size: 1.05rem;
         font-weight: 600;
         text-decoration: none;
         text-align: center;
         cursor: pointer;
         border: 1px solid transparent;
-        color: rgba(255, 255, 255, 0.85);
+        color: white;
     }
 
     .mobile-donate {
-        background: rgba(72, 187, 120, 0.2);
-        border-color: rgba(72, 187, 120, 0.35);
+        background: rgba(72, 187, 120, 0.25);
+        border-color: rgba(72, 187, 120, 0.4);
         order: -1;
-    }
-
-    .mobile-donate:hover {
-        background: rgba(72, 187, 120, 0.35);
-        color: white;
     }
 
     .mobile-instagram {
         background: rgba(188, 24, 136, 0.2);
         border-color: rgba(188, 24, 136, 0.35);
-        gap: 0.5rem;
     }
 
-    .mobile-instagram:hover {
-        background: rgba(188, 24, 136, 0.35);
-        color: white;
-    }
-
-    body.menu-open {
-        overflow: hidden;
-    }
+    body.menu-open { overflow: hidden; }
 
     .content {
         margin-top: var(--nav-offset);
@@ -1754,9 +1719,3 @@ img {
     gap: 0.5rem;
 }
 
-/* iOS Fixes */
-@supports (-webkit-touch-callout: none) {
-    .nav-menu {
-        padding-bottom: max(2rem, env(safe-area-inset-bottom));
-    }
-}
