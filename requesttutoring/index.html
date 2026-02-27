@@ -20,7 +20,7 @@
         gtag('config', 'G-2XP5SSKZVN');
     </script>
 
-    <link rel="stylesheet" href="/styles.css?v=3">
+    <link rel="stylesheet" href="/styles.css?v=4">
 </head>
 <body>
 
@@ -64,6 +64,22 @@
         </div>
     </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-header">
+        <img src="/tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <nav class="mobile-menu-nav">
+        <a href="/donate" class="mobile-menu-item mobile-menu-donate">Donate</a>
+        <a href="/becomeatutor" class="mobile-menu-item">Become a Tutor</a>
+        <a href="/requesttutoring" class="mobile-menu-item">Request Tutoring</a>
+        <a href="/about" class="mobile-menu-item">About</a>
+        <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="mobile-menu-item mobile-menu-instagram">Instagram</a>
+    </nav>
+</div>
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop" onclick="toggleMobileMenu()"></div>
 
 <main class="content">
 
@@ -501,26 +517,20 @@
 
 <script>
     function toggleMobileMenu() {
-        const menu = document.querySelector('.nav-menu');
-        const btn  = document.querySelector('.hamburger');
-        const isOpen = menu.classList.toggle('active');
-        btn.classList.toggle('active');
+        const menu = document.getElementById('mobileMenu');
+        const btn = document.querySelector('.hamburger');
+        const backdrop = document.getElementById('mobileMenuBackdrop');
+        const isOpen = menu.classList.toggle('open');
+        btn.classList.toggle('active', isOpen);
         btn.setAttribute('aria-expanded', isOpen);
-        let bd = document.getElementById('menuBackdrop');
-        if (!bd) {
-            bd = document.createElement('div');
-            bd.id = 'menuBackdrop';
-            bd.className = 'menu-backdrop';
-            bd.onclick = toggleMobileMenu;
-            document.body.appendChild(bd);
-        }
-        bd.classList.toggle('active', isOpen);
+        backdrop.classList.toggle('active', isOpen);
         document.body.classList.toggle('menu-open', isOpen);
+        menu.setAttribute('aria-hidden', !isOpen);
     }
 
-    document.querySelectorAll('.nav-item, .mobile-only').forEach(function(el) {
+    document.querySelectorAll('.mobile-menu-item').forEach(function(el) {
         el.addEventListener('click', function() {
-            if (document.querySelector('.nav-menu').classList.contains('active'))
+            if (document.getElementById('mobileMenu').classList.contains('open'))
                 toggleMobileMenu();
         });
     });
