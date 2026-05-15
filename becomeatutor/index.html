@@ -605,6 +605,36 @@
                                   placeholder="Languages spoken, previous tutoring experience, etc."></textarea>
                     </div>
 
+                    <hr class="form-divider">
+                    <p style="font-weight:600; font-size:0.95rem; color:var(--text); margin-bottom:1.25rem;">Referral</p>
+
+                    <div class="form-group">
+                        <label class="form-label">Were you referred by a current Tutor-For-All tutor? <span class="req">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="radio" name="referred" value="Yes" id="referredYes" required onchange="toggleReferral()"> Yes
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="radio" name="referred" value="No" id="referredNo" onchange="toggleReferral()"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="referralNameGroup" style="display:none;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="referrerFirstName">Referrer's First Name <span class="req">*</span></label>
+                                <input type="text" id="referrerFirstName" name="referrer_first_name" class="form-input"
+                                       placeholder="e.g., Maria" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="referrerLastName">Referrer's Last Name <span class="req">*</span></label>
+                                <input type="text" id="referrerLastName" name="referrer_last_name" class="form-input"
+                                       placeholder="e.g., Gonzalez" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+
                     <button type="submit" class="form-submit-btn orange">
                         Submit My Application
                     </button>
@@ -675,6 +705,17 @@
                 toggleMobileMenu();
         });
     });
+
+    function toggleReferral() {
+        const isYes = document.getElementById('referredYes').checked;
+        const group = document.getElementById('referralNameGroup');
+        const first = document.getElementById('referrerFirstName');
+        const last = document.getElementById('referrerLastName');
+        group.style.display = isYes ? 'block' : 'none';
+        first.required = isYes;
+        last.required = isYes;
+        if (!isYes) { first.value = ''; last.value = ''; }
+    }
 
     // "Select all day" column toggles
     document.querySelectorAll('.select-col').forEach(master => {
