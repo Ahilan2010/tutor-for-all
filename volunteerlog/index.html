@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Hour Log | Tutor-For-All</title>
+    <meta name="description" content="Log your volunteer hours after every tutoring session with Tutor-For-All. Submit the form below to track your tutoring, referral, and family referral hours.">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XP5SSKZVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2XP5SSKZVN');
+    </script>
+
+    <link rel="stylesheet" href="/styles.css?v=4">
+    <style>
+        /* Hour type cards */
+        .hour-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.75rem;
+        }
+        .hour-card {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            padding: 1.75rem 1.5rem;
+            text-align: center;
+        }
+        .hour-card-icon {
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .hour-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+        .hour-card .hour-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.1;
+        }
+        .hour-card .hour-unit {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Requirements steps */
+        .req-steps {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.25rem;
+            counter-reset: step-counter;
+        }
+        .req-steps li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.9rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.97rem;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .req-steps li:last-child { border-bottom: none; }
+        .step-badge {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.1rem;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: #fff8e1;
+            border: 2px solid #f59e0b;
+            border-radius: 14px;
+            padding: 1.5rem 1.75rem;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .warning-box h4 {
+            color: #92400e;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .warning-box ul {
+            margin: 0.5rem 0 0 1.25rem;
+            color: #78350f;
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        /* Form embed wrapper */
+        .form-embed-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1.5px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+        }
+        .form-embed-wrapper iframe {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== BANNER ===== -->
+<div class="banner">
+    Log your hours after every session — it only takes a minute! &nbsp;<a href="#hour-log-form">Submit below →</a>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo-link">
+            <img src="/tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo">
+        </a>
+        <ul class="nav-menu">
+            <a href="/donate" class="mobile-only mobile-donate">Donate</a>
+            <li><a href="/becomeatutor" class="nav-item">Become a Tutor</a></li>
+            <li><a href="/requesttutoring" class="nav-item">Request Tutoring</a></li>
+            <li><a href="/about" class="nav-item">About</a></li>
+            <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="mobile-only mobile-instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
+                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+                </svg>
+                &nbsp;Instagram
+            </a>
+        </ul>
+        <div class="nav-actions">
+            <a href="/donate" class="btn-donate-nav">Donate</a>
+            <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="instagram-icon" aria-label="Follow us on Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
+                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-header">
+        <img src="/tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <nav class="mobile-menu-nav">
+        <a href="/donate" class="mobile-menu-item mobile-menu-donate">Donate</a>
+        <a href="/becomeatutor" class="mobile-menu-item">Become a Tutor</a>
+        <a href="/requesttutoring" class="mobile-menu-item">Request Tutoring</a>
+        <a href="/about" class="mobile-menu-item">About</a>
+        <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="mobile-menu-item mobile-menu-instagram">Instagram</a>
+    </nav>
+</div>
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop" onclick="toggleMobileMenu()"></div>
+
+<main class="content">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <h1>Volunteer Hour Log</h1>
+        <p>
+            Submit this form after every tutoring session or qualifying activity to keep your
+            volunteer hours up to date. Hours are verified by the Tutor-For-All team and
+            used for NHS, scholarships, and college applications.
+        </p>
+    </div>
+
+    <!-- HOUR BREAKDOWN -->
+    <section class="section">
+        <h2 class="section-title">How Hours Are Counted</h2>
+        <p class="section-subtitle">Different activities earn different amounts of verified volunteer hours.</p>
+        <div class="hour-cards">
+            <div class="hour-card">
+                <span class="hour-card-icon">📚</span>
+                <h3>Tutoring Session</h3>
+                <div class="hour-value">1</div>
+                <div class="hour-unit">hour per session</div>
+            </div>
+            <div class="hour-card">
+                <span class="hour-card-icon">🤝</span>
+                <h3>Tutor Referral</h3>
+                <div class="hour-value">2</div>
+                <div class="hour-unit">hours per verified referral</div>
+            </div>
+            <div class="hour-card">
+                <span class="hour-card-icon">👨‍👩‍👧</span>
+                <h3>Family Referral</h3>
+                <div class="hour-value">½</div>
+                <div class="hour-unit">hour (30 min) per verified referral</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- VERIFIED HOURS REQUIREMENTS -->
+    <section class="section">
+        <h2 class="section-title">Requirements for Verified Hours</h2>
+        <p class="section-subtitle">Referral hours are only credited once the person you referred meets the requirements below.</p>
+
+        <div class="requirements-box" style="max-width:780px; margin: 1.5rem auto;">
+            <h3>Tutor Referral — 2 Hours</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1rem;">
+                The tutor you referred must complete <strong>all four</strong> of the following steps:
+            </p>
+            <ul class="req-steps">
+                <li>
+                    <span class="step-badge">1</span>
+                    <div><strong>Complete onboarding</strong> — finish the full Tutor-For-All onboarding process and meet all program requirements.</div>
+                </li>
+                <li>
+                    <span class="step-badge">2</span>
+                    <div><strong>Pass qualifications review</strong> — submit and have their academic qualifications (GPA, grades) verified by the team.</div>
+                </li>
+                <li>
+                    <span class="step-badge">3</span>
+                    <div><strong>Flash Power qualifications</strong> — demonstrate their subject knowledge and readiness through the Flash Power qualification step.</div>
+                </li>
+                <li>
+                    <span class="step-badge">4</span>
+                    <div><strong>Complete at least one tutoring session</strong> — conduct their first full session with a matched student.</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="requirements-box" style="max-width:780px; margin: 1.5rem auto;">
+            <h3>Family Referral — 30 Minutes</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1rem;">
+                The family you referred must complete the following:
+            </p>
+            <ul class="req-steps">
+                <li>
+                    <span class="step-badge">1</span>
+                    <div><strong>Complete at least one tutoring session</strong> — the student must attend and complete their first session with their assigned tutor.</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- IMPORTANT NOTICE -->
+    <section class="section" style="padding-bottom:1.5rem;">
+        <h2 class="section-title">Important: Consistency Is Required</h2>
+        <div class="warning-box">
+            <h4>⚠️ Your hours cannot be verified if your submissions don't match</h4>
+            <ul>
+                <li>
+                    <strong>Full name</strong> — enter your first and last name <em>exactly the same way</em> every time you submit.
+                    Do not use nicknames, abbreviations, or alternate spellings across submissions.
+                </li>
+                <li>
+                    <strong>School name</strong> — type your school's name <em>identically</em> on every submission
+                    (e.g., always write "Carnegie Vanguard High School", never "Carnegie Vanguard HS" on one and
+                    "Carnegie Vanguard" on another). Inconsistent school names will delay or prevent hour verification.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- GOOGLE FORM EMBED -->
+    <section class="section" id="hour-log-form">
+        <h2 class="section-title">Submit Your Hour Log</h2>
+        <p class="section-subtitle">Fill out the form below after every qualifying session or activity. You can submit multiple times — once per session.</p>
+
+        <div class="form-embed-wrapper">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeRvoWLJZk0tt33A5DPEy2CXbX5WAf_cBkrTHA-CncZzFVxtw/viewform?embedded=true"
+                width="100%"
+                height="1200"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Volunteer Hour Log Form"
+                loading="lazy">
+                Loading form…
+            </iframe>
+        </div>
+
+        <p style="text-align:center; color:var(--text-muted); font-size:0.9rem; margin-top:1.25rem;">
+            Having trouble with the form?
+            <a href="https://forms.gle/Dh6PdXYh51WqkKuY9" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600;">Open it directly →</a>
+        </p>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="cta-section">
+        <h2>Questions About Your Hours?</h2>
+        <p>Reach out to the Tutor-For-All team and we'll help you sort it out.</p>
+        <a href="mailto:tutorforallnonprofit@gmail.com" class="btn-white">Email Us</a>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">Tutor-For-All</div>
+                <p>Free K–5 math and reading tutoring for low-income students in Houston, TX. A student-led nonprofit.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/becomeatutor">Become a Tutor</a></li>
+                    <li><a href="/requesttutoring">Request Tutoring</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                    <li><a href="/volunteerlog">Volunteer Hour Log</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Carnegie Vanguard High School<br>1501 Taft St, Houston, TX 77019</p>
+                <p style="margin-top:0.75rem;"><a href="mailto:tutorforallnonprofit@gmail.com">tutorforallnonprofit@gmail.com</a></p>
+                <p style="margin-top:0.5rem;"><a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener">@tutorforallorg</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tutor-For-All. A registered nonprofit organization.</p>
+            <p>Serving low-income students in the Greater Houston area.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const btn = document.querySelector('.hamburger');
+        const backdrop = document.getElementById('mobileMenuBackdrop');
+        const isOpen = menu.classList.toggle('open');
+        btn.classList.toggle('active', isOpen);
+        btn.setAttribute('aria-expanded', isOpen);
+        backdrop.classList.toggle('active', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+        menu.setAttribute('aria-hidden', !isOpen);
+    }
+
+    document.querySelectorAll('.mobile-menu-item').forEach(function(el) {
+        el.addEventListener('click', function() {
+            if (document.getElementById('mobileMenu').classList.contains('open'))
+                toggleMobileMenu();
+        });
+    });
+</script>
+</body>
+</html>
