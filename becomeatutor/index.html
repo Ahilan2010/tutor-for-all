@@ -608,6 +608,48 @@
                         </div>
                     </div>
 
+                    <hr class="form-divider">
+                    <p style="font-weight:600; font-size:0.95rem; color:var(--text); margin-bottom:1.25rem;">Language Skills</p>
+
+                    <div class="form-group">
+                        <label class="form-label">Are you fluent or conversational in any language besides English? <span class="req">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="radio" name="other_language" value="Yes" id="langYes" required onchange="toggleLanguageFields()"> Yes
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="radio" name="other_language" value="No" id="langNo" onchange="toggleLanguageFields()"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="languageDetailsGroup" style="display:none;">
+                        <div class="form-group">
+                            <label class="form-label" for="spokenLanguages">Which language(s)? <span class="req">*</span></label>
+                            <input type="text" id="spokenLanguages" name="spoken_languages" class="form-input"
+                                   placeholder="e.g., Spanish, Mandarin, Hindi...">
+                            <span class="form-hint">List all languages you are fluent or conversational in.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Would you be comfortable tutoring a student in that language if it helps the child learn better? <span class="req">*</span></label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="radio" name="language_tutoring_ok" value="Yes, comfortable"> Yes, I'm comfortable with that
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="radio" name="language_tutoring_ok" value="Open to it"> If needed / Open to it
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="radio" name="language_tutoring_ok" value="No, English only"> No, I'd prefer to tutor in English only
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="form-divider">
+                    <p style="font-weight:600; font-size:0.95rem; color:var(--text); margin-bottom:1.25rem;">About You</p>
+
                     <div class="form-group">
                         <label class="form-label" for="whyTutor">Why do you want to tutor? <span class="req">*</span></label>
                         <textarea id="whyTutor" name="why_tutor" class="form-textarea" rows="4"
@@ -618,7 +660,7 @@
                     <div class="form-group">
                         <label class="form-label" for="additionalInfo">Anything else we should know? <span style="color:var(--text-muted);font-weight:400;">(optional)</span></label>
                         <textarea id="additionalInfo" name="additional_info" class="form-textarea" rows="3"
-                                  placeholder="Languages spoken, previous tutoring experience, etc."></textarea>
+                                  placeholder="Previous tutoring experience, anything else relevant..."></textarea>
                     </div>
 
                     <hr class="form-divider">
@@ -744,6 +786,16 @@
             });
         });
     });
+
+    function toggleLanguageFields() {
+        const isYes = document.getElementById('langYes').checked;
+        const group = document.getElementById('languageDetailsGroup');
+        const langs = document.getElementById('spokenLanguages');
+        const tutorRadios = document.querySelectorAll('input[name="language_tutoring_ok"]');
+        group.style.display = isYes ? 'block' : 'none';
+        langs.required = isYes;
+        if (!isYes) { langs.value = ''; tutorRadios.forEach(r => r.checked = false); }
+    }
 
     async function handleTutorSubmit(e) {
         e.preventDefault();
