@@ -466,6 +466,44 @@
                                   placeholder="Any special needs, language preferences, or other information that would help us match your child with the right tutor..."></textarea>
                     </div>
 
+                    <hr class="form-divider">
+
+                    <!-- SECTION 5: Electronic Consent -->
+                    <p style="font-weight:700; font-size:1rem; color:var(--accent-dark); margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:0.04em;">
+                        5. Electronic Consent &amp; Accuracy Statement
+                    </p>
+
+                    <div style="background:#f9fafb; border:1.5px solid var(--border); border-radius:12px; padding:1.5rem 1.75rem; margin-bottom:1.5rem;">
+                        <p style="font-size:0.95rem; color:var(--text); line-height:1.75; margin-bottom:1rem;">
+                            By typing your full name below, you confirm that:
+                        </p>
+                        <ul style="font-size:0.93rem; color:var(--text-muted); line-height:1.9; margin:0 0 1rem 1.25rem;">
+                            <li>All information provided in this form — including household income, participation in assistance programs, and eligibility details — is <strong>accurate and truthful</strong> to the best of your knowledge.</li>
+                            <li>You understand that Tutor-For-All is a free program designed exclusively for low-income families, and that providing false information to access these services is a misuse of resources meant for families who need them most.</li>
+                            <li>You consent to Tutor-For-All using the information provided to assess eligibility, match your child with a tutor, and contact you about scheduling.</li>
+                        </ul>
+                        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1.25rem;">
+                            This constitutes your electronic signature and agreement to the above.
+                        </p>
+
+                        <div class="form-group" style="margin-bottom:0;">
+                            <label class="form-label" for="consentSignature">Type your full name as your electronic signature <span class="req">*</span></label>
+                            <input type="text" id="consentSignature" name="electronic_signature" class="form-input"
+                                   placeholder="e.g., Ana Rivera" required autocomplete="off"
+                                   style="max-width:400px;">
+                            <span class="form-hint">Must match the parent/guardian name entered above.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom:1.5rem;">
+                        <label class="checkbox-item" style="align-items:flex-start; gap:0.75rem;">
+                            <input type="checkbox" name="accuracy_confirmed" id="accuracyConfirmed" required style="margin-top:0.2rem; flex-shrink:0;">
+                            <span style="font-size:0.93rem; color:var(--text); line-height:1.65;">
+                                I confirm that all information I have provided is accurate and truthful. I understand that submitting false eligibility information takes resources away from families in genuine need.
+                            </span>
+                        </label>
+                    </div>
+
                     <button type="submit" class="form-submit-btn">
                         Request Free Tutoring
                     </button>
@@ -598,6 +636,18 @@
         const subjects = form.querySelectorAll('input[name="subjects_needed"]:checked');
         if (subjects.length === 0) {
             alert('Please select at least one subject your child needs help with.');
+            return;
+        }
+
+        // Validate consent signature
+        const sig = form.querySelector('#consentSignature').value.trim();
+        if (!sig) {
+            alert('Please type your full name as your electronic signature before submitting.');
+            form.querySelector('#consentSignature').focus();
+            return;
+        }
+        if (!form.querySelector('#accuracyConfirmed').checked) {
+            alert('Please check the accuracy confirmation box before submitting.');
             return;
         }
 
