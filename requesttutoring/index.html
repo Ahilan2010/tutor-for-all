@@ -158,19 +158,12 @@
                 </p>
 
                 <!--
-                    FORM SETUP: Uses Formspree (formspree.io) — no backend required.
-                    Steps to activate:
-                    1. Create a free Formspree account at https://formspree.io
-                    2. Create a new form and get your unique form ID.
-                    3. Replace "YOUR_STUDENT_FORM_ID" below with your actual form ID.
-                    Submissions are emailed to tutorforallnonprofit@gmail.com.
-                    Free plan handles 50 submissions/month.
                 -->
-                <form id="requestForm" action="https://formspree.io/f/mjgelyrg" method="POST"
+                <form id="requestForm" action="https://script.google.com/macros/s/AKfycbxe4Y0sGj276yPRm09u3SBpMslCAeUO1a0x2T0LiVQ2iWGQMb7Z7hnzCSpM1KqwFyGy/exec" method="POST"
                       novalidate onsubmit="handleRequestSubmit(event)">
 
-                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-                    <input type="hidden" name="_subject" value="New Tutoring Request — Tutor-For-All">
+                    <input type="hidden" name="form_type" value="student">
+                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
 
                     <!-- SECTION 1: Student Info -->
                     <p style="font-weight:700; font-size:1rem; color:var(--accent-dark); margin-bottom:1.25rem; text-transform:uppercase; letter-spacing:0.04em;">
@@ -658,8 +651,7 @@
             const data = new FormData(form);
             const response = await fetch(form.action, {
                 method: 'POST',
-                body: data,
-                headers: { 'Accept': 'application/json' }
+                body: data
             });
             if (response.ok) {
                 document.getElementById('requestFormCard').style.display = 'none';

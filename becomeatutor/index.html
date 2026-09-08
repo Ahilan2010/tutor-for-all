@@ -401,20 +401,12 @@
                 </p>
 
                 <!--
-                    FORM SETUP: This form uses Formspree (formspree.io) to send submissions
-                    to your email. Steps to activate:
-                    1. Go to https://formspree.io and create a free account.
-                    2. Create a new form and get your unique form ID (e.g., "xabcdefg").
-                    3. Replace "YOUR_TUTOR_FORM_ID" below with your actual form ID.
-                    Free plan: 50 submissions/month. Submissions go to tutorforallnonprofit@gmail.com.
                 -->
-                <form id="tutorForm" action="https://formspree.io/f/xvzblkaj" method="POST"
+                <form id="tutorForm" action="https://script.google.com/macros/s/AKfycbxe4Y0sGj276yPRm09u3SBpMslCAeUO1a0x2T0LiVQ2iWGQMb7Z7hnzCSpM1KqwFyGy/exec" method="POST"
                       novalidate onsubmit="handleTutorSubmit(event)">
 
-                    <!-- Honeypot spam protection -->
-                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-                    <!-- Redirect after Formspree submission (fallback) -->
-                    <input type="hidden" name="_subject" value="New Tutor Application — Tutor-For-All">
+                    <input type="hidden" name="form_type" value="tutor">
+                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
 
                     <div class="form-row">
                         <div class="form-group">
@@ -994,8 +986,7 @@
             const data = new FormData(form);
             const response = await fetch(form.action, {
                 method: 'POST',
-                body: data,
-                headers: { 'Accept': 'application/json' }
+                body: data
             });
             if (response.ok) {
                 document.getElementById('tutorFormCard').style.display = 'none';
