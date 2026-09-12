@@ -31,6 +31,17 @@
     </script>
 
     <link rel="stylesheet" href="/styles.css?v=4">
+    <style>
+    .avail-scroll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--border);border-radius:8px;}
+    .avail-table{border-collapse:collapse;min-width:520px;width:100%;font-size:0.83rem;}
+    .avail-table th{padding:8px 4px;text-align:center;color:var(--text-muted);font-weight:600;border-bottom:2px solid var(--border);background:var(--surface,#f9fafb);white-space:nowrap;}
+    .avail-table th.avail-time-col{text-align:left;padding-left:10px;min-width:82px;}
+    .avail-table td{padding:4px 0;text-align:center;border-bottom:1px solid var(--border);}
+    .avail-table td.avail-time-lbl{padding:5px 10px;text-align:left;color:var(--text-muted);font-size:0.8rem;font-weight:500;white-space:nowrap;}
+    .avail-table tr:nth-child(even){background:rgba(0,0,0,0.025);}
+    .avail-table label{display:block;cursor:pointer;padding:5px 0;}
+    .avail-table input[type="checkbox"]{cursor:pointer;width:16px;height:16px;accent-color:var(--accent,#276749);}
+    </style>
 </head>
 <body>
 
@@ -328,13 +339,141 @@
                         </div>
                     </div>
 
-                    <!-- Open-ended availability -->
-                    <div class="form-group">
-                        <label class="form-label" for="availability">When Is Your Child Typically Available? <span class="req">*</span></label>
-                        <textarea id="availability" name="availability" class="form-textarea" rows="3"
-                                  placeholder="e.g., Weekday afternoons after 3 pm, or Saturday mornings between 9 am–12 pm..."
-                                  required></textarea>
-                        <span class="form-hint">Include the days of the week and approximate times that work best. Each session is ~1 hour.</span>
+                    <!-- Availability checkbox grid -->
+                    <div class="form-group" id="availabilityGroup">
+                        <label class="form-label">When is your child available? <span class="req">*</span></label>
+                        <p style="font-size:0.875rem;color:var(--text-muted);margin:-0.25rem 0 0.75rem;line-height:1.55;">
+                            Check every time that works — the more you check, the faster we can match you with a tutor.
+                        </p>
+                        <div class="avail-scroll-wrap">
+                            <table class="avail-table">
+                                <thead>
+                                    <tr>
+                                        <th class="avail-time-col" scope="col">Time</th>
+                                        <th scope="col">Mon</th>
+                                        <th scope="col">Tue</th>
+                                        <th scope="col">Wed</th>
+                                        <th scope="col">Thu</th>
+                                        <th scope="col">Fri</th>
+                                        <th scope="col">Sat</th>
+                                        <th scope="col">Sun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="avail-time-lbl">9–10am</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 9:00–10:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 9:00–10:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 9:00–10:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 9:00–10:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 9:00–10:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 9:00–10:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 9:00–10:00am"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">10–11am</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 10:00–11:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 10:00–11:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 10:00–11:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 10:00–11:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 10:00–11:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 10:00–11:00am"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 10:00–11:00am"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">11am–12pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 11:00am–12:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 11:00am–12:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 11:00am–12:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 11:00am–12:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 11:00am–12:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 11:00am–12:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 11:00am–12:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">12–1pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 12:00–1:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 12:00–1:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 12:00–1:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 12:00–1:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 12:00–1:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 12:00–1:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 12:00–1:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">1–2pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 1:00–2:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 1:00–2:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 1:00–2:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 1:00–2:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 1:00–2:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 1:00–2:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 1:00–2:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">2–3pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 2:00–3:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 2:00–3:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 2:00–3:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 2:00–3:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 2:00–3:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 2:00–3:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 2:00–3:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">3–4pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 3:00–4:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 3:00–4:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 3:00–4:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 3:00–4:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 3:00–4:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 3:00–4:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 3:00–4:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">4–5pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 4:00–5:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 4:00–5:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 4:00–5:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 4:00–5:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 4:00–5:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 4:00–5:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 4:00–5:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">5–6pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 5:00–6:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 5:00–6:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 5:00–6:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 5:00–6:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 5:00–6:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 5:00–6:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 5:00–6:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">6–7pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 6:00–7:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 6:00–7:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 6:00–7:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 6:00–7:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 6:00–7:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 6:00–7:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 6:00–7:00pm"></label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="avail-time-lbl">7–8pm</td>
+                                        <td><label><input type="checkbox" name="availability" value="Mon 7:00–8:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Tue 7:00–8:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Wed 7:00–8:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Thu 7:00–8:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Fri 7:00–8:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sat 7:00–8:00pm"></label></td>
+                                        <td><label><input type="checkbox" name="availability" value="Sun 7:00–8:00pm"></label></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <span class="form-hint">Select all that could work. Each session is approximately 1 hour.</span>
                     </div>
 
                     <div class="form-row">
@@ -629,6 +768,14 @@
         const subjects = form.querySelectorAll('input[name="subjects_needed"]:checked');
         if (subjects.length === 0) {
             alert('Please select at least one subject your child needs help with.');
+            return;
+        }
+
+        // Validate availability
+        const availSlots = form.querySelectorAll('input[name="availability"]:checked');
+        if (availSlots.length === 0) {
+            alert('Please select at least one availability time slot.');
+            document.getElementById('availabilityGroup').scrollIntoView({ behavior: 'smooth', block: 'center' });
             return;
         }
 
