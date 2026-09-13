@@ -551,22 +551,51 @@
                             <label class="form-label" for="tutorTimezone">What is your local time zone? <span class="req">*</span></label>
                             <select id="tutorTimezone" name="timezone" class="form-select" required onchange="toggleTutorTimezoneOther()">
                                 <option value="" disabled selected>Select your time zone</option>
-                                <option value="US — Eastern (ET)">US — Eastern (ET)</option>
-                                <option value="US — Central (CT) — same as Houston">US — Central (CT) — same as Houston</option>
-                                <option value="US — Mountain (MT)">US — Mountain (MT)</option>
-                                <option value="US — Pacific (PT)">US — Pacific (PT)</option>
-                                <option value="US — Alaska (AKT)">US — Alaska (AKT)</option>
-                                <option value="US — Hawaii (HST)">US — Hawaii (HST)</option>
-                                <option value="West Africa (WAT) — Nigeria, Ghana +1">West Africa (WAT) — Nigeria, Ghana +1</option>
-                                <option value="Central Africa (CAT) — +2">Central Africa (CAT) — +2</option>
-                                <option value="East Africa (EAT) — Kenya +3">East Africa (EAT) — Kenya +3</option>
-                                <option value="Brazil (BRT) — -3">Brazil (BRT) — -3</option>
-                                <option value="Colombia / Peru (COT) — -5">Colombia / Peru (COT) — -5</option>
-                                <option value="United Kingdom (GMT/BST)">United Kingdom (GMT/BST)</option>
-                                <option value="Central Europe (CET)">Central Europe (CET)</option>
-                                <option value="India (IST) — +5:30">India (IST) — +5:30</option>
-                                <option value="Philippines (PHT) — +8">Philippines (PHT) — +8</option>
-                                <option value="Other — I will note it below">Other — I will note it below</option>
+                                <optgroup label="United States">
+                                    <option value="US – Eastern (ET)">US – Eastern (ET)</option>
+                                    <option value="US – Central (CT) – same as Houston">US – Central (CT) – same as Houston</option>
+                                    <option value="US – Mountain (MT)">US – Mountain (MT)</option>
+                                    <option value="US – Pacific (PT)">US – Pacific (PT)</option>
+                                    <option value="US – Alaska (AKT)">US – Alaska (AKT)</option>
+                                    <option value="US – Hawaii (HST)">US – Hawaii (HST)</option>
+                                </optgroup>
+                                <optgroup label="Americas">
+                                    <option value="Canada – see US zones above" disabled>Canada – see US zones above</option>
+                                    <option value="Mexico City (CST) – -6">Mexico City (CST) – -6</option>
+                                    <option value="Colombia / Peru (COT) – -5">Colombia / Peru (COT) – -5</option>
+                                    <option value="Brazil (BRT) – -3">Brazil (BRT) – -3</option>
+                                    <option value="Argentina (ART) – -3">Argentina (ART) – -3</option>
+                                    <option value="Chile (CLT)">Chile (CLT)</option>
+                                </optgroup>
+                                <optgroup label="Africa">
+                                    <option value="Morocco (WET)">Morocco (WET)</option>
+                                    <option value="West Africa (WAT) – Nigeria, Ghana +1">West Africa (WAT) – Nigeria, Ghana +1</option>
+                                    <option value="Central Africa (CAT) – +2">Central Africa (CAT) – +2</option>
+                                    <option value="South Africa (SAST) – +2">South Africa (SAST) – +2</option>
+                                    <option value="Egypt (EET) – +2">Egypt (EET) – +2</option>
+                                    <option value="East Africa (EAT) – Kenya +3">East Africa (EAT) – Kenya +3</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                    <option value="United Kingdom (GMT/BST)">United Kingdom (GMT/BST)</option>
+                                    <option value="Spain / France (CET)">Spain / France (CET)</option>
+                                    <option value="Central Europe (CET)">Central Europe (CET)</option>
+                                    <option value="Eastern Europe (EET)">Eastern Europe (EET)</option>
+                                </optgroup>
+                                <optgroup label="Asia &amp; Pacific">
+                                    <option value="Gulf (GST) – +4">Gulf (GST) – +4</option>
+                                    <option value="Pakistan (PKT) – +5">Pakistan (PKT) – +5</option>
+                                    <option value="India (IST) – +5:30">India (IST) – +5:30</option>
+                                    <option value="Bangladesh (BST) – +6">Bangladesh (BST) – +6</option>
+                                    <option value="Indonesia – Jakarta (WIB) +7">Indonesia – Jakarta (WIB) +7</option>
+                                    <option value="China / Singapore (+8)">China / Singapore (+8)</option>
+                                    <option value="Philippines (PHT) – +8">Philippines (PHT) – +8</option>
+                                    <option value="Japan / Korea (+9)">Japan / Korea (+9)</option>
+                                    <option value="Eastern Australia (AET)">Eastern Australia (AET)</option>
+                                    <option value="New Zealand (NZT)">New Zealand (NZT)</option>
+                                </optgroup>
+                                <optgroup label="Not listed">
+                                    <option value="Other – I will note it below">Other – I will note it below</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
@@ -963,7 +992,7 @@
     function toggleTutorTimezoneOther() {
         const sel = document.getElementById('tutorTimezone');
         const group = document.getElementById('tutorTimezoneOtherGroup');
-        group.style.display = (sel.value === 'Other — I will note it below') ? 'block' : 'none';
+        group.style.display = (sel.value === 'Other – I will note it below') ? 'block' : 'none';
     }
 
     function toggleLanguageFields() {
