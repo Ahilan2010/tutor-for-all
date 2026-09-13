@@ -317,15 +317,54 @@
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label class="form-label" for="studentTimezone">Time Zone <span class="req">*</span></label>
-                            <select id="studentTimezone" name="timezone" class="form-select" required>
-                                <option value="" disabled selected>Select your time zone</option>
-                                <option value="Central Time (CT)" selected>Central Time — CT (Houston, TX)</option>
-                                <option value="Eastern Time (ET)">Eastern Time — ET</option>
-                                <option value="Mountain Time (MT)">Mountain Time — MT</option>
-                                <option value="Pacific Time (PT)">Pacific Time — PT</option>
+                            <label class="form-label" for="studentCountry">What country are you in? <span class="req">*</span></label>
+                            <select id="studentCountry" name="country" class="form-select" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="United States">United States</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="India">India</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Canada">Canada</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label class="form-label" for="studentTimezone">What is your local time zone? <span class="req">*</span></label>
+                            <select id="studentTimezone" name="timezone" class="form-select" required onchange="toggleStudentTimezoneOther()">
+                                <option value="" disabled selected>Select your time zone</option>
+                                <option value="US — Eastern (ET)">US — Eastern (ET)</option>
+                                <option value="US — Central (CT) — same as Houston">US — Central (CT) — same as Houston</option>
+                                <option value="US — Mountain (MT)">US — Mountain (MT)</option>
+                                <option value="US — Pacific (PT)">US — Pacific (PT)</option>
+                                <option value="US — Alaska (AKT)">US — Alaska (AKT)</option>
+                                <option value="US — Hawaii (HST)">US — Hawaii (HST)</option>
+                                <option value="West Africa (WAT) — Nigeria, Ghana +1">West Africa (WAT) — Nigeria, Ghana +1</option>
+                                <option value="Central Africa (CAT) — +2">Central Africa (CAT) — +2</option>
+                                <option value="East Africa (EAT) — Kenya +3">East Africa (EAT) — Kenya +3</option>
+                                <option value="Brazil (BRT) — -3">Brazil (BRT) — -3</option>
+                                <option value="Colombia / Peru (COT) — -5">Colombia / Peru (COT) — -5</option>
+                                <option value="United Kingdom (GMT/BST)">United Kingdom (GMT/BST)</option>
+                                <option value="Central Europe (CET)">Central Europe (CET)</option>
+                                <option value="India (IST) — +5:30">India (IST) — +5:30</option>
+                                <option value="Philippines (PHT) — +8">Philippines (PHT) — +8</option>
+                                <option value="Other — I will note it below">Other — I will note it below</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row" id="studentTimezoneOtherGroup" style="display:none;">
+                        <div class="form-group">
+                            <label class="form-label" for="studentTimezoneOther">If you chose Other, which time zone?</label>
+                            <input type="text" id="studentTimezoneOther" name="timezone_other" class="form-input"
+                                   placeholder="e.g., Japan Standard Time (JST), +9">
+                        </div>
+                    </div>
+                    <div class="form-row">
                         <div class="form-group">
                             <label class="form-label" for="internetAccess">Internet &amp; Device Access <span class="req">*</span></label>
                             <select id="internetAccess" name="internet_device_access" class="form-select" required>
@@ -342,9 +381,15 @@
                     <!-- Availability checkbox grid -->
                     <div class="form-group" id="availabilityGroup">
                         <label class="form-label">When is your child available? <span class="req">*</span></label>
-                        <p style="font-size:0.875rem;color:var(--text-muted);margin:-0.25rem 0 0.75rem;line-height:1.55;">
-                            Check every time that works — the more you check, the faster we can match you with a tutor.
-                        </p>
+                        <div style="background:#eff8f3;border:1.5px solid var(--accent,#276749);border-radius:10px;padding:1.1rem 1.35rem;margin-bottom:0.85rem;">
+                            <p style="font-size:0.85rem;font-weight:700;color:var(--accent-dark,#1a4e34);margin-bottom:0.4rem;text-transform:uppercase;letter-spacing:0.04em;">Pick times in YOUR OWN local time</p>
+                            <p style="font-size:0.875rem;color:var(--text);line-height:1.65;margin-bottom:0.4rem;">
+                                Check every time that works for your child, in your own local time. Do not convert anything — we handle that.
+                            </p>
+                            <p style="font-size:0.875rem;color:var(--text);line-height:1.65;margin:0;">
+                                One thing that matters: <strong>check a range, not a single hour</strong>. If you can do 4:00–5:00pm, check 5:00–6:00pm too if that also works. Clocks change twice a year in some countries and not others, so a session can shift by an hour. Someone who checks two hours in a row can be matched all year. Someone who checks only one sometimes cannot.
+                            </p>
+                        </div>
                         <div class="avail-scroll-wrap">
                             <table class="avail-table">
                                 <thead>
@@ -743,6 +788,12 @@
                 toggleMobileMenu();
         });
     });
+
+    function toggleStudentTimezoneOther() {
+        const sel = document.getElementById('studentTimezone');
+        const group = document.getElementById('studentTimezoneOtherGroup');
+        group.style.display = (sel.value === 'Other — I will note it below') ? 'block' : 'none';
+    }
 
     function toggleEslField() {
         const isYes = document.getElementById('eslYes').checked;
