@@ -71,7 +71,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400..700&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=5">
+    <link rel="stylesheet" href="/styles.css?v=6">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -140,17 +140,15 @@
                     <span>Tutors and families worldwide</span>
                 </p>
             </div>
-            <figure class="figure">
-                <div class="figure-frame">
-                    <picture>
-                        <source srcset="/assets/img/session-fractions.webp" type="image/webp">
-                        <img src="/assets/img/session-fractions.jpg" width="950" height="529"
-                             alt="A Tutor-For-All tutor and a third grader on a video call, working on a fractions problem together.">
-                    </picture>
-                </div>
-                <figcaption><b>Fig. 1</b> A third grader works out what fraction of the circle is shaded. She got it.</figcaption>
-                <img class="figure-stamp" src="/assets/img/logo-160.png" alt="" width="104" height="104">
-            </figure>
+            <aside class="glance" aria-label="Tutor-For-All at a glance">
+                <img class="glance-seal" src="/assets/img/logo-512.png" alt="Tutor-For-All seal: Empowering Growth" width="200" height="200">
+                <dl class="glance-list">
+                    <div><dt>Cost to families</dt><dd>$0, always</dd></div>
+                    <div><dt>Format</dt><dd>One tutor, one student, online</dd></div>
+                    <div><dt>Subjects</dt><dd>Math and reading, K&ndash;5</dd></div>
+                    <div><dt>Where</dt><dd>Anywhere in the world</dd></div>
+                </dl>
+            </aside>
         </div>
     </section>
 
@@ -246,7 +244,7 @@
                 </li>
                 <li>
                     <h3>We find the right tutor</h3>
-                    <p>We match by grade level, subject, schedule and language. If your child is more comfortable in another language, we try to find a tutor who speaks it.</p>
+                    <p>We match by grade level, subject and schedule. If your child is learning English, we match them with a tutor who speaks their home language, which can take longer.</p>
                 </li>
                 <li>
                     <h3>Regular one-on-one sessions</h3>
@@ -276,26 +274,28 @@
                     <li><strong>Parents welcome.</strong> You can sit in on any session, any time.</li>
                 </ul>
             </div>
-            <div class="anatomy reveal">
-                <figure class="figure">
-                    <div class="figure-frame">
-                        <picture>
-                            <source srcset="/assets/img/session-reflection.webp" type="image/webp">
-                            <img src="/assets/img/session-reflection.jpg" width="1264" height="677" loading="lazy"
-                                 alt="A Tutor-For-All tutor and an elementary student on a video call, with a lesson slide on screen.">
-                        </picture>
-                    </div>
-                </figure>
-                <figure class="figure">
-                    <div class="figure-frame">
-                        <picture>
-                            <source srcset="/assets/img/session-reflect.webp" type="image/webp">
-                            <img src="/assets/img/session-reflect.jpg" width="634" height="378" loading="lazy"
-                                 alt="A tutor and a student smiling during an online session.">
-                        </picture>
-                    </div>
-                </figure>
-                <p class="anatomy-note"><b>Real sessions, real students.</b>Every photo on this site is from an actual Tutor-For-All session.</p>
+            <div class="lesson-art reveal">
+                <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <rect x="1" y="1" width="478" height="338" rx="14" class="la-frame"/>
+                    <rect x="1" y="1" width="478" height="40" rx="14" class="la-bar"/>
+                    <rect x="1" y="27" width="478" height="14" class="la-bar"/>
+                    <circle cx="26" cy="21" r="5" class="la-dot"/><circle cx="44" cy="21" r="5" class="la-dot"/><circle cx="62" cy="21" r="5" class="la-dot"/>
+                    <g transform="translate(130 170)">
+                        <circle r="74" class="la-pie-bg"/>
+                        <path d="M0 0 L0 -74 A74 74 0 1 1 -64.09 37 Z" class="la-pie"/>
+                        <line x1="0" y1="0" x2="0" y2="-74" class="la-pie-line"/><line x1="0" y1="0" x2="64.09" y2="37" class="la-pie-line"/><line x1="0" y1="0" x2="-64.09" y2="37" class="la-pie-line"/>
+                    </g>
+                    <text x="130" y="290" text-anchor="middle" class="la-label">2 / 3</text>
+                    <rect x="256" y="90" width="180" height="12" rx="6" class="la-line la-line--strong"/>
+                    <rect x="256" y="120" width="150" height="10" rx="5" class="la-line"/>
+                    <rect x="256" y="142" width="168" height="10" rx="5" class="la-line"/>
+                    <rect x="256" y="164" width="120" height="10" rx="5" class="la-line"/>
+                    <rect x="256" y="206" width="76" height="34" rx="6" class="la-chip"/>
+                    <text x="294" y="229" text-anchor="middle" class="la-chip-text">A b c</text>
+                    <rect x="342" y="206" width="76" height="34" rx="6" class="la-chip la-chip--gold"/>
+                    <text x="380" y="229" text-anchor="middle" class="la-chip-text">1 : 1</text>
+                </svg>
+                <p class="lesson-art-note"><b>Math and reading, side by side.</b>Each hour is planned around one child's grade level and the skills they're working on.</p>
             </div>
         </div>
     </section>
