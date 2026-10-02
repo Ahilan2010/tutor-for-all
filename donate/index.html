@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate | Support Free K–5 Tutoring in Houston | Tutor-For-All</title>
-    <meta name="description" content="Support Tutor-For-All with a monetary donation or book donation. 100% of contributions go directly toward helping low-income K–5 students in Houston.">
+    <title>Donate to Tutor-For-All | Free Tutoring & Books for K–5 Kids</title>
+    <meta name="description" content="Support free tutoring and books for K–5 students from low-income families. Tutor-For-All is student-led with no paid staff. Donate via PayPal or give books and school supplies.">
     <link rel="canonical" href="https://tutorforall.org/donate">
+    <meta name="theme-color" content="#1b2d5b">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tutorforall.org/donate">
     <meta property="og:site_name" content="Tutor-For-All">
-    <meta property="og:title" content="Donate | Support Free K–5 Tutoring in Houston | Tutor-For-All">
-    <meta property="og:description" content="100% of donations go directly toward helping low-income K–5 students in Houston. Give money or books — every contribution makes a real difference.">
-    <meta property="og:image" content="https://tutorforall.org/tutor-for-all-logo.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Donate to Tutor-For-All | Free Tutoring & Books for K–5 Kids">
+    <meta property="og:description" content="Support free tutoring and books for K–5 students from low-income families. Tutor-For-All is student-led with no paid staff. Donate via PayPal or give books and school supplies.">
+    <meta property="og:image" content="https://tutorforall.org/assets/img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,451 +33,238 @@
         gtag('config', 'G-2XP5SSKZVN');
     </script>
 
-    <link rel="stylesheet" href="/styles.css?v=4">
-    <style>
-        /* Fundraising progress */
-        .fundraising-card {
-            background: white;
-            border-radius: 18px;
-            padding: 2rem;
-            max-width: 700px;
-            margin: 2rem auto;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.07);
-            border: 1px solid var(--border);
-            text-align: center;
-        }
-        .fundraising-card h3 {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: var(--text);
-            margin-bottom: 0.5rem;
-        }
-        .fundraising-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.93rem;
-            color: var(--text-muted);
-            margin-top: 0.6rem;
-        }
-        .fundraising-meta strong { color: var(--text); }
-
-        /* Impact breakdown */
-        .impact-breakdown {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 1.25rem;
-            margin-top: 2rem;
-        }
-        .impact-slice {
-            text-align: center;
-            padding: 1.5rem 1rem;
-            background: var(--card-bg);
-            border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-        .impact-slice .slice-pct {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--accent-dark);
-            display: block;
-            line-height: 1;
-            margin-bottom: 0.35rem;
-        }
-        .impact-slice p { font-size: 0.85rem; color: var(--text-muted); font-weight: 500; }
-
-        /* Donor wall */
-        .donor-list { list-style: none; padding: 0; margin-top: 1rem; }
-        .donor-list li {
-            padding: 0.65rem 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 0.95rem;
-            color: var(--text);
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-        }
-        .donor-list li:last-child { border-bottom: none; }
-
-        /* Donor Recognition Wall */
-        .donor-wall { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
-        .donor-tier {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 1.75rem 2rem;
-            border: 1px solid var(--border);
-            box-shadow: 0 2px 14px rgba(0,0,0,0.05);
-        }
-        .donor-tier-header {
-            display: flex;
-            align-items: center;
-            gap: 0.85rem;
-            margin-bottom: 1.25rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
-        }
-        .tier-badge-icon { font-size: 1.6rem; line-height: 1; }
-        .tier-badge-text { display: flex; flex-direction: column; gap: 0.1rem; }
-        .tier-badge-name { font-weight: 700; font-size: 1.05rem; color: var(--text); }
-        .tier-badge-range { font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
-        .donor-entries {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-            gap: 1rem;
-        }
-        .donor-entry {
-            background: white;
-            border-radius: 10px;
-            padding: 1.1rem 1.25rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-        .donor-entry:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-        .donor-entry-name { font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.3rem; }
-        .donor-entry-name a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--border); }
-        .donor-entry-name a:hover { border-bottom-color: var(--text); }
-        .donor-entry-amount { font-size: 0.85rem; color: var(--text-muted); font-weight: 500; }
-        .donor-tier-bronze { border-top: 3px solid #CD7F32; }
-        .donor-tier-bronze .donor-entry { border-left: 4px solid #CD7F32; }
-        .donor-tier-community { border-top: 3px solid #E94E77; }
-        .donor-tier-community .donor-entry { border-left: 4px solid #E94E77; }
-        .donor-tier-guide {
-            list-style: none; padding: 0; margin: 0.75rem 0 0;
-            display: flex; flex-wrap: wrap; gap: 0.5rem 2.5rem;
-        }
-        .donor-tier-guide li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.92rem; color: var(--text); }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400..700&display=swap">
+    <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== BANNER ===== -->
-<div class="banner">
-    Every dollar goes directly to helping low-income students. <a href="#donate-options">Donate today →</a>
-</div>
+<div class="topbar">2026&ndash;27 goal: $5,000 for books, tools and outreach. <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" rel="noopener">Give now &rarr;</a></div>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="/" class="logo-link">
-            <img src="/tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo">
+<header class="site-header">
+    <div class="wrap">
+        <a href="/" class="brand" aria-label="Tutor-For-All home">
+            <img src="/assets/img/logo-160.png" alt="" width="44" height="44">
+            <span class="brand-name">Tutor-For-All</span>
         </a>
-        <ul class="nav-menu">
-            <a href="/donate" class="mobile-only mobile-donate">Donate</a>
-            <li><a href="/becomeatutor" class="nav-item">Become a Tutor</a></li>
-            <li><a href="/requesttutoring" class="nav-item">Request Tutoring</a></li>
-            <li><a href="/volunteerlog" class="nav-item">Hour Log</a></li>
-            <li><a href="/about" class="nav-item">About</a></li>
-            
-            <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="mobile-only mobile-instagram">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
-                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
-                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
-                </svg>
-                &nbsp;Instagram
-            </a>
+        <nav class="nav" aria-label="Main">
+            <a href="/requesttutoring">For Families</a>
+            <a href="/becomeatutor">For Tutors</a>
+            <a href="/volunteerlog">Hour Log</a>
+            <a href="/about">About</a>
+            <a href="/faq">FAQ</a>
+        </nav>
+        <div class="header-cta">
+            <a href="/donate" class="btn btn--gold">Donate</a>
+            <button class="menu-toggle" type="button" aria-controls="mobileNav" aria-expanded="false">
+                <span class="bars" aria-hidden="true"></span> Menu
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-head">
+        <span class="brand-name">Tutor-For-All</span>
+        <button class="mobile-nav-close" type="button">Close</button>
+    </div>
+    <nav aria-label="Mobile">
+        <ul>
+            <li><a href="/">Home <span>01</span></a></li>
+            <li><a href="/requesttutoring">For Families <span>02</span></a></li>
+            <li><a href="/becomeatutor">For Tutors <span>03</span></a></li>
+            <li><a href="/volunteerlog">Hour Log <span>04</span></a></li>
+            <li><a href="/about">About <span>05</span></a></li>
+            <li><a href="/faq">FAQ <span>06</span></a></li>
         </ul>
-        <div class="nav-actions">
-            <a href="/donate" class="btn-donate-nav active" style="background:linear-gradient(135deg,#F8D6B8,#B98C63);">Donate</a>
-            <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="instagram-icon" aria-label="Follow us on Instagram">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Z" fill="white"/>
-                    <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="white"/>
-                    <circle cx="17.5" cy="6.5" r="1" fill="white"/>
-                </svg>
-            </a>
-        </div>
-        <div class="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </div>
-    </div>
-</nav>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <div class="mobile-menu-header">
-        <img src="/tutor-for-all-logo.png" alt="Tutor-For-All Logo" class="logo">
-        <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
-    </div>
-    <nav class="mobile-menu-nav">
-        <a href="/donate" class="mobile-menu-item mobile-menu-donate">Donate</a>
-        <a href="/becomeatutor" class="mobile-menu-item">Become a Tutor</a>
-        <a href="/requesttutoring" class="mobile-menu-item">Request Tutoring</a>
-        <a href="/volunteerlog" class="mobile-menu-item">Volunteer Hour Log</a>
-        <a href="/about" class="mobile-menu-item">About</a>
-        
-        <a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener" class="mobile-menu-item mobile-menu-instagram">Instagram</a>
     </nav>
+    <a href="/donate" class="btn btn--gold btn--block">Donate</a>
 </div>
-<div class="mobile-menu-backdrop" id="mobileMenuBackdrop" onclick="toggleMobileMenu()"></div>
 
-<main class="content">
+<main id="main">
 
-    <!-- PAGE HEADER -->
-    <div class="page-header">
-        <h1>Your Support Changes Lives</h1>
-        <p>
-            Every contribution to Tutor-For-All goes directly toward helping low-income K–5 students
-            in Houston access the tutoring and educational materials they need to succeed.
-            No corporate overhead. Just impact.
-        </p>
-    </div>
-
-    <!-- FUNDRAISING PROGRESS -->
-    <div class="fundraising-card">
-        <h3>2026–2027 Fundraising Goal</h3>
-        <div class="progress-bar-wrap">
-            <div class="progress-bar-fill" style="width: 2%;" id="progressBar"></div>
+    <header class="page-head">
+        <div class="wrap page-head-grid">
+            <div>
+                <p class="eyebrow">Support Tutor-For-All</p>
+                <h1 class="display">Small budget. <em>No overhead.</em> Big return.</h1>
+                <p class="lede">We have no paid staff and every tutor is a volunteer. Your gift buys books, learning tools and outreach for kids whose families can't pay for tutoring.</p>
+            </div>
+            <aside>
+                <dl>
+                    <dt>Paid staff</dt><dd>None</dd>
+                    <dt>Tutors</dt><dd>100% volunteer</dd>
+                    <dt>Ways to give</dt><dd>Money, books, school supplies</dd>
+                </dl>
+            </aside>
         </div>
-        <div class="fundraising-meta">
-            <span><strong>$100</strong> raised so far</span>
-            <span>Goal: <strong>$5,000</strong></span>
-        </div>
-        <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.75rem;">
-            Help us hit our goal. Every dollar funds tutoring sessions and educational supplies
-            for students who can't afford private tutoring.
-        </p>
-    </div>
+    </header>
 
-    <!-- DONATION OPTIONS -->
-    <section class="section" id="donate-options">
-        <h2 class="section-title">How to Support Us</h2>
-        <p class="section-subtitle">Two ways to give — every contribution goes directly to helping low-income students.</p>
-
-        <div class="donation-options">
-
-            <!-- Monetary Donation -->
-            <div class="donation-card">
-                <span class="donation-icon">💵</span>
-                <h3>Monetary Donation</h3>
-                <p>
-                    Cash donations help us cover program operations, printing, outreach materials, and
-                    future educational resources for students and families. Every dollar makes a direct
-                    difference for a child who needs it.
-                </p>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY"
-                   target="_blank" rel="noopener" class="btn-green"
-                   style="display:block; text-align:center;">
-                    Donate via PayPal
-                </a>
-                <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem; margin-bottom:0;">
-                    Secure payment processed through PayPal. You do not need a PayPal account to donate by card.
-                </p>
+    <!-- GOAL + GIVE -->
+    <section class="section">
+        <div class="wrap">
+            <div class="goal reveal" role="group" aria-label="2026–2027 fundraising progress">
+                <div class="goal-top">
+                    <div>
+                        <p class="eyebrow" style="margin-bottom:.6rem;">2026&ndash;27 fundraising goal</p>
+                        <span class="goal-raised">$100</span> <span class="goal-of">raised of $5,000</span>
+                    </div>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" rel="noopener" class="btn btn--gold">Donate via PayPal <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                </div>
+                <div class="goal-bar" role="progressbar" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="100"><span style="width:2.0%"></span></div>
+                <div class="goal-meta"><span>2% of the way there</span><span>Every dollar counts at this stage</span></div>
             </div>
 
-            <!-- Book / Supply Donation -->
-            <div class="donation-card">
-                <span class="donation-icon">📚</span>
-                <h3>Books &amp; School Supplies</h3>
-                <p>
-                    Donate educational books, workbooks, pencils, notebooks, and other school supplies.
-                    We distribute donated materials directly to low-income students in Houston — often
-                    attached to information about our free tutoring program.
-                </p>
-                <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview"
-                   target="_blank" rel="noopener" class="btn-primary"
-                   style="display:block; text-align:center;">
-                    Donate Resources
-                </a>
-                <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.75rem; margin-bottom:0;">
-                    Fill out the form and we'll arrange a drop-off or pickup for your donation.
-                </p>
+            <div class="give mt-2">
+                <div class="give-card">
+                    <p class="eyebrow" style="margin-bottom:0;">Give money</p>
+                    <h3>Make a donation</h3>
+                    <p>Funds books, workbooks and printing, the learning tools tutors use in sessions, and the outreach that helps families find us.</p>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" rel="noopener" class="btn">Donate via PayPal</a>
+                    <p class="fine">Processed securely by PayPal. You can pay by card without a PayPal account.</p>
+                </div>
+                <div class="give-card">
+                    <p class="eyebrow" style="margin-bottom:0;">Give things</p>
+                    <h3>Books &amp; school supplies</h3>
+                    <p>Children's books, workbooks, pencils, notebooks and other supplies go directly to students, usually along with information about free tutoring.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc52oVzaRMrL2PziCmhW8Njo67vsWNh7jbjQrXhnjCDWTw8BQ/viewform" target="_blank" rel="noopener" class="btn btn--line">Donate books or supplies</a>
+                    <p class="fine">Fill out the form and we'll arrange drop-off or pickup. <a class="link" href="https://docs.google.com/document/d/1qltJk7tT9KZ-iD-24FCUcRo4UrD7YNHtgQXEjhlfaco/edit" target="_blank" rel="noopener">See everything we accept.</a></p>
+                </div>
             </div>
-
-        </div>
-
-        <!-- What we accept -->
-        <div style="text-align:center; margin-top:1rem;">
-            <a href="https://docs.google.com/document/d/1qltJk7tT9KZ-iD-24FCUcRo4UrD7YNHtgQXEjhlfaco/edit"
-               target="_blank" rel="noopener" class="btn-outline">
-                View Full List of Accepted Donations
-            </a>
         </div>
     </section>
 
-    <hr class="section-divider">
-
-    <!-- WHERE YOUR MONEY GOES -->
-    <section class="section">
-        <h2 class="section-title">Where Every Dollar Goes</h2>
-        <p class="section-subtitle">100% of donations go toward helping students. Here's exactly how we use contributions.</p>
-        <div class="impact-breakdown">
-            <div class="impact-slice">
-                <span class="slice-pct">65%</span>
-                <p>Educational Materials &amp; Books</p>
+    <!-- WHERE IT GOES -->
+    <section class="section section--card">
+        <div class="wrap split" style="align-items:start;">
+            <div>
+                <p class="eyebrow"><span class="num">01</span> Where it goes</p>
+                <h2 class="h-xl">Where every dollar goes</h2>
+                <p class="lede mt-1">With no salaries or office to pay for, donations go to work right away.</p>
             </div>
-            <div class="impact-slice">
-                <span class="slice-pct">20%</span>
-                <p>Technology &amp; Learning Tools</p>
-            </div>
-            <div class="impact-slice">
-                <span class="slice-pct">15%</span>
-                <p>Outreach &amp; Program Operations</p>
-            </div>
-        </div>
-
-        <div class="highlight-callout" style="margin-top:2rem;">
-            <h3>A Student-Led, Community-Funded Program</h3>
-            <p>
-                Tutor-For-All has no paid staff and no administrative overhead. Every tutor is a
-                volunteer. Every dollar you donate goes to work immediately — buying books, printing
-                outreach materials, and supporting the tools that make learning possible for students
-                who have very little.
-            </p>
-        </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <!-- DONORS -->
-    <section class="section">
-        <h2 class="section-title">Our Donors &amp; Community Partners</h2>
-        <p class="section-subtitle">Every contribution — large or small — makes a direct impact on a child's education. Thank you.</p>
-
-        <div class="donor-wall">
-
-            <div class="donor-tier donor-tier-bronze">
-                <div class="donor-tier-header">
-                    <span class="tier-badge-icon">🥉</span>
-                    <div class="tier-badge-text">
-                        <span class="tier-badge-name">Bronze Advocate</span>
-                        <span class="tier-badge-range">$50 – $199 monetary contribution</span>
-                    </div>
+            <div class="reveal">
+                <div class="alloc" aria-hidden="true">
+                    <span class="a1">65%</span><span class="a2">20%</span><span class="a3">15%</span>
                 </div>
-                <div class="donor-entries">
-                    <div class="donor-entry">
-                        <div class="donor-entry-name"><a href="https://kindredstorieshtx.com/" target="_blank" rel="noopener">Kindred Stories</a></div>
-                        <div class="donor-entry-amount">$50 donated</div>
-                    </div>
-                    <div class="donor-entry">
-                        <div class="donor-entry-name"><a href="https://www.thebookreadersvenue.com/" target="_blank" rel="noopener">The Book Readers Venue</a></div>
-                        <div class="donor-entry-amount">$50 donated</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="donor-tier donor-tier-community">
-                <div class="donor-tier-header">
-                    <span class="tier-badge-icon">❤️</span>
-                    <div class="tier-badge-text">
-                        <span class="tier-badge-name">Community Friend</span>
-                        <span class="tier-badge-range">Books &amp; school supply donations</span>
-                    </div>
-                </div>
-                <div class="donor-entries">
-                    <div class="donor-entry">
-                        <div class="donor-entry-name"><a href="https://www.booksbetweenkids.org/" target="_blank" rel="noopener">Books Between Kids</a></div>
-                        <div class="donor-entry-amount">~500 books donated</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="highlight-callout" style="margin-top:2.5rem;">
-            <h3>Donor Recognition Tiers</h3>
-            <ul class="donor-tier-guide">
-                <li>🥇 <strong>Gold Champion</strong> — $500+</li>
-                <li>🥈 <strong>Silver Supporter</strong> — $200–$499</li>
-                <li>🥉 <strong>Bronze Advocate</strong> — $50–$199</li>
-                <li>❤️ <strong>Community Friend</strong> — Books &amp; supplies</li>
-            </ul>
-            <p style="font-size:0.88rem; color:var(--text-muted); margin-top:1rem; margin-bottom:0;">
-                Want to be featured? <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" rel="noopener">Make a donation</a> and join our growing community of supporters.
-            </p>
-        </div>
-
-        <div class="features" style="margin-top:2rem;">
-            <div class="feature-card">
-                <span class="feature-icon">🎯</span>
-                <h3>2026–2027 Goals</h3>
-                <ul class="donor-list">
-                    <li>📚 Distribute 500+ books to students</li>
-                    <li>🎓 Tutor 50+ students this year</li>
-                    <li>💰 Raise $5,000 in funding</li>
-                    <li>🏫 Partner with 10 local schools</li>
-                    <li>👨‍🏫 Recruit 10+ active tutors</li>
+                <ul class="alloc-key">
+                    <li><i style="background:var(--navy)"></i><b>65%</b><span>Educational materials and books</span></li>
+                    <li><i style="background:var(--gold)"></i><b>20%</b><span>Technology and learning tools</span></li>
+                    <li><i style="background:var(--paper-deep);border:1px solid var(--line)"></i><b>15%</b><span>Outreach and program operations</span></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <h2>Ready to Make an Impact?</h2>
-        <p>
-            Even a small donation goes a long way when 100% of it reaches a child in need.
-            Thank you for believing in educational equity.
-        </p>
-        <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY"
-           target="_blank" rel="noopener" class="btn-white">
-            Donate Now via PayPal
-        </a>
-        <a href="https://docs.google.com/forms/d/1DSfb1GrfSh_bNRoN4CW7yc0Ab_vakCzgWV_tivJuWtM/preview"
-           target="_blank" rel="noopener" class="btn-white-green">
-            Donate Books
-        </a>
+    <!-- GOALS -->
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow"><span class="num">02</span> This year</p>
+                    <h2 class="h-xl">What we're aiming for in 2026&ndash;27</h2>
+                </div>
+                <p class="lede">Ambitious for a student-run team. Your support decides how close we get.</p>
+            </div>
+            <div class="figures reveal" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr));">
+                <div><span class="n">50+</span><span class="l">students tutored</span></div>
+                <div><span class="n">500+</span><span class="l">books distributed</span></div>
+                <div><span class="n">10+</span><span class="l">active tutors</span></div>
+                <div><span class="n">10</span><span class="l">partner schools</span></div>
+                <div><span class="n">$5k</span><span class="l">raised</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONORS -->
+    <section class="section section--deep">
+        <div class="wrap split" style="align-items:start;">
+            <div>
+                <p class="eyebrow"><span class="num">03</span> Thank you</p>
+                <h2 class="h-xl">Our donors &amp; community partners</h2>
+                <p class="lede mt-1">Every gift, large or small, reaches a child. We're grateful to everyone who's helped.</p>
+                <h4 class="mt-2 mb-1">Recognition tiers</h4>
+                <ul class="tiers">
+                    <li><b>Gold Champion</b><span>$500+</span></li>
+                    <li><b>Silver Supporter</b><span>$200&ndash;$499</span></li>
+                    <li><b>Bronze Advocate</b><span>$50&ndash;$199</span></li>
+                    <li><b>Community Friend</b><span>Books &amp; supplies</span></li>
+                </ul>
+            </div>
+            <ul class="donors reveal">
+                <li>
+                    <div class="name"><a href="https://www.booksbetweenkids.org/" target="_blank" rel="noopener">Books Between Kids</a><span class="tier">Community Friend</span></div>
+                    <span class="amt">~500 books</span>
+                </li>
+                <li>
+                    <div class="name"><a href="https://kindredstorieshtx.com/" target="_blank" rel="noopener">Kindred Stories</a><span class="tier">Bronze Advocate</span></div>
+                    <span class="amt">$50</span>
+                </li>
+                <li>
+                    <div class="name"><a href="https://www.thebookreadersvenue.com/" target="_blank" rel="noopener">The Book Readers Venue</a><span class="tier">Bronze Advocate</span></div>
+                    <span class="amt">$50</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="closing">
+        <img class="seal" src="/assets/img/logo-512.png" alt="" width="360" height="360">
+        <div class="wrap">
+            <h2 class="h-xl">Help a kid <em>love reading.</em></h2>
+            <p>A gift of any size, or a box of books, goes straight to a student who needs it. Thank you for believing in this.</p>
+            <div class="btn-row">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=PYYMDA9FD6NBY" target="_blank" rel="noopener" class="btn btn--gold">Donate via PayPal</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc52oVzaRMrL2PziCmhW8Njo67vsWNh7jbjQrXhnjCDWTw8BQ/viewform" target="_blank" rel="noopener" class="btn btn--ghost-light">Donate books</a>
+            </div>
+        </div>
     </section>
 
 </main>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-    <div class="footer-inner">
+<footer class="site-footer">
+    <div class="wrap">
         <div class="footer-grid">
             <div class="footer-brand">
-                <div class="footer-logo">Tutor-For-All</div>
-                <p>Free K–5 math and reading tutoring for low-income students in Houston, TX. A student-led nonprofit.</p>
+                <span class="brand-name">Tutor-For-All</span>
+                <p>Free one-on-one math and reading tutoring for K&ndash;5 students from low-income families. Started by students, run by volunteers, open to families worldwide, and free for every one of them.</p>
             </div>
-            <div class="footer-col">
-                <h4>Pages</h4>
+            <div>
+                <h4>Get involved</h4>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/becomeatutor">Become a Tutor</a></li>
-                    <li><a href="/requesttutoring">Request Tutoring</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href="/requesttutoring">Request tutoring</a></li>
+                    <li><a href="/becomeatutor">Become a tutor</a></li>
+                    <li><a href="/volunteerlog">Log volunteer hours</a></li>
                     <li><a href="/donate">Donate</a></li>
-                    <li><a href="/volunteerlog">Volunteer Hour Log</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
+                <h4>Organization</h4>
+                <ul>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/about#partners">Partners</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="https://docs.google.com/document/d/1h9qcaefI6_PN6ttIUEO25Cbnn9UeCq9QMLEcJehEIn4/edit" target="_blank" rel="noopener">Advocacy statement</a></li>
+                </ul>
+            </div>
+            <div>
                 <h4>Contact</h4>
-                <p>Carnegie Vanguard High School<br>1501 Taft St, Houston, TX 77019</p>
-                <p style="margin-top:0.75rem;"><a href="mailto:tutorforallnonprofit@gmail.com">tutorforallnonprofit@gmail.com</a></p>
-                <p style="margin-top:0.5rem;"><a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener">@tutorforallorg</a></p>
+                <ul>
+                    <li><a href="mailto:tutorforallnonprofit@gmail.com">tutorforallnonprofit@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/tutorforallorg/" target="_blank" rel="noopener">Instagram @tutorforallorg</a></li>
+                    <li>Online, worldwide</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Tutor-For-All. A registered nonprofit organization.</p>
-            <p>Serving low-income students in the Greater Houston area.</p>
+            <p>&copy; 2026 Tutor-For-All. A student-led nonprofit organization.</p>
+            <p>Founded at Carnegie Vanguard High School, Houston, TX. Always free for families.</p>
         </div>
     </div>
 </footer>
 
-<script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        const btn = document.querySelector('.hamburger');
-        const backdrop = document.getElementById('mobileMenuBackdrop');
-        const isOpen = menu.classList.toggle('open');
-        btn.classList.toggle('active', isOpen);
-        btn.setAttribute('aria-expanded', isOpen);
-        backdrop.classList.toggle('active', isOpen);
-        document.body.classList.toggle('menu-open', isOpen);
-        menu.setAttribute('aria-hidden', !isOpen);
-    }
+<script src="/site.js?v=5" defer></script>
 
-    document.querySelectorAll('.mobile-menu-item').forEach(function(el) {
-        el.addEventListener('click', function() {
-            if (document.getElementById('mobileMenu').classList.contains('open'))
-                toggleMobileMenu();
-        });
-    });
-
-    // Animate progress bar on load
-    window.addEventListener('load', () => {
-        const bar = document.getElementById('progressBar');
-        if (bar) setTimeout(() => bar.style.width = '1%', 300);
-    });
-</script>
 </body>
 </html>
