@@ -686,3 +686,25 @@ a.partner:hover .name { color: var(--navy); text-decoration: underline; text-dec
     .avail-grid td, .avail-table td { padding: 0.45rem 0; }
     .avail-table label { padding: 0.2rem 0; }
 }
+
+/* ---------- FAQ page ---------- */
+
+.faq-layout { display: grid; grid-template-columns: 15rem 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.faq-toc { position: sticky; top: 100px; }
+.faq-toc-title { font-size: 0.75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem; }
+.faq-toc ul { border-top: 1px solid var(--line); }
+.faq-toc li a { display: flex; justify-content: space-between; gap: 1rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); text-decoration: none; font-weight: 500; color: var(--ink-soft); font-size: 0.95rem; }
+.faq-toc li a:hover { color: var(--navy); }
+.faq-toc li a span { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.85rem; }
+.faq-toc-actions { display: flex; gap: 1.25rem; margin-top: 1.25rem; }
+.faq-toc-actions .text-link { background: none; border: 0; border-bottom: 2px solid var(--gold); padding: 0 0 2px; font-size: 0.9rem; }
+.faq-groups { display: grid; gap: clamp(3rem, 6vw, 4.5rem); min-width: 0; }
+.faq-group { scroll-margin-top: 96px; }
+@media (max-width: 860px) {
+    .faq-layout { grid-template-columns: 1fr; }
+    .faq-toc { position: static; }
+    .faq-toc ul { display: flex; flex-wrap: wrap; gap: 0.5rem; border-top: 0; }
+    .faq-toc li a { border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.4rem 0.85rem; background: var(--card); font-size: 0.88rem; }
+    .faq-toc li a span { display: none; }
+}
+@media (max-width: 860px) { .faq-head aside { display: none; } }

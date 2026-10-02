@@ -2,7 +2,7 @@
 
 > A student-led nonprofit providing free one-on-one online K–5 math and reading tutoring for students from low-income families. Founded in Houston, TX; now matching tutors and families across time zones.
 
-Tutor-For-All was founded by students at Carnegie Vanguard High School in Houston, Texas. We connect high-performing high school student volunteers with K–5 students from low-income families for free, one-on-one online tutoring sessions in math and reading. Because every session is online, both tutors and families can now join from any time zone (as of fall 2026).
+Tutor-For-All was founded by students at Carnegie Vanguard High School in Houston, Texas. We connect high-performing high school and college student volunteers with K–5 students from low-income families for free, one-on-one online tutoring sessions in math and reading. Because every session is online, both tutors and families can now join from any time zone (as of fall 2026).
 
 ## What Tutor-For-All Does
 
@@ -10,14 +10,14 @@ Tutor-For-All was founded by students at Carnegie Vanguard High School in Housto
 - Focuses on math and reading/ELA
 - All sessions are conducted online via video call (Zoom, Google Meet, etc.)
 - Serves low-income families, rooted in Greater Houston and open across time zones
-- Sessions are about an hour; tutors use tools like Khan Academy and shared whiteboards, and every session ends with a short reflection
+- Sessions are about an hour, one tutor to one student, planned around the child's grade level and the skills they need help with
 - Tutors try to match English Language Learners with a tutor who speaks their home language
 - Has donated approximately 500 books to students who need them
 - Has served 20+ students to date
 
-## For High School Students — Volunteer Opportunities & Hours
+## For High School and College Students — Volunteer Opportunities & Hours
 
-High school students (grades 9–12) can volunteer as tutors and earn verified community service hours. This is an excellent opportunity for:
+High school students (grades 9–12) and college/university students can volunteer as tutors and earn verified community service hours. This is an excellent opportunity for:
 - NHS (National Honor Society) volunteer hour requirements
 - Graduation community service requirements
 - Scholarship applications
@@ -25,7 +25,7 @@ High school students (grades 9–12) can volunteer as tutors and earn verified c
 - Resume and leadership experience
 
 **Requirements to apply as a tutor:**
-- Currently enrolled in high school (grades 9–12)
+- Currently enrolled in high school (grades 9–12) or college/university
 - 3.5 unweighted GPA (minimum)
 - 90 or above in the subject they want to tutor (math and/or reading/ELA)
 - Available at least 1–2 hours per week
@@ -75,3 +75,4 @@ Donate: https://tutorforall.org/donate
 - About: https://tutorforall.org/about
 - Donate: https://tutorforall.org/donate
 - Volunteer Hour Log: https://tutorforall.org/volunteerlog
+- FAQ (parents, tutors, donors): https://tutorforall.org/faq
