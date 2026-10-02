@@ -330,7 +330,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label class="form-label" for="studentCountry">What country are you in? <span class="req">*</span></label>
-                            <select id="studentCountry" name="country" class="form-select" required>
+                            <select id="studentCountry" name="country" class="form-select" required onchange="toggleStudentCountryOther()">
                                 <option value="" disabled selected>Select your country</option>
                                 <option value="United States">United States</option>
                                 <option value="Nigeria">Nigeria</option>
@@ -345,6 +345,11 @@
                                 <option value="Colombia">Colombia</option>
                                 <option value="Other">Other</option>
                             </select>
+                            <div id="studentCountryOtherGroup" class="mt-1" style="display:none;">
+                                <label class="form-label" for="studentCountryOther">If you chose Other, which country? <span class="req">*</span></label>
+                                <input type="text" id="studentCountryOther" name="country_other" class="form-input"
+                                       placeholder="e.g., Vietnam" maxlength="80" autocomplete="off">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="studentTimezone">What is your local time zone? <span class="req">*</span></label>
@@ -816,6 +821,19 @@
 <script src="/site.js?v=5" defer></script>
 <script>
 
+
+    function toggleStudentCountryOther() {
+        const sel = document.getElementById('studentCountry');
+        const group = document.getElementById('studentCountryOtherGroup');
+        const input = document.getElementById('studentCountryOther');
+        const isOther = sel.value === 'Other';
+        group.style.display = isOther ? 'block' : 'none';
+        input.required = isOther;
+        if (!isOther) input.value = '';
+    }
+    // Run once now and again if the browser restores a saved selection.
+    toggleStudentCountryOther();
+    window.addEventListener('pageshow', toggleStudentCountryOther);
 
     function toggleStudentTimezoneOther() {
         const sel = document.getElementById('studentTimezone');
