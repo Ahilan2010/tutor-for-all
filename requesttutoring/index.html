@@ -153,7 +153,7 @@
                 </li>
                 <li>
                     <h3>We schedule</h3>
-                    <p>We email you your tutor's name, the day and time, and the video link, with a calendar invite.</p>
+                    <p>We email you your tutor's name, the day and time, and the video link, with a calendar invite, and a reminder the day before each session.</p>
                 </li>
                 <li>
                     <h3>Sessions begin</h3>
@@ -358,37 +358,55 @@
                                 <optgroup label="United States">
                                     <option value="US – Eastern (ET)">US – Eastern (ET)</option>
                                     <option value="US – Central (CT) – same as Houston">US – Central (CT) – same as Houston</option>
-                                    <option value="US – Mountain (MT)">US – Mountain (MT)</option>
+                                    <option value="US – Mountain (MT)">US – Mountain (MT) – Denver, Utah, New Mexico</option>
+                                    <option value="US – Arizona (MST, no daylight saving)">US – Arizona (MST) – clocks never change</option>
                                     <option value="US – Pacific (PT)">US – Pacific (PT)</option>
                                     <option value="US – Alaska (AKT)">US – Alaska (AKT)</option>
                                     <option value="US – Hawaii (HST)">US – Hawaii (HST)</option>
                                 </optgroup>
-                                <optgroup label="Americas">
-                                    <option value="Canada – see US zones above" disabled>Canada – see US zones above</option>
-                                    <option value="Mexico City (CST) – -6">Mexico City (CST) – -6</option>
-                                    <option value="Colombia / Peru (COT) – -5">Colombia / Peru (COT) – -5</option>
-                                    <option value="Brazil (BRT) – -3">Brazil (BRT) – -3</option>
+                                <optgroup label="Canada">
+                                    <option value="Canada – see US zones above" disabled>Ontario, Quebec, Manitoba: pick the US zone above</option>
+                                    <option value="Canada – Alberta">Canada – Alberta (Calgary, Edmonton)</option>
+                                    <option value="Canada – British Columbia">Canada – British Columbia (Vancouver)</option>
+                                    <option value="Canada – Atlantic (AT) – -4">Canada – Atlantic (AT) – Nova Scotia, New Brunswick, PEI</option>
+                                    <option value="Newfoundland (NST) – -3:30">Canada – Newfoundland (NST) – -3:30</option>
+                                    <option value="Canada – Saskatchewan (CST, no daylight saving)">Canada – Saskatchewan (CST) – clocks never change</option>
+                                    <option value="Canada – Yukon (MST, no daylight saving)">Canada – Yukon (MST) – clocks never change</option>
+                                </optgroup>
+                                <optgroup label="Mexico, Caribbean, Central &amp; South America">
+                                    <option value="Mexico City (CST) – -6">Mexico – Mexico City and most of the country (CST) – -6</option>
+                                    <option value="Mexico – Cancún / Quintana Roo (EST) – -5">Mexico – Cancún / Quintana Roo (EST) – -5</option>
+                                    <option value="Mexico – Sonora (MST) – -7">Mexico – Sonora, Sinaloa, Baja California Sur (MST) – -7</option>
+                                    <option value="Mexico – border cities: use the US zone" disabled>Mexico – Tijuana, Juárez, Reynosa, Matamoros: pick the US zone above that matches your clock</option>
+                                    <option value="Caribbean / Puerto Rico / Dominican Rep. (AST) – -4">Caribbean – Puerto Rico, Dominican Rep., Venezuela, Bolivia (AST) – -4</option>
+                                    <option value="Colombia / Peru (COT) – -5">Colombia / Peru / Ecuador / Panama (COT) – -5</option>
+                                    <option value="Brazil (BRT) – -3">Brazil – Brasília, São Paulo, Rio (BRT) – -3</option>
+                                    <option value="Brazil – Amazonas / Manaus (AMT) – -4">Brazil – Amazonas / Manaus (AMT) – -4</option>
                                     <option value="Argentina (ART) – -3">Argentina (ART) – -3</option>
                                     <option value="Chile (CLT)">Chile (CLT)</option>
-                                    <option value="Newfoundland (NST) – -3:30">Canada – Newfoundland (NST) – -3:30</option>
                                 </optgroup>
                                 <optgroup label="Africa">
-                                    <option value="Morocco (WET)">Morocco (WET)</option>
-                                    <option value="West Africa (WAT) – Nigeria, Ghana +1">West Africa (WAT) – Nigeria, Ghana +1</option>
+                                    <option value="Morocco (WET)">Morocco</option>
+                                    <option value="Ghana / West Africa (GMT) – +0">Ghana, Senegal, Côte d'Ivoire (GMT) – +0</option>
+                                    <option value="West Africa (WAT) – Nigeria, Cameroon +1">West Africa – Nigeria, Cameroon (WAT) – +1</option>
                                     <option value="Central Africa (CAT) – +2">Central Africa (CAT) – +2</option>
                                     <option value="South Africa (SAST) – +2">South Africa (SAST) – +2</option>
-                                    <option value="Egypt (EET) – +2">Egypt (EET) – +2</option>
-                                    <option value="East Africa (EAT) – Kenya +3">East Africa (EAT) – Kenya +3</option>
+                                    <option value="Egypt (EET) – +2">Egypt (EET/EEST)</option>
+                                    <option value="East Africa (EAT) – Kenya +3">East Africa – Kenya, Ethiopia, Tanzania (EAT) – +3</option>
                                 </optgroup>
                                 <optgroup label="Europe">
-                                    <option value="United Kingdom (GMT/BST)">United Kingdom (GMT/BST)</option>
+                                    <option value="United Kingdom (GMT/BST)">United Kingdom / Ireland / Portugal (GMT/BST)</option>
                                     <option value="Spain / France (CET)">Spain / France (CET)</option>
                                     <option value="Central Europe (CET)">Central Europe (CET)</option>
-                                    <option value="Eastern Europe (EET)">Eastern Europe (EET)</option>
+                                    <option value="Eastern Europe (EET)">Eastern Europe – Ukraine, Romania, Greece, Finland (EET)</option>
+                                </optgroup>
+                                <optgroup label="Middle East">
+                                    <option value="Saudi Arabia / Qatar / Kuwait / Iraq / Turkey (+3)">Saudi Arabia / Qatar / Kuwait / Iraq / Jordan / Turkey (+3)</option>
+                                    <option value="Israel (IST/IDT)">Israel (IST/IDT)</option>
+                                    <option value="Iran (IRST) – +3:30">Iran (IRST) – +3:30</option>
+                                    <option value="Gulf (GST) – +4">UAE / Oman (GST) – +4</option>
                                 </optgroup>
                                 <optgroup label="Asia &amp; Pacific">
-                                    <option value="Iran (IRST) – +3:30">Iran (IRST) – +3:30</option>
-                                    <option value="Gulf (GST) – +4">Gulf (GST) – +4</option>
                                     <option value="Afghanistan (AFT) – +4:30">Afghanistan (AFT) – +4:30</option>
                                     <option value="Pakistan (PKT) – +5">Pakistan (PKT) – +5</option>
                                     <option value="India (IST) – +5:30">India (IST) – +5:30</option>
@@ -396,12 +414,16 @@
                                     <option value="Nepal (NPT) – +5:45">Nepal (NPT) – +5:45</option>
                                     <option value="Bangladesh (BST) – +6">Bangladesh (BST) – +6</option>
                                     <option value="Myanmar (MMT) – +6:30">Myanmar (MMT) – +6:30</option>
+                                    <option value="Vietnam / Thailand / Cambodia (ICT) – +7">Vietnam / Thailand / Cambodia (ICT) – +7</option>
                                     <option value="Indonesia – Jakarta (WIB) +7">Indonesia – Jakarta (WIB) +7</option>
-                                    <option value="China / Singapore (+8)">China / Singapore (+8)</option>
+                                    <option value="China / Singapore (+8)">China / Singapore / Malaysia / Taiwan / Hong Kong (+8)</option>
                                     <option value="Philippines (PHT) – +8">Philippines (PHT) – +8</option>
+                                    <option value="Western Australia – Perth (AWST) – +8">Western Australia – Perth (AWST) – +8</option>
                                     <option value="Japan / Korea (+9)">Japan / Korea (+9)</option>
-                                    <option value="Central Australia (ACST)">Central Australia (ACST)</option>
-                                    <option value="Eastern Australia (AET)">Eastern Australia (AET)</option>
+                                    <option value="Northern Territory – Darwin (ACST, no daylight saving) – +9:30">Northern Territory – Darwin (ACST) – clocks never change</option>
+                                    <option value="Central Australia (ACST)">South Australia – Adelaide (ACST)</option>
+                                    <option value="Queensland – Brisbane (AEST, no daylight saving) – +10">Queensland – Brisbane (AEST) – clocks never change</option>
+                                    <option value="Eastern Australia (AET)">Eastern Australia – Sydney, Melbourne, Canberra, Hobart (AET)</option>
                                     <option value="New Zealand (NZT)">New Zealand (NZT)</option>
                                 </optgroup>
                                 <optgroup label="Not listed">
@@ -412,7 +434,7 @@
                     </div>
                     <div class="form-row" id="studentTimezoneOtherGroup" style="display:none;">
                         <div class="form-group">
-                            <label class="form-label" for="studentTimezoneOther">If you chose Other, which time zone?</label>
+                            <label class="form-label" for="studentTimezoneOther">If you chose Other, which time zone? <span class="req">*</span></label>
                             <input type="text" id="studentTimezoneOther" name="timezone_other" class="form-input"
                                    placeholder="e.g., Japan Standard Time (JST), +9">
                         </div>
@@ -845,8 +867,15 @@
     function toggleStudentTimezoneOther() {
         const sel = document.getElementById('studentTimezone');
         const group = document.getElementById('studentTimezoneOtherGroup');
-        group.style.display = (sel.value === 'Other – I will note it below') ? 'block' : 'none';
+        const input = document.getElementById('studentTimezoneOther');
+        const isOther = sel.value === 'Other – I will note it below';
+        group.style.display = isOther ? 'block' : 'none';
+        input.required = isOther;
+        if (!isOther) input.value = '';
     }
+    // Run once now and again if the browser restores a saved selection.
+    toggleStudentTimezoneOther();
+    window.addEventListener('pageshow', toggleStudentTimezoneOther);
 
     function toggleEslField() {
         const isYes = document.getElementById('eslYes').checked;
