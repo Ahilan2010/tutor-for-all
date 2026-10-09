@@ -294,7 +294,7 @@
                 <p>Questions first? Email <a class="link" href="mailto:tutorforallnonprofit@gmail.com">tutorforallnonprofit@gmail.com</a>.</p>
                 <div class="callout callout--green">
                     <h4>Choosing times</h4>
-                    <p>Pick hours in <strong>your own local time</strong>. We handle the conversion. Checking two hours in a row makes you much easier to match.</p>
+                    <p>Pick hours in <strong>your own local time</strong>. We handle the conversion. Checking two hours in a row makes you much easier to match. Outside the US? Open the early-morning and late-evening hours under the grid too.</p>
                 </div>
             </div>
             <div>
@@ -705,6 +705,88 @@
                         <p class="avail-grid-legend">
                             Tip: Use the "Select all day" row to quickly check an entire day.
                         </p>
+                        <details class="avail-extra" id="tutorExtraHours">
+                            <summary>Outside the US, or free very early or late? Add early-morning and late-evening hours</summary>
+                            <p class="avail-grid-legend">Your own local time again, and only hours you could really do. These mostly help tutors abroad: a weekend morning in Houston is evening in India, and a Houston afternoon is early morning in Asia.</p>
+                            <div class="avail-grid-wrap">
+                            <table class="avail-grid" id="tutorExtraGrid">
+                                <thead>
+                                    <tr>
+                                        <th>Your time</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                        <th>Sun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>6–7 am</td>
+                                    <td><input type="checkbox" name="schedule" value="Mon 6:00–7:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Tue 6:00–7:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Wed 6:00–7:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Thu 6:00–7:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Fri 6:00–7:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sat 6:00–7:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sun 6:00–7:00am"></td>
+                                </tr>
+                                <tr>
+                                    <td>7–8 am</td>
+                                    <td><input type="checkbox" name="schedule" value="Mon 7:00–8:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Tue 7:00–8:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Wed 7:00–8:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Thu 7:00–8:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Fri 7:00–8:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sat 7:00–8:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sun 7:00–8:00am"></td>
+                                </tr>
+                                <tr>
+                                    <td>8–9 am</td>
+                                    <td><input type="checkbox" name="schedule" value="Mon 8:00–9:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Tue 8:00–9:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Wed 8:00–9:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Thu 8:00–9:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Fri 8:00–9:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sat 8:00–9:00am"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sun 8:00–9:00am"></td>
+                                </tr>
+                                <tr>
+                                    <td>8–9 pm</td>
+                                    <td><input type="checkbox" name="schedule" value="Mon 8:00–9:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Tue 8:00–9:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Wed 8:00–9:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Thu 8:00–9:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Fri 8:00–9:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sat 8:00–9:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sun 8:00–9:00pm"></td>
+                                </tr>
+                                <tr>
+                                    <td>9–10 pm</td>
+                                    <td><input type="checkbox" name="schedule" value="Mon 9:00–10:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Tue 9:00–10:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Wed 9:00–10:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Thu 9:00–10:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Fri 9:00–10:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sat 9:00–10:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sun 9:00–10:00pm"></td>
+                                </tr>
+                                <tr>
+                                    <td>10–11 pm</td>
+                                    <td><input type="checkbox" name="schedule" value="Mon 10:00–11:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Tue 10:00–11:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Wed 10:00–11:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Thu 10:00–11:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Fri 10:00–11:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sat 10:00–11:00pm"></td>
+                                    <td><input type="checkbox" name="schedule" value="Sun 10:00–11:00pm"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </details>
                     </div>
 
                     <div class="form-group">
