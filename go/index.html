@@ -3,14 +3,359 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tutor-For-All</title>
+<link rel="icon" href="/favicon-32x32.png">
 <!-- tfa-go-v1 -->
+<style>
+  :root { --navy:#1E3A6F; --deep:#15294F; --cream:#F5EBC8; --gold:#E6B340; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#f4f4f2; font-family:Georgia,serif; color:#333; }
+  .wrap { max-width:560px; margin:0 auto; background:#fff; min-height:100vh; border-left:1px solid #ddd; border-right:1px solid #ddd; }
+  .head { background:var(--navy); padding:26px 22px; text-align:center; }
+  .head .t { color:var(--cream); font-size:22px; font-weight:bold; }
+  .head .s { color:var(--gold); font-size:11px; letter-spacing:2px; margin-top:5px; }
+  .body { padding:26px 22px; }
+  h1 { font-size:19px; color:var(--deep); margin:0 0 6px; }
+  h2 { font-size:15px; color:var(--deep); margin:26px 0 10px; }
+  p  { font-size:15px; line-height:1.6; }
+  a { color:var(--navy); }
+  .muted { color:#666; font-size:13px; line-height:1.55; }
+  label { display:block; font-size:14px; margin:16px 0 6px; color:var(--deep); }
+  input[type=email], input[type=text], textarea { width:100%; padding:11px 12px; font-size:15px; font-family:inherit; border:1px solid #bbb; border-radius:4px; }
+  input[type=file] { font-size:14px; font-family:inherit; }
+  button { width:100%; margin-top:12px; padding:13px; font-size:15px; font-family:inherit; background:var(--navy); color:#fff; border:0; border-radius:4px; cursor:pointer; }
+  button:disabled { opacity:.55; cursor:default; }
+  button.alt { background:#fff; color:var(--navy); border:1px solid var(--navy); }
+  .card { background:var(--cream); border-radius:6px; padding:18px 20px; margin:22px 0; }
+  .big { font-size:40px; font-weight:bold; color:var(--deep); line-height:1.1; }
+  .big span { font-size:15px; font-weight:normal; }
+  table { width:100%; border-collapse:collapse; margin-top:14px; font-size:14px; }
+  td { padding:6px 0; border-top:1px solid rgba(21,41,79,.15); }
+  td.r { text-align:right; font-weight:bold; }
+  .opt { border:1px solid #ddd; border-radius:6px; padding:14px 16px; margin-bottom:10px; cursor:pointer; }
+  .opt:hover { border-color:var(--navy); }
+  .opt.star { border-color:var(--gold); background:#fffaf0; }
+  .opt .n { font-size:15px; color:var(--deep); font-weight:bold; }
+  .opt .d { font-size:13px; color:#666; line-height:1.5; margin-top:3px; }
+  .note { background:#f7f9fc; border-left:3px solid var(--navy); padding:10px 14px; font-size:13px; line-height:1.55; color:#444; margin:0 0 18px; }
+  .stu { border:1px solid rgba(21,41,79,.18); border-radius:6px; padding:12px 14px; margin:0 0 10px; }
+  .stu .sn { font-weight:bold; color:var(--deep); font-size:16px; }
+  .stu .sw { color:#444; font-size:14px; margin:2px 0 6px; }
+  .stu .sf { font-size:13px; color:#333; line-height:1.5; } .stu .sf span { color:#777; }
+  .links a { display:inline-block; margin:4px 10px 4px 0; color:var(--navy); font-weight:bold; font-size:14px; }
+  .err { color:#9C0006; font-size:14px; }
+  .ok { background:#D6EDD9; border-radius:4px; padding:14px 16px; font-size:14px; line-height:1.55; }
+  .hide { display:none; }
+  .foot { background:var(--cream); padding:15px; text-align:center; font-size:12px; color:var(--deep); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head"><div class="t">Tutor-For-All</div><div class="s">EMPOWERING GROWTH</div></div>
+  <div class="body">
+
+    <noscript><p class="err">This page needs JavaScript. Please turn it on, or email tutorforallnonprofit@gmail.com.</p></noscript>
+
+    <!-- links that are not the hours page (family pages, availability, and so on) still open the Google page -->
+    <div id="fwd" class="hide">
+      <p>Opening Tutor-For-All&hellip;</p>
+      <p><a id="fwdlink" href="https://tutorforall.org">Tap here if nothing happens</a></p>
+    </div>
+
+    <div id="lookup" class="hide">
+      <h1>Your volunteer hours</h1>
+      <p class="muted"><span id="lmsg"></span>Enter the email address you applied with. We will email you a private link to your hours.</p>
+      <label for="em">Email address</label>
+      <input id="em" type="email" autocomplete="email" placeholder="you@example.com">
+      <button id="go" type="button">Email me my private link</button>
+      <p id="err" class="err"></p>
+      <div id="sent" class="ok hide"></div>
+    </div>
+
+    <div id="loading" class="hide"><p>Loading your hours...</p></div>
+    <div id="loadErr" class="hide">
+      <p class="err" id="loadErrText"></p>
+      <button id="retry" type="button">Try again</button>
+      <p class="muted">Still stuck? Try <a id="oldpage" href="https://tutorforall.org">the older page</a>, or email <a href="mailto:tutorforallnonprofit@gmail.com">tutorforallnonprofit@gmail.com</a> and we will help.</p>
+    </div>
+
+    <div id="result" class="hide">
+      <h1 id="who"></h1>
+      <p class="muted" id="school"></p>
+      <div class="card">
+        <div class="big"><span id="total"></span></div>
+        <table>
+          <tr><td>Tutoring sessions</td><td class="r" id="sess"></td></tr>
+          <tr><td>Hours from sessions</td><td class="r" id="sh"></td></tr>
+          <tr id="nsRow"><td>Hours from student no-shows</td><td class="r" id="nh"></td></tr>
+          <tr id="refRow"><td>Hours from referrals</td><td class="r" id="rh"></td></tr>
+          <tr><td>First session</td><td class="r" id="fd"></td></tr>
+          <tr><td>Most recent</td><td class="r" id="ld"></td></tr>
+        </table>
+      </div>
+      <p class="muted">Hours are self-logged after each session with a screenshot of the call, then checked against the scheduled pairing before they are counted. A session you logged in the last day or two may not be counted yet.</p>
+      <div id="linksBox" class="hide"><h2>Your students</h2><div id="links" class="links"></div></div>
+      <p id="progress" class="note hide"></p>
+
+      <div id="menu">
+        <div class="opt star hide" id="o4" data-pick="more">
+          <div class="n">I am ready for another student</div>
+          <div class="d">You have logged enough sessions to take on one more.</div>
+        </div>
+        <h2>Need something for your school?</h2>
+        <div class="opt" id="o1" data-pick="cert"><div class="n">A certificate</div>
+          <div class="d">A PDF with your name and total hours, emailed to you straight away.</div></div>
+        <div class="opt" id="o2" data-pick="letter"><div class="n">A signed verification letter</div>
+          <div class="d">A letter on TFA letterhead with your hours, signed by us. Usually takes a few days.</div></div>
+        <div class="opt" id="o3" data-pick="form"><div class="n">My school gave me a form to be signed</div>
+          <div class="d">Upload it and we will fill it in, sign it, and email it back to you.</div></div>
+      </div>
+
+      <div id="morePane" class="hide">
+        <p>We will look for another family whose times match yours. Only say yes if you can keep the same time every week for every student.</p>
+        <button id="moreBtn" type="button">Yes, match me with another student</button>
+        <button class="alt" type="button" data-back="1">Back</button>
+      </div>
+      <div id="certPane" class="hide">
+        <button id="certBtn" type="button">Email me my certificate</button>
+        <button class="alt" type="button" data-back="1">Back</button>
+      </div>
+      <div id="letterPane" class="hide">
+        <label for="lnote">What does the school need, and by when?</label>
+        <textarea id="lnote" rows="3" maxlength="500" placeholder="e.g. NHS needs it by 3 October, must show hours since January"></textarea>
+        <button id="letterBtn" type="button">Request the letter</button>
+        <button class="alt" type="button" data-back="1">Back</button>
+      </div>
+      <div id="formPane" class="hide">
+        <label for="file">Your school's form (PDF or a clear photo, under 8 MB)</label>
+        <input id="file" type="file" accept=".pdf,.doc,.docx,image/*">
+        <label for="fnote">Anything we should know? (a deadline, which boxes to fill)</label>
+        <textarea id="fnote" rows="3" maxlength="500"></textarea>
+        <button id="formBtn" type="button">Send it to us</button>
+        <button class="alt" type="button" data-back="1">Back</button>
+        <p id="ferr" class="err"></p>
+      </div>
+
+      <div id="done" class="ok hide"></div>
+      <p class="muted" style="margin-top:22px;">Not you? <a id="notyou" href="./">Ask for your own link</a>.</p>
+    </div>
+  </div>
+  <div class="foot">tutorforall.org</div>
+</div>
+
 <script>
+  // The Google web app. Pages other than the hours page still open there. The hours page only sends it plain requests.
   var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
-  var q = location.search || "";
-  if (/^\?[A-Za-z0-9_\-=&%.]*$/.test(q) || q === "") location.replace(APP + q);
+  var nav = window.__nav || function (u) { location.replace(u); };
+
+  (function () {
+    var MAX_MB = 8, T = "", K = "";
+    var PANES = ["morePane", "certPane", "letterPane", "formPane"];
+    function el(id) { return document.getElementById(id); }
+    function show_(id) { el(id).classList.remove("hide"); }
+    function hide_(id) { el(id).classList.add("hide"); }
+
+    // One plain request, no cookies, no Google sign-in. Resolves to what the script returned.
+    function api(op, args) {
+      return fetch(APP + "?api=1", {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ op: op, args: args || [] }),
+        credentials: "omit",
+        redirect: "follow"
+      }).then(function (r) {
+        if (!r.ok) throw new Error("http " + r.status);
+        return r.json();
+      }).then(function (j) {
+        if (!j || j.api !== true) throw new Error("unexpected reply");
+        return j.data;
+      });
+    }
+
+    var q = location.search || "";
+    var sp = new URLSearchParams(q);
+    var a = sp.get("a");
+
+    // Not the hours page: open the Google page, exactly as before.
+    if (q !== "" && a !== "h") {
+      show_("fwd");
+      var okq = /^\?[A-Za-z0-9_\-=&%.]*$/.test(q);
+      var url = APP + (okq ? q : "");
+      el("fwdlink").href = url;
+      if (okq) nav(url);
+      return;
+    }
+
+    el("notyou").href = location.pathname;
+    el("oldpage").href = APP + (/^\?[A-Za-z0-9_\-=&%.]*$/.test(q) ? q : "");
+
+    function showLookup(msg) {
+      hide_("loading"); hide_("loadErr"); hide_("result");
+      el("lmsg").textContent = msg ? msg + " " : "";
+      show_("lookup");
+    }
+
+    // ---- ask for a private link ----
+    function go() {
+      var em = el("em").value.trim();
+      el("err").textContent = "";
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { el("err").textContent = "That does not look like an email address."; return; }
+      var b = el("go"); b.disabled = true; b.textContent = "Sending...";
+      function reset() { b.disabled = false; b.textContent = "Email me my private link"; }
+      api("requestHoursLink", [em]).then(function (r) {
+        reset();
+        if (!r || !r.ok) { el("err").textContent = (r && r.message) || "Something went wrong. Try again in a moment."; return; }
+        el("sent").textContent = r.message; show_("sent");
+      }).catch(function () {
+        reset();
+        el("err").textContent = "Something went wrong. Try again in a moment.";
+      });
+    }
+    el("go").addEventListener("click", go);
+    el("em").addEventListener("keydown", function (ev) { if (ev.key === "Enter") go(); });
+
+    // ---- load the hours ----
+    function load() {
+      hide_("lookup"); hide_("loadErr"); show_("loading");
+      api("hoursData", [T, K]).then(render).catch(function () {
+        hide_("loading");
+        el("loadErrText").textContent = "We could not load your hours just now. Check your connection and try again.";
+        show_("loadErr");
+      });
+    }
+    el("retry").addEventListener("click", load);
+
+    function render(d) {
+      hide_("loading");
+      if (!d || !d.found) {
+        var msg = (d && d.expired) ? "That link has expired. Ask for a new one." :
+                  (d && d.ok === false && d.message) ? d.message :
+                  "No hours found yet. Hours appear here once your first session log is verified.";
+        el("err").textContent = "";
+        showLookup("");
+        el("err").textContent = msg;
+        return;
+      }
+      MAX_MB = d.maxMb || MAX_MB;
+      el("who").textContent = d.name || "Your hours";
+      el("school").textContent = d.school || "";
+      el("total").textContent = d.totalHours + " ";
+      var s = document.createElement("span"); s.textContent = "verified hours"; el("total").appendChild(s);
+      el("sess").textContent = d.sessions;
+      el("sh").textContent = d.sessionHours;
+      el("nh").textContent = d.noShowHours + " (" + d.noShows + ")";
+      el("nsRow").style.display = d.noShowHours > 0 ? "" : "none";
+      el("rh").textContent = d.referralHours;
+      el("refRow").style.display = d.referralHours > 0 ? "" : "none";
+      el("fd").textContent = d.firstDate || "—";
+      el("ld").textContent = d.lastDate || "—";
+
+      el("links").textContent = "";
+      if (d.links && d.links.length) {
+        d.links.forEach(function (x) {
+          var box = document.createElement("div"); box.className = "stu";
+          var b = document.createElement("div"); b.className = "sn"; b.textContent = x.student; box.appendChild(b);
+          if (x.when || x.next) {
+            var w = document.createElement("div"); w.className = "sw";
+            w.textContent = [x.when, x.next].filter(String).join(" · "); box.appendChild(w);
+          }
+          (x.facts || []).forEach(function (f) {
+            var r = document.createElement("div"); r.className = "sf";
+            var k = document.createElement("span"); k.textContent = f[0] + ": "; r.appendChild(k);
+            r.appendChild(document.createTextNode(f[1])); box.appendChild(r);
+          });
+          var line = document.createElement("div");
+          [["Join the session", x.meet], ["Log a session", x.log], ["Report a problem", x.report]].forEach(function (p) {
+            if (!p[1] || !/^https:\/\//.test(p[1])) return;
+            var l = document.createElement("a"); l.href = p[1]; l.textContent = p[0]; l.target = "_blank"; l.rel = "noopener";
+            line.appendChild(l);
+          });
+          box.appendChild(line);
+          el("links").appendChild(box);
+        });
+        show_("linksBox");
+      }
+      showOffer(d.offer || {});
+      var waiting = [];
+      if (d.openLetter) waiting.push("a verification letter");
+      if (d.openForm) waiting.push("your school's form");
+      if (waiting.length) {
+        el("done").textContent = "You already have " + waiting.join(" and ") + " waiting with us. We will email you when it is ready.";
+        show_("done");
+      }
+      show_("result");
+    }
+
+    function showOffer(o) {
+      var pg = el("progress");
+      hide_("o4"); hide_("progress");
+      if (!o.show) return;
+      if (o.state === "eligible") { show_("o4"); return; }
+      if (o.state === "progress") pg.textContent = "Another student: " + o.done + " of " + o.need + " verified sessions since your most recent student started. At " + o.need + " you can ask for another one right here.";
+      else if (o.state === "open") pg.textContent = "You are on the list for another student. We will email you an introduction when we find a match.";
+      else if (o.state === "waiting") pg.textContent = "Your newest student's introduction is still being set up.";
+      else return;
+      show_("progress");
+    }
+
+    // ---- the menu and its panes ----
+    function pick(which) { hide_("menu"); show_(which + "Pane"); }
+    function back() { PANES.forEach(hide_); show_("menu"); }
+    function finish(res) {
+      ["menu"].concat(PANES).forEach(hide_);
+      el("done").textContent = (res && res.message) ? res.message : "Request received.";
+      show_("done");
+    }
+    function busy(id, label) { var b = el(id); b.disabled = true; b.textContent = label; return function (text) { b.disabled = false; b.textContent = text; }; }
+
+    Array.prototype.forEach.call(document.querySelectorAll("[data-pick]"), function (n) {
+      n.addEventListener("click", function () { pick(n.getAttribute("data-pick")); });
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("[data-back]"), function (n) { n.addEventListener("click", back); });
+
+    el("moreBtn").addEventListener("click", function () {
+      var undo = busy("moreBtn", "Sending...");
+      api("hoursMoreStudents", [T, K]).then(function (res) { hide_("o4"); hide_("progress"); finish(res); })
+        .catch(function () { undo("Yes, match me with another student"); alert("Something went wrong. Try again in a moment."); });
+    });
+    el("certBtn").addEventListener("click", function () {
+      var undo = busy("certBtn", "Building your certificate...");
+      api("hoursCertificate", [T, K]).then(finish)
+        .catch(function () { undo("Email me my certificate"); alert("Something went wrong. Try again in a moment."); });
+    });
+    el("letterBtn").addEventListener("click", function () {
+      var undo = busy("letterBtn", "Sending...");
+      api("hoursLetter", [T, K, el("lnote").value]).then(finish)
+        .catch(function () { undo("Request the letter"); alert("Something went wrong. Try again in a moment, or email tutorforallnonprofit@gmail.com."); });
+    });
+    el("formBtn").addEventListener("click", function () {
+      var f = el("file").files[0];
+      el("ferr").textContent = "";
+      if (!f) { el("ferr").textContent = "Choose a file first."; return; }
+      if (f.size > MAX_MB * 1024 * 1024) { el("ferr").textContent = "That file is over " + MAX_MB + " MB. Try a smaller photo, or email it to tutorforallnonprofit@gmail.com."; return; }
+      var undo = busy("formBtn", "Uploading...");
+      var reader = new FileReader();
+      reader.onload = function () {
+        var b64 = String(reader.result).split(",")[1];
+        api("hoursUpload", [T, K, el("fnote").value, f.name, f.type, b64]).then(function (res) {
+          if (res && res.ok === false) { undo("Send it to us"); el("ferr").textContent = res.message; return; }
+          finish(res);
+        }).catch(function () {
+          undo("Send it to us");
+          el("ferr").textContent = "The upload did not go through. Try again, or email it to tutorforallnonprofit@gmail.com.";
+        });
+      };
+      reader.onerror = function () { undo("Send it to us"); el("ferr").textContent = "That file could not be read."; };
+      reader.readAsDataURL(f);
+    });
+
+    // ---- start ----
+    if (a === "h") {
+      var t = sp.get("t") || "", k = sp.get("k") || "";
+      if (/^[A-Za-z0-9_\-]{1,400}$/.test(t) && /^[A-Za-z0-9_\-]{1,100}$/.test(k)) { T = t; K = k; load(); }
+      else showLookup("That link has expired or is not valid. Ask for a new one below.");
+    } else {
+      showLookup("");
+    }
+  })();
 </script>
-</head><body style="font-family:Georgia,serif;padding:40px;text-align:center">
-<p>Opening Tutor-For-All&hellip;</p>
-<p><a id="go" href="https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec">Tap here if nothing happens</a></p>
-<script>document.getElementById("go").href = APP + (location.search || "");</script>
 </body></html>
