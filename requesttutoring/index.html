@@ -298,13 +298,19 @@
                             <label class="form-label" for="guardianEmail">Email Address <span class="req">*</span></label>
                             <input type="email" id="guardianEmail" name="guardian_email" class="form-input"
                                    placeholder="you@example.com" required autocomplete="email">
-                            <span class="form-hint">A Gmail address works best for the video calls, but any email is fine.</span>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="guardianPhone">Phone Number <span class="req">*</span></label>
                             <input type="tel" id="guardianPhone" name="guardian_phone" class="form-input"
                                    placeholder="(713) 000-0000" required autocomplete="tel">
                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="googleEmail">Google email for the video call <span class="opt">(optional)</span></label>
+                        <input type="email" id="googleEmail" name="google_email" class="form-input"
+                               maxlength="120" autocomplete="off" placeholder="name@gmail.com">
+                        <span class="form-hint">Our tutoring calls run on Google Meet. If you or your child sign in to Google on the device you will use for the call, type that email here. A Gmail address works, and so does a school Google account. Not sure, or no Google account? Leave it blank. It will not affect your request.</span>
                     </div>
 
                     <div class="form-group">
