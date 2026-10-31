@@ -45,6 +45,9 @@
   .err { color:#9C0006; font-size:14px; }
   .ok { background:#D6EDD9; border-radius:4px; padding:14px 16px; font-size:14px; line-height:1.55; }
   .hide { display:none; }
+  .rl { white-space:pre-line; }
+  label.opt { display:flex; gap:10px; align-items:flex-start; margin:0 0 10px; color:var(--deep); font-size:15px; white-space:pre-line; }
+  label.opt input { margin-top:4px; }
   .foot { background:var(--cream); padding:15px; text-align:center; font-size:12px; color:var(--deep); }
 </style>
 </head>
@@ -54,6 +57,19 @@
   <div class="body">
 
     <noscript><p class="err">This page needs JavaScript. Please turn it on, or email tutorforallnonprofit@gmail.com.</p></noscript>
+
+    <!-- 30 Oct 2026: Confirm buttons (a=cf) and "keep us on the waitlist" (a=w) are answered right here, so they work
+         for people signed in to several Google accounts. They talk to the script the same way as the hours page. -->
+    <div id="reply" class="hide">
+      <div id="rloading"><p>Loading...</p></div>
+      <h1 id="rhead" class="rl"></h1>
+      <div id="rlines"></div>
+      <div id="rchoices"></div>
+      <button id="rsend" type="button" class="hide">Send</button>
+      <p id="rerr" class="err rl"></p>
+      <div id="rdone" class="ok rl hide"></div>
+      <p id="rold" class="muted hide">Still stuck? Try <a id="roldlink" href="https://tutorforall.org">the older page</a>, or reply to our email and we will help.</p>
+    </div>
 
     <!-- links that are not the hours page (family pages, availability, and so on) still open the Google page -->
     <div id="fwd" class="hide">
@@ -174,6 +190,43 @@
     var q = location.search || "";
     var sp = new URLSearchParams(q);
     var a = sp.get("a");
+
+    // Confirm a match (a=cf) or stay on the waitlist (a=w): answered on this page.
+    if (a === "cf" || a === "w") {
+      var rt = sp.get("t") || "", rk = sp.get("k") || "", pre = sp.get("ch") || "";
+      var infoOp = a === "cf" ? "confirmInfo" : "waitlistInfo", replyOp = a === "cf" ? "confirmReply" : "waitlistReply";
+      var okq2 = /^\?[A-Za-z0-9_\-=&%.]*$/.test(q);
+      el("roldlink").href = APP + (okq2 ? q : "");
+      show_("reply");
+      var rfail = function (msg) { hide_("rloading"); el("rerr").textContent = msg; show_("rold"); };
+      if (!/^[A-Za-z0-9_\-]{1,600}$/.test(rt) || !/^[A-Za-z0-9_\-]{1,100}$/.test(rk)) { rfail("This link is not complete. Please tap the button in our email again."); return; }
+      api(infoOp, [rt, rk]).then(function (d) {
+        hide_("rloading");
+        if (!d || !d.ok) { rfail((d && d.message) || "This link is not valid or has expired. Please reply to our email."); return; }
+        el("rhead").textContent = d.heading || "";
+        (d.lines || []).forEach(function (x) { var p = document.createElement("p"); p.className = "rl"; p.textContent = x; el("rlines").appendChild(p); });
+        var ch = d.choices || [];
+        ch.forEach(function (c) {
+          var lab = document.createElement("label"); lab.className = "opt";
+          var inp = document.createElement("input"); inp.type = "radio"; inp.name = "rc"; inp.value = c.v; if (c.v === pre || ch.length === 1) inp.checked = true;
+          var sp2 = document.createElement("span"); sp2.textContent = c.label;
+          lab.appendChild(inp); lab.appendChild(sp2); el("rchoices").appendChild(lab);
+        });
+        if (!ch.length) return;
+        var b = el("rsend"); b.textContent = d.send || "Send"; show_("rsend");
+        b.addEventListener("click", function () {
+          var r = document.querySelector("input[name=rc]:checked");
+          if (!r) { el("rerr").textContent = "Please pick one."; return; }
+          el("rerr").textContent = ""; b.disabled = true; var label = b.textContent; b.textContent = "...";
+          api(replyOp, [rt, rk, r.value]).then(function (x) {
+            b.textContent = label;
+            if (x && x.ok) { hide_("rchoices"); hide_("rsend"); el("rdone").textContent = x.message; show_("rdone"); }
+            else { b.disabled = false; el("rerr").textContent = (x && x.message) || "Something went wrong. Please try again."; }
+          }).catch(function () { b.disabled = false; b.textContent = label; el("rerr").textContent = "Something went wrong. Please try again in a moment."; show_("rold"); });
+        });
+      }).catch(function () { rfail("We could not load this page. Please try again in a moment."); });
+      return;
+    }
 
     // Not the hours page: open the Google page, exactly as before.
     if (q !== "" && a !== "h") {
