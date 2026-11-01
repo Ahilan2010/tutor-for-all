@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Text the parent - Tutor-For-All</title>
+<style>
+  body { margin: 0; background: #F5EBC8; font-family: Arial, sans-serif; color: #15294F; }
+  .card { max-width: 420px; margin: 40px auto; background: #fff; border-radius: 10px; padding: 28px 22px; text-align: center; }
+  h1 { font-family: Georgia, serif; font-size: 22px; margin: 0 0 6px; color: #1E3A6F; }
+  p { font-size: 15px; line-height: 1.5; margin: 10px 0; }
+  a.btn { display: block; margin: 18px 0 8px; padding: 16px; background: #1E3A6F; color: #fff; text-decoration: none;
+          border-radius: 8px; font-size: 18px; font-weight: bold; }
+  .msg { text-align: left; background: #F7F7F7; border-radius: 6px; padding: 12px; font-size: 14px; white-space: pre-wrap; }
+  .small { font-size: 13px; color: #555; }
+</style>
+</head>
+<body>
+<!-- tfa-text-v1: opens the phone's texting app with a reminder written. Email apps block sms: links, so emails link here. -->
+<div class="card">
+  <h1>Text the parent</h1>
+  <p id="lead">Opening your messages app...</p>
+  <a class="btn" id="go" href="#">Open Messages</a>
+  <p class="small" id="to"></p>
+  <div class="msg" id="body"></div>
+  <p class="small">Nothing happens? Copy the message above and text it yourself.</p>
+</div>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var n = String(q.get("n") || "").replace(/[^0-9+]/g, "").slice(0, 16);
+  var b = String(q.get("b") || "").slice(0, 1200);
+  var lead = document.getElementById("lead"), go = document.getElementById("go");
+  if (!/^\+?[0-9]{7,15}$/.test(n)) {
+    lead.textContent = "This link is missing the phone number. Use the WhatsApp button, or text the parent yourself.";
+    go.style.display = "none";
+    return;
+  }
+  // "?&body=" works on both iPhone and Android.
+  var url = "sms:" + n + "?&body=" + encodeURIComponent(b);
+  go.href = url;
+  document.getElementById("to").textContent = "To: " + n;
+  document.getElementById("body").textContent = b;
+  lead.textContent = "Tap the button, then press send.";
+  setTimeout(function () { location.href = url; }, 300);
+})();
+</script>
+</body>
+</html>
