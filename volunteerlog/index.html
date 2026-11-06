@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Hour Log | Tutor-For-All</title>
     <meta name="description" content="Tutor-For-All tutors: log your verified volunteer hours within 3 days of every session. 1 hour per session, 2 hours per verified tutor referral, 30 minutes per verified family referral.">
-    <link rel="canonical" href="https://tutorforall.org/volunteerlog">
+    <link rel="canonical" href="https://tutorforall.org/volunteerlog/">
+    <!--i18n:head-->
+    <link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/">
+    <link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/">
+    <link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/">
+    <link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/">
+    <link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/">
+    <link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/">
+    <link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/">
+    <link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/">
+    <link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/">
+    <link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/">
+    <!--/i18n:head-->
     <meta name="theme-color" content="#1b2d5b">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tutorforall.org/volunteerlog">
+    <meta property="og:url" content="https://tutorforall.org/volunteerlog/">
     <meta property="og:site_name" content="Tutor-For-All">
     <meta property="og:title" content="Volunteer Hour Log | Tutor-For-All">
     <meta property="og:description" content="Tutor-For-All tutors: log your verified volunteer hours within 3 days of every session. 1 hour per session, 2 hours per verified tutor referral, 30 minutes per verified family referral.">
@@ -29,6 +41,8 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+            region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'] });
         gtag('js', new Date());
         gtag('config', 'G-2XP5SSKZVN');
     </script>
@@ -36,7 +50,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400..700&display=swap">
-    <link rel="stylesheet" href="/styles.css?v=6">
+    <link rel="stylesheet" href="/styles.css?v=7">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -50,14 +64,15 @@
             <span class="brand-name">Tutor-For-All</span>
         </a>
         <nav class="nav" aria-label="Main">
-            <a href="/requesttutoring">For Families</a>
-            <a href="/becomeatutor">For Tutors</a>
-            <a href="/volunteerlog" aria-current="page">Hour Log</a>
-            <a href="/about">About</a>
-            <a href="/faq">FAQ</a>
+            <a href="/requesttutoring/">For Families</a>
+            <a href="/becomeatutor/">For Tutors</a>
+            <a href="/volunteerlog/" aria-current="page">Hour Log</a>
+            <a href="/about/">About</a>
+            <a href="/faq/">FAQ</a>
         </nav>
         <div class="header-cta">
-            <a href="/donate" class="btn btn--gold">Donate</a>
+            <!--i18n:switch--><details class="lang-menu"><summary aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 5.6 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-5.6-3.9-9.2s1.3-6.6 3.9-9.2z"/></svg><span>English</span></summary><ul><li><a href="/volunteerlog/" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="/es/volunteerlog/" lang="es" hreflang="es">Español</a></li><li><a href="/fr/volunteerlog/" lang="fr" hreflang="fr">Français</a></li><li><a href="/pt/volunteerlog/" lang="pt" hreflang="pt">Português</a></li><li><a href="/ar/volunteerlog/" lang="ar" hreflang="ar">العربية</a></li><li><a href="/hi/volunteerlog/" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="/id/volunteerlog/" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="/vi/volunteerlog/" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="/sw/volunteerlog/" lang="sw" hreflang="sw">Kiswahili</a></li></ul></details><!--/i18n:switch-->
+            <a href="/donate/" class="btn btn--gold">Donate</a>
             <button class="menu-toggle" type="button" aria-controls="mobileNav" aria-expanded="false">
                 <span class="bars" aria-hidden="true"></span> Menu
             </button>
@@ -73,14 +88,14 @@
     <nav aria-label="Mobile">
         <ul>
             <li><a href="/">Home <span>01</span></a></li>
-            <li><a href="/requesttutoring">For Families <span>02</span></a></li>
-            <li><a href="/becomeatutor">For Tutors <span>03</span></a></li>
-            <li><a href="/volunteerlog">Hour Log <span>04</span></a></li>
-            <li><a href="/about">About <span>05</span></a></li>
-            <li><a href="/faq">FAQ <span>06</span></a></li>
+            <li><a href="/requesttutoring/">For Families <span>02</span></a></li>
+            <li><a href="/becomeatutor/">For Tutors <span>03</span></a></li>
+            <li><a href="/volunteerlog/">Hour Log <span>04</span></a></li>
+            <li><a href="/about/">About <span>05</span></a></li>
+            <li><a href="/faq/">FAQ <span>06</span></a></li>
         </ul>
     </nav>
-    <a href="/donate" class="btn btn--gold btn--block">Donate</a>
+    <a href="/donate/" class="btn btn--gold btn--block">Donate</a>
 </div>
 
 <main id="main">
@@ -197,6 +212,42 @@
         </div>
     </section>
 
+    <section class="section" id="in-your-language">
+        <div class="wrap wrap--narrow">
+            <p class="eyebrow"><span class="num">05</span> Help with the forms</p>
+            <h2 class="h-xl">What each question asks</h2>
+            <div class="prose mt-2">
+                <p>The hour log and the Report a problem form are in English. Here is what they ask, so you can fill them in with any level of English. In the Chrome browser you can also right-click the form and choose Translate.</p>
+                <h3>Hour log</h3>
+                <ul class="check-list">
+                    <li>Your full name and your school, written the same way every time</li>
+                    <li>What you are logging: a tutoring session, a tutor referral, or a family referral</li>
+                    <li>Your student's first and last name</li>
+                    <li>The date of the session</li>
+                    <li>How long the session lasted, in minutes</li>
+                    <li>What you covered and how it went</li>
+                    <li>Any concerns: No, Yes - Minor, or Yes - Needs Follow-up</li>
+                    <li>Notes for next time</li>
+                    <li>Your TFA Board Snapshot, the picture that proves the session</li>
+                </ul>
+                <h3>Report a problem</h3>
+                <ul class="check-list">
+                    <li><strong>I need to miss an upcoming session:</strong> you cannot come to a session. Tell us at least 24 hours ahead.</li>
+                    <li><strong>Session was held, I forgot to log it:</strong> the session happened but you did not log it in time.</li>
+                    <li><strong>Student did not show up:</strong> you came and your student did not.</li>
+                    <li><strong>The family cancelled this session:</strong> the family told you they could not come.</li>
+                    <li><strong>I had to cancel:</strong> you could not hold the session.</li>
+                    <li><strong>We rescheduled it:</strong> you moved one session to a new date. Give the new date and time.</li>
+                    <li><strong>We changed our regular day/time:</strong> your weekly session moves for good.</li>
+                    <li><strong>We added another weekly session:</strong> you agreed on an extra weekly time with the family.</li>
+                    <li><strong>We're taking a break:</strong> sessions stop until a date you choose.</li>
+                    <li><strong>The family has stopped coming:</strong> the family is not coming any more.</li>
+                    <li><strong>I need to stop tutoring:</strong> you are leaving. We tell the family and find them a new tutor.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="closing">
         <img class="seal" src="/assets/img/logo-512.png" alt="" width="360" height="360">
         <div class="wrap">
@@ -220,18 +271,20 @@
             <div>
                 <h4>Get involved</h4>
                 <ul>
-                    <li><a href="/requesttutoring">Request tutoring</a></li>
-                    <li><a href="/becomeatutor">Become a tutor</a></li>
-                    <li><a href="/volunteerlog">Log volunteer hours</a></li>
-                    <li><a href="/donate">Donate</a></li>
+                    <li><a href="/requesttutoring/">Request tutoring</a></li>
+                    <li><a href="/becomeatutor/">Become a tutor</a></li>
+                    <li><a href="/volunteerlog/">Log volunteer hours</a></li>
+                    <li><a href="/donate/">Donate</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Organization</h4>
                 <ul>
-                    <li><a href="/about">About us</a></li>
-                    <li><a href="/about#partners">Partners</a></li>
-                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/about/">About us</a></li>
+                    <li><a href="/about/#partners">Partners</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/safety/">Child safety</a></li>
+                    <li><a href="/privacy/">Privacy notice</a></li>
                     <li><a href="https://docs.google.com/document/d/1h9qcaefI6_PN6ttIUEO25Cbnn9UeCq9QMLEcJehEIn4/edit" target="_blank" rel="noopener">Advocacy statement</a></li>
                 </ul>
             </div>
@@ -244,6 +297,7 @@
                 </ul>
             </div>
         </div>
+        <!--i18n:footer--><nav class="footer-langs" aria-label="Languages"><a href="/volunteerlog/" lang="en" hreflang="en">English</a><a href="/es/volunteerlog/" lang="es" hreflang="es">Español</a><a href="/fr/volunteerlog/" lang="fr" hreflang="fr">Français</a><a href="/pt/volunteerlog/" lang="pt" hreflang="pt">Português</a><a href="/ar/volunteerlog/" lang="ar" hreflang="ar">العربية</a><a href="/hi/volunteerlog/" lang="hi" hreflang="hi">हिन्दी</a><a href="/id/volunteerlog/" lang="id" hreflang="id">Bahasa Indonesia</a><a href="/vi/volunteerlog/" lang="vi" hreflang="vi">Tiếng Việt</a><a href="/sw/volunteerlog/" lang="sw" hreflang="sw">Kiswahili</a></nav><!--/i18n:footer-->
         <div class="footer-bottom">
             <p>&copy; 2026 Tutor-For-All. A student-led nonprofit organization.</p>
             <p>Founded at Carnegie Vanguard High School, Houston, TX. Always free for families.</p>
@@ -251,7 +305,7 @@
     </div>
 </footer>
 
-<script src="/site.js?v=5" defer></script>
+<script src="/site.js?v=6" defer></script>
 
 </body>
 </html>
