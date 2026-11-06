@@ -1,45 +1,1758 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tutorforall.org/</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tutorforall.org/becomeatutor</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://tutorforall.org/es/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tutorforall.org/requesttutoring</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://tutorforall.org/es/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tutorforall.org/about</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://tutorforall.org/fr/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/requesttutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/requesttutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/requesttutoring/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/becomeatutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/becomeatutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/becomeatutor/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tutorforall.org/donate</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://tutorforall.org/es/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tutorforall.org/volunteerlog</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://tutorforall.org/fr/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/about/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/about/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/about/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/about/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/about/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/faq/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/faq/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/faq/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tutorforall.org/faq</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://tutorforall.org/es/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/donate/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/donate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/donate/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/donate/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/donate/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/donate/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/donate/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/donate/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/donate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/donate/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/volunteerlog/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteerlog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteerlog/"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/safety/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/safety/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/safety/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/safety/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/safety/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/safety/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/safety/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/safety/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/privacy/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/free-online-tutoring/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-online-tutoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-online-tutoring/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/free-reading-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-reading-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-reading-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/free-math-tutor/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/free-math-tutor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/free-math-tutor/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/es/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/fr/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/pt/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/ar/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/hi/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/id/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/vi/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tutorforall.org/sw/volunteer-hours-online/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tutorforall.org/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tutorforall.org/es/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tutorforall.org/fr/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tutorforall.org/pt/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tutorforall.org/ar/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tutorforall.org/hi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tutorforall.org/id/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://tutorforall.org/vi/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://tutorforall.org/sw/volunteer-hours-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tutorforall.org/volunteer-hours-online/"/>
     <priority>0.8</priority>
   </url>
 </urlset>
