@@ -228,6 +228,18 @@
       return;
     }
 
+    // Time zone and hours (a=z): loaded through the API, so it opens for people signed in to several Google accounts.
+    if (a === "z") {
+      var zold = APP + (/^\?[A-Za-z0-9_\-=&%.]*$/.test(q) ? q : "");
+      el("roldlink").href = zold;
+      show_("reply");
+      api("zonePageForSite", [sp.get("t") || "", sp.get("k") || ""]).then(function (d) {
+        if (d && d.ok && d.html) { document.open(); document.write(d.html); document.close(); return; }
+        hide_("rloading"); el("rerr").textContent = (d && d.message) || "This link is not valid or has expired. Please reply to our email."; show_("rold");
+      }).catch(function () { nav(zold); });
+      return;
+    }
+
     // Not the hours page: open the Google page, exactly as before.
     if (q !== "" && a !== "h") {
       show_("fwd");
