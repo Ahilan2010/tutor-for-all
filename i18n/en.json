@@ -253,6 +253,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -332,6 +333,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -374,6 +376,12 @@
 "en": "3rd Grade",
 "pages": [
 "requesttutoring/"
+]
+},
+"0c941c98a3": {
+"en": "<1>A new day or time.</1> Agree it with your tutor first. We then email you the new time. If you did not agree to it, tap “That’s not right” in that email.",
+"pages": [
+"families/"
 ]
 },
 "0cd68eb863": {
@@ -437,6 +445,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -587,6 +596,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -619,6 +629,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -630,6 +641,12 @@
 "safety/",
 "volunteer-hours-online/",
 "volunteerlog/"
+]
+},
+"13e995e854": {
+"en": "<1>Stopping.</1> Tap “No longer need tutoring?” at the bottom of any reminder email, or reply to us. Your child can join the waitlist again later.",
+"pages": [
+"families/"
 ]
 },
 "13ed766990": {
@@ -668,6 +685,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -699,6 +717,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -784,6 +803,18 @@
 "requesttutoring/"
 ]
 },
+"16f8cc4448": {
+"en": "When we find a tutor, we email you their name and the day and time. Tap <1>Confirm</1> within 2 days, or the tutor goes to the next family.",
+"pages": [
+"families/"
+]
+},
+"171176160f": {
+"en": "Breaks, new times and stopping",
+"pages": [
+"families/"
+]
+},
 "17d038fa8b": {
 "en": "Answers about Tutor-For-All's free K–5 online tutoring: who qualifies, languages, safety, sessions, tutor requirements, volunteer hours and donating.",
 "pages": [
@@ -865,6 +896,12 @@
 "safety/"
 ]
 },
+"1cbd0e28dd": {
+"en": "<1>05</1> Our emails",
+"pages": [
+"families/"
+]
+},
 "1cbfd3063e": {
 "en": "The family also needs to put your name in the referral question on their sign-up form.",
 "pages": [
@@ -883,6 +920,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -1129,6 +1167,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -1324,6 +1363,12 @@
 "becomeatutor/"
 ]
 },
+"284d0e465f": {
+"en": "If your child misses <1>2 sessions in a row</1> without cancelling, we email you. If we don’t hear back within 2 days, your spot goes to the next family on our waitlist.",
+"pages": [
+"families/"
+]
+},
 "28614356c1": {
 "en": "If needed / Open to it",
 "pages": [
@@ -1397,6 +1442,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -1420,6 +1466,12 @@
 "en": "Expand all",
 "pages": [
 "faq/"
+]
+},
+"2b19776b97": {
+"en": "What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to cancel a session, and our attendance rule.",
+"pages": [
+"families/"
 ]
 },
 "2b1be7c9d9": {
@@ -1468,6 +1520,12 @@
 "en": "Only the link on the calendar invitation for that student",
 "pages": [
 "onboarding/"
+]
+},
+"2d1181c358": {
+"en": "That’s it",
+"pages": [
+"families/"
 ]
 },
 "2d326ce091": {
@@ -1607,6 +1665,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -1787,6 +1846,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -1855,6 +1915,12 @@
 "requesttutoring/"
 ]
 },
+"398cb4a578": {
+"en": "From sign-up to your first session",
+"pages": [
+"families/"
+]
+},
 "39a25a709c": {
 "en": "Hours earned",
 "pages": [
@@ -1919,9 +1985,30 @@
 "3c8ed8aef2": {
 "en": "For parents & guardians",
 "pages": [
+"families/",
 "home",
 "requesttutoring/",
 "safety/"
+]
+},
+"3cdbdd2957": {
+"en": "<1>How tutoring works</1>",
+"pages": [
+"about/",
+"becomeatutor/",
+"donate/",
+"families/",
+"faq/",
+"free-math-tutor/",
+"free-online-tutoring/",
+"free-reading-tutor/",
+"home",
+"onboarding/",
+"privacy/",
+"requesttutoring/",
+"safety/",
+"volunteer-hours-online/",
+"volunteerlog/"
 ]
 },
 "3ceb049c90": {
@@ -1946,12 +2033,6 @@
 "en": "The form takes five minutes. It is free, now and always.",
 "pages": [
 "free-online-tutoring/"
-]
-},
-"3da8b7d18c": {
-"en": "Email us at <1>tutorforallnonprofit@gmail.com</1> as early as you can and we'll help sort it out.",
-"pages": [
-"faq/"
 ]
 },
 "3dc7dac4a6": {
@@ -2333,6 +2414,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -2379,6 +2461,12 @@
 "faq/"
 ]
 },
+"4acfd37c83": {
+"en": "<1>Joining the call.</1> Open the Meet link signed in to the Google account the invitation was sent to. If Meet says “Ask to join”, you are signed in to a different account: tap your picture at the top right and switch.",
+"pages": [
+"families/"
+]
+},
 "4ad1a0867a": {
 "en": "<1>High school graduation requirements.</1> Many schools and districts require service hours.",
 "pages": [
@@ -2412,6 +2500,7 @@
 "4b0e9fd18a": {
 "en": "Free tutoring for K–5 students is open now. <1>Sign up →</1>",
 "pages": [
+"families/",
 "free-math-tutor/",
 "free-online-tutoring/",
 "free-reading-tutor/",
@@ -2501,6 +2590,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -2526,6 +2616,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -2537,6 +2628,12 @@
 "safety/",
 "volunteer-hours-online/",
 "volunteerlog/"
+]
+},
+"4db921166d": {
+"en": "Why: our tutors are student volunteers who set this time aside for your child, and many families are still waiting for a tutor. Cancelling ahead keeps it fair for everyone.",
+"pages": [
+"families/"
 ]
 },
 "4dc6bf0ef0": {
@@ -2582,6 +2679,12 @@
 "requesttutoring/"
 ]
 },
+"502901afc5": {
+"en": "Email us at tutorforallnonprofit@gmail.com, in any language.",
+"pages": [
+"families/"
+]
+},
 "502c86bab3": {
 "en": "Volunteer Online Tutor for K–5 Math and Reading",
 "pages": [
@@ -2613,6 +2716,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -2632,6 +2736,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -2675,6 +2780,7 @@
 "pages": [
 "about/",
 "becomeatutor/",
+"families/",
 "home",
 "requesttutoring/",
 "volunteer-hours-online/"
@@ -3208,6 +3314,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -3305,6 +3412,12 @@
 "privacy/"
 ]
 },
+"6411f6122c": {
+"en": "You get the intro email",
+"pages": [
+"families/"
+]
+},
 "641a5868d9": {
 "en": "<1>05</1> Children",
 "pages": [
@@ -3329,6 +3442,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -3351,6 +3465,7 @@
 "64ae43e8fe": {
 "en": "Cost",
 "pages": [
+"families/",
 "free-math-tutor/",
 "free-online-tutoring/",
 "free-reading-tutor/",
@@ -3388,6 +3503,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -3450,6 +3566,12 @@
 "en": "Log the session the same day, and always within 3 days. Press Snapshot on the board and upload the picture with your log. A session with no log counts against you.",
 "pages": [
 "onboarding/"
+]
+},
+"674eda0fae": {
+"en": "<1>Be ready.</1> A laptop or tablet with the camera on, in a quiet spot, a few minutes early.",
+"pages": [
+"families/"
 ]
 },
 "675ce0332d": {
@@ -3554,6 +3676,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -3573,6 +3696,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -3596,6 +3720,12 @@
 "en": "Would you be comfortable tutoring a student in that language if it helps the child learn better? <1>*</1>",
 "pages": [
 "becomeatutor/"
+]
+},
+"6ac239c430": {
+"en": "<1>03</1> If you can’t make it",
+"pages": [
+"families/"
 ]
 },
 "6aece89239": {
@@ -3639,6 +3769,12 @@
 "en": "The information you give us",
 "pages": [
 "privacy/"
+]
+},
+"6c2c590e9c": {
+"en": "Watch for our emails",
+"pages": [
+"families/"
 ]
 },
 "6c4b548b4f": {
@@ -3745,6 +3881,7 @@
 "6f324caf47": {
 "en": "Still have a question?",
 "pages": [
+"families/",
 "faq/"
 ]
 },
@@ -3814,6 +3951,12 @@
 "en": "WIC",
 "pages": [
 "requesttutoring/"
+]
+},
+"72ba3c3471": {
+"en": "You confirm your tutor",
+"pages": [
+"families/"
 ]
 },
 "72c08a729c": {
@@ -4152,6 +4295,12 @@
 "onboarding/"
 ]
 },
+"7c68c92dda": {
+"en": "How tutoring <1>works.</1>",
+"pages": [
+"families/"
+]
+},
 "7c6ac5450d": {
 "en": "Current or most recent reading or language course. Required if you're tutoring reading; we look for 90 or above.",
 "pages": [
@@ -4199,6 +4348,12 @@
 "en": "<1>For tutors <2>11</2></1>",
 "pages": [
 "faq/"
+]
+},
+"7dd533a4b1": {
+"en": "Please cancel at least 2 hours before the session starts",
+"pages": [
+"families/"
 ]
 },
 "7df05925e5": {
@@ -4308,6 +4463,12 @@
 "volunteerlog/"
 ]
 },
+"81e5155204": {
+"en": "<1>Can’t make a session? <2>→</2></1>",
+"pages": [
+"families/"
+]
+},
 "81ebbb0c40": {
 "en": "Sessions begin",
 "pages": [
@@ -4345,6 +4506,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4368,6 +4530,12 @@
 "en": "<1>10</1><2>partner schools</2>",
 "pages": [
 "donate/"
+]
+},
+"83d0c86f49": {
+"en": "Pick the session your child can’t make. You can also cancel one of the next few sessions there.",
+"pages": [
+"families/"
 ]
 },
 "841d906904": {
@@ -4486,6 +4654,12 @@
 "becomeatutor/"
 ]
 },
+"8756e83dbb": {
+"en": "<1>Safety.</1> Sessions are online only, calls are closed to anyone not invited, and tutors never record. <2>How we keep children safe</2>.",
+"pages": [
+"families/"
+]
+},
 "876862289f": {
 "en": "45–50 min",
 "pages": [
@@ -4510,6 +4684,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4548,6 +4723,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4574,6 +4750,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4600,6 +4777,7 @@
 "all",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4661,6 +4839,12 @@
 "faq/"
 ]
 },
+"8b6a9e3246": {
+"en": "<1>02</1> Every week",
+"pages": [
+"families/"
+]
+},
 "8b6dc98d86": {
 "en": "State / Province / Region <1>*</1>",
 "pages": [
@@ -4704,6 +4888,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4785,6 +4970,12 @@
 "becomeatutor/"
 ]
 },
+"8fda5748dc": {
+"en": "Free, always",
+"pages": [
+"families/"
+]
+},
 "9006dd767d": {
 "en": "Nepal (NPT) – +5:45",
 "pages": [
@@ -4797,6 +4988,12 @@
 "pages": [
 "becomeatutor/",
 "requesttutoring/"
+]
+},
+"90478a6318": {
+"en": "Later than that, text or call your tutor. Their number is in your intro email.",
+"pages": [
+"families/"
 ]
 },
 "90dee75ac6": {
@@ -4839,6 +5036,12 @@
 "en": "What if we need to miss or move a session?",
 "pages": [
 "faq/"
+]
+},
+"91d48a515e": {
+"en": "Cancel from the reminder email",
+"pages": [
+"families/"
 ]
 },
 "91e8988b87": {
@@ -4905,6 +5108,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -4991,6 +5195,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -5016,6 +5221,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -5089,6 +5295,12 @@
 "en": "Processed securely by PayPal. You can pay by card without a PayPal account.",
 "pages": [
 "donate/"
+]
+},
+"97e17bca84": {
+"en": "What a normal week looks like",
+"pages": [
+"families/"
 ]
 },
 "97e1e34c13": {
@@ -5165,6 +5377,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -5254,6 +5467,12 @@
 "en": "A tutor referred me. Does that matter?",
 "pages": [
 "faq/"
+]
+},
+"9b335d6508": {
+"en": "<1>One address.</1> Every email comes from tutorforallnonprofit@gmail.com, and the subject starts with “IMPORTANT”. Save the address so we don’t land in spam.",
+"pages": [
+"families/"
 ]
 },
 "9b38947a6f": {
@@ -5396,6 +5615,12 @@
 "privacy/"
 ]
 },
+"9ed4f2ee34": {
+"en": "Tap “Cancel this session” in the reminder email we send the day before, at least 2 hours before the session starts. Your tutor is told right away, and it does not count against you. To move a session or take a break for a few weeks, reply to any of our emails. <1>How cancelling works</1>.",
+"pages": [
+"faq/"
+]
+},
 "9f04681d37": {
 "en": "Which language(s)? <1>*</1>",
 "pages": [
@@ -5408,6 +5633,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -5560,6 +5786,12 @@
 "becomeatutor/"
 ]
 },
+"a3a3c24c69": {
+"en": "<1>Same day, same time.</1> About one hour, one tutor with your child, online. Nobody comes to your home.",
+"pages": [
+"families/"
+]
+},
 "a449ff9411": {
 "en": "November 6, 2026",
 "pages": [
@@ -5706,6 +5938,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -5767,6 +6000,12 @@
 "en": "<1>02</1> For parents & guardians",
 "pages": [
 "faq/"
+]
+},
+"a9f5ff389c": {
+"en": "If 3 sessions in a row are cancelled, we email to check that tutoring still works for you. Nothing ends without asking you first.",
+"pages": [
+"families/"
 ]
 },
 "aa0142af77": {
@@ -5938,6 +6177,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -5949,6 +6189,12 @@
 "safety/",
 "volunteer-hours-online/",
 "volunteerlog/"
+]
+},
+"af504645a5": {
+"en": "<1>06</1> Changes",
+"pages": [
+"families/"
 ]
 },
 "af90cef809": {
@@ -6025,6 +6271,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -6056,6 +6303,12 @@
 "requesttutoring/"
 ]
 },
+"b2ba295fe6": {
+"en": "<1>How is it going?</1> About a month in, we ask how tutoring is going. Your answer helps us get better.",
+"pages": [
+"families/"
+]
+},
 "b2c3ae730c": {
 "en": "What makes volunteer hours count",
 "pages": [
@@ -6080,6 +6333,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -6110,6 +6364,12 @@
 "en": "The sign-up form asks a few short, confidential questions. In the United States: whether your child gets free or reduced-price school lunch, your approximate household income range, and whether your household receives assistance such as SNAP, Medicaid/CHIP, WIC, TANF or housing assistance. In other countries: whether your child gets free or low-cost school meals or help with school fees, how your income compares with most families in your country, and whether you receive government or charity help. We use the answers only to make sure our limited spots go to the families who need them most.",
 "pages": [
 "faq/"
+]
+},
+"b3c13c6a80": {
+"en": "How Tutoring Works for Families | Tutor-For-All",
+"pages": [
+"families/"
 ]
 },
 "b3ca60dd61": {
@@ -6269,6 +6529,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -6306,6 +6567,12 @@
 "en": "<1>Apply to tutor <2>→</2></1>",
 "pages": [
 "volunteer-hours-online/"
+]
+},
+"b8bad8903f": {
+"en": "You can ask to come back at any time, and we will put your child back on the waitlist.",
+"pages": [
+"families/"
 ]
 },
 "b8e79c862e": {
@@ -6351,6 +6618,12 @@
 "becomeatutor/"
 ]
 },
+"b9f56f3057": {
+"en": "<1>Read the FAQ</1><2>Email us</2>",
+"pages": [
+"families/"
+]
+},
 "b9fc179b17": {
 "en": "Online Volunteer Hours for High School Students | Tutor-For-All",
 "pages": [
@@ -6393,6 +6666,12 @@
 "requesttutoring/"
 ]
 },
+"bb82794f5f": {
+"en": "It has your tutor’s name and phone number, the weekly day and time on your clock, and the Google Meet link. A calendar invitation comes too. The first session is at least 2 days later.",
+"pages": [
+"families/"
+]
+},
 "bbd6e32ee1": {
 "en": "Fri",
 "pages": [
@@ -6406,6 +6685,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -6590,6 +6870,12 @@
 "becomeatutor/"
 ]
 },
+"c19a369879": {
+"en": "Fill in the short form. We reply within 3 to 5 school days.",
+"pages": [
+"families/"
+]
+},
 "c1ae0a311f": {
 "en": "School fee help or a scholarship",
 "pages": [
@@ -6623,6 +6909,12 @@
 "onboarding/"
 ]
 },
+"c2dbdad723": {
+"en": "Tap “Cancel this session”",
+"pages": [
+"families/"
+]
+},
 "c309bc1bdc": {
 "en": "One completed session",
 "pages": [
@@ -6651,6 +6943,12 @@
 "en": "Yes. Fill in the form in your language and tell us which language your child speaks best. We match your child with a tutor who speaks it. Our emails reach you in your language, with the English underneath. You can also reply to us in your own language.",
 "pages": [
 "faq/"
+]
+},
+"c3b7e6b0f9": {
+"en": "You sign up",
+"pages": [
+"families/"
 ]
 },
 "c3e839df60": {
@@ -6699,6 +6997,12 @@
 "en": "Comprehension of longer texts",
 "pages": [
 "home"
+]
+},
+"c5647bf736": {
+"en": "We email you the day before every session.",
+"pages": [
+"families/"
 ]
 },
 "c660637132": {
@@ -6755,6 +7059,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -6790,6 +7095,12 @@
 "en": "How long the session lasted, in minutes",
 "pages": [
 "volunteerlog/"
+]
+},
+"c93a5e0a1e": {
+"en": "Your tutor gets an email right away. A session you cancel does not count against you.",
+"pages": [
+"families/"
 ]
 },
 "c993d81694": {
@@ -6847,6 +7158,12 @@
 "volunteerlog/"
 ]
 },
+"cc4ce1ad0f": {
+"en": "Need a few weeks off, or a different day or time? Reply to any of our emails and we will set it up.",
+"pages": [
+"families/"
+]
+},
 "cc4f5c399c": {
 "en": "Your child and the tutor work problems together on our shared whiteboard, built for young children. The tutor starts with a quick review, teaches one skill, then watches your child try it and helps when they get stuck. Many tutors also set a little practice on Khan Academy, which is free and available in many languages.",
 "pages": [
@@ -6883,6 +7200,12 @@
 "en": "Select all Sunday",
 "pages": [
 "becomeatutor/"
+]
+},
+"ccb9c71dae": {
+"en": "Online, on Google Meet",
+"pages": [
+"families/"
 ]
 },
 "cd6a7b8768": {
@@ -6941,6 +7264,12 @@
 "donate/"
 ]
 },
+"cf7ade014f": {
+"en": "<1>Tap the buttons.</1> Most of our emails have a button. One tap is all we need: no forms, no accounts.",
+"pages": [
+"families/"
+]
+},
 "cfd6869bbe": {
 "en": "Jump to",
 "pages": [
@@ -6971,6 +7300,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -7093,6 +7423,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -7125,6 +7456,12 @@
 "becomeatutor/"
 ]
 },
+"d388478070": {
+"en": "About 1 hour a week",
+"pages": [
+"families/"
+]
+},
 "d3ac3e477d": {
 "en": "Select all that could work. Each session is approximately 1 hour.",
 "pages": [
@@ -7137,6 +7474,18 @@
 "all"
 ]
 },
+"d421b58e75": {
+"en": "<1>04</1> Our attendance rule",
+"pages": [
+"families/"
+]
+},
+"d455a87fe9": {
+"en": "Can’t make it?",
+"pages": [
+"families/"
+]
+},
 "d469068b9c": {
 "en": "Children's books, workbooks, pencils, notebooks and other school supplies. <1>See the full list of accepted donations.</1>",
 "pages": [
@@ -7147,6 +7496,12 @@
 "en": "Your child avoids reading or says it is boring.",
 "pages": [
 "free-reading-tutor/"
+]
+},
+"d48374953d": {
+"en": "Two missed sessions in a row",
+"pages": [
+"families/"
 ]
 },
 "d4925350e7": {
@@ -7296,6 +7651,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -7313,6 +7669,12 @@
 "en": "<1>I need to stop tutoring:</1> you are leaving. We tell the family and find them a new tutor.",
 "pages": [
 "volunteerlog/"
+]
+},
+"dc1e3a59a5": {
+"en": "<1>School holidays.</1> Before a holiday break, we email you if there is no session that week.",
+"pages": [
+"families/"
 ]
 },
 "dc5840a648": {
@@ -7388,10 +7750,22 @@
 "volunteerlog/"
 ]
 },
+"ddd3d566b9": {
+"en": "<1>You can watch.</1> You are welcome to sit in on any session.",
+"pages": [
+"families/"
+]
+},
 "dddd272d2b": {
 "en": "I will log my hours honestly. I will not inflate session times, fake referrals, or send proof for something I did not do.",
 "pages": [
 "onboarding/"
+]
+},
+"dde3b19d38": {
+"en": "Open the reminder",
+"pages": [
+"families/"
 ]
 },
 "de7aa9bd7a": {
@@ -7471,6 +7845,7 @@
 "e11e37a925": {
 "en": "Sessions",
 "pages": [
+"families/",
 "safety/"
 ]
 },
@@ -7702,6 +8077,7 @@
 "about/",
 "becomeatutor/",
 "donate/",
+"families/",
 "faq/",
 "free-math-tutor/",
 "free-online-tutoring/",
@@ -7770,6 +8146,12 @@
 "en": "Tutor-For-All is designed specifically for low-income families who cannot access paid tutoring services. To ensure our resources reach those who need them most, we ask a few brief questions below. Your answers are <1>completely confidential</1> and used only for eligibility review.",
 "pages": [
 "requesttutoring/"
+]
+},
+"ea79a7727e": {
+"en": "<1>Your language.</1> If you use another language, our emails come in that language with English underneath. You can reply in your own language.",
+"pages": [
+"families/"
 ]
 },
 "ea99379201": {
@@ -8008,6 +8390,12 @@
 "onboarding/"
 ]
 },
+"f0410e3f83": {
+"en": "<1>Homework.</1> If your child is stuck on schoolwork, send it to the tutor with the homework link in your intro email.",
+"pages": [
+"families/"
+]
+},
 "f056ced647": {
 "en": "Brazil – Amazonas / Manaus (AMT) – -4",
 "pages": [
@@ -8033,6 +8421,12 @@
 "onboarding/"
 ]
 },
+"f0f7ae1089": {
+"en": "How tutoring works",
+"pages": [
+"families/"
+]
+},
 "f12122e94f": {
 "en": "<1>02</1> Grade by grade",
 "pages": [
@@ -8050,6 +8444,12 @@
 "en": "The application takes about five minutes.",
 "pages": [
 "volunteer-hours-online/"
+]
+},
+"f19e4e18bf": {
+"en": "You wait for a tutor",
+"pages": [
+"families/"
 ]
 },
 "f1d5ed4c68": {
@@ -8138,6 +8538,18 @@
 "en": "One-on-one math and reading help for kindergarten through 5th grade, from a trained high school or college tutor, online. No fees, no catch. Fill out one form and we'll take it from there.",
 "pages": [
 "requesttutoring/"
+]
+},
+"f4b0868635": {
+"en": "We look for a tutor who fits your child’s grade, subjects, language and times. After 2 weeks, and then about once a month, we email to ask if you still want a tutor. Please tap <1>Yes</1> within 3 days. Until you do, we can’t match your child.",
+"pages": [
+"families/"
+]
+},
+"f4c9894384": {
+"en": "<1>01</1> Before the first session",
+"pages": [
+"families/"
 ]
 },
 "f4f9d2449d": {
@@ -8265,6 +8677,12 @@
 "en": "Yes. If you're close, apply anyway. We review every application individually. If it's not a yes this time, you're welcome to apply again next semester.",
 "pages": [
 "faq/"
+]
+},
+"f974a1ef9a": {
+"en": "<1>Reminders.</1> We email you the day before, and again shortly before the session starts.",
+"pages": [
+"families/"
 ]
 },
 "f992d0528b": {
@@ -8441,6 +8859,12 @@
 "en": "4. Eligibility Screening",
 "pages": [
 "requesttutoring/"
+]
+},
+"ffd7155e02": {
+"en": "Everything that happens after you sign up, and the few things we ask of you. It takes about three minutes to read.",
+"pages": [
+"families/"
 ]
 }
 }
