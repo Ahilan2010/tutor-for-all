@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 SITE = 'https://tutorforall.org/'
-TODAY = '2026-11-06'
+TODAY = '2026-11-07'
 
 LANGS = {
     'es': {'name': 'Español', 'og': 'es_ES'},
@@ -46,11 +46,11 @@ LANGS = {
 
 # Pages that exist in every language. noindex pages stay out of the sitemap and hreflang.
 PAGES = ['', 'requesttutoring/', 'becomeatutor/', 'about/', 'faq/', 'donate/', 'volunteerlog/', 'safety/', 'privacy/',
-         'free-online-tutoring/', 'free-reading-tutor/', 'free-math-tutor/', 'volunteer-hours-online/', 'onboarding/']
+         'free-online-tutoring/', 'free-reading-tutor/', 'free-math-tutor/', 'volunteer-hours-online/', 'onboarding/', 'families/']
 NOINDEX = {'onboarding/'}
 PRIORITY = {'': '1.0', 'requesttutoring/': '0.9', 'becomeatutor/': '0.9', 'free-online-tutoring/': '0.8', 'volunteer-hours-online/': '0.8',
             'faq/': '0.7', 'about/': '0.7', 'donate/': '0.6', 'free-reading-tutor/': '0.7', 'free-math-tutor/': '0.7',
-            'safety/': '0.6', 'privacy/': '0.3', 'volunteerlog/': '0.4'}
+            'safety/': '0.6', 'privacy/': '0.3', 'volunteerlog/': '0.4', 'families/': '0.7'}
 
 # Extra text that only translated pages show.
 UI = {
