@@ -71,7 +71,7 @@
       <p id="rold" class="muted hide">Still stuck? Try <a id="roldlink" href="https://tutorforall.org">the older page</a>, or reply to our email and we will help.</p>
     </div>
 
-    <!-- links that are not the hours page (family pages, availability, and so on) still open the Google page -->
+    <!-- admin, helper and email-list links still open the Google page (7 Nov 2026: family pages are answered here, see PAGES) -->
     <div id="fwd" class="hide">
       <p>Opening Tutor-For-All&hellip;</p>
       <p><a id="fwdlink" href="https://tutorforall.org">Tap here if nothing happens</a></p>
@@ -159,7 +159,8 @@
 </div>
 
 <script>
-  // The Google web app. Pages other than the hours page still open there. The hours page only sends it plain requests.
+  // The Google web app. Only the admin, helper and email-list pages still open there; everything a tutor or family taps
+  // is answered on this page with plain requests to the script (api.gs).
   var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
   var nav = window.__nav || function (u) { location.replace(u); };
 
@@ -228,19 +229,31 @@
       return;
     }
 
-    // Time zone and hours (a=z): loaded through the API, so it opens for people signed in to several Google accounts.
-    if (a === "z") {
-      var zold = APP + (/^\?[A-Za-z0-9_\-=&%.]*$/.test(q) ? q : "");
-      el("roldlink").href = zold;
+    // Private pages loaded through the API, so they open for people signed in to several Google accounts:
+    // time zone and hours (a=z, 5 Nov 2026) and, since 7 Nov 2026 (Phase 2), the family reply page (f), homework (hw),
+    // the one-month review (rv), "add a Google email" (ge) and a family's tutoring times (avail).
+    // The script checks the signed link and returns the whole page; its buttons talk to the same API.
+    var PAGES = {
+      z:     ["zonePageForSite",         ["t", "k"]],
+      f:     ["familyPageForSite",       ["d", "k", "ch"]],
+      hw:    ["homeworkPageForSite",     ["d", "k"]],
+      rv:    ["reviewPageForSite",       ["d", "k"]],
+      ge:    ["googleEmailPageForSite",  ["d", "k"]],
+      avail: ["availabilityPageForSite", ["s", "k"]]
+    };
+    if (Object.prototype.hasOwnProperty.call(PAGES, a)) {
+      var pold = APP + (/^\?[A-Za-z0-9_\-=&%.]*$/.test(q) ? q : "");
+      el("roldlink").href = pold;
       show_("reply");
-      api("zonePageForSite", [sp.get("t") || "", sp.get("k") || ""]).then(function (d) {
+      var pargs = PAGES[a][1].map(function (n) { return sp.get(n) || ""; });
+      api(PAGES[a][0], pargs).then(function (d) {
         if (d && d.ok && d.html) { document.open(); document.write(d.html); document.close(); return; }
         hide_("rloading"); el("rerr").textContent = (d && d.message) || "This link is not valid or has expired. Please reply to our email."; show_("rold");
-      }).catch(function () { nav(zold); });
+      }).catch(function () { nav(pold); });
       return;
     }
 
-    // Not the hours page: open the Google page, exactly as before.
+    // Anything else with a query (admin, helper and email-list pages): open the Google page, exactly as before.
     if (q !== "" && a !== "h") {
       show_("fwd");
       var okq = /^\?[A-Za-z0-9_\-=&%.]*$/.test(q);
