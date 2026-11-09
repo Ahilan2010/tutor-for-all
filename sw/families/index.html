@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Jinsi Masomo Yanavyofanya Kazi kwa Familia | Tutor-For-All</title>
-<meta content="Kinachotokea baada ya kujisajili kwa masomo ya bure ya Tutor-For-All: orodha ya kusubiri, mwalimu wako, vipindi vya kila wiki, jinsi ya kughairi kipindi, na kanuni yetu ya mahudhurio." name="description"/>
+<meta content="Kinachotokea baada ya kujisajili kwa masomo ya bure ya Tutor-For-All: orodha ya kusubiri, mwalimu wako, vipindi vya kila wiki, jinsi ya kuona na kughairi vipindi vyako, na kanuni yetu ya mahudhurio." name="description"/>
 <link href="https://tutorforall.org/sw/families/" rel="canonical"/>
 <!--i18n:head-->
     <link rel="alternate" hreflang="en" href="https://tutorforall.org/families/">
@@ -25,7 +25,7 @@
 <meta content="https://tutorforall.org/sw/families/" property="og:url"/>
 <meta content="Tutor-For-All" property="og:site_name"/>
 <meta content="Jinsi Masomo Yanavyofanya Kazi kwa Familia | Tutor-For-All" property="og:title"/>
-<meta content="Kinachotokea baada ya kujisajili kwa masomo ya bure ya Tutor-For-All: orodha ya kusubiri, mwalimu wako, vipindi vya kila wiki, jinsi ya kughairi kipindi, na kanuni yetu ya mahudhurio." property="og:description"/>
+<meta content="Kinachotokea baada ya kujisajili kwa masomo ya bure ya Tutor-For-All: orodha ya kusubiri, mwalimu wako, vipindi vya kila wiki, jinsi ya kuona na kughairi vipindi vyako, na kanuni yetu ya mahudhurio." property="og:description"/>
 <meta content="https://tutorforall.org/assets/img/og.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -49,6 +49,16 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Instrument+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
 <link href="/styles.css?v=7" rel="stylesheet"/>
+<style>
+        /* "Email me my link" (8 Nov 2026): the box that emails a family its private My sessions page */
+        .link-form-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+        .link-form-row .form-input { flex: 1 1 15rem; min-width: 0; }
+        .link-form-row .btn { flex: 0 0 auto; }
+        .link-form-msg { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.5; }
+        .link-form-msg:empty { display: none; }
+        .link-form-msg.is-ok { color: var(--green); }
+        .link-form-msg.is-err { color: var(--red); }
+    </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Ruka hadi maudhui</a><div class="machine-note">Ukurasa huu umetafsiriwa na kompyuta. Kama kuna kitu kisichoeleweka, ukurasa wa Kiingereza ndio rasmi. <a href="/families/" lang="en">Soma kwa Kiingereza</a></div>
@@ -94,7 +104,7 @@
 <p class="lede">Kila kinachotokea baada ya kujisajili, na mambo machache tunayokuomba. Inachukua takriban dakika tatu kusoma.</p>
 <div class="btn-row mt-2"><a class="btn" href="#cancel">Huwezi kuhudhuria kipindi? <span aria-hidden="true" class="arrow">→</span></a></div>
 </div>
-<aside><dl><dt>Gharama</dt><dd>Bure, daima</dd><dt>Vipindi</dt><dd>Takriban saa 1 kwa wiki</dd><dt>Wapi</dt><dd>Mtandaoni, kwenye Google Meet</dd><dt>Huwezi kuhudhuria?</dt><dd>Ghairi kupitia barua pepe ya ukumbusho</dd></dl></aside>
+<aside><dl><dt>Gharama</dt><dd>Bure, daima</dd><dt>Vipindi</dt><dd>Takriban saa 1 kwa wiki</dd><dt>Wapi</dt><dd>Mtandaoni, kwenye Google Meet</dd><dt>Huwezi kuhudhuria?</dt><dd>Ghairi kwenye ukurasa wa “Vipindi vyangu”</dd></dl></aside>
 </div>
 </header>
 <section class="section">
@@ -140,13 +150,25 @@
 <section class="section" id="cancel">
 <div class="wrap wrap--narrow">
 <p class="eyebrow"><span class="num">03</span> Usipoweza kuhudhuria</p>
-<h2 class="h-xl">Ghairi kupitia barua pepe ya ukumbusho</h2>
+<h2 class="h-xl">Angalia na ughairi vipindi vyako</h2>
 <div class="mt-2">
 <ol class="steps steps--list">
-<li><div><h3>Fungua ukumbusho</h3><p>Tunakutumia barua pepe siku moja kabla ya kila kipindi.</p></div></li>
-<li><div><h3>Gusa “Ghairi kipindi hiki”</h3><p>Chagua kipindi ambacho mtoto wako hawezi kuhudhuria. Hapo pia unaweza kughairi kimojawapo cha vipindi vijavyo.</p></div></li>
-<li><div><h3>Basi</h3><p>Mwalimu wako anapata barua pepe mara moja. Kipindi unachoghairi hakihesabiwi dhidi yako.</p></div></li>
+<li><div><h3>Fungua “Vipindi vyangu”</h3><p>Kila barua pepe ya ukumbusho ina kiungo cha ukurasa wako wa <strong>Vipindi vyangu</strong>. Unaonyesha wiki 8 zijazo za masomo, kwa saa zako.</p></div></li>
+<li><div><h3>Gusa “Ghairi”</h3><p>Chagua kipindi chochote ambacho mtoto wako hawezi kuhudhuria, wiki hii au wiki kadhaa mbele.</p></div></li>
+<li><div><h3>Basi</h3><p>Mwalimu wako anapata barua pepe mara moja, na ukumbusho siku moja kabla. Kipindi unachoghairi hakihesabiwi dhidi yako. Umebadili mawazo? Gusa <strong>Tendua</strong>, hadi saa 24 kabla.</p></div></li>
 </ol>
+<div class="callout mt-2" id="my-sessions">
+<h3>Huna kiungo?</h3>
+<p>Andika anwani ya barua pepe uliyotumia kujisajili. Ikiwa ina vipindi vya masomo nasi, tutakutumia kiungo chako binafsi cha ukurasa wa “Vipindi vyangu”.</p>
+<form class="mt-1" id="mySessionsForm" novalidate="">
+<label class="form-label" for="mySessionsEmail">Anwani yako ya barua pepe</label>
+<div class="link-form-row">
+<input autocomplete="email" class="form-input" id="mySessionsEmail" inputmode="email" placeholder="you@example.com" required="" type="email"/>
+<button class="btn" id="mySessionsBtn" type="submit">Nitumie kiungo changu</button>
+</div>
+<p aria-live="polite" class="link-form-msg" id="mySessionsMsg" role="status"></p>
+</form>
+</div>
 <div class="callout mt-2">
 <h3>Tafadhali ghairi angalau saa 2 kabla kipindi hakijaanza</h3>
 <p>Baada ya hapo, mtumie mwalimu wako ujumbe au umpigie simu. Namba yake iko kwenye barua pepe ya utambulisho.</p>
@@ -250,6 +272,42 @@
 </div>
 </div>
 </footer>
+<script id="tfa-strings" type="application/json">{
+  "sending": "Inatuma...",
+  "button": "Nitumie kiungo changu",
+  "sent": "Asante. Ikiwa barua pepe hiyo ina vipindi vya masomo nasi, tumetuma kiungo chako huko. Angalia kikasha chako (na folda ya barua taka) baada ya dakika chache.",
+  "badEmail": "Andika anwani ya barua pepe uliyotumia kujisajili.",
+  "failed": "Kuna hitilafu. Jaribu tena baada ya dakika moja, au tuandikie kwa tutorforallnonprofit@gmail.com."
+}</script>
+<script>
+  // "Email me my link" (8 Nov 2026): asks the Apps Script (api.gs requestFamilyLink) to email this family its
+  // private My sessions page. The script gives the same answer whether or not the email is on file.
+  (function () {
+    var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
+    var form = document.getElementById("mySessionsForm");
+    if (!form) return;
+    var S = {};
+    try { S = JSON.parse(document.getElementById("tfa-strings").textContent); } catch (e) { /* English fallbacks below */ }
+    var input = document.getElementById("mySessionsEmail"), btn = document.getElementById("mySessionsBtn"), msg = document.getElementById("mySessionsMsg");
+    function show(text, ok) { msg.textContent = text || ""; msg.className = "link-form-msg " + (ok ? "is-ok" : "is-err"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = String(input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { show(S.badEmail || "Please type your email address.", false); input.focus(); return; }
+      btn.disabled = true; btn.textContent = S.sending || "Sending...";
+      fetch(APP + "?api=1", {
+        method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, credentials: "omit", redirect: "follow",
+        body: JSON.stringify({ op: "requestFamilyLink", args: [v] })
+      }).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then(function (j) {
+          if (!j || j.api !== true || !j.data || !j.data.ok) throw new Error("not ok");
+          show(S.sent, true); input.value = "";
+        })
+        .catch(function () { show(S.failed || "Something went wrong. Please try again.", false); })
+        .then(function () { btn.disabled = false; btn.textContent = S.button || "Email me my link"; });
+    });
+  })();
+</script>
 <script defer="" src="/site.js?v=6"></script>
 </body>
 </html>

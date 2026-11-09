@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Como funciona o reforço para as famílias | Tutor-For-All</title>
-<meta content="O que acontece depois que você se inscreve no reforço gratuito da Tutor-For-All: a lista de espera, seu tutor, as aulas semanais, como cancelar uma aula e nossa regra de presença." name="description"/>
+<meta content="O que acontece depois da inscrição na tutoria gratuita da Tutor-For-All: a lista de espera, o seu tutor, as aulas semanais, como ver e cancelar suas aulas, e a nossa regra de presença." name="description"/>
 <link href="https://tutorforall.org/pt/families/" rel="canonical"/>
 <!--i18n:head-->
     <link rel="alternate" hreflang="en" href="https://tutorforall.org/families/">
@@ -25,7 +25,7 @@
 <meta content="https://tutorforall.org/pt/families/" property="og:url"/>
 <meta content="Tutor-For-All" property="og:site_name"/>
 <meta content="Como funciona o reforço para as famílias | Tutor-For-All" property="og:title"/>
-<meta content="O que acontece depois que você se inscreve no reforço gratuito da Tutor-For-All: a lista de espera, seu tutor, as aulas semanais, como cancelar uma aula e nossa regra de presença." property="og:description"/>
+<meta content="O que acontece depois da inscrição na tutoria gratuita da Tutor-For-All: a lista de espera, o seu tutor, as aulas semanais, como ver e cancelar suas aulas, e a nossa regra de presença." property="og:description"/>
 <meta content="https://tutorforall.org/assets/img/og.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -49,6 +49,16 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Instrument+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
 <link href="/styles.css?v=7" rel="stylesheet"/>
+<style>
+        /* "Email me my link" (8 Nov 2026): the box that emails a family its private My sessions page */
+        .link-form-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+        .link-form-row .form-input { flex: 1 1 15rem; min-width: 0; }
+        .link-form-row .btn { flex: 0 0 auto; }
+        .link-form-msg { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.5; }
+        .link-form-msg:empty { display: none; }
+        .link-form-msg.is-ok { color: var(--green); }
+        .link-form-msg.is-err { color: var(--red); }
+    </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Ir para o conteúdo</a><div class="machine-note">Esta página foi traduzida por computador. Se algo não estiver claro, a página em inglês é a oficial. <a href="/families/" lang="en">Ler em inglês</a></div>
@@ -96,7 +106,7 @@
 <p class="lede">Tudo o que acontece depois da inscrição, e o pouco que pedimos a você. Leva uns três minutos para ler.</p>
 <div class="btn-row mt-2"><a class="btn" href="#cancel">Não pode ir a uma aula? <span aria-hidden="true" class="arrow">→</span></a></div>
 </div>
-<aside><dl><dt>Custo</dt><dd>Grátis, sempre</dd><dt>Aulas</dt><dd>Cerca de 1 hora por semana</dd><dt>Onde</dt><dd>On-line, pelo Google Meet</dd><dt>Não pode ir?</dt><dd>Cancele pelo e-mail de lembrete</dd></dl></aside>
+<aside><dl><dt>Custo</dt><dd>Grátis, sempre</dd><dt>Aulas</dt><dd>Cerca de 1 hora por semana</dd><dt>Onde</dt><dd>On-line, pelo Google Meet</dd><dt>Não pode ir?</dt><dd>Cancele na sua página “Minhas aulas”</dd></dl></aside>
 </div>
 </header>
 <section class="section">
@@ -142,13 +152,25 @@
 <section class="section" id="cancel">
 <div class="wrap wrap--narrow">
 <p class="eyebrow"><span class="num">03</span> Se não puder ir</p>
-<h2 class="h-xl">Cancele pelo e-mail de lembrete</h2>
+<h2 class="h-xl">Veja e cancele suas aulas</h2>
 <div class="mt-2">
 <ol class="steps steps--list">
-<li><div><h3>Abra o lembrete</h3><p>Enviamos um e-mail na véspera de cada aula.</p></div></li>
-<li><div><h3>Toque em “Cancelar esta aula”</h3><p>Escolha a aula que seu filho vai perder. Ali você também pode cancelar uma das próximas aulas.</p></div></li>
-<li><div><h3>Pronto</h3><p>O tutor recebe um e-mail na hora. Uma aula que você cancela não conta contra você.</p></div></li>
+<li><div><h3>Abra “Minhas aulas”</h3><p>Todo e-mail de lembrete tem um link para a sua própria página <strong>Minhas aulas</strong>. Ela mostra as suas próximas 8 semanas de tutoria, no seu horário.</p></div></li>
+<li><div><h3>Toque em “Cancelar”</h3><p>Escolha qualquer aula em que seu filho não possa estar, nesta semana ou daqui a algumas semanas.</p></div></li>
+<li><div><h3>Pronto</h3><p>O tutor recebe um e-mail na hora, e um lembrete na véspera. Uma aula que você cancela não conta contra você. Mudou de ideia? Toque em <strong>Desfazer</strong>, até 24 horas antes.</p></div></li>
 </ol>
+<div class="callout mt-2" id="my-sessions">
+<h3>Não tem o link?</h3>
+<p>Digite o e-mail que você usou na inscrição. Se ele tiver aulas de tutoria conosco, enviaremos por e-mail o seu link privado para “Minhas aulas”.</p>
+<form class="mt-1" id="mySessionsForm" novalidate="">
+<label class="form-label" for="mySessionsEmail">Seu e-mail</label>
+<div class="link-form-row">
+<input autocomplete="email" class="form-input" id="mySessionsEmail" inputmode="email" placeholder="you@example.com" required="" type="email"/>
+<button class="btn" id="mySessionsBtn" type="submit">Envie meu link por e-mail</button>
+</div>
+<p aria-live="polite" class="link-form-msg" id="mySessionsMsg" role="status"></p>
+</form>
+</div>
 <div class="callout mt-2">
 <h3>Cancele pelo menos 2 horas antes do início da aula</h3>
 <p>Depois disso, mande mensagem ou ligue para o tutor. O número está no e-mail de apresentação.</p>
@@ -252,6 +274,42 @@
 </div>
 </div>
 </footer>
+<script id="tfa-strings" type="application/json">{
+  "sending": "Enviando...",
+  "button": "Envie meu link por e-mail",
+  "sent": "Obrigado. Se esse e-mail tiver aulas de tutoria conosco, enviamos o seu link para ele. Confira sua caixa de entrada (e o spam) em alguns minutos.",
+  "badEmail": "Digite o e-mail que você usou na inscrição.",
+  "failed": "Algo deu errado. Tente de novo em um minuto, ou escreva para tutorforallnonprofit@gmail.com."
+}</script>
+<script>
+  // "Email me my link" (8 Nov 2026): asks the Apps Script (api.gs requestFamilyLink) to email this family its
+  // private My sessions page. The script gives the same answer whether or not the email is on file.
+  (function () {
+    var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
+    var form = document.getElementById("mySessionsForm");
+    if (!form) return;
+    var S = {};
+    try { S = JSON.parse(document.getElementById("tfa-strings").textContent); } catch (e) { /* English fallbacks below */ }
+    var input = document.getElementById("mySessionsEmail"), btn = document.getElementById("mySessionsBtn"), msg = document.getElementById("mySessionsMsg");
+    function show(text, ok) { msg.textContent = text || ""; msg.className = "link-form-msg " + (ok ? "is-ok" : "is-err"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = String(input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { show(S.badEmail || "Please type your email address.", false); input.focus(); return; }
+      btn.disabled = true; btn.textContent = S.sending || "Sending...";
+      fetch(APP + "?api=1", {
+        method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, credentials: "omit", redirect: "follow",
+        body: JSON.stringify({ op: "requestFamilyLink", args: [v] })
+      }).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then(function (j) {
+          if (!j || j.api !== true || !j.data || !j.data.ok) throw new Error("not ok");
+          show(S.sent, true); input.value = "";
+        })
+        .catch(function () { show(S.failed || "Something went wrong. Please try again.", false); })
+        .then(function () { btn.disabled = false; btn.textContent = S.button || "Email me my link"; });
+    });
+  })();
+</script>
 <script defer="" src="/site.js?v=6"></script>
 </body>
 </html>

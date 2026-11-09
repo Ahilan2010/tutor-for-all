@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Comment fonctionne le tutorat pour les familles | Tutor-For-All</title>
-<meta content="Ce qui se passe après votre inscription au tutorat gratuit de Tutor-For-All : la liste d’attente, votre tuteur, les séances hebdomadaires, comment annuler une séance et notre règle de présence." name="description"/>
+<meta content="Ce qui se passe après l’inscription au tutorat gratuit de Tutor-For-All : la liste d’attente, votre tuteur, les séances hebdomadaires, comment voir et annuler vos séances, et notre règle d’assiduité." name="description"/>
 <link href="https://tutorforall.org/fr/families/" rel="canonical"/>
 <!--i18n:head-->
     <link rel="alternate" hreflang="en" href="https://tutorforall.org/families/">
@@ -25,7 +25,7 @@
 <meta content="https://tutorforall.org/fr/families/" property="og:url"/>
 <meta content="Tutor-For-All" property="og:site_name"/>
 <meta content="Comment fonctionne le tutorat pour les familles | Tutor-For-All" property="og:title"/>
-<meta content="Ce qui se passe après votre inscription au tutorat gratuit de Tutor-For-All : la liste d’attente, votre tuteur, les séances hebdomadaires, comment annuler une séance et notre règle de présence." property="og:description"/>
+<meta content="Ce qui se passe après l’inscription au tutorat gratuit de Tutor-For-All : la liste d’attente, votre tuteur, les séances hebdomadaires, comment voir et annuler vos séances, et notre règle d’assiduité." property="og:description"/>
 <meta content="https://tutorforall.org/assets/img/og.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -49,6 +49,16 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Instrument+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
 <link href="/styles.css?v=7" rel="stylesheet"/>
+<style>
+        /* "Email me my link" (8 Nov 2026): the box that emails a family its private My sessions page */
+        .link-form-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+        .link-form-row .form-input { flex: 1 1 15rem; min-width: 0; }
+        .link-form-row .btn { flex: 0 0 auto; }
+        .link-form-msg { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.5; }
+        .link-form-msg:empty { display: none; }
+        .link-form-msg.is-ok { color: var(--green); }
+        .link-form-msg.is-err { color: var(--red); }
+    </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu</a><div class="machine-note">Cette page a été traduite par ordinateur. Si quelque chose n'est pas clair, la page en anglais fait foi. <a href="/families/" lang="en">Lire en anglais</a></div>
@@ -96,7 +106,7 @@
 <p class="lede">Tout ce qui se passe après votre inscription, et le peu que nous vous demandons. Trois minutes de lecture environ.</p>
 <div class="btn-row mt-2"><a class="btn" href="#cancel">Impossible de venir à une séance ? <span aria-hidden="true" class="arrow">→</span></a></div>
 </div>
-<aside><dl><dt>Coût</dt><dd>Gratuit, toujours</dd><dt>Séances</dt><dd>Environ 1 heure par semaine</dd><dt>Où</dt><dd>En ligne, sur Google Meet</dd><dt>Vous ne pouvez pas venir ?</dt><dd>Annulez depuis l’e-mail de rappel</dd></dl></aside>
+<aside><dl><dt>Coût</dt><dd>Gratuit, toujours</dd><dt>Séances</dt><dd>Environ 1 heure par semaine</dd><dt>Où</dt><dd>En ligne, sur Google Meet</dd><dt>Vous ne pouvez pas venir ?</dt><dd>Annulez sur votre page « Mes séances »</dd></dl></aside>
 </div>
 </header>
 <section class="section">
@@ -142,13 +152,25 @@
 <section class="section" id="cancel">
 <div class="wrap wrap--narrow">
 <p class="eyebrow"><span class="num">03</span> Si vous ne pouvez pas venir</p>
-<h2 class="h-xl">Annulez depuis l’e-mail de rappel</h2>
+<h2 class="h-xl">Voir et annuler vos séances</h2>
 <div class="mt-2">
 <ol class="steps steps--list">
-<li><div><h3>Ouvrez le rappel</h3><p>Nous vous écrivons la veille de chaque séance.</p></div></li>
-<li><div><h3>Touchez « Annuler cette séance »</h3><p>Choisissez la séance que votre enfant va manquer. Vous pouvez aussi y annuler l’une des prochaines séances.</p></div></li>
-<li><div><h3>C’est tout</h3><p>Votre tuteur reçoit un e-mail tout de suite. Une séance que vous annulez ne compte pas contre vous.</p></div></li>
+<li><div><h3>Ouvrez « Mes séances »</h3><p>Chaque e-mail de rappel contient un lien vers votre propre page <strong>Mes séances</strong>. Elle affiche vos 8 prochaines semaines de tutorat, à votre heure.</p></div></li>
+<li><div><h3>Touchez « Annuler »</h3><p>Choisissez n’importe quelle séance à laquelle votre enfant ne peut pas venir, cette semaine ou dans plusieurs semaines.</p></div></li>
+<li><div><h3>C’est tout</h3><p>Votre tuteur reçoit un e-mail tout de suite, et un rappel la veille. Une séance que vous annulez ne compte pas contre vous. Vous avez changé d’avis ? Touchez <strong>Rétablir</strong>, jusqu’à 24 heures avant.</p></div></li>
 </ol>
+<div class="callout mt-2" id="my-sessions">
+<h3>Vous n’avez pas le lien ?</h3>
+<p>Saisissez l’adresse e-mail utilisée pour votre inscription. Si elle a des séances de tutorat chez nous, nous vous enverrons par e-mail votre lien privé vers « Mes séances ».</p>
+<form class="mt-1" id="mySessionsForm" novalidate="">
+<label class="form-label" for="mySessionsEmail">Votre adresse e-mail</label>
+<div class="link-form-row">
+<input autocomplete="email" class="form-input" id="mySessionsEmail" inputmode="email" placeholder="you@example.com" required="" type="email"/>
+<button class="btn" id="mySessionsBtn" type="submit">Envoyez-moi mon lien</button>
+</div>
+<p aria-live="polite" class="link-form-msg" id="mySessionsMsg" role="status"></p>
+</form>
+</div>
 <div class="callout mt-2">
 <h3>Annulez au moins 2 heures avant le début de la séance</h3>
 <p>Plus tard, envoyez un SMS ou appelez votre tuteur. Son numéro est dans l’e-mail de présentation.</p>
@@ -252,6 +274,42 @@
 </div>
 </div>
 </footer>
+<script id="tfa-strings" type="application/json">{
+  "sending": "Envoi en cours...",
+  "button": "Envoyez-moi mon lien",
+  "sent": "Merci. Si cette adresse a des séances de tutorat chez nous, nous y avons envoyé votre lien. Vérifiez votre boîte de réception (et vos spams) dans quelques minutes.",
+  "badEmail": "Saisissez l’adresse e-mail utilisée pour votre inscription.",
+  "failed": "Un problème est survenu. Réessayez dans une minute, ou écrivez-nous à tutorforallnonprofit@gmail.com."
+}</script>
+<script>
+  // "Email me my link" (8 Nov 2026): asks the Apps Script (api.gs requestFamilyLink) to email this family its
+  // private My sessions page. The script gives the same answer whether or not the email is on file.
+  (function () {
+    var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
+    var form = document.getElementById("mySessionsForm");
+    if (!form) return;
+    var S = {};
+    try { S = JSON.parse(document.getElementById("tfa-strings").textContent); } catch (e) { /* English fallbacks below */ }
+    var input = document.getElementById("mySessionsEmail"), btn = document.getElementById("mySessionsBtn"), msg = document.getElementById("mySessionsMsg");
+    function show(text, ok) { msg.textContent = text || ""; msg.className = "link-form-msg " + (ok ? "is-ok" : "is-err"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = String(input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { show(S.badEmail || "Please type your email address.", false); input.focus(); return; }
+      btn.disabled = true; btn.textContent = S.sending || "Sending...";
+      fetch(APP + "?api=1", {
+        method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, credentials: "omit", redirect: "follow",
+        body: JSON.stringify({ op: "requestFamilyLink", args: [v] })
+      }).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then(function (j) {
+          if (!j || j.api !== true || !j.data || !j.data.ok) throw new Error("not ok");
+          show(S.sent, true); input.value = "";
+        })
+        .catch(function () { show(S.failed || "Something went wrong. Please try again.", false); })
+        .then(function () { btn.disabled = false; btn.textContent = S.button || "Email me my link"; });
+    });
+  })();
+</script>
 <script defer="" src="/site.js?v=6"></script>
 </body>
 </html>

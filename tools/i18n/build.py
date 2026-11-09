@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 SITE = 'https://tutorforall.org/'
-TODAY = '2026-11-07'
+TODAY = '2026-11-08'
 
 LANGS = {
     'es': {'name': 'Español', 'og': 'es_ES'},

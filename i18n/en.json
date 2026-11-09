@@ -433,6 +433,12 @@
 "donate/"
 ]
 },
+"0e907952aa": {
+"en": "Something went wrong. Please try again in a minute, or email us at tutorforallnonprofit@gmail.com.",
+"pages": [
+"families/"
+]
+},
 "0eab5777c9": {
 "en": "When is your child available? <1>*</1>",
 "pages": [
@@ -614,6 +620,12 @@
 "en": "I have read the Code of Conduct and I agree to follow it.",
 "pages": [
 "onboarding/"
+]
+},
+"1338f58a31": {
+"en": "See and cancel your sessions",
+"pages": [
+"families/"
 ]
 },
 "13d48d17db": {
@@ -856,6 +868,12 @@
 "en": "Previous tutoring experience, anything else relevant...",
 "pages": [
 "becomeatutor/"
+]
+},
+"1b9634e037": {
+"en": "Tap “Cancel”",
+"pages": [
+"families/"
 ]
 },
 "1bda9365c6": {
@@ -1462,16 +1480,16 @@
 "home"
 ]
 },
+"2ae3fdca43": {
+"en": "Please type the email address you signed up with.",
+"pages": [
+"families/"
+]
+},
 "2af9d498f8": {
 "en": "Expand all",
 "pages": [
 "faq/"
-]
-},
-"2b19776b97": {
-"en": "What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to cancel a session, and our attendance rule.",
-"pages": [
-"families/"
 ]
 },
 "2b1be7c9d9": {
@@ -2353,6 +2371,12 @@
 "safety/"
 ]
 },
+"48a40dfda6": {
+"en": "Type the email address you signed up with. If it has tutoring sessions with us, we will email you your private My sessions link.",
+"pages": [
+"families/"
+]
+},
 "48b913f1ae": {
 "en": "A student-led nonprofit that gives children around the world free, one-on-one, online math and reading tutoring for kindergarten through 5th-grade students from low-income families. Our tutors are high school and college student volunteers.",
 "pages": [
@@ -3031,6 +3055,12 @@
 "volunteerlog/"
 ]
 },
+"5a1fc4ff8a": {
+"en": "Your tutor gets an email right away, and a reminder the day before. A session you cancel does not count against you. Changed your mind? Tap <1>Undo</1>, up to 24 hours before.",
+"pages": [
+"families/"
+]
+},
 "5a967fa373": {
 "en": "Kids who fall behind in reading and math in elementary school rarely catch up on their own. Families who can afford it hire a tutor. Families who can't usually go without.",
 "pages": [
@@ -3066,6 +3096,12 @@
 "en": "How long does tutoring last?",
 "pages": [
 "requesttutoring/"
+]
+},
+"5bcd3e78e9": {
+"en": "Every reminder email has a link to your own <1>My sessions</1> page. It shows your next 8 weeks of tutoring, on your clock.",
+"pages": [
+"families/"
 ]
 },
 "5bd7d6da7b": {
@@ -3422,6 +3458,12 @@
 "en": "<1>05</1> Children",
 "pages": [
 "privacy/"
+]
+},
+"64307a20b5": {
+"en": "Cancel on your My sessions page",
+"pages": [
+"families/"
 ]
 },
 "64326cf49d": {
@@ -3829,6 +3871,12 @@
 "privacy/"
 ]
 },
+"6dd62ee673": {
+"en": "Pick any session your child can’t make, this week or weeks ahead.",
+"pages": [
+"families/"
+]
+},
 "6e0b7ef4f3": {
 "en": "Please try again",
 "pages": [
@@ -3969,6 +4017,12 @@
 "en": "Send a short video",
 "pages": [
 "onboarding/"
+]
+},
+"7364060379": {
+"en": "Email me my link",
+"pages": [
+"families/"
 ]
 },
 "736820ac8b": {
@@ -4532,12 +4586,6 @@
 "donate/"
 ]
 },
-"83d0c86f49": {
-"en": "Pick the session your child can’t make. You can also cancel one of the next few sessions there.",
-"pages": [
-"families/"
-]
-},
 "841d906904": {
 "en": "The rules that keep children safe",
 "pages": [
@@ -4864,6 +4912,12 @@
 "home"
 ]
 },
+"8bf636f1db": {
+"en": "Don’t have the link?",
+"pages": [
+"families/"
+]
+},
 "8bf9216d89": {
 "en": "<1>Student did not show up:</1> you came and your student did not.",
 "pages": [
@@ -4940,6 +4994,12 @@
 "requesttutoring/"
 ]
 },
+"8d8b26d83b": {
+"en": "Thank you. If that email has tutoring sessions with us, we have sent your link to it. Check your inbox (and spam folder) in a few minutes.",
+"pages": [
+"families/"
+]
+},
 "8dcaa5f854": {
 "en": "Yes. Tutors can request a reference letter from our team for internships, jobs, scholarships, or college applications.",
 "pages": [
@@ -4968,6 +5028,12 @@
 "en": "Gender <1>(optional)</1>",
 "pages": [
 "becomeatutor/"
+]
+},
+"8f2c9a071d": {
+"en": "What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to see and cancel your sessions, and our attendance rule.",
+"pages": [
+"families/"
 ]
 },
 "8fda5748dc": {
@@ -5036,12 +5102,6 @@
 "en": "What if we need to miss or move a session?",
 "pages": [
 "faq/"
-]
-},
-"91d48a515e": {
-"en": "Cancel from the reminder email",
-"pages": [
-"families/"
 ]
 },
 "91e8988b87": {
@@ -5613,12 +5673,6 @@
 "en": "<1>04</1> Where it is kept",
 "pages": [
 "privacy/"
-]
-},
-"9ed4f2ee34": {
-"en": "Tap “Cancel this session” in the reminder email we send the day before, at least 2 hours before the session starts. Your tutor is told right away, and it does not count against you. To move a session or take a break for a few weeks, reply to any of our emails. <1>How cancelling works</1>.",
-"pages": [
-"faq/"
 ]
 },
 "9f04681d37": {
@@ -6909,12 +6963,6 @@
 "onboarding/"
 ]
 },
-"c2dbdad723": {
-"en": "Tap “Cancel this session”",
-"pages": [
-"families/"
-]
-},
 "c309bc1bdc": {
 "en": "One completed session",
 "pages": [
@@ -6930,6 +6978,7 @@
 "c338c191ab": {
 "en": "Sending...",
 "pages": [
+"families/",
 "onboarding/"
 ]
 },
@@ -6997,12 +7046,6 @@
 "en": "Comprehension of longer texts",
 "pages": [
 "home"
-]
-},
-"c5647bf736": {
-"en": "We email you the day before every session.",
-"pages": [
-"families/"
 ]
 },
 "c660637132": {
@@ -7095,12 +7138,6 @@
 "en": "How long the session lasted, in minutes",
 "pages": [
 "volunteerlog/"
-]
-},
-"c93a5e0a1e": {
-"en": "Your tutor gets an email right away. A session you cancel does not count against you.",
-"pages": [
-"families/"
 ]
 },
 "c993d81694": {
@@ -7226,6 +7263,12 @@
 "en": "Phone / Text",
 "pages": [
 "requesttutoring/"
+]
+},
+"cde5c13bfe": {
+"en": "Open “My sessions”",
+"pages": [
+"families/"
 ]
 },
 "ce200075f1": {
@@ -7762,12 +7805,6 @@
 "onboarding/"
 ]
 },
-"dde3b19d38": {
-"en": "Open the reminder",
-"pages": [
-"families/"
-]
-},
 "de7aa9bd7a": {
 "en": "Egypt (EET/EEST)",
 "pages": [
@@ -7853,6 +7890,12 @@
 "en": "Friend or family member",
 "pages": [
 "requesttutoring/"
+]
+},
+"e1b1790da9": {
+"en": "Your email address",
+"pages": [
+"families/"
 ]
 },
 "e1c8916b4d": {
@@ -8477,6 +8520,12 @@
 "pages": [
 "becomeatutor/",
 "requesttutoring/"
+]
+},
+"f29a2692de": {
+"en": "Open your <1>My sessions</1> page from any reminder email and tap Cancel, at least 2 hours before the session starts. You can cancel any session in the next 8 weeks, and undo it up to 24 hours before. Your tutor is told right away, and it does not count against you. To move a session or take a break for a few weeks, reply to any of our emails. <2>How cancelling works</2>.",
+"pages": [
+"faq/"
 ]
 },
 "f2d0253425": {
