@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>परिवारों के लिए ट्यूशन कैसे काम करती है | Tutor-For-All</title>
-<meta content="Tutor-For-All की मुफ्त ट्यूशन के लिए साइन अप करने के बाद क्या होता है: प्रतीक्षा सूची, आपका ट्यूटर, हर हफ़्ते के सेशन, सेशन कैंसिल कैसे करें, और हमारा उपस्थिति नियम।" name="description"/>
+<meta content="Tutor-For-All की मुफ़्त ट्यूशन के लिए साइन अप करने के बाद क्या होता है: प्रतीक्षा सूची, आपका ट्यूटर, हर हफ़्ते के सेशन, अपने सेशन कैसे देखें और कैंसिल करें, और हमारा उपस्थिति नियम।" name="description"/>
 <link href="https://tutorforall.org/hi/families/" rel="canonical"/>
 <!--i18n:head-->
     <link rel="alternate" hreflang="en" href="https://tutorforall.org/families/">
@@ -25,7 +25,7 @@
 <meta content="https://tutorforall.org/hi/families/" property="og:url"/>
 <meta content="Tutor-For-All" property="og:site_name"/>
 <meta content="परिवारों के लिए ट्यूशन कैसे काम करती है | Tutor-For-All" property="og:title"/>
-<meta content="Tutor-For-All की मुफ्त ट्यूशन के लिए साइन अप करने के बाद क्या होता है: प्रतीक्षा सूची, आपका ट्यूटर, हर हफ़्ते के सेशन, सेशन कैंसिल कैसे करें, और हमारा उपस्थिति नियम।" property="og:description"/>
+<meta content="Tutor-For-All की मुफ़्त ट्यूशन के लिए साइन अप करने के बाद क्या होता है: प्रतीक्षा सूची, आपका ट्यूटर, हर हफ़्ते के सेशन, अपने सेशन कैसे देखें और कैंसिल करें, और हमारा उपस्थिति नियम।" property="og:description"/>
 <meta content="https://tutorforall.org/assets/img/og.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -49,6 +49,16 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Instrument+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
 <link href="/styles.css?v=7" rel="stylesheet"/>
+<style>
+        /* "Email me my link" (8 Nov 2026): the box that emails a family its private My sessions page */
+        .link-form-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+        .link-form-row .form-input { flex: 1 1 15rem; min-width: 0; }
+        .link-form-row .btn { flex: 0 0 auto; }
+        .link-form-msg { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.5; }
+        .link-form-msg:empty { display: none; }
+        .link-form-msg.is-ok { color: var(--green); }
+        .link-form-msg.is-err { color: var(--red); }
+    </style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400..700&amp;family=Noto+Serif+Devanagari:wght@400..700&amp;display=swap" rel="stylesheet"/><style>:root{--serif:"Noto Serif Devanagari", serif;--sans:"Noto Sans Devanagari", sans-serif;}</style></head>
 <body>
 <a class="skip-link" href="#main">मुख्य सामग्री पर जाएँ</a><div class="machine-note">यह पेज कंप्यूटर से अनुवाद किया गया है। अगर कुछ साफ़ न लगे, तो अंग्रेज़ी पेज ही सही माना जाएगा। <a href="/families/" lang="en">अंग्रेज़ी में पढ़ें</a></div>
@@ -94,7 +104,7 @@
 <p class="lede">साइन अप के बाद क्या-क्या होता है, और हम आपसे क्या थोड़ी सी चीज़ें चाहते हैं। इसे पढ़ने में करीब तीन मिनट लगते हैं।</p>
 <div class="btn-row mt-2"><a class="btn" href="#cancel">सेशन में नहीं आ पा रहे? <span aria-hidden="true" class="arrow">→</span></a></div>
 </div>
-<aside><dl><dt>खर्च</dt><dd>हमेशा मुफ्त</dd><dt>सेशन</dt><dd>हफ़्ते में लगभग 1 घंटा</dd><dt>कहाँ</dt><dd>ऑनलाइन, Google Meet पर</dd><dt>नहीं आ पा रहे?</dt><dd>रिमाइंडर ईमेल से कैंसिल करें</dd></dl></aside>
+<aside><dl><dt>खर्च</dt><dd>हमेशा मुफ्त</dd><dt>सेशन</dt><dd>हफ़्ते में लगभग 1 घंटा</dd><dt>कहाँ</dt><dd>ऑनलाइन, Google Meet पर</dd><dt>नहीं आ पा रहे?</dt><dd>अपने “मेरे सेशन” पेज पर कैंसिल करें</dd></dl></aside>
 </div>
 </header>
 <section class="section">
@@ -140,13 +150,25 @@
 <section class="section" id="cancel">
 <div class="wrap wrap--narrow">
 <p class="eyebrow"><span class="num">03</span> अगर आप नहीं आ पा रहे</p>
-<h2 class="h-xl">रिमाइंडर ईमेल से कैंसिल करें</h2>
+<h2 class="h-xl">अपने सेशन देखें और कैंसिल करें</h2>
 <div class="mt-2">
 <ol class="steps steps--list">
-<li><div><h3>रिमाइंडर खोलिए</h3><p>हम हर सेशन से एक दिन पहले आपको ईमेल करते हैं।</p></div></li>
-<li><div><h3>“यह सेशन कैंसिल करें” पर टैप कीजिए</h3><p>वह सेशन चुनिए जिसमें आपका बच्चा नहीं आ पाएगा। वहाँ आप अगले कुछ सेशन में से कोई एक भी कैंसिल कर सकते हैं।</p></div></li>
-<li><div><h3>बस इतना ही</h3><p>आपके ट्यूटर को तुरंत ईमेल चला जाता है। जो सेशन आप कैंसिल करते हैं, वह आपके ख़िलाफ़ नहीं गिना जाता।</p></div></li>
+<li><div><h3>“मेरे सेशन” खोलिए</h3><p>हर रिमाइंडर ईमेल में आपके अपने <strong>मेरे सेशन</strong> पेज का लिंक होता है। उसमें आपके अगले 8 हफ़्तों की ट्यूशन, आपके समय के अनुसार, दिखती है।</p></div></li>
+<li><div><h3>“कैंसिल” पर टैप कीजिए</h3><p>कोई भी सेशन चुनिए जिसमें आपका बच्चा नहीं आ सकता, इस हफ़्ते या कुछ हफ़्ते बाद का।</p></div></li>
+<li><div><h3>बस इतना ही</h3><p>आपके ट्यूटर को तुरंत ईमेल जाता है, और एक दिन पहले रिमाइंडर भी। आपका कैंसिल किया हुआ सेशन आपके ख़िलाफ़ नहीं गिना जाता। मन बदल गया? सेशन से 24 घंटे पहले तक <strong>पूर्ववत करें</strong> पर टैप कीजिए।</p></div></li>
 </ol>
+<div class="callout mt-2" id="my-sessions">
+<h3>लिंक नहीं है?</h3>
+<p>वह ईमेल पता लिखिए जिससे आपने साइन अप किया था। अगर उस ईमेल के हमारे साथ ट्यूशन सेशन हैं, तो हम आपको “मेरे सेशन” पेज का आपका निजी लिंक ईमेल कर देंगे।</p>
+<form class="mt-1" id="mySessionsForm" novalidate="">
+<label class="form-label" for="mySessionsEmail">आपका ईमेल पता</label>
+<div class="link-form-row">
+<input autocomplete="email" class="form-input" id="mySessionsEmail" inputmode="email" placeholder="you@example.com" required="" type="email"/>
+<button class="btn" id="mySessionsBtn" type="submit">मेरा लिंक ईमेल करें</button>
+</div>
+<p aria-live="polite" class="link-form-msg" id="mySessionsMsg" role="status"></p>
+</form>
+</div>
 <div class="callout mt-2">
 <h3>कृपया सेशन शुरू होने से कम से कम 2 घंटे पहले कैंसिल करें</h3>
 <p>इसके बाद, अपने ट्यूटर को मैसेज या कॉल कीजिए। उनका नंबर आपके परिचय ईमेल में है।</p>
@@ -250,6 +272,42 @@
 </div>
 </div>
 </footer>
+<script id="tfa-strings" type="application/json">{
+  "sending": "भेजा जा रहा है...",
+  "button": "मेरा लिंक ईमेल करें",
+  "sent": "धन्यवाद। अगर उस ईमेल के हमारे साथ ट्यूशन सेशन हैं, तो हमने उस पर आपका लिंक भेज दिया है। कुछ मिनट में अपना इनबॉक्स (और स्पैम फ़ोल्डर) देखिए।",
+  "badEmail": "वह ईमेल पता लिखिए जिससे आपने साइन अप किया था।",
+  "failed": "कुछ गड़बड़ हो गई। एक मिनट बाद फिर कोशिश कीजिए, या हमें tutorforallnonprofit@gmail.com पर ईमेल कीजिए।"
+}</script>
+<script>
+  // "Email me my link" (8 Nov 2026): asks the Apps Script (api.gs requestFamilyLink) to email this family its
+  // private My sessions page. The script gives the same answer whether or not the email is on file.
+  (function () {
+    var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
+    var form = document.getElementById("mySessionsForm");
+    if (!form) return;
+    var S = {};
+    try { S = JSON.parse(document.getElementById("tfa-strings").textContent); } catch (e) { /* English fallbacks below */ }
+    var input = document.getElementById("mySessionsEmail"), btn = document.getElementById("mySessionsBtn"), msg = document.getElementById("mySessionsMsg");
+    function show(text, ok) { msg.textContent = text || ""; msg.className = "link-form-msg " + (ok ? "is-ok" : "is-err"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = String(input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { show(S.badEmail || "Please type your email address.", false); input.focus(); return; }
+      btn.disabled = true; btn.textContent = S.sending || "Sending...";
+      fetch(APP + "?api=1", {
+        method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, credentials: "omit", redirect: "follow",
+        body: JSON.stringify({ op: "requestFamilyLink", args: [v] })
+      }).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then(function (j) {
+          if (!j || j.api !== true || !j.data || !j.data.ok) throw new Error("not ok");
+          show(S.sent, true); input.value = "";
+        })
+        .catch(function () { show(S.failed || "Something went wrong. Please try again.", false); })
+        .then(function () { btn.disabled = false; btn.textContent = S.button || "Email me my link"; });
+    });
+  })();
+</script>
 <script defer="" src="/site.js?v=6"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Tutoring Works for Families | Tutor-For-All</title>
-    <meta name="description" content="What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to cancel a session, and our attendance rule.">
+    <meta name="description" content="What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to see and cancel your sessions, and our attendance rule.">
     <link rel="canonical" href="https://tutorforall.org/families/">
     <!--i18n:head-->
     <link rel="alternate" hreflang="en" href="https://tutorforall.org/families/">
@@ -25,7 +25,7 @@
     <meta property="og:url" content="https://tutorforall.org/families/">
     <meta property="og:site_name" content="Tutor-For-All">
     <meta property="og:title" content="How Tutoring Works for Families | Tutor-For-All">
-    <meta property="og:description" content="What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to cancel a session, and our attendance rule.">
+    <meta property="og:description" content="What happens after you sign up for free Tutor-For-All tutoring: the waitlist, your tutor, weekly sessions, how to see and cancel your sessions, and our attendance rule.">
     <meta property="og:image" content="https://tutorforall.org/assets/img/og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -52,6 +52,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400..700&display=swap">
     <link rel="stylesheet" href="/styles.css?v=7">
+    <style>
+        /* "Email me my link" (8 Nov 2026): the box that emails a family its private My sessions page */
+        .link-form-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+        .link-form-row .form-input { flex: 1 1 15rem; min-width: 0; }
+        .link-form-row .btn { flex: 0 0 auto; }
+        .link-form-msg { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.5; }
+        .link-form-msg:empty { display: none; }
+        .link-form-msg.is-ok { color: var(--green); }
+        .link-form-msg.is-err { color: var(--red); }
+    </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -110,7 +120,7 @@
                 <p class="lede">Everything that happens after you sign up, and the few things we ask of you. It takes about three minutes to read.</p>
                 <div class="btn-row mt-2"><a href="#cancel" class="btn">Can&rsquo;t make a session? <span class="arrow" aria-hidden="true">&rarr;</span></a></div>
             </div>
-            <aside><dl><dt>Cost</dt><dd>Free, always</dd><dt>Sessions</dt><dd>About 1 hour a week</dd><dt>Where</dt><dd>Online, on Google Meet</dd><dt>Can&rsquo;t make it?</dt><dd>Cancel from the reminder email</dd></dl></aside>
+            <aside><dl><dt>Cost</dt><dd>Free, always</dd><dt>Sessions</dt><dd>About 1 hour a week</dd><dt>Where</dt><dd>Online, on Google Meet</dd><dt>Can&rsquo;t make it?</dt><dd>Cancel on your My sessions page</dd></dl></aside>
         </div>
     </header>
 
@@ -159,13 +169,25 @@
     <section class="section" id="cancel">
         <div class="wrap wrap--narrow">
             <p class="eyebrow"><span class="num">03</span> If you can&rsquo;t make it</p>
-            <h2 class="h-xl">Cancel from the reminder email</h2>
+            <h2 class="h-xl">See and cancel your sessions</h2>
             <div class="mt-2">
                 <ol class="steps steps--list">
-                    <li><div><h3>Open the reminder</h3><p>We email you the day before every session.</p></div></li>
-                    <li><div><h3>Tap &ldquo;Cancel this session&rdquo;</h3><p>Pick the session your child can&rsquo;t make. You can also cancel one of the next few sessions there.</p></div></li>
-                    <li><div><h3>That&rsquo;s it</h3><p>Your tutor gets an email right away. A session you cancel does not count against you.</p></div></li>
+                    <li><div><h3>Open &ldquo;My sessions&rdquo;</h3><p>Every reminder email has a link to your own <strong>My sessions</strong> page. It shows your next 8 weeks of tutoring, on your clock.</p></div></li>
+                    <li><div><h3>Tap &ldquo;Cancel&rdquo;</h3><p>Pick any session your child can&rsquo;t make, this week or weeks ahead.</p></div></li>
+                    <li><div><h3>That&rsquo;s it</h3><p>Your tutor gets an email right away, and a reminder the day before. A session you cancel does not count against you. Changed your mind? Tap <strong>Undo</strong>, up to 24 hours before.</p></div></li>
                 </ol>
+                <div class="callout mt-2" id="my-sessions">
+                    <h3>Don&rsquo;t have the link?</h3>
+                    <p>Type the email address you signed up with. If it has tutoring sessions with us, we will email you your private My sessions link.</p>
+                    <form class="mt-1" id="mySessionsForm" novalidate>
+                        <label class="form-label" for="mySessionsEmail">Your email address</label>
+                        <div class="link-form-row">
+                            <input type="email" id="mySessionsEmail" class="form-input" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
+                            <button type="submit" class="btn" id="mySessionsBtn">Email me my link</button>
+                        </div>
+                        <p class="link-form-msg" id="mySessionsMsg" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
                 <div class="callout mt-2">
                     <h3>Please cancel at least 2 hours before the session starts</h3>
                     <p>Later than that, text or call your tutor. Their number is in your intro email.</p>
@@ -277,6 +299,42 @@
     </div>
 </footer>
 
+<script type="application/json" id="tfa-strings">{
+  "sending": "Sending...",
+  "button": "Email me my link",
+  "sent": "Thank you. If that email has tutoring sessions with us, we have sent your link to it. Check your inbox (and spam folder) in a few minutes.",
+  "badEmail": "Please type the email address you signed up with.",
+  "failed": "Something went wrong. Please try again in a minute, or email us at tutorforallnonprofit@gmail.com."
+}</script>
+<script>
+  // "Email me my link" (8 Nov 2026): asks the Apps Script (api.gs requestFamilyLink) to email this family its
+  // private My sessions page. The script gives the same answer whether or not the email is on file.
+  (function () {
+    var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
+    var form = document.getElementById("mySessionsForm");
+    if (!form) return;
+    var S = {};
+    try { S = JSON.parse(document.getElementById("tfa-strings").textContent); } catch (e) { /* English fallbacks below */ }
+    var input = document.getElementById("mySessionsEmail"), btn = document.getElementById("mySessionsBtn"), msg = document.getElementById("mySessionsMsg");
+    function show(text, ok) { msg.textContent = text || ""; msg.className = "link-form-msg " + (ok ? "is-ok" : "is-err"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = String(input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { show(S.badEmail || "Please type your email address.", false); input.focus(); return; }
+      btn.disabled = true; btn.textContent = S.sending || "Sending...";
+      fetch(APP + "?api=1", {
+        method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, credentials: "omit", redirect: "follow",
+        body: JSON.stringify({ op: "requestFamilyLink", args: [v] })
+      }).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then(function (j) {
+          if (!j || j.api !== true || !j.data || !j.data.ok) throw new Error("not ok");
+          show(S.sent, true); input.value = "";
+        })
+        .catch(function () { show(S.failed || "Something went wrong. Please try again.", false); })
+        .then(function () { btn.disabled = false; btn.textContent = S.button || "Email me my link"; });
+    });
+  })();
+</script>
 <script src="/site.js?v=6" defer></script>
 
 </body>

@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>كيف تعمل الدروس للعائلات | Tutor-For-All</title>
-<meta content="ما يحدث بعد التسجيل في دروس Tutor-For-All المجانية: قائمة الانتظار، ومعلمك، والجلسات الأسبوعية، وكيفية إلغاء جلسة، وقاعدة الحضور لدينا." name="description"/>
+<meta content="ماذا يحدث بعد التسجيل في دروس Tutor-For-All المجانية: قائمة الانتظار، ومعلمك، والجلسات الأسبوعية، وكيف ترى جلساتك وتلغيها، وقاعدة الحضور لدينا." name="description"/>
 <link href="https://tutorforall.org/ar/families/" rel="canonical"/>
 <!--i18n:head-->
     <link rel="alternate" hreflang="en" href="https://tutorforall.org/families/">
@@ -25,7 +25,7 @@
 <meta content="https://tutorforall.org/ar/families/" property="og:url"/>
 <meta content="Tutor-For-All" property="og:site_name"/>
 <meta content="كيف تعمل الدروس للعائلات | Tutor-For-All" property="og:title"/>
-<meta content="ما يحدث بعد التسجيل في دروس Tutor-For-All المجانية: قائمة الانتظار، ومعلمك، والجلسات الأسبوعية، وكيفية إلغاء جلسة، وقاعدة الحضور لدينا." property="og:description"/>
+<meta content="ماذا يحدث بعد التسجيل في دروس Tutor-For-All المجانية: قائمة الانتظار، ومعلمك، والجلسات الأسبوعية، وكيف ترى جلساتك وتلغيها، وقاعدة الحضور لدينا." property="og:description"/>
 <meta content="https://tutorforall.org/assets/img/og.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -49,6 +49,16 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Instrument+Sans:wght@400..700&amp;display=swap" rel="stylesheet"/>
 <link href="/styles.css?v=7" rel="stylesheet"/>
+<style>
+        /* "Email me my link" (8 Nov 2026): the box that emails a family its private My sessions page */
+        .link-form-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: stretch; }
+        .link-form-row .form-input { flex: 1 1 15rem; min-width: 0; }
+        .link-form-row .btn { flex: 0 0 auto; }
+        .link-form-msg { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.5; }
+        .link-form-msg:empty { display: none; }
+        .link-form-msg.is-ok { color: var(--green); }
+        .link-form-msg.is-err { color: var(--red); }
+    </style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&amp;family=Noto+Sans+Arabic:wght@400..700&amp;display=swap" rel="stylesheet"/><style>:root{--serif:"Noto Naskh Arabic", serif;--sans:"Noto Sans Arabic", sans-serif;}</style></head>
 <body>
 <a class="skip-link" href="#main">انتقل إلى المحتوى</a><div class="machine-note">تُرجمت هذه الصفحة بالحاسوب. إذا كان أي شيء غير واضح، فالصفحة الإنجليزية هي الصفحة الرسمية. <a href="/families/" lang="en">اقرأها بالإنجليزية</a></div>
@@ -94,7 +104,7 @@
 <p class="lede">كل ما يحدث بعد التسجيل، والقليل الذي نطلبه منك. قراءته تستغرق نحو ثلاث دقائق.</p>
 <div class="btn-row mt-2"><a class="btn" href="#cancel">لا تستطيع حضور جلسة؟ <span aria-hidden="true" class="arrow">→</span></a></div>
 </div>
-<aside><dl><dt>التكلفة</dt><dd>مجانًا، دائمًا</dd><dt>الجلسات</dt><dd>نحو ساعة واحدة أسبوعيًا</dd><dt>أين</dt><dd>عبر الإنترنت، على Google Meet</dd><dt>لا تستطيع الحضور؟</dt><dd>ألغِ من رسالة التذكير</dd></dl></aside>
+<aside><dl><dt>التكلفة</dt><dd>مجانًا، دائمًا</dd><dt>الجلسات</dt><dd>نحو ساعة واحدة أسبوعيًا</dd><dt>أين</dt><dd>عبر الإنترنت، على Google Meet</dd><dt>لا تستطيع الحضور؟</dt><dd>ألغِ من صفحة “جلساتي”</dd></dl></aside>
 </div>
 </header>
 <section class="section">
@@ -140,13 +150,25 @@
 <section class="section" id="cancel">
 <div class="wrap wrap--narrow">
 <p class="eyebrow"><span class="num">03</span> إذا لم تتمكن من الحضور</p>
-<h2 class="h-xl">ألغِ من رسالة التذكير</h2>
+<h2 class="h-xl">اطّلع على جلساتك وألغِها</h2>
 <div class="mt-2">
 <ol class="steps steps--list">
-<li><div><h3>افتح رسالة التذكير</h3><p>نراسلك قبل كل جلسة بيوم.</p></div></li>
-<li><div><h3>اضغط على “إلغاء هذه الجلسة”</h3><p>اختر الجلسة التي لا يستطيع طفلك حضورها. ويمكنك من هناك أيضًا إلغاء إحدى الجلسات القادمة.</p></div></li>
-<li><div><h3>هذا كل شيء</h3><p>يصل إلى المعلم بريد إلكتروني فورًا. والجلسة التي تلغيها لا تُحسب ضدك.</p></div></li>
+<li><div><h3>افتح “جلساتي”</h3><p>كل رسالة تذكير فيها رابط إلى صفحتك الخاصة <strong>جلساتي</strong>. تعرض الأسابيع الثمانية القادمة من الدروس، بحسب توقيتك.</p></div></li>
+<li><div><h3>اضغط على “إلغاء”</h3><p>اختر أي جلسة لا يستطيع طفلك حضورها، هذا الأسبوع أو بعد أسابيع.</p></div></li>
+<li><div><h3>هذا كل شيء</h3><p>يتلقى المعلم رسالة فورًا، وتذكيرًا قبل يوم. الجلسة التي تلغيها لا تُحسب ضدك. هل غيّرت رأيك؟ اضغط على <strong>تراجع</strong>، حتى 24 ساعة قبل الجلسة.</p></div></li>
 </ol>
+<div class="callout mt-2" id="my-sessions">
+<h3>ليس لديك الرابط؟</h3>
+<p>اكتب البريد الإلكتروني الذي سجّلت به. إذا كانت لديه جلسات دروس معنا، فسنرسل إليك رابطك الخاص إلى صفحة “جلساتي”.</p>
+<form class="mt-1" id="mySessionsForm" novalidate="">
+<label class="form-label" for="mySessionsEmail">بريدك الإلكتروني</label>
+<div class="link-form-row">
+<input autocomplete="email" class="form-input" id="mySessionsEmail" inputmode="email" placeholder="you@example.com" required="" type="email"/>
+<button class="btn" id="mySessionsBtn" type="submit">أرسلوا لي رابطي</button>
+</div>
+<p aria-live="polite" class="link-form-msg" id="mySessionsMsg" role="status"></p>
+</form>
+</div>
 <div class="callout mt-2">
 <h3>يُرجى الإلغاء قبل بدء الجلسة بساعتين على الأقل</h3>
 <p>بعد ذلك، أرسل رسالة نصية إلى المعلم أو اتصل به. رقمه موجود في رسالة التعارف.</p>
@@ -250,6 +272,42 @@
 </div>
 </div>
 </footer>
+<script id="tfa-strings" type="application/json">{
+  "sending": "جارٍ الإرسال...",
+  "button": "أرسلوا لي رابطي",
+  "sent": "شكرًا لك. إذا كانت لهذا البريد جلسات دروس معنا، فقد أرسلنا إليه رابطك. تحقّق من بريدك الوارد (ومجلد الرسائل غير المرغوب فيها) خلال دقائق.",
+  "badEmail": "اكتب البريد الإلكتروني الذي سجّلت به.",
+  "failed": "حدث خطأ ما. حاول مرة أخرى بعد دقيقة، أو راسلنا على tutorforallnonprofit@gmail.com."
+}</script>
+<script>
+  // "Email me my link" (8 Nov 2026): asks the Apps Script (api.gs requestFamilyLink) to email this family its
+  // private My sessions page. The script gives the same answer whether or not the email is on file.
+  (function () {
+    var APP = "https://script.google.com/macros/s/AKfycbxNTeNiKu7jn1VvsE69FE_8jfkqIjzc9nLCSn_sPzVCiXJ5k6poRg-F0hPhnQQO0_vrzg/exec";
+    var form = document.getElementById("mySessionsForm");
+    if (!form) return;
+    var S = {};
+    try { S = JSON.parse(document.getElementById("tfa-strings").textContent); } catch (e) { /* English fallbacks below */ }
+    var input = document.getElementById("mySessionsEmail"), btn = document.getElementById("mySessionsBtn"), msg = document.getElementById("mySessionsMsg");
+    function show(text, ok) { msg.textContent = text || ""; msg.className = "link-form-msg " + (ok ? "is-ok" : "is-err"); }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = String(input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { show(S.badEmail || "Please type your email address.", false); input.focus(); return; }
+      btn.disabled = true; btn.textContent = S.sending || "Sending...";
+      fetch(APP + "?api=1", {
+        method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, credentials: "omit", redirect: "follow",
+        body: JSON.stringify({ op: "requestFamilyLink", args: [v] })
+      }).then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then(function (j) {
+          if (!j || j.api !== true || !j.data || !j.data.ok) throw new Error("not ok");
+          show(S.sent, true); input.value = "";
+        })
+        .catch(function () { show(S.failed || "Something went wrong. Please try again.", false); })
+        .then(function () { btn.disabled = false; btn.textContent = S.button || "Email me my link"; });
+    });
+  })();
+</script>
 <script defer="" src="/site.js?v=6"></script>
 </body>
 </html>
