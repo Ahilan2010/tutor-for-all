@@ -86,17 +86,43 @@
 <aside><dl><dt>Langkah 1</dt><dd>Baca pelatihan</dd><dt>Langkah 2</dt><dd>Jawab 5 pertanyaan</dd><dt>Langkah 3</dt><dd>Kirim video singkat</dd><dt>Langkah 4</dt><dd>Dipertemukan dengan murid</dd></dl></aside>
 </div>
 </header>
+<section class="section" id="videos">
+<div class="wrap wrap--narrow">
+<p class="eyebrow"><span class="num">00</span> Video</p>
+<h2 class="h-xl">Tonton dua video pelatihan</h2>
+<div class="prose">
+<p>Tonton keduanya sebelum menjawab pertanyaan: keselamatan dulu, lalu cara kerja semuanya. Teksnya dalam bahasa Anda.</p>
+<h3>1. Menjaga keselamatan anak</h3>
+<div class="tfa-video"><iframe allow="autoplay; fullscreen" allowfullscreen="" data-video="safety" loading="lazy" title="Safety training video"></iframe></div>
+<h3>2. Cara kerja semuanya</h3>
+<div class="tfa-video"><iframe allow="autoplay; fullscreen" allowfullscreen="" data-video="tech" loading="lazy" title="Technical training video"></iframe></div>
+</div>
+</div>
+</section>
+<style>.tfa-video{position:relative;aspect-ratio:16/9;margin:.6rem 0 1.6rem;background:#15294F;border-radius:10px;overflow:hidden}.tfa-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}</style>
+<script>
+    /* Training videos, one pair per language (Google Drive, anyone with the link). */
+    (function () {
+        var V = {"en": {"safety": "10VS4qkMPcjAe2pdbST7vflemgnHlh5Rr", "tech": "1dGqqsLaJvUOdHRyL5UHOYYMyDu9mIv4u"}, "es": {"safety": "191HFsvbzLdbPvkNvOB3Lih1Zk6qsI2eT", "tech": "1595IPPBkgkEEUZ_Rc4LPA3-VvpJoi3BY"}, "fr": {"safety": "163FGFSKLK5XoU67sbkjOXmLCV1zWEY2e", "tech": "1qFEH7qW5dEUOYWtP0rmJMOaHg3epsolB"}, "pt": {"safety": "1GdI9few4_ZDy6MabJ2KcUHapI12GYSTH", "tech": "19YBrcHt9V1cvM908RUsaaTVTLy1qUf6n"}, "ar": {"safety": "1Eje5UGsDYN8TFbrSen8v7MZJn54v3tL3", "tech": "1ZMocJycmTELEcPYgs6d3PXYgt_pN5PwE"}, "hi": {"safety": "19YDw8RoO0JOAKaWJpe2-4ka5H3VxQTeM", "tech": "10v3zfye1qLVW9yhJ4pqCiADH0h5fMXzL"}, "id": {"safety": "1LrlVbRArkoyClHYGBr_BHinIuVXPI8Kf", "tech": "11sGrCyeGHHtmLg939D-Lu_sZT1gksU4g"}, "vi": {"safety": "1tA6Ip09iBgYEu31AiamLSfzxfgmwvHq2", "tech": "1rmE5xArZu5esYpj8DPQ1TlWMe8zM7V78"}, "sw": {"safety": "1QKMX6lelR2ESHJMsYijur6X-UlZZXi0s", "tech": "1ajmQVJzaofGYlZCZ3INGuzI7syNHr7eU"}};
+        var L = (document.documentElement.lang || 'en').slice(0, 2);
+        var v = V[L] || V.en || {};
+        document.querySelectorAll('iframe[data-video]').forEach(function (f) {
+            var id = v[f.getAttribute('data-video')];
+            if (id) f.src = 'https://drive.google.com/file/d/' + id + '/preview';
+        });
+    })();
+    </script>
 <section class="section">
 <div class="wrap wrap--narrow">
 <p class="eyebrow"><span class="num">01</span> Keselamatan</p>
 <h2 class="h-xl">Aturan yang menjaga keselamatan anak</h2>
 <div class="prose mt-2">
-<p>Ini bagian yang paling penting. Empat dari lima pertanyaan di bagian bawah adalah tentang keselamatan, dan keempatnya harus Anda jawab benar.</p>
+<p>Ini bagian terpenting. Tiga dari lima pertanyaan di bagian akhir adalah tentang keselamatan, dan ketiganya harus Anda jawab dengan benar.</p>
 <h3>Biarkan kamera Anda menyala</h3>
 <p>Anda dan murid Anda menyalakan kamera selama seluruh sesi. Jika kamera murid mati lebih dari satu menit, minta ia menyalakannya. Jika menolak, akhiri sesi dengan sopan dan segera kirim email kepada kami.</p><h3>Orang tua selalu dipersilakan</h3>
 <p>Orang tua atau wali harus ada di rumah dan tahu bahwa sesi sedang berlangsung. Orang tua boleh menemani sesi mana pun tanpa pemberitahuan. Jika orang tua bertanya, selalu jawab ya.</p><h3>Jangan pernah merekam</h3>
 <p>Jangan pernah merekam sesi, dan jangan pernah memotret murid. Satu-satunya pengecualian adalah foto akhir sesi untuk catatan sesi Anda. Kirim hanya kepada Tutor-For-All lewat formulir catatan. Jangan pernah menyimpannya, mengunggahnya, atau menunjukkannya kepada siapa pun.</p><h3>Pakai hanya tautan di undangan kalender</h3>
-<p>Setiap murid punya satu tautan Google Meet, yang ada di undangan kalender. Pakai hanya tautan itu. Jangan pernah membuat tautan baru dan jangan pernah memakai tautan Anda sendiri. Bergabunglah dengan masuk ke akun Google yang menerima undangan, atau Meet tidak akan mengizinkan Anda masuk.</p><h3>Jika seorang anak mengatakan sesuatu yang mengkhawatirkan</h3>
+<p>Setiap murid punya satu tautan Google Meet, di undangan kalender. Gunakan hanya tautan itu dan jaga kerahasiaannya. Jangan membuat tautan baru atau memakai tautan Anda sendiri. Jika orang asing bergabung, akhiri panggilan dan kirim email kepada kami.</p><h3>Jika seorang anak mengatakan sesuatu yang mengkhawatirkan</h3>
 <p>Jika seorang anak mengatakan atau menunjukkan sesuatu yang membuat Anda khawatir tentang keselamatannya, tetaplah tenang dan lanjutkan mengajar. Jangan mengajukan pertanyaan yang menyelidik dan jangan membicarakannya dengan orang tua. Beri tahu Tutor-For-All pada hari yang sama lewat email. Jangan beri tahu teman dan jangan unggah apa pun tentang hal itu. Hukum pelaporan berbeda di setiap negara, dan kami akan membimbing Anda.</p><h3>Jaga komunikasi tetap lewat Tutor-For-All</h3>
 <p>Tembuskan tutorforallnonprofit@gmail.com pada setiap email dengan keluarga. Pakai telepon hanya untuk hal singkat pada hari itu, misalnya terlambat. Tidak ada media sosial dengan murid atau keluarga. Tidak ada hadiah. Sesi hanya online: jangan pernah bertemu keluarga secara langsung, bahkan di perpustakaan.</p><h3>Anda selalu boleh menghentikan sesi</h3>
 <p>Jika ada yang mengatakan sesuatu yang membuat Anda tidak nyaman, akhiri sesi dan beri tahu kami. Anda tidak akan pernah mendapat masalah karena itu.</p>
@@ -154,7 +180,7 @@
 <div class="form-aside">
 <p class="eyebrow"><span class="num">04</span> Kuis</p>
 <h2 class="h-lg">Lima pertanyaan</h2>
-<p>Anda butuh 4 dari 5 benar, dan keempat pertanyaan keselamatan harus benar semua. Jika belum lulus, baca lagi pelatihannya dan ulangi kuisnya. Itu tidak merugikan Anda.</p>
+<p>Anda perlu 4 dari 5, dan ketiga pertanyaan keselamatan harus benar. Jika belum lulus, baca lagi pelatihannya dan ulangi. Ini tidak merugikan Anda.</p>
 </div>
 <div>
 <div class="success-message" id="obPassed" role="status">
@@ -175,22 +201,22 @@
 <div class="form-card-title">Kuis tutor</div>
 <p class="form-card-subtitle" id="obWho"></p>
 <form id="obForm" novalidate="" onsubmit="handleOnboarding(event)">
-<div class="form-group" data-q="parent">
-<label class="form-label">1. Seorang orang tua meminta menemani sesi minggu depan. Apa yang Anda lakukan? <span class="req">*</span></label>
+<div class="form-group" data-q="in person">
+<label class="form-label">1. Sebuah keluarga mengajak Anda bertemu langsung di perpustakaan umum, bukan secara online. Apa yang Anda lakukan? <span class="req">*</span></label>
 <div class="checkbox-group checkbox-group--stack">
-<label class="checkbox-item"><input name="q0" required="" type="radio" value="0"/> Katakan ya. Orang tua boleh menemani sesi mana pun, tanpa perlu pemberitahuan</label>
-<label class="checkbox-item"><input name="q0" required="" type="radio" value="1"/> Minta mereka memberi tahu seminggu sebelumnya agar Anda bisa bersiap</label>
-<label class="checkbox-item"><input name="q0" required="" type="radio" value="2"/> Jelaskan bahwa sesi lebih baik dilakukan satu lawan satu</label>
-<label class="checkbox-item"><input name="q0" required="" type="radio" value="3"/> Tanyakan dulu kepada Tutor-For-All</label>
+<label class="checkbox-item"><input name="q0" required="" type="radio" value="0"/> Menolak. Sesi hanya online, tanpa pengecualian</label>
+<label class="checkbox-item"><input name="q0" required="" type="radio" value="1"/> Datang, asalkan ada orang tua</label>
+<label class="checkbox-item"><input name="q0" required="" type="radio" value="2"/> Datang, asalkan memberi tahu Tutor-For-All lebih dulu</label>
+<label class="checkbox-item"><input name="q0" required="" type="radio" value="3"/> Datang sekali untuk membangun kepercayaan, lalu kembali online</label>
 </div>
 </div>
-<div class="form-group" data-q="Meet link">
-<label class="form-label">2. Tautan Meet mana yang Anda pakai untuk sebuah sesi? <span class="req">*</span></label>
+<div class="form-group" data-q="log it">
+<label class="form-label">2. Sesi Anda baru saja selesai. Kapan dan bagaimana Anda mencatatnya? <span class="req">*</span></label>
 <div class="checkbox-group checkbox-group--stack">
-<label class="checkbox-item"><input name="q1" required="" type="radio" value="0"/> Tautan Meet Anda sendiri yang bisa dipakai berulang</label>
-<label class="checkbox-item"><input name="q1" required="" type="radio" value="1"/> Hanya tautan di undangan kalender untuk murid itu</label>
-<label class="checkbox-item"><input name="q1" required="" type="radio" value="2"/> Tautan baru yang Anda buat dan kirim kepada orang tua</label>
-<label class="checkbox-item"><input name="q1" required="" type="radio" value="3"/> Mana pun yang lebih disukai keluarga</label>
+<label class="checkbox-item"><input name="q1" required="" type="radio" value="0"/> Di hari yang sama (paling lambat 3 hari), dengan Snapshot dari TFA Board Anda</label>
+<label class="checkbox-item"><input name="q1" required="" type="radio" value="1"/> Di akhir bulan, semua sesi sekaligus</label>
+<label class="checkbox-item"><input name="q1" required="" type="radio" value="2"/> Hanya jika Tutor-For-All memintanya</label>
+<label class="checkbox-item"><input name="q1" required="" type="radio" value="3"/> Kapan saja, dan tidak perlu gambar</label>
 </div>
 </div>
 <div class="form-group" data-q="concerning">

@@ -92,6 +92,12 @@
 "becomeatutor/"
 ]
 },
+"0271685dae": {
+"en": "1. Keeping children safe",
+"pages": [
+"onboarding/"
+]
+},
 "0297148d25": {
 "en": "No, I'd prefer to tutor in English only",
 "pages": [
@@ -102,12 +108,6 @@
 "en": "Support Tutor-For-All",
 "pages": [
 "donate/"
-]
-},
-"03103dec40": {
-"en": "Explain that sessions work better one-on-one",
-"pages": [
-"onboarding/"
 ]
 },
 "0322b4fcc2": {
@@ -420,6 +420,12 @@
 "privacy/"
 ]
 },
+"0e2f6d7276": {
+"en": "2. Your session just ended. When and how do you log it? <1>*</1>",
+"pages": [
+"onboarding/"
+]
+},
 "0e4b2056bc": {
 "en": "Prefer not to say",
 "pages": [
@@ -487,6 +493,12 @@
 "en": "<1>Count real things:</1> stairs, spoons, coins.",
 "pages": [
 "free-math-tutor/"
+]
+},
+"0f79109185": {
+"en": "Say no. Sessions are online only, with no exceptions",
+"pages": [
+"onboarding/"
 ]
 },
 "0fc2eb511a": {
@@ -1534,12 +1546,6 @@
 "requesttutoring/"
 ]
 },
-"2d1088abf2": {
-"en": "Only the link on the calendar invitation for that student",
-"pages": [
-"onboarding/"
-]
-},
 "2d1181c358": {
 "en": "That’s it",
 "pages": [
@@ -1746,6 +1752,12 @@
 "faq/"
 ]
 },
+"32d0727aee": {
+"en": "Go, as long as you tell Tutor-For-All first",
+"pages": [
+"onboarding/"
+]
+},
 "32e087f099": {
 "en": "Morocco",
 "pages": [
@@ -1918,6 +1930,12 @@
 "en": "Please select at least one availability slot in the weekly grid.",
 "pages": [
 "becomeatutor/"
+]
+},
+"396607abb0": {
+"en": "At the end of the month, all sessions together",
+"pages": [
+"onboarding/"
 ]
 },
 "3979c505d4": {
@@ -2660,12 +2678,6 @@
 "families/"
 ]
 },
-"4dc6bf0ef0": {
-"en": "Check with Tutor-For-All first",
-"pages": [
-"onboarding/"
-]
-},
 "4de3117f61": {
 "en": "Earn verified volunteer hours <1>online.</1>",
 "pages": [
@@ -2974,6 +2986,12 @@
 "pages": [
 "becomeatutor/",
 "requesttutoring/"
+]
+},
+"57bfeac922": {
+"en": "Each student has one Google Meet link, on the calendar invitation. Use only that link, and keep it private. Never make a new link and never use your own. If a stranger joins, end the call and email us.",
+"pages": [
+"onboarding/"
 ]
 },
 "57c48fa681": {
@@ -3382,6 +3400,12 @@
 "about/"
 ]
 },
+"630bf42a9f": {
+"en": "Go once to build trust, then move back online",
+"pages": [
+"onboarding/"
+]
+},
 "6312f02b9e": {
 "en": "One verified service hour per session, for NHS, graduation and service-learning requirements, scholarships, and college or job applications.",
 "pages": [
@@ -3565,12 +3589,6 @@
 "faq/"
 ]
 },
-"65ac3ad1a7": {
-"en": "2. Which Meet link do you use for a session? <1>*</1>",
-"pages": [
-"onboarding/"
-]
-},
 "65ba351946": {
 "en": "$0. Always.",
 "pages": [
@@ -3688,8 +3706,8 @@
 "becomeatutor/"
 ]
 },
-"699028233c": {
-"en": "Your own reusable Meet link",
+"696f8cca9e": {
+"en": "Any time, and no picture is needed",
 "pages": [
 "onboarding/"
 ]
@@ -4174,6 +4192,12 @@
 "requesttutoring/"
 ]
 },
+"77a2ccda83": {
+"en": "The same day (3 days at the latest), with the Snapshot from your TFA Board",
+"pages": [
+"onboarding/"
+]
+},
 "77e4fb605e": {
 "en": "Can my organization partner with you?",
 "pages": [
@@ -4610,12 +4634,6 @@
 "home"
 ]
 },
-"8545200b10": {
-"en": "Each student has one Google Meet link, on the calendar invitation. Use only that link. Never make a new link and never use your own. Join signed in to the Google account the invitation went to, or Meet will not let you in.",
-"pages": [
-"onboarding/"
-]
-},
 "8558dc6cc1": {
 "en": "Sometimes — connection can be unreliable",
 "pages": [
@@ -4744,6 +4762,12 @@
 "safety/",
 "volunteer-hours-online/",
 "volunteerlog/"
+]
+},
+"8815987af8": {
+"en": "1. A family invites you to meet in person at the public library instead of online. What do you do? <1>*</1>",
+"pages": [
+"onboarding/"
 ]
 },
 "8833bd97fb": {
@@ -5036,6 +5060,12 @@
 "families/"
 ]
 },
+"8f3df69194": {
+"en": "You need 4 of 5, and all three safety questions must be right. If you do not pass, read the training again and retake it. It does not count against you.",
+"pages": [
+"onboarding/"
+]
+},
 "8fda5748dc": {
 "en": "Free, always",
 "pages": [
@@ -5121,6 +5151,12 @@
 "en": "<1>Volunteer hours <2>5</2></1>",
 "pages": [
 "faq/"
+]
+},
+"924c7c8d66": {
+"en": "This is the most important part. Three of the five questions at the bottom are about safety, and you must get all three right.",
+"pages": [
+"onboarding/"
 ]
 },
 "92899c788a": {
@@ -5419,12 +5455,6 @@
 "requesttutoring/"
 ]
 },
-"98fda458ea": {
-"en": "You need 4 of 5, and all four safety questions must be right. If you do not pass, read the training again and retake it. It does not count against you.",
-"pages": [
-"onboarding/"
-]
-},
 "99052e5c85": {
 "en": "Short training videos, then a short form: five questions on how sessions work and how we keep students safe, our Code of Conduct, and your availability. Prefer another language? You can read the whole training and take the quiz in your language instead. Then a quick hello video call, or a short video of yourself.",
 "pages": [
@@ -5613,12 +5643,6 @@
 "en": "About 5 minutes",
 "pages": [
 "becomeatutor/"
-]
-},
-"9d2fd5ad66": {
-"en": "Ask them to give a week's notice so you can prepare",
-"pages": [
-"onboarding/"
 ]
 },
 "9d3a8ac3c5": {
@@ -6339,12 +6363,6 @@
 "volunteerlog/"
 ]
 },
-"b1e5ade69b": {
-"en": "1. A parent asks to sit in on the session next week. What do you do? <1>*</1>",
-"pages": [
-"onboarding/"
-]
-},
 "b291beb879": {
 "en": "Application",
 "pages": [
@@ -6467,6 +6485,12 @@
 "en": "Direct, visible impact",
 "pages": [
 "becomeatutor/"
+]
+},
+"b4b8ab07b4": {
+"en": "Go, as long as a parent is there",
+"pages": [
+"onboarding/"
 ]
 },
 "b4c860050a": {
@@ -6634,12 +6658,6 @@
 "pages": [
 "becomeatutor/",
 "requesttutoring/"
-]
-},
-"b8fc71cd31": {
-"en": "Say yes. A parent may sit in on any session, with no notice needed",
-"pages": [
-"onboarding/"
 ]
 },
 "b911a45546": {
@@ -6868,12 +6886,6 @@
 "en": "<1>10+</1><2>active tutors</2>",
 "pages": [
 "donate/"
-]
-},
-"bfe6b9f40e": {
-"en": "Whichever one the family prefers",
-"pages": [
-"onboarding/"
 ]
 },
 "c02b67af9c": {
@@ -7480,6 +7492,12 @@
 "volunteerlog/"
 ]
 },
+"d33803db8d": {
+"en": "Only when Tutor-For-All asks for it",
+"pages": [
+"onboarding/"
+]
+},
 "d34ce1f8b5": {
 "en": "We never sell your information, and we never use it for advertising.",
 "pages": [
@@ -7642,12 +7660,6 @@
 "en": "Please use your Gmail address. Tutoring calls run on Google Meet, which lets invited Gmail accounts straight in.",
 "pages": [
 "becomeatutor/"
-]
-},
-"d9dbd359b6": {
-"en": "This is the most important part. Four of the five questions at the bottom are about safety, and you must get all four right.",
-"pages": [
-"onboarding/"
 ]
 },
 "d9fd44fab6": {
@@ -7837,12 +7849,6 @@
 "becomeatutor/"
 ]
 },
-"e092d7b3a7": {
-"en": "A new link you create and send to the parent",
-"pages": [
-"onboarding/"
-]
-},
 "e0c1461c05": {
 "en": "Family referral",
 "pages": [
@@ -7890,6 +7896,12 @@
 "en": "Friend or family member",
 "pages": [
 "requesttutoring/"
+]
+},
+"e1b0beb732": {
+"en": "2. How everything works",
+"pages": [
+"onboarding/"
 ]
 },
 "e1b1790da9": {
@@ -8057,6 +8069,12 @@
 "en": "<1>Closed calls.</1> Each Google Meet call is only for the people invited. Anyone else has to ask to join.",
 "pages": [
 "safety/"
+]
+},
+"e6ee29af79": {
+"en": "Watch both before you answer the questions: safety first, then how everything works. The captions are in your language.",
+"pages": [
+"onboarding/"
 ]
 },
 "e768c0e274": {
@@ -8286,6 +8304,12 @@
 "en": "Submit your hour log",
 "pages": [
 "volunteerlog/"
+]
+},
+"ec34f85a7a": {
+"en": "Watch the two training videos",
+"pages": [
+"onboarding/"
 ]
 },
 "ec4b831b21": {
@@ -8579,6 +8603,12 @@
 },
 "f43719df08": {
 "en": "Send my answers",
+"pages": [
+"onboarding/"
+]
+},
+"f45e2f0d30": {
+"en": "<1>00</1> Videos",
 "pages": [
 "onboarding/"
 ]
