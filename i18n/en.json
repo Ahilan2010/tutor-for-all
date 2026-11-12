@@ -477,6 +477,12 @@
 "requesttutoring/"
 ]
 },
+"0f2d53d1ec": {
+"en": "Yes, there's an optional question on the form. If you choose one, we look for a tutor of that gender first, but we may suggest another tutor so your child can start sooner. You can always say no to a match.",
+"pages": [
+"requesttutoring/"
+]
+},
 "0f5efe7255": {
 "en": "You'll hear from a real person on our team, usually within a few school days.",
 "pages": [
@@ -570,12 +576,6 @@
 "en": "~500 books",
 "pages": [
 "donate/"
-]
-},
-"11692da6a4": {
-"en": "Yes, there's an optional question on the form. If you choose one, we only match your child with a tutor of that gender, which can mean a longer wait.",
-"pages": [
-"requesttutoring/"
 ]
 },
 "1185339f24": {
@@ -1997,6 +1997,12 @@
 "en": "Per session you lead with a matched student.",
 "pages": [
 "volunteerlog/"
+]
+},
+"3b57afe46d": {
+"en": "If you pick one, we look for a tutor of that gender first. If none is free, we may suggest another tutor, and you can always say no.",
+"pages": [
+"requesttutoring/"
 ]
 },
 "3bbbe7bdea": {
@@ -4147,12 +4153,6 @@
 "volunteer-hours-online/"
 ]
 },
-"76395993fc": {
-"en": "We match by grade level, subjects, language, and the times you are both available. You can also ask for a male or female tutor. A less common language or a gender choice can mean a longer wait.",
-"pages": [
-"faq/"
-]
-},
 "7684657b73": {
 "en": "Ghana, Senegal, Côte d'Ivoire (GMT) – +0",
 "pages": [
@@ -4202,12 +4202,6 @@
 "en": "Can my organization partner with you?",
 "pages": [
 "faq/"
-]
-},
-"7880ab3fc2": {
-"en": "If you pick one, we only match your child with a tutor of that gender, which can mean a longer wait.",
-"pages": [
-"requesttutoring/"
 ]
 },
 "789040cf26": {
@@ -4465,6 +4459,12 @@
 "en": "Students at Carnegie Vanguard start tutoring K–5 kids over video call in math and reading.",
 "pages": [
 "about/"
+]
+},
+"7f53e5f9ad": {
+"en": "We match by grade level, subjects, language, and the times you are both available. Families outside the US are matched first with a tutor from their own country who speaks their language. You can also ask for a male or female tutor: we look for one first, but it is not a must. A less common language can mean a longer wait.",
+"pages": [
+"faq/"
 ]
 },
 "7f7925ac02": {

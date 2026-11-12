@@ -511,7 +511,6 @@
 "6f324caf47": "Bado una swali?",
 "74b5d46318": "Wafadhili",
 "75b5ba3134": "Wanafunzi wa Carnegie Vanguard High School huko Houston, Texas. Tuliona watoto wa shule ya msingi wakibaki nyuma kwa sababu familia zao hazikuweza kulipia masomo binafsi, ambayo mara nyingi hugharimu $40 hadi $80 kwa saa, na tukaamua kufanya jambo.",
-"76395993fc": "Tunaunganisha kwa darasa, masomo, lugha, na nyakati ambazo nyote mko huru. Unaweza pia kuomba mwalimu wa kiume au wa kike. Lugha isiyo ya kawaida sana au kuchagua jinsia kunaweza kumaanisha kusubiri zaidi.",
 "77e4fb605e": "Shirika langu linaweza kushirikiana nanyi?",
 "7a3b122f89": "Inachukua muda gani?",
 "7a565d2136": "Una hadithi kuhusu uzoefu wako wa masomo? Weka alama kwenye kisanduku cha ushuhuda na tunaweza kuishiriki (jina la kwanza tu) kwenye tovuti yetu.",
@@ -958,7 +957,6 @@
 "0f641d8fb6": "Endelevu / muda mrefu",
 "0fc2eb511a": "<1>Tuandikie</1> <2>Tujue zaidi</2>",
 "1016a940cd": "Chagua makadirio",
-"11692da6a4": "Ndiyo, kuna swali la hiari kwenye fomu. Ukichagua, tunamuunganisha mtoto wako na mwalimu wa jinsia hiyo tu, jambo ambalo linaweza kumaanisha kusubiri zaidi.",
 "1185339f24": "Darasa la 2",
 "13ed766990": "Darasa la 4",
 "1544ff7d73": "TANF",
@@ -1024,7 +1022,6 @@
 "6f4e1833d1": "Juu ya wastani",
 "70bdd9b513": "Jina Lako la Kwanza <1>*</1>",
 "72916444ea": "WIC",
-"7880ab3fc2": "Ukichagua moja, tunamuunganisha mtoto wako na mwalimu wa jinsia hiyo tu, jambo ambalo linaweza kumaanisha kusubiri zaidi.",
 "7bf5c908b4": "Jinsia Unayopendelea ya Mwalimu wa Mtoto Wako? <1>(si lazima)</1>",
 "7c50c464e5": "<1>Mtandaoni tu.</1> Vipindi vinafanyika kupitia Google Meet. Hakuna anayekuja nyumbani kwako.",
 "7d0847ce6d": "2. Mawasiliano ya Mzazi / Mlezi",
@@ -1348,5 +1345,8 @@
 "57bfeac922": "Kila mwanafunzi ana kiungo kimoja cha Google Meet, kwenye mwaliko wa kalenda. Tumia kiungo hicho pekee na ukiweke siri. Usitengeneze kiungo kipya wala kutumia chako. Mtu usiyemjua akijiunga, kata simu na ututumie barua pepe.",
 "924c7c8d66": "Hii ndiyo sehemu muhimu zaidi. Maswali matatu kati ya matano ya mwisho yanahusu usalama, na lazima uyapate yote matatu.",
 "0271685dae": "1. Kuwalinda watoto",
-"e1b0beb732": "2. Jinsi kila kitu kinavyofanya kazi"
+"e1b0beb732": "2. Jinsi kila kitu kinavyofanya kazi",
+"0f2d53d1ec": "Ndiyo, kuna swali la hiari kwenye fomu. Ukichagua mmoja, tunatafuta kwanza mwalimu wa jinsia hiyo, lakini tunaweza kupendekeza mwalimu mwingine ili mtoto wako aanze mapema. Unaweza kukataa pendekezo lolote wakati wowote.",
+"3b57afe46d": "Ukichagua mmoja, tunatafuta kwanza mwalimu wa jinsia hiyo. Kama hakuna aliye huru, tunaweza kupendekeza mwalimu mwingine, na unaweza kukataa wakati wowote.",
+"7f53e5f9ad": "Tunaoanisha kwa darasa, masomo, lugha, na nyakati ambazo nyote mko huru. Familia zilizo nje ya Marekani zinapewa kwanza mwalimu wa nchi yao anayezungumza lugha yao. Unaweza pia kuomba mwalimu wa kiume au wa kike: tunamtafuta kwanza, lakini si lazima. Lugha isiyo ya kawaida inaweza kumaanisha kusubiri kwa muda mrefu zaidi."
 }

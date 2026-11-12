@@ -511,7 +511,6 @@
 "6f324caf47": "¿Todavía tiene una pregunta?",
 "74b5d46318": "Aportantes",
 "75b5ba3134": "Estudiantes de Carnegie Vanguard High School, en Houston, Texas. Vimos que niños de primaria se atrasaban porque sus familias no podían pagar un tutor particular, que muchas veces cuesta de $40 a $80 la hora, y decidimos hacer algo.",
-"76395993fc": "Asignamos por grado, materias, idioma y los horarios en que ambos pueden. También puede pedir un tutor hombre o mujer. Un idioma poco común o elegir el género del tutor puede significar más espera.",
 "77e4fb605e": "¿Puede nuestra organización ser aliada de ustedes?",
 "7a3b122f89": "¿Cuánto tiempo toma?",
 "7a565d2136": "¿Tiene una historia sobre su experiencia con la tutoría? Marque la casilla de testimonio y es posible que la compartamos (solo con su nombre de pila) en nuestro sitio.",
@@ -958,7 +957,6 @@
 "0f641d8fb6": "Continuo / a largo plazo",
 "0fc2eb511a": "<1>Escríbanos</1> <2>Conozca quiénes somos</2>",
 "1016a940cd": "Seleccione un cálculo",
-"11692da6a4": "Sí, hay una pregunta opcional en el formulario. Si elige una, solo asignamos a su hijo un tutor de ese género, y eso puede significar más espera.",
 "1185339f24": "2.º grado",
 "13ed766990": "4.º grado",
 "1544ff7d73": "TANF",
@@ -1024,7 +1022,6 @@
 "6f4e1833d1": "Por encima del promedio",
 "70bdd9b513": "Su nombre <1>*</1>",
 "72916444ea": "WIC",
-"7880ab3fc2": "Si elige uno, solo asignamos a su hijo un tutor de ese género, y eso puede significar más espera.",
 "7bf5c908b4": "¿Género preferido del tutor de su hijo? <1>(opcional)</1>",
 "7c50c464e5": "<1>Solo en línea.</1> Las sesiones son por Google Meet. Nadie va a su casa.",
 "7d0847ce6d": "2. Contacto del padre, madre o encargado",
@@ -1348,5 +1345,8 @@
 "57bfeac922": "Cada estudiante tiene un solo enlace de Google Meet, en la invitación de calendario. Usa solo ese enlace y mantenlo en privado. Nunca crees un enlace nuevo ni uses uno propio. Si entra un desconocido, termina la llamada y escríbenos.",
 "924c7c8d66": "Esta es la parte más importante. Tres de las cinco preguntas del final son sobre seguridad, y debes acertar las tres.",
 "0271685dae": "1. Proteger a los niños",
-"e1b0beb732": "2. Cómo funciona todo"
+"e1b0beb732": "2. Cómo funciona todo",
+"0f2d53d1ec": "Sí, hay una pregunta opcional en el formulario. Si elige una, primero buscamos un tutor de ese género, pero podemos sugerir otro tutor para que su hijo empiece antes. Siempre puede decir que no a una propuesta.",
+"3b57afe46d": "Si elige uno, primero buscamos un tutor de ese género. Si no hay ninguno disponible, podemos sugerir otro tutor, y siempre puede decir que no.",
+"7f53e5f9ad": "Emparejamos por grado, materias, idioma y los horarios en que ambos están disponibles. A las familias fuera de EE. UU. les damos primero un tutor de su propio país que hable su idioma. También puede pedir un tutor hombre o mujer: lo buscamos primero, pero no es obligatorio. Un idioma menos común puede significar una espera más larga."
 }
