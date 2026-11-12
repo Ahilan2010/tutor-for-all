@@ -511,7 +511,6 @@
 "6f324caf47": "Vẫn còn thắc mắc?",
 "74b5d46318": "Nhà tài trợ",
 "75b5ba3134": "Học sinh Trường Trung học Carnegie Vanguard ở Houston, Texas. Chúng tôi thấy các em tiểu học bị tụt lại vì gia đình không đủ tiền thuê gia sư riêng, thường tốn $40 đến $80 một giờ, và quyết định làm điều gì đó.",
-"76395993fc": "Chúng tôi ghép theo lớp, môn học, ngôn ngữ và thời gian cả hai cùng rảnh. Bạn cũng có thể yêu cầu gia sư nam hoặc nữ. Một ngôn ngữ ít phổ biến hoặc yêu cầu về giới tính có thể khiến chờ lâu hơn.",
 "77e4fb605e": "Tổ chức của tôi có thể hợp tác với các bạn không?",
 "7a3b122f89": "Việc này mất bao nhiêu thời gian?",
 "7a565d2136": "Bạn có câu chuyện về trải nghiệm dạy kèm? Hãy đánh dấu ô chia sẻ và chúng tôi có thể đăng (chỉ tên) trên trang web.",
@@ -958,7 +957,6 @@
 "0f641d8fb6": "Liên tục / lâu dài",
 "0fc2eb511a": "<1>Gửi email cho chúng tôi</1> <2>Tìm hiểu về chúng tôi</2>",
 "1016a940cd": "Chọn một ước tính",
-"11692da6a4": "Có, trong mẫu có một câu hỏi không bắt buộc. Nếu bạn chọn, chúng tôi chỉ ghép con bạn với gia sư thuộc giới tính đó, việc này có thể khiến chờ lâu hơn.",
 "1185339f24": "Lớp 2",
 "13ed766990": "Lớp 4",
 "1544ff7d73": "TANF",
@@ -1024,7 +1022,6 @@
 "6f4e1833d1": "Trên trung bình",
 "70bdd9b513": "Tên của bạn <1>*</1>",
 "72916444ea": "WIC",
-"7880ab3fc2": "Nếu bạn chọn, chúng tôi chỉ ghép con bạn với gia sư thuộc giới tính đó, việc này có thể khiến chờ lâu hơn.",
 "7bf5c908b4": "Giới tính gia sư bạn muốn cho con? <1>(không bắt buộc)</1>",
 "7c50c464e5": "<1>Chỉ trực tuyến.</1> Buổi học diễn ra qua Google Meet. Không ai đến nhà bạn.",
 "7d0847ce6d": "2. Liên hệ phụ huynh / người giám hộ",
@@ -1348,5 +1345,8 @@
 "57bfeac922": "Mỗi học sinh có một đường dẫn Google Meet, nằm trong lời mời lịch. Chỉ dùng đường dẫn đó và giữ kín. Đừng tạo đường dẫn mới hay dùng đường dẫn của riêng bạn. Nếu có người lạ vào, hãy kết thúc cuộc gọi và gửi email cho chúng tôi.",
 "924c7c8d66": "Đây là phần quan trọng nhất. Ba trong năm câu hỏi ở cuối là về an toàn, và bạn phải trả lời đúng cả ba.",
 "0271685dae": "1. Giữ an toàn cho trẻ",
-"e1b0beb732": "2. Mọi thứ hoạt động thế nào"
+"e1b0beb732": "2. Mọi thứ hoạt động thế nào",
+"0f2d53d1ec": "Có, biểu mẫu có một câu hỏi không bắt buộc. Nếu quý vị chọn, chúng tôi sẽ tìm gia sư thuộc giới tính đó trước, nhưng có thể đề xuất gia sư khác để con quý vị được bắt đầu sớm hơn. Quý vị luôn có thể từ chối một đề xuất ghép cặp.",
+"3b57afe46d": "Nếu quý vị chọn, chúng tôi sẽ tìm gia sư thuộc giới tính đó trước. Nếu không có ai rảnh, chúng tôi có thể đề xuất gia sư khác, và quý vị luôn có thể từ chối.",
+"7f53e5f9ad": "Chúng tôi ghép cặp theo lớp, môn học, ngôn ngữ và thời gian cả hai bên đều rảnh. Các gia đình ở ngoài Hoa Kỳ được ưu tiên ghép với gia sư cùng quốc gia và nói cùng ngôn ngữ. Quý vị cũng có thể yêu cầu gia sư nam hoặc nữ: chúng tôi sẽ tìm trước, nhưng đó không phải điều bắt buộc. Ngôn ngữ ít phổ biến có thể khiến thời gian chờ lâu hơn."
 }
